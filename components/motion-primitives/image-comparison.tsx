@@ -93,11 +93,13 @@ const ImageComparisonImage = ({
   alt,
   src,
   position,
+  objectPosition = '50% 38%',
 }: {
   className?: string;
   alt: string;
   src: string;
   position: 'left' | 'right';
+  objectPosition?: string;
 }) => {
   const { motionSliderPosition } = useContext(ImageComparisonContext)!;
   const leftClipPath = useTransform(
@@ -113,9 +115,14 @@ const ImageComparisonImage = ({
     <motion.img
       src={src}
       alt={alt}
-      className={cn('absolute inset-0 h-full w-full object-cover', className)}
+      draggable={false}
+      className={cn(
+        'pointer-events-none absolute inset-0 block h-full w-full max-w-none object-cover',
+        className
+      )}
       style={{
         clipPath: position === 'left' ? leftClipPath : rightClipPath,
+        objectPosition,
       }}
     />
   );
@@ -125,7 +132,7 @@ const ImageComparisonSlider = ({
   className,
   children,
 }: {
-  className: string;
+  className?: string;
   children?: React.ReactNode;
 }) => {
   const { motionSliderPosition } = useContext(ImageComparisonContext)!;
