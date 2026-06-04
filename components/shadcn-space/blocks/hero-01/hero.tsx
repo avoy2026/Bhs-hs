@@ -25,7 +25,7 @@ function HeroSection(_props: HeroSectionProps) {
   return (
     <section id="home" className="relative w-full overflow-hidden">
       <div className="relative w-full">
-        <div className="relative w-full pt-4 md:pt-8 pb-6 md:pb-10 before:absolute before:inset-x-0 before:top-16 before:h-[min(70vw,520px)] before:bg-linear-to-r before:from-sky-100 before:via-white before:to-amber-100 before:rounded-full before:blur-3xl before:-z-10 dark:before:from-slate-800 dark:before:via-black dark:before:to-stone-700">
+        <div className="relative w-full pt-4 md:pt-8 pb-6 md:pb-10">
           <div className="container relative z-10 mx-auto px-4 sm:px-6">
             <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 md:gap-10">
               <motion.div
