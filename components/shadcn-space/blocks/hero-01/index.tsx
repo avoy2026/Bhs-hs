@@ -2,6 +2,7 @@ import HeroSection from "@/components/shadcn-space/blocks/hero-01/hero";
 import type { NavigationSection } from "@/components/shadcn-space/blocks/hero-01/header";
 import Header from "@/components/shadcn-space/blocks/hero-01/header";
 import BrandSlider from "@/components/shadcn-space/blocks/hero-01/brand-slider";
+import HunterScrollProfile from "@/components/HunterScrollProfile";
 import { NAV_ITEMS, JOURNEY_MARQUEE } from "@/lib/site-data";
 
 export default function AgencyHeroSection() {
@@ -17,7 +18,9 @@ export default function AgencyHeroSection() {
       <main>
         <HeroSection />
         <BrandSlider tags={JOURNEY_MARQUEE.tags} label={JOURNEY_MARQUEE.label} />
+        <HunterScrollProfile />
       </main>
     </div>
   );
 }
+
