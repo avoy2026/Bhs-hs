@@ -42,14 +42,12 @@ const CINEMATIC_LINES = [
 ] as const;
 
 /** object-fit: cover math for canvas */
-function drawCover(ctx: CanvasRenderingContext2D, img: HTMLImageElement) {
-  const cw = ctx.canvas.width;
-  const ch = ctx.canvas.height;
-  const scale = Math.max(cw / img.naturalWidth, ch / img.naturalHeight);
-  const sw = img.naturalWidth * scale;
+function drawCover(ctx: CanvasRenderingContext2D, img: HTMLImageElement, w: number, h: number) {
+  const scale = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+  const sw = img.naturalWidth  * scale;
   const sh = img.naturalHeight * scale;
-  ctx.clearRect(0, 0, cw, ch);
-  ctx.drawImage(img, (cw - sw) / 2, (ch - sh) / 2, sw, sh);
+  ctx.clearRect(0, 0, w, h);
+  ctx.drawImage(img, (w - sw) / 2, (h - sh) / 2, sw, sh);
 }
 
 // ── Cinematic text block ────────────────────────────────────────────────────
@@ -67,15 +65,15 @@ function CinematicText({
   return (
     <motion.div
       style={{ opacity, y }}
-      className="absolute inset-0 z-20 flex flex-col items-start justify-center pointer-events-none px-10 md:px-20 lg:px-32"
+      className="absolute inset-0 flex flex-col items-start justify-center pointer-events-none"
     >
       <span className="mb-3 text-[10px] font-semibold uppercase tracking-[0.5em] text-white/40">
         {eyebrow}
       </span>
       <h2
-        className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white"
+        className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white"
         style={{
-          textShadow: "0 2px 40px rgba(0,0,0,0.8)",
+          textShadow: "0 2px 30px rgba(0,0,0,0.6)",
           whiteSpace: "pre-line",
         }}
       >
@@ -88,53 +86,50 @@ function CinematicText({
 // ── Main component ──────────────────────────────────────────────────────────
 export default function HunterScrollProfile() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const canvasRef    = useRef<HTMLCanvasElement>(null);
-  const imagesRef    = useRef<HTMLImageElement[]>([]);
-  const [loaded,      setLoaded     ] = useState(false);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const backgroundRef = useRef<HTMLDivElement>(null);
+  const imagesRef = useRef<HTMLImageElement[]>([]);
+  const [loaded, setLoaded] = useState(false);
   const [loadedCount, setLoadedCount] = useState(0);
 
-  // Raw scroll progress — used directly for frame index (no spring lag)
+  // Raw scroll — direct 1:1 frame scrubbing
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  // Spring ONLY for overlay text — feels natural on text, not on video frames
+  // Spring only for text overlays
   const textProgress = useSpring(scrollYProgress, {
     stiffness: 120,
     damping: 28,
     restDelta: 0.0001,
   });
 
-  // Frame index mapped directly from raw scroll (1:1 with finger/wheel)
+  // Frame index from raw scroll (no spring lag)
   const frameIndex = useTransform(scrollYProgress, [0, 1], [0, TOTAL_FRAMES - 1]);
 
-  // Text overlays use the smoother spring-based progress
+  // Text opacity/y driven by spring
   const hintOpacity  = useTransform(textProgress, [0, 0.06], [1, 0]);
 
   const line1Opacity = useTransform(textProgress,
     [CINEMATIC_LINES[0].inStart, CINEMATIC_LINES[0].inEnd, CINEMATIC_LINES[0].outStart, CINEMATIC_LINES[0].outEnd],
     [0, 1, 1, 0]);
-  const line1Y       = useTransform(textProgress,
-    [CINEMATIC_LINES[0].inStart, CINEMATIC_LINES[0].inEnd], [28, 0]);
+  const line1Y = useTransform(textProgress, [CINEMATIC_LINES[0].inStart, CINEMATIC_LINES[0].inEnd], [24, 0]);
 
   const line2Opacity = useTransform(textProgress,
     [CINEMATIC_LINES[1].inStart, CINEMATIC_LINES[1].inEnd, CINEMATIC_LINES[1].outStart, CINEMATIC_LINES[1].outEnd],
     [0, 1, 1, 0]);
-  const line2Y       = useTransform(textProgress,
-    [CINEMATIC_LINES[1].inStart, CINEMATIC_LINES[1].inEnd], [28, 0]);
+  const line2Y = useTransform(textProgress, [CINEMATIC_LINES[1].inStart, CINEMATIC_LINES[1].inEnd], [24, 0]);
 
   const line3Opacity = useTransform(textProgress,
     [CINEMATIC_LINES[2].inStart, CINEMATIC_LINES[2].inEnd, CINEMATIC_LINES[2].outStart, CINEMATIC_LINES[2].outEnd],
     [0, 1, 1, 0]);
-  const line3Y       = useTransform(textProgress,
-    [CINEMATIC_LINES[2].inStart, CINEMATIC_LINES[2].inEnd], [28, 0]);
+  const line3Y = useTransform(textProgress, [CINEMATIC_LINES[2].inStart, CINEMATIC_LINES[2].inEnd], [24, 0]);
 
   const line4Opacity = useTransform(textProgress,
     [CINEMATIC_LINES[3].inStart, CINEMATIC_LINES[3].inEnd, CINEMATIC_LINES[3].outStart, CINEMATIC_LINES[3].outEnd],
     [0, 1, 1, 0]);
-  const line4Y       = useTransform(textProgress,
-    [CINEMATIC_LINES[3].inStart, CINEMATIC_LINES[3].inEnd], [28, 0]);
+  const line4Y = useTransform(textProgress, [CINEMATIC_LINES[3].inStart, CINEMATIC_LINES[3].inEnd], [24, 0]);
 
   // Preload all frames
   useEffect(() => {
@@ -153,21 +148,24 @@ export default function HunterScrollProfile() {
     imagesRef.current = imgs;
   }, []);
 
-  // Resize canvas to fill viewport exactly
+  // Match canvas pixel dimensions to the full sticky background layer
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
-    const resize = () => {
-      canvas.width  = window.innerWidth;
-      canvas.height = window.innerHeight;
+    const background = backgroundRef.current;
+    if (!canvas || !background) return;
+
+    const sync = () => {
+      canvas.width = background.clientWidth;
+      canvas.height = background.clientHeight;
     };
-    resize();
-    window.addEventListener("resize", resize);
-    return () => window.removeEventListener("resize", resize);
+
+    sync();
+    const ro = new ResizeObserver(sync);
+    ro.observe(background);
+    return () => ro.disconnect();
   }, []);
 
-  // requestAnimationFrame loop — reads the latest frame index every display frame.
-  // This is the Apple-style approach: silky smooth because it never misses a rAF tick.
+  // rAF loop — paint current frame into the panel-sized canvas
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -176,15 +174,17 @@ export default function HunterScrollProfile() {
     let rafId: number;
 
     const tick = () => {
-      const raw = frameIndex.get();                                     // 0 → 119 (float)
+      const raw = frameIndex.get();
       const idx = Math.min(Math.max(Math.round(raw), 0), TOTAL_FRAMES - 1);
 
-      if (idx !== lastIdx) {                                            // only repaint on change
+      if (idx !== lastIdx) {
         const img = imagesRef.current[idx];
         if (img?.complete) {
           const ctx = canvas.getContext("2d");
-          if (ctx) drawCover(ctx, img);
-          lastIdx = idx;
+          if (ctx) {
+            drawCover(ctx, img, canvas.width, canvas.height);
+            lastIdx = idx;
+          }
         }
       }
 
@@ -204,18 +204,18 @@ export default function HunterScrollProfile() {
       className="relative"
       style={{ height: "600vh" }}
     >
-      {/* Sticky full-screen panel */}
-      <div className="sticky top-0 h-screen w-screen overflow-hidden bg-black">
+      {/* Sticky full-screen panel with the frame sequence as the background */}
+      <div ref={backgroundRef} className="sticky top-0 h-screen w-full overflow-hidden bg-black">
 
-        {/* Canvas — cover-scaled frames, painted via rAF */}
+        {/* Background image scrubber */}
         <canvas
           ref={canvasRef}
-          className="absolute inset-0 select-none"
-          style={{
-            opacity: loaded ? 1 : 0,
-            transition: "opacity 0.5s ease",
-          }}
+          className="absolute inset-0 h-full w-full select-none"
         />
+
+        {/* Atmosphere overlays to keep the text readable */}
+        <div className="absolute inset-0 z-1 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.10),transparent_35%),linear-gradient(90deg,rgba(0,0,0,0.88)_0%,rgba(0,0,0,0.66)_42%,rgba(0,0,0,0.22)_100%)]" />
+        <div className="absolute inset-0 z-1 bg-linear-to-t from-black via-black/10 to-transparent" />
 
         {/* Loading overlay */}
         {!loaded && (
@@ -223,7 +223,7 @@ export default function HunterScrollProfile() {
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-white/50">
               Initialising System · {loadPercent}%
             </p>
-            <div className="w-56 h-[1px] bg-white/10 overflow-hidden">
+            <div className="w-56 h-px bg-white/10 overflow-hidden">
               <div
                 className="h-full bg-white/60 transition-all duration-75"
                 style={{ width: `${loadPercent}%` }}
@@ -232,13 +232,21 @@ export default function HunterScrollProfile() {
           </div>
         )}
 
-        {/* Cinematic text overlays */}
-        <CinematicText eyebrow={CINEMATIC_LINES[0].eyebrow} text={CINEMATIC_LINES[0].text} opacity={line1Opacity} y={line1Y} />
-        <CinematicText eyebrow={CINEMATIC_LINES[1].eyebrow} text={CINEMATIC_LINES[1].text} opacity={line2Opacity} y={line2Y} />
-        <CinematicText eyebrow={CINEMATIC_LINES[2].eyebrow} text={CINEMATIC_LINES[2].text} opacity={line3Opacity} y={line3Y} />
-        <CinematicText eyebrow={CINEMATIC_LINES[3].eyebrow} text={CINEMATIC_LINES[3].text} opacity={line4Opacity} y={line4Y} />
+        {/* ── Two-column layout ── */}
+        <div className="relative z-10 flex h-full w-full items-center">
+          <div className="w-full max-w-7xl mx-auto px-8 md:px-16 flex items-center">
 
-        {/* Section label */}
+          {/* LEFT — cinematic text */}
+          <div className="relative flex-1 min-h-80 md:min-h-105 max-w-2xl">
+            <CinematicText eyebrow={CINEMATIC_LINES[0].eyebrow} text={CINEMATIC_LINES[0].text} opacity={line1Opacity} y={line1Y} />
+            <CinematicText eyebrow={CINEMATIC_LINES[1].eyebrow} text={CINEMATIC_LINES[1].text} opacity={line2Opacity} y={line2Y} />
+            <CinematicText eyebrow={CINEMATIC_LINES[2].eyebrow} text={CINEMATIC_LINES[2].text} opacity={line3Opacity} y={line3Y} />
+            <CinematicText eyebrow={CINEMATIC_LINES[3].eyebrow} text={CINEMATIC_LINES[3].text} opacity={line4Opacity} y={line4Y} />
+          </div>
+          </div>
+        </div>
+
+        {/* Section label — top centre */}
         <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 text-center pointer-events-none">
           <p className="text-[10px] font-semibold uppercase tracking-[0.45em] text-white/30">
             Hunter Profile · Shadow Monarch
@@ -246,7 +254,7 @@ export default function HunterScrollProfile() {
         </div>
 
         {/* Scroll progress bar */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 h-[1px] bg-white/10">
+        <div className="absolute bottom-0 left-0 right-0 z-20 h-px bg-white/10">
           <motion.div
             className="h-full bg-white/50 origin-left"
             style={{ scaleX: scrollYProgress }}
@@ -261,7 +269,7 @@ export default function HunterScrollProfile() {
           <span className="text-[10px] uppercase tracking-[0.35em] text-white/30">
             Scroll to awaken
           </span>
-          <div className="h-8 w-px bg-gradient-to-b from-white/40 to-transparent animate-pulse" />
+          <div className="h-8 w-px bg-linear-to-b from-white/40 to-transparent animate-pulse" />
         </motion.div>
       </div>
     </div>
