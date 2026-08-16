@@ -103,11 +103,14 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        School Events <br /> at Boromohonpur
+    <div className="relative left-0 top-0 mx-auto w-full max-w-7xl px-4 py-20 md:py-40">
+      <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[var(--brand-gold)] uppercase">
+        School Events
+      </p>
+      <h1 className="text-2xl font-bold text-[var(--brand-navy)] md:text-7xl">
+        Moments that <br /> shape our students
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+      <p className="mt-8 max-w-2xl text-base text-[var(--muted-foreground)] md:text-xl">
         From annual celebrations to sports meets and cultural programs, every
         event brings our students, teachers, and community together.
       </p>

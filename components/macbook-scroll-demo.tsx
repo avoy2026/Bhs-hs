@@ -3,12 +3,12 @@ import { MacbookScroll } from "@/components/ui/macbook-scroll";
 
 export default function MacbookScrollDemo() {
   return (
-    <div className="w-full overflow-hidden bg-white dark:bg-[#0B0B0F]">
+    <div className="section-light w-full overflow-hidden">
       <MacbookScroll
         title={
-          <span>
-            A proud tradition of learning at Boromohonpur. <br /> Scroll to see our
-            campus life.
+          <span className="text-[var(--brand-navy)]">
+            A proud tradition of learning at Boromohonpur. <br /> Scroll to see
+            our campus life.
           </span>
         }
         badge={

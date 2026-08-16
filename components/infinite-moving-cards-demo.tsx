@@ -5,7 +5,10 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className="relative flex h-[40rem] flex-col items-center justify-center overflow-hidden rounded-md bg-neutral-950 antialiased">
+    <section className="section-dark relative flex h-[40rem] flex-col items-center justify-center overflow-hidden antialiased">
+      <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-gold)] uppercase">
+        Community Voices
+      </p>
       <h2 className="mb-8 px-4 text-center text-2xl font-semibold text-white md:text-3xl">
         Voices from Boromohonpur High School
       </h2>
@@ -14,7 +17,7 @@ export default function InfiniteMovingCardsDemo() {
         direction="right"
         speed="slow"
       />
-    </div>
+    </section>
   );
 }
 

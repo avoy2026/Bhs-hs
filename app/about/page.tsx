@@ -3,7 +3,7 @@ import TimelineDemo from "@/components/timeline-demo";
 
 export default function AboutPage() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <FocusCardsDemo />
       <TimelineDemo />
     </main>

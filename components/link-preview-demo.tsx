@@ -4,14 +4,17 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function LinkPreviewDemo() {
   return (
-    <div className="flex justify-center items-center h-[40rem] flex-col px-4">
-      <div className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
+    <section className="section-soft flex h-[36rem] flex-col items-center justify-center px-4 md:h-[40rem]">
+      <p className="mb-6 text-xs font-semibold tracking-[0.2em] text-[var(--brand-navy)]/60 uppercase">
+        Explore the School
+      </p>
+      <div className="mx-auto mb-10 max-w-3xl text-center text-xl text-[var(--muted-foreground)] md:text-3xl">
         At{" "}
         <LinkPreview
           url="/"
           isStatic
           imageSrc="/images/bhs-logo.jpeg"
-          className="font-bold"
+          className="font-bold text-[var(--brand-navy)]"
         >
           Boromohonpur High School
         </LinkPreview>
@@ -20,19 +23,19 @@ export default function LinkPreviewDemo() {
           url="/about"
           isStatic
           imageSrc="/images/img-slider-1.jpeg"
-          className="font-bold"
+          className="font-bold text-[var(--brand-navy)]"
         >
           dedicated teaching
         </LinkPreview>{" "}
         and a respectful learning culture.
       </div>
-      <div className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto">
+      <div className="mx-auto max-w-3xl text-center text-xl text-[var(--muted-foreground)] md:text-3xl">
         Discover our{" "}
         <LinkPreview
           url="/events"
           isStatic
           imageSrc="/images/img-slider-2.jpeg"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-[#1B2A4A] to-[#C9A227]"
+          className="bg-gradient-to-br from-[var(--brand-navy)] to-[var(--brand-gold)] bg-clip-text font-bold text-transparent"
         >
           campus events
         </LinkPreview>{" "}
@@ -41,12 +44,12 @@ export default function LinkPreviewDemo() {
           url="/notices"
           isStatic
           imageSrc="/images/img-slider-3.jpeg"
-          className="font-bold"
+          className="font-bold text-[var(--brand-navy)]"
         >
           school notices
         </LinkPreview>
         .
       </div>
-    </div>
+    </section>
   );
 }

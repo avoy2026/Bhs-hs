@@ -7,14 +7,17 @@ import MacbookScrollDemo from "@/components/macbook-scroll-demo";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
+      {/* Cinematic hero */}
       <ImagesSliderDemo />
-      <CoverDemo/>
+      {/* Dark showcase */}
+      <CoverDemo />
+      {/* Light reading / campus */}
       <MacbookScrollDemo />
       <LinkPreviewDemo />
+      {/* Dark showcase */}
       <LampDemo />
-      <InfiniteMovingCardsDemo/>
+      <InfiniteMovingCardsDemo />
     </main>
   );
 }
-
