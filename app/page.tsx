@@ -1,16 +1,16 @@
-import React from 'react';
-import AgencyHeroSection from '../components/shadcn-space/blocks/hero-01/index';
+import ImagesSliderDemo from "@/components/images-slider-demo";
+import LampDemo from "@/components/lamp-demo";
+import LinkPreviewDemo from "@/components/link-preview-demo";
+import MacbookScrollDemo from "@/components/macbook-scroll-demo";
 
-// HunterScrollProfile  → already rendered inside AgencyHeroSection (index.tsx)
-// ImageComparisonBasic → already rendered inside HeroSection (hero.tsx)
-// No need to import them here — page.tsx is the entry shell only.
-
-const page = () => {
+export default function HomePage() {
   return (
     <main>
-      <AgencyHeroSection />
+      <ImagesSliderDemo />
+      <LampDemo />
+      <LinkPreviewDemo />
+      <MacbookScrollDemo />
     </main>
   );
-};
+}
 
-export default page;
