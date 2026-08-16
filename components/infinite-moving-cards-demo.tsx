@@ -1,11 +1,14 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="relative flex h-[40rem] flex-col items-center justify-center overflow-hidden rounded-md bg-neutral-950 antialiased">
+      <h2 className="mb-8 px-4 text-center text-2xl font-semibold text-white md:text-3xl">
+        Voices from Boromohonpur High School
+      </h2>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -18,31 +21,32 @@ export default function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Our teachers care deeply about every student. The guidance I received at Boromohonpur High School helped me grow in confidence and academics.",
+    name: "A Parent",
+    title: "Guardian, Class X",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "From classroom learning to cultural programs, this school gives students a complete experience. I am proud to be part of Boromohonpur High School.",
+    name: "Student Leader",
+    title: "Senior Section",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Discipline, respect, and hard work are valued here. The school environment encourages students to aim higher every day.",
+    name: "Alumni",
+    title: "Former Student",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "The teachers explain with patience and the campus feels like a second home. Events and notices keep parents connected with school life.",
+    name: "Guardian",
+    title: "Parent Community",
+  },
+  {
+    quote:
+      "Boromohonpur High School builds character along with knowledge. Sports, academics, and cultural activities all get equal importance.",
+    name: "Teacher",
+    title: "Faculty Member",
   },
 ];
