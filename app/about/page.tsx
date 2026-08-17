@@ -5,9 +5,10 @@ import TimelineDemo from "@/components/timeline-demo";
 export default function AboutPage() {
   return (
     <main className="overflow-x-hidden">
-      <CanvasTextDemo/>
-      <FocusCardsDemo />
+      <CanvasTextDemo/>   
       <TimelineDemo />
+      <FocusCardsDemo />
+
     </main>
   );
 }
