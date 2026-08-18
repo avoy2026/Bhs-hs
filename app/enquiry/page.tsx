@@ -23,11 +23,12 @@ export default function EnquiryPage() {
               Enquire Now
             </p>
             <h1 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Start your journey with us
+              Write the first line of{" "}
+              <span className="text-[var(--brand-gold)]">your story</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-              Submit an admission or general enquiry. Our office will get back
-              to you with the next steps.
+              Tell us about the child who may join us. The office reads every
+              enquiry and replies with the next honest step.
             </p>
             <p className="mt-6 text-sm text-slate-400">
               Need office hours or directions?{" "}

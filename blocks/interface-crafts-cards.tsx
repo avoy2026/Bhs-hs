@@ -48,9 +48,9 @@ export const Cards = ({
 }: CardsProps = {}) => {
   const cards = [
     {
-      title: "Working Knowledge",
+      title: "Annual Day",
       description:
-        "You have a basic understanding of the topic and can apply it to simple situations.",
+        "A night of music, theatre, and proud applause — when the whole school gathers to celebrate talent.",
       skeleton: (
         <div className="h-50 w-full rounded-xl bg-linear-to-r from-orange-600 to-orange-600/40"></div>
       ),
@@ -64,13 +64,13 @@ export const Cards = ({
     },
 
     {
-      title: "Practical Demonstration",
+      title: "Sports Meet",
       description:
-        "You can demonstrate the concept in practice with real-world examples.",
+        "Races, relays, and house spirit on the field — where discipline meets joy and every student is cheered.",
       skeleton: (
         <div className="h-50 w-full rounded-xl bg-linear-to-r from-neutral-300 to-neutral-400/40"></div>
       ),
-      className: "bg-stone-200 [&_p]:text-black",
+      className: "bg-stone-200 [&_p]:text-neutral-800",
       config: {
         y: 20,
         x: 180,
@@ -79,13 +79,13 @@ export const Cards = ({
       },
     },
     {
-      title: "Collaborate with AI",
+      title: "Cultural Fest",
       description:
-        "You can effectively work alongside AI tools to enhance your workflow.",
+        "Dance, song, and art that carry the voice of Boromohonpur — a festival of culture and belonging.",
       skeleton: (
-        <div className="h-50 w-full rounded-xl bg-linear-to-r from-blue-600 to-blue-600/40"></div>
+        <div className="h-50 w-full rounded-xl bg-linear-to-r from-[#1b2a4a] to-[#1b2a4a]/40"></div>
       ),
-      className: "bg-blue-500 [&_h2]:text-white",
+      className: "bg-[var(--brand-navy)] [&_h2]:text-white",
       config: {
         y: -80,
         x: 360,
@@ -94,13 +94,13 @@ export const Cards = ({
       },
     },
     {
-      title: "Means & Methods",
+      title: "Science Fair",
       description:
-        "You understand the various approaches and techniques available.",
+        "Curious minds, handmade models, and questions that spark — learning that steps out of the textbook.",
       skeleton: (
-        <div className="h-50 w-full rounded-xl bg-linear-to-r from-purple-600 to-purple-600/40"></div>
+        <div className="h-50 w-full rounded-xl bg-linear-to-r from-[#c9a227] to-[#c9a227]/40"></div>
       ),
-      className: "bg-purple-500 [&_h2]:text-white",
+      className: "bg-[var(--brand-gold)] [&_h2]:text-[var(--brand-ink)] [&_p]:text-[var(--brand-ink)]/80",
       config: {
         y: 20,
         x: 540,
@@ -109,9 +109,9 @@ export const Cards = ({
       },
     },
     {
-      title: "Interface Kit",
+      title: "Prize Night",
       description:
-        "You have the tools and components needed to build interfaces.",
+        "Medals, certificates, and quiet pride — honouring the students who lifted the name of our school.",
       skeleton: (
         <div className="h-50 w-full rounded-xl bg-linear-to-r from-neutral-950 to-neutral-950/40"></div>
       ),
@@ -164,11 +164,11 @@ export const Cards = ({
     return active?.title === card.title;
   };
   return (
-    <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
+    <div className="relative isolate z-10 flex min-h-[42rem] w-full items-center justify-center overflow-visible py-24 md:min-h-[52rem] md:py-32">
       <motion.div
         ref={ref}
         onClick={() => setActive(null)}
-        className="relative mx-auto flex h-120 w-full max-w-5xl items-center justify-center [--height:300px] [--width:220px] lg:[--height:400px] lg:[--width:300px]"
+        className="relative mx-auto flex h-[28rem] w-full max-w-5xl items-center justify-center [--height:300px] [--width:220px] lg:h-[32rem] lg:[--height:400px] lg:[--width:300px]"
       >
         {cards.map((card, index) => {
           const offsetX = (index - middle) * spacing;
@@ -187,7 +187,7 @@ export const Cards = ({
                   y: isCurrentActive(card)
                     ? 0
                     : isAnyCardActive()
-                      ? 400
+                      ? 280
                       : card.config.y,
                   x: isCurrentActive(card)
                     ? 0

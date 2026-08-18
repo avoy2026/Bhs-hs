@@ -75,11 +75,12 @@ export default function ContactPage() {
               Contact Us
             </p>
             <h1 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Get in touch with Boromohonpur High School
+              The office is{" "}
+              <span className="text-[var(--brand-gold)]">open</span> to you
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-              Visit the school office, call us, or send an enquiry online. We
-              are here for admissions, documents, and general questions.
+              Come in person, write to us, or send an enquiry. Admissions,
+              certificates, and everyday questions all begin at the same desk.
             </p>
             <Link
               href="#enquiry"

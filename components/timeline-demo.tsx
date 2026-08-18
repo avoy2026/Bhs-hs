@@ -11,9 +11,13 @@ export default function TimelineDemo() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Boromohonpur High School continues to guide students with strong
-            academics, discipline, and values that prepare them for life beyond
-            school.
+            Today, Boromohonpur High School is still what it has always been —
+            a place where a child is known by name, taught with patience, and
+            sent into the world with{" "}
+            <span className="font-semibold text-[var(--brand-gold)]">
+              backbone and courtesy
+            </span>
+            .
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -53,13 +57,17 @@ export default function TimelineDemo() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Over the years, our school has strengthened teaching quality,
-            expanded student activities, and built a supportive environment for
+            Year after year we have widened the classroom — stronger teaching,
+            richer cultural life, and a campus that feels safer and prouder for
             every learner.
           </p>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            From classroom excellence to cultural programs and sports, students
-            at Boromohonpur High School grow with confidence and purpose.
+            From first-period mathematics to the last cheer on sports day,
+            students here grow in{" "}
+            <span className="font-semibold text-[var(--brand-navy)]">
+              confidence and purpose
+            </span>
+            .
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -99,23 +107,23 @@ export default function TimelineDemo() {
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Milestones that define our school community
+            The chapters that still define us
           </p>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Quality classroom education
+              Classroom teaching that refuses to hurry a child
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Cultural and sports events
+              Sports, music, and festivals that belong to everyone
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Student leadership and discipline
+              Prefects, houses, and a culture of self-discipline
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Parent and community partnership
+              Parents treated as partners, not visitors
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Pride in every Boromohonpur student
+              Quiet pride in every student who wears our name
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">

@@ -7,10 +7,11 @@ export default function InfiniteMovingCardsDemo() {
   return (
     <section className="section-dark relative flex h-[40rem] flex-col items-center justify-center overflow-hidden antialiased">
       <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-gold)] uppercase">
-        Community Voices
+        Voices from the campus
       </p>
       <h2 className="mb-8 px-4 text-center text-2xl font-semibold text-white md:text-3xl">
-        Voices from Boromohonpur High School
+        People who know{" "}
+        <span className="text-[var(--brand-gold)]">this school</span>
       </h2>
       <InfiniteMovingCards
         items={testimonials}
@@ -24,31 +25,31 @@ export default function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "Our teachers care deeply about every student. The guidance I received at Boromohonpur High School helped me grow in confidence and academics.",
+      "Teachers here do not rush a child past confusion. The guidance my son received changed both his marks and his manners.",
     name: "A Parent",
     title: "Guardian, Class X",
   },
   {
     quote:
-      "From classroom learning to cultural programs, this school gives students a complete experience. I am proud to be part of Boromohonpur High School.",
+      "From the first assembly to the last cultural night, this campus gives a student a complete life — not just a report card.",
     name: "Student Leader",
     title: "Senior Section",
   },
   {
     quote:
-      "Discipline, respect, and hard work are valued here. The school environment encourages students to aim higher every day.",
+      "Respect is expected in the corridor as much as in the exam hall. That is why students here learn to aim higher without becoming unkind.",
     name: "Alumni",
     title: "Former Student",
   },
   {
     quote:
-      "The teachers explain with patience and the campus feels like a second home. Events and notices keep parents connected with school life.",
+      "The campus feels like a second home. When notices go up and events are shared, parents stay inside the story of school life.",
     name: "Guardian",
     title: "Parent Community",
   },
   {
     quote:
-      "Boromohonpur High School builds character along with knowledge. Sports, academics, and cultural activities all get equal importance.",
+      "At Boromohonpur, a medal and a kind word carry the same weight. Academics, sport, and culture are all given a proper stage.",
     name: "Teacher",
     title: "Faculty Member",
   },

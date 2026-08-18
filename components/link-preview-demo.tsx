@@ -4,9 +4,9 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function LinkPreviewDemo() {
   return (
-    <section className="section-soft flex h-[36rem] flex-col items-center justify-center px-4 md:h-[40rem]">
+    <section className="section-soft relative isolate flex min-h-[32rem] flex-col items-center justify-center overflow-hidden px-4 py-20 md:min-h-[36rem]">
       <p className="mb-6 text-xs font-semibold tracking-[0.2em] text-[var(--brand-navy)]/60 uppercase">
-        Explore the School
+        Walk the campus in words
       </p>
       <div className="mx-auto mb-10 max-w-3xl text-center text-xl text-[var(--muted-foreground)] md:text-3xl">
         At{" "}
@@ -18,19 +18,19 @@ export default function LinkPreviewDemo() {
         >
           Boromohonpur High School
         </LinkPreview>
-        , students grow through{" "}
+        , a child learns to think clearly — and to{" "}
         <LinkPreview
           url="/about"
           isStatic
           imageSrc="/images/img-slider-1.jpeg"
-          className="font-bold text-[var(--brand-navy)]"
+          className="font-bold text-[var(--brand-gold)]"
         >
-          dedicated teaching
-        </LinkPreview>{" "}
-        and a respectful learning culture.
+          carry themselves with grace
+        </LinkPreview>
+        .
       </div>
       <div className="mx-auto max-w-3xl text-center text-xl text-[var(--muted-foreground)] md:text-3xl">
-        Discover our{" "}
+        Follow the year through our{" "}
         <LinkPreview
           url="/events"
           isStatic
@@ -39,14 +39,14 @@ export default function LinkPreviewDemo() {
         >
           campus events
         </LinkPreview>{" "}
-        and read important{" "}
+        and stay close through{" "}
         <LinkPreview
           url="/notices"
           isStatic
           imageSrc="/images/img-slider-3.jpeg"
           className="font-bold text-[var(--brand-navy)]"
         >
-          school notices
+          official notices
         </LinkPreview>
         .
       </div>

@@ -35,11 +35,12 @@ export default function FocusCardsDemo() {
           About Us
         </p>
         <h2 className="text-3xl font-semibold text-[var(--brand-navy)] md:text-4xl">
-          Life at Boromohonpur High School
+          Life between the{" "}
+          <span className="text-[var(--brand-gold)]">bells</span>
         </h2>
         <p className="mt-3 text-[var(--muted-foreground)]">
-          A closer look at our campus, classrooms, and the spirit of our
-          students.
+          Classrooms, courtyards, and the small hours that turn a building into
+          a school.
         </p>
       </div>
       <FocusCards cards={cards} />

@@ -243,7 +243,7 @@ export const NavbarLogo = () => {
         className="h-[30px] w-[30px] rounded-full object-cover"
       />
       <span className="max-w-[9rem] truncate font-medium text-black dark:text-white xl:max-w-none xl:overflow-visible">
-        Boromohonpur High School
+        Baramohonpur High School
       </span>
     </a>
   );

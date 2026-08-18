@@ -39,11 +39,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="mb-4 max-w-4xl text-lg text-[var(--brand-navy)] md:text-4xl">
-          Our journey at Boromohonpur High School
+          The story of{" "}
+          <span className="text-[var(--brand-gold)]">Boromohonpur</span>
         </h2>
-        <p className="max-w-sm text-sm text-[var(--muted-foreground)] md:text-base">
-          A short look at how our school continues to grow — in learning,
-          values, and student success.
+        <p className="max-w-lg text-sm text-[var(--muted-foreground)] md:text-base">
+          Not a list of dates — a living school. Here is how we still grow:
+          in learning, in values, and in the success of our students.
         </p>
       </div>
 

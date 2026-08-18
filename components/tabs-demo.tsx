@@ -9,10 +9,11 @@ export default function TabsDemo() {
       value: "admissions",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
-          <p>Admission Notice</p>
+          <p>Open for the new session</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
-            New admission forms for the upcoming session are available at the
-            school office. Please submit documents within the announced dates.
+            Forms are at the school office. Bring the child, the papers, and a
+            little hope — we will help you with the rest, within the dates
+            announced each year.
           </p>
           <DummyContent src="/images/img-slider-1.jpeg" />
         </div>
@@ -23,10 +24,10 @@ export default function TabsDemo() {
       value: "exams",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
-          <p>Examination Schedule</p>
+          <p>How the year is examined</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
-            Half-yearly and annual exam dates will be published here. Students
-            should prepare according to the class routine shared by teachers.
+            Half-yearly and annual dates appear here first. Students follow the
+            class routine; parents use this board so no one is caught unready.
           </p>
           <DummyContent src="/images/img-slider-2.jpeg" />
         </div>
@@ -37,10 +38,10 @@ export default function TabsDemo() {
       value: "holidays",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
-          <p>Holiday List</p>
+          <p>When the campus rests</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
-            Official holidays and unexpected closures for Boromohonpur High
-            School will be updated in this section for parents and students.
+            Official holidays and unexpected closures are posted for families
+            first — so a closed gate never comes as a surprise.
           </p>
           <DummyContent src="/images/img-slider-3.jpeg" />
         </div>
@@ -51,10 +52,11 @@ export default function TabsDemo() {
       value: "results",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
-          <p>Result Updates</p>
+          <p>When results are ready</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
-            Class and board result announcements will be posted here. Students
-            may collect mark sheets from the school office when notified.
+            Class and board announcements live here. Collect mark sheets from
+            the office when your name is called — and celebrate with quiet
+            pride.
           </p>
           <DummyContent src="/images/achievemenets.jpeg" />
         </div>
@@ -65,10 +67,10 @@ export default function TabsDemo() {
       value: "general",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
-          <p>General Notices</p>
+          <p>The everyday school</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
-            Uniform rules, meeting dates, fee reminders, and other important
-            school information for the Boromohonpur High School community.
+            Uniform, meetings, fees, and the small rules that keep a large
+            family in order. If it matters to campus life, it appears here.
           </p>
           <DummyContent src="/images/bhs-logo.jpeg" />
         </div>
@@ -77,8 +79,8 @@ export default function TabsDemo() {
   ];
 
   return (
-    <div className="relative b my-16 flex h-[20rem] w-full max-w-5xl flex-col items-start justify-start [perspective:1000px] md:my-24 md:h-[40rem] mx-auto">
-      <Tabs tabs={tabs} />
+    <div className="relative isolate z-10 mx-auto flex h-[28rem] w-full max-w-5xl flex-col items-start justify-start overflow-visible px-4 [perspective:1000px] md:h-[46rem]">
+      <Tabs tabs={tabs} contentClassName="mt-16 md:mt-20" />
     </div>
   );
 }
@@ -90,7 +92,7 @@ const DummyContent = ({ src }: { src: string }) => {
       alt="School notice"
       width="1000"
       height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+      className="object-cover object-left-top h-[55%] md:h-[72%] absolute bottom-4 inset-x-0 w-[90%] rounded-xl mx-auto"
     />
   );
 };

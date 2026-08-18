@@ -108,11 +108,13 @@ export const Header = () => {
         School Events
       </p>
       <h1 className="text-2xl font-bold text-[var(--brand-navy)] md:text-7xl">
-        Moments that <br /> shape our students
+        The year, told in{" "}
+        <span className="text-[var(--brand-gold)]">gatherings</span>
       </h1>
       <p className="mt-8 max-w-2xl text-base text-[var(--muted-foreground)] md:text-xl">
-        From annual celebrations to sports meets and cultural programs, every
-        event brings our students, teachers, and community together.
+        Independence Day on the ground. Annual Night under the lights. A sports
+        meet that still makes the whole school shout one name. These are the
+        days our students remember.
       </p>
     </div>
   );

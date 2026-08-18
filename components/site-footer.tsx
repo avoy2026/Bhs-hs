@@ -29,7 +29,7 @@ const exploreLinks = [
 
 export default function SiteFooter() {
   return (
-    <footer className="relative mt-auto overflow-hidden bg-[var(--brand-ink)] text-slate-200">
+    <footer className="relative z-0 mt-auto overflow-hidden bg-[var(--brand-ink)] text-slate-200">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_20%_0%,rgb(201_162_39/18%),transparent_55%),radial-gradient(ellipse_60%_40%_at_90%_100%,rgb(27_42_74/80%),transparent)]"
@@ -57,8 +57,9 @@ export default function SiteFooter() {
               </span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-slate-400">
-              Knowledge, character, and community — guiding students with strong
-              values and a proud tradition of learning.
+              A neighbourhood school with a long memory — teaching children to
+              think clearly, stand honestly, and belong to something larger than
+              themselves.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <SocialIcon
