@@ -20,7 +20,7 @@ export default function HomePage() {
     <TimelineDemo />
   </div>
 
-  <div className="w-full md:w-1/2 flex items-center justify-center">
+  <div className="w-full md:w-1/2 flex items-center justify-center bg-white">
   <MacbookScrollDemo />
   </div>
 </div>     
