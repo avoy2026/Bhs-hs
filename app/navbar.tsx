@@ -54,7 +54,7 @@ export default function SiteNavbar() {
               key={`mobile-link-${idx}`}
               href={item.link}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="relative text-neutral-600 dark:text-neutral-300"
+              className="relative w-full rounded-md px-3 py-2 text-neutral-600 transition-colors hover:bg-[var(--brand-navy)] hover:text-white"
             >
               <span className="block">{item.name}</span>
             </a>

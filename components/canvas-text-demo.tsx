@@ -4,10 +4,10 @@ import { CanvasText } from "@/components/ui/canvas-text";
 
 export default function CanvasTextDemo() {
   return (
-    <section className="relative isolate flex min-h-[22rem] items-center justify-center overflow-hidden bg-white px-8 py-20">
+    <section className="relative isolate flex h-full min-h-[22rem] items-center justify-center overflow-hidden bg-white px-6 py-12 md:min-h-[36rem] md:px-8">
       <h2
         className={cn(
-          "group relative mx-auto mt-4 max-w-3xl text-left text-4xl font-bold leading-tight tracking-tight text-balance text-[var(--brand-navy)] sm:text-5xl md:text-6xl md:leading-tight xl:text-7xl",
+          "group relative mx-auto mt-4 max-w-xl text-left text-3xl font-bold leading-tight tracking-tight text-balance text-[var(--brand-navy)] sm:text-4xl md:text-5xl md:leading-tight",
         )}
       >
         Raise children who learn with{" "}

@@ -18,12 +18,22 @@ export default function HomePage() {
       <TimelineDemo />
       <MacbookScrollDemo />
       <CoverDemo />
-      <LinkPreviewDemo />
-      <section className="relative isolate overflow-hidden bg-[var(--brand-fog)]">
-        <AnimatedTestimonialsDemo />
+      <section className="flex min-h-0 w-full flex-col border-t border-[var(--border)] md:flex-row">
+        <div className="w-full border-b border-[var(--border)] md:w-1/2 md:border-r md:border-b-0">
+          <LinkPreviewDemo />
+        </div>
+        <div className="w-full md:w-1/2">
+          <AnimatedTestimonialsDemo />
+        </div>
       </section>
-      <InfiniteMovingCardsDemo />
-      <CanvasTextDemo />
+      <section className="flex min-h-0 w-full flex-col border-t border-[var(--border)] md:flex-row">
+        <div className="w-full border-b border-[var(--border)] md:w-1/2 md:border-r md:border-b-0">
+          <InfiniteMovingCardsDemo />
+        </div>
+        <div className="w-full md:w-1/2">
+          <CanvasTextDemo />
+        </div>
+      </section>
     </main>
   );
 }

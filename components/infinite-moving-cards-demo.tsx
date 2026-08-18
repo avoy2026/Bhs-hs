@@ -5,11 +5,11 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <section className="section-dark relative flex h-[40rem] flex-col items-center justify-center overflow-hidden antialiased">
+    <section className="relative flex h-full min-h-[28rem] w-full flex-col items-center justify-center overflow-hidden bg-white py-12 antialiased md:min-h-[36rem]">
       <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-gold)] uppercase">
         Voices from the campus
       </p>
-      <h2 className="mb-8 px-4 text-center text-2xl font-semibold text-white md:text-3xl">
+      <h2 className="mb-8 px-4 text-center text-2xl font-semibold text-[var(--brand-navy)] md:text-3xl">
         People who know{" "}
         <span className="text-[var(--brand-gold)]">this school</span>
       </h2>
@@ -17,6 +17,7 @@ export default function InfiniteMovingCardsDemo() {
         items={testimonials}
         direction="right"
         speed="slow"
+        variant="light"
       />
     </section>
   );
