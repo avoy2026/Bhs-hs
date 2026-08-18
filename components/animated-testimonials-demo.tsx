@@ -38,5 +38,15 @@ export default function AnimatedTestimonialsDemo() {
       src: "/images/bhs-logo.jpeg",
     },
   ];
-  return <AnimatedTestimonials testimonials={testimonials} autoplay />;
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-br from-[var(--brand-warm)] via-white to-[var(--brand-fog)] py-16 md:min-h-[42rem] md:py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_40%_50%_at_20%_80%,rgb(45_122_95/8%),transparent)]"
+      />
+      <div className="relative">
+        <AnimatedTestimonials testimonials={testimonials} autoplay />
+      </div>
+    </section>
+  );
 }

@@ -13,8 +13,18 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [showPreloader, setShowPreloader] = useState(true);
 
+  // Skip the preloader entirely if it was already shown this session
+  useEffect(() => {
+    if (typeof window !== "undefined" && sessionStorage.getItem("bhs_preloader_done")) {
+      setShowPreloader(false);
+    }
+  }, []);
+
   const finishPreloader = useCallback(() => {
     setShowPreloader(false);
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("bhs_preloader_done", "1");
+    }
   }, []);
 
   useEffect(() => {

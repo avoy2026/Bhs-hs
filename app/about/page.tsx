@@ -1,12 +1,13 @@
-import CanvasTextDemo from "@/components/canvas-text-demo";
+
 import FocusCardsDemo from "@/components/focus-cards-demo";
 import TimelineDemo from "@/components/timeline-demo";
 import AppleCardsCarouselDemo from "@/components/apple-cards-carousel-demo";
+import LampDemo from "@/components/lamp-demo";
 
 export default function AboutPage() {
   return (
     <main className="overflow-x-hidden">
-      <CanvasTextDemo />
+       <LampDemo />
       <TimelineDemo />
       <AppleCardsCarouselDemo />
       <FocusCardsDemo />

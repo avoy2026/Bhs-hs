@@ -4,11 +4,21 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function LinkPreviewDemo() {
   return (
-    <section className="relative isolate flex h-full min-h-[28rem] flex-col items-center justify-center overflow-hidden bg-[var(--brand-fog)] px-4 py-12 md:min-h-[36rem] md:py-16">
-      <p className="mb-6 text-xs font-semibold tracking-[0.2em] text-[var(--brand-navy)]/60 uppercase">
+    <section className="relative isolate flex h-full min-h-[32rem] flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-white via-[#fdf6e3] to-[#f5e6b8] px-4 py-16 md:min-h-[40rem] md:py-20">
+      {/* Decorative warm gold glow */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_50%_30%,rgb(201_162_39/14%),transparent)]"
+      />
+      {/* Subtle bottom-right accent */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_90%,rgb(201_162_39/10%),transparent)]"
+      />
+      <p className="relative mb-6 text-xs font-semibold tracking-[0.2em] text-[var(--brand-emerald)] uppercase">
         Walk the campus in words
       </p>
-      <div className="mx-auto mb-8 max-w-xl text-center text-lg text-[var(--muted-foreground)] md:text-2xl">
+      <div className="relative mx-auto mb-8 max-w-xl text-center text-xl text-[var(--brand-navy)]/70 md:text-3xl">
         At{" "}
         <LinkPreview
           url="/"
@@ -29,13 +39,13 @@ export default function LinkPreviewDemo() {
         </LinkPreview>
         .
       </div>
-      <div className="mx-auto max-w-xl text-center text-lg text-[var(--muted-foreground)] md:text-2xl">
+      <div className="relative mx-auto max-w-xl text-center text-xl text-[var(--brand-navy)]/70 md:text-3xl">
         Follow the year through our{" "}
         <LinkPreview
           url="/events"
           isStatic
           imageSrc="/images/img-slider-2.jpeg"
-          className="bg-gradient-to-br from-[var(--brand-navy)] to-[var(--brand-gold)] bg-clip-text font-bold text-transparent"
+          className="bg-gradient-to-r from-[var(--brand-gold)] to-amber-500 bg-clip-text font-bold text-transparent"
         >
           campus events
         </LinkPreview>{" "}
@@ -44,7 +54,7 @@ export default function LinkPreviewDemo() {
           url="/notices"
           isStatic
           imageSrc="/images/img-slider-3.jpeg"
-          className="font-bold text-[var(--brand-navy)]"
+          className="font-bold text-[var(--brand-emerald)]"
         >
           official notices
         </LinkPreview>

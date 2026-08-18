@@ -14,7 +14,7 @@ export default function TimelineDemo() {
             Today, Boromohonpur High School is still what it has always been —
             a place where a child is known by name, taught with patience, and
             sent into the world with{" "}
-            <span className="font-semibold text-[var(--brand-gold)]">
+            <span className="font-semibold text-emerald-600">
               backbone and courtesy
             </span>
             .
@@ -64,7 +64,7 @@ export default function TimelineDemo() {
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             From first-period mathematics to the last cheer on sports day,
             students here grow in{" "}
-            <span className="font-semibold text-[var(--brand-navy)]">
+            <span className="font-semibold text-[var(--brand-gold)]">
               confidence and purpose
             </span>
             .
@@ -110,21 +110,29 @@ export default function TimelineDemo() {
             The chapters that still define us
           </p>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              Classroom teaching that refuses to hurry a child
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              Sports, music, and festivals that belong to everyone
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              Prefects, houses, and a culture of self-discipline
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              Parents treated as partners, not visitors
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              Quiet pride in every student who wears our name
-            </div>
+            {[
+              "Classroom teaching that refuses to hurry a child",
+              "Sports, music, and festivals that belong to everyone",
+              "Prefects, houses, and a culture of self-discipline",
+              "Parents treated as partners, not visitors",
+              "Quiet pride in every student who wears our name",
+            ].map((item, idx) => (
+              <div
+                key={item}
+                className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300"
+              >
+                <span
+                  className={`inline-block h-1.5 w-1.5 rounded-full ${[
+                    "bg-emerald-500",
+                    "bg-blue-500",
+                    "bg-amber-500",
+                    "bg-[var(--brand-gold)]",
+                    "bg-rose-500",
+                  ][idx]}`}
+                />
+                {item}
+              </div>
+            ))}
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img

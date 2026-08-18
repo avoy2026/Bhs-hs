@@ -9,12 +9,16 @@ export default function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <section className="relative isolate w-full overflow-hidden bg-white py-20">
-      <h2 className="mx-auto max-w-7xl px-4 font-sans text-xl font-bold text-[var(--brand-navy)] md:text-5xl">
+    <section className="relative isolate w-full overflow-hidden bg-gradient-to-br from-[var(--brand-warm)] via-white to-[var(--brand-fog)] py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_80%_20%,rgb(201_162_39/8%),transparent)]"
+      />
+      <h2 className="relative mx-auto max-w-7xl px-4 font-sans text-xl font-bold text-[var(--brand-navy)] md:text-5xl">
         A closer look at{" "}
-        <span className="text-[var(--brand-gold)]">our school</span>
+        <span className="bg-gradient-to-r from-[var(--brand-gold)] to-[var(--brand-emerald)] bg-clip-text text-transparent">our school</span>
       </h2>
-      <p className="mx-auto mt-3 max-w-7xl px-4 text-sm text-[var(--muted-foreground)] md:text-base">
+      <p className="relative mx-auto mt-3 max-w-7xl px-4 text-sm text-[var(--brand-navy)]/55 md:text-base">
         Slide through the rooms, fields, and gatherings that make Boromohonpur
         feel like home.
       </p>

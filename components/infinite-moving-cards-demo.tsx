@@ -5,13 +5,18 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <section className="relative flex h-full min-h-[28rem] w-full flex-col items-center justify-center overflow-hidden bg-white py-12 antialiased md:min-h-[36rem]">
-      <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-gold)] uppercase">
+    <section className="relative flex h-full min-h-[32rem] w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[var(--brand-fog)] via-white to-[var(--brand-fog)] py-16 antialiased md:min-h-[40rem] md:py-20">
+      {/* Decorative gradient overlays */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_50%_-10%,rgb(201_162_39/8%),transparent_60%)]"
+      />
+      <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-emerald)] uppercase">
         Voices from the campus
       </p>
-      <h2 className="mb-8 px-4 text-center text-2xl font-semibold text-[var(--brand-navy)] md:text-3xl">
+      <h2 className="mb-8 px-4 text-center text-3xl font-semibold text-[var(--brand-navy)] md:text-4xl">
         People who know{" "}
-        <span className="text-[var(--brand-gold)]">this school</span>
+        <span className="bg-gradient-to-r from-[var(--brand-gold)] to-[#f0d78c] bg-clip-text text-transparent">this school</span>
       </h2>
       <InfiniteMovingCards
         items={testimonials}
