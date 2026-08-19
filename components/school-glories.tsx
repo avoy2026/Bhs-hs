@@ -37,7 +37,7 @@ const highlights = [
   {
     icon: IconSchool,
     title: "Admissions",
-    text: "Begin a new chapter at Boromohonpur High School.",
+    text: "Begin a new chapter at Baramohanpur High School.",
     href: "/enquiry",
     accent: "from-[var(--brand-gold)]/20 to-yellow-500/10",
     iconBg: "bg-[var(--brand-gold)]/15 text-[var(--brand-gold)]",
@@ -60,7 +60,7 @@ export default function SchoolGlories() {
           Four doors into school life
         </h2>
         <p className="mx-auto mb-10 max-w-lg text-center text-sm text-[var(--brand-navy)]/60">
-          Every corner of our campus has a story — discover the paths that shape a Boromohonpur student.
+          Every corner of our campus has a story — discover the paths that shape a Baramohanpur student.
         </p>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {highlights.map((item, index) => {

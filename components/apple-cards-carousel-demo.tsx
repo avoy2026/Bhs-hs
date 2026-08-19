@@ -19,7 +19,7 @@ export default function AppleCardsCarouselDemo() {
         <span className="bg-gradient-to-r from-[var(--brand-gold)] to-[var(--brand-emerald)] bg-clip-text text-transparent">our school</span>
       </h2>
       <p className="relative mx-auto mt-3 max-w-7xl px-4 text-sm text-[var(--brand-navy)]/55 md:text-base">
-        Slide through the rooms, fields, and gatherings that make Boromohonpur
+        Slide through the rooms, fields, and gatherings that make Baramohanpur
         feel like home.
       </p>
       <Carousel items={cards} />
@@ -74,7 +74,7 @@ const data = [
     src: "/images/img-slider-2.jpeg",
     content: (
       <Story
-        lead="Teaching at Boromohonpur is patient work."
+        lead="Teaching at Baramohanpur is patient work."
         body="From first letters to board exams, our teachers walk beside every learner — explaining again, encouraging often, and expecting the best."
         image="/images/img-slider-2.jpeg"
         alt="Classroom learning"
@@ -101,7 +101,7 @@ const data = [
     content: (
       <Story
         lead="Every certificate on our wall has a story."
-        body="Academic ranks, cultural prizes, and sports medals — they remind us that hard work at Boromohonpur is seen and celebrated."
+        body="Academic ranks, cultural prizes, and sports medals — they remind us that hard work at Baramohanpur is seen and celebrated."
         image="/images/achievemenets.jpeg"
         alt="School achievements"
       />
@@ -127,7 +127,7 @@ const data = [
     content: (
       <Story
         lead="We measure success in more than marks."
-        body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground — that is the Boromohonpur way."
+        body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground — that is the Baramohanpur way."
         image="/images/img-slider-1.jpeg"
         alt="School values"
       />

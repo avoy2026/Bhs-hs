@@ -47,13 +47,13 @@ export default function SiteFooter() {
             <Link href="/" className="inline-flex items-center gap-3">
               <img
                 src="/images/bhs-logo.jpeg"
-                alt="Boromohonpur High School"
+                alt="Baramohanpur High School"
                 width={44}
                 height={44}
                 className="h-11 w-11 rounded-full object-cover ring-2 ring-[var(--brand-gold)]/40"
               />
               <span className="text-lg font-semibold tracking-tight text-white">
-                Boromohonpur High School
+                Baramohanpur High School
               </span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-slate-400">
@@ -104,9 +104,9 @@ export default function SiteFooter() {
               <li className="flex gap-3">
                 <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand-gold)]" />
                 <span>
-                  Boromohonpur High School
+                  Baramohanpur High School
                   <br />
-                  Boromohonpur, West Bengal
+                  Baramohanpur, West Bengal
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -121,10 +121,10 @@ export default function SiteFooter() {
               <li className="flex items-center gap-3">
                 <IconMail className="h-4 w-4 shrink-0 text-[var(--brand-gold)]" />
                 <a
-                  href="mailto:office@boromohonpurhs.edu.in"
+                  href="mailto:office@baramohanpurhs.edu.in"
                   className="transition hover:text-white"
                 >
-                  office@boromohonpurhs.edu.in
+                  office@baramohanpurhs.edu.in
                 </a>
               </li>
             </ul>
@@ -140,7 +140,7 @@ export default function SiteFooter() {
 
         <div className="relative mt-14 flex flex-col gap-3 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} Boromohonpur High School. All rights
+            © {new Date().getFullYear()} Baramohanpur High School. All rights
             reserved.
           </p>
           <p className="tracking-wide">

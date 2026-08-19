@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Boromohonpur High School",
+  title: "Baramohanpur High School",
   description:
-    "Official website of Boromohonpur High School — a story of classrooms, character, and campus life.",
+    "Official website of Baramohanpur High School — a story of classrooms, character, and campus life.",
 };
 
 export default function RootLayout({

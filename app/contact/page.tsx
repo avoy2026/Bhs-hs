@@ -16,9 +16,9 @@ const contactDetails = [
     label: "Address",
     body: (
       <>
-        Boromohonpur High School
+        Baramohanpur High School
         <br />
-        Boromohonpur, West Bengal
+        Baramohanpur, West Bengal
       </>
     ),
   },
@@ -36,10 +36,10 @@ const contactDetails = [
     label: "Email",
     body: (
       <a
-        href="mailto:office@boromohonpurhs.edu.in"
+        href="mailto:office@baramohanpurhs.edu.in"
         className="hover:underline"
       >
-        office@boromohonpurhs.edu.in
+        office@baramohanpurhs.edu.in
       </a>
     ),
   },
@@ -150,7 +150,7 @@ export default function ContactPage() {
               Start with an admission enquiry
             </h2>
             <p className="mt-4 max-w-md text-[var(--muted-foreground)]">
-              Looking to join Boromohonpur High School? Use the enquiry form
+              Looking to join Baramohanpur High School? Use the enquiry form
               here, or open the dedicated enquiry page.
             </p>
             <Link

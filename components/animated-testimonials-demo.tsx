@@ -25,7 +25,7 @@ export default function AnimatedTestimonialsDemo() {
     },
     {
       quote:
-        "Years later I still remember the assembly ground. Boromohonpur gave me friends, a voice, and the habit of trying once more.",
+        "Years later I still remember the assembly ground. Baramohanpur gave me friends, a voice, and the habit of trying once more.",
       name: "Priya Ghosh",
       designation: "Alumna",
       src: "/images/achievemenets.jpeg",

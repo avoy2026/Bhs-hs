@@ -32,7 +32,7 @@ export default function SchoolVisionSection() {
             </span>
           </h2>
           <p className="mb-6 max-w-lg text-base leading-relaxed text-[var(--foreground)]/70 md:text-lg">
-            For generations, Boromohonpur High School has shaped young minds with
+            For generations, Baramohanpur High School has shaped young minds with
             a balance of academic rigour and human values. Our campus is more than
             a building — it is a community where every student finds their voice,
             every teacher leaves a lasting mark, and every achievement is celebrated
@@ -65,7 +65,7 @@ export default function SchoolVisionSection() {
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_60px_-20px_rgb(27_42_74/25%)]">
             <Image
               src="/images/img-slider-2.jpeg"
-              alt="Boromohonpur High School campus life"
+              alt="Baramohanpur High School campus life"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

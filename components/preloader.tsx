@@ -42,7 +42,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       {/* School Logo */}
       <motion.img
         src="/images/bhs-logo.jpeg"
-        alt="Boromohonpur High School"
+        alt="Baramohanpur High School"
         className="mb-6 h-24 w-24 rounded-full object-cover ring-4 ring-[var(--brand-gold)]/35 shadow-[0_12px_35px_rgba(201,162,39,0.2)] md:h-32 md:w-32"
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -50,7 +50,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       />
 
       <p className="mb-7 text-[0.7rem] font-semibold tracking-[0.38em] text-[var(--brand-gold)] uppercase md:text-sm">
-        Boromohonpur High School
+        Baramohanpur High School
       </p>
       <div className="flex h-24 items-center justify-center overflow-hidden md:h-32">
         <AnimatePresence mode="wait">

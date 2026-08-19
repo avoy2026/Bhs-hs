@@ -55,7 +55,7 @@ const testimonials = [
   },
   {
     quote:
-      "At Boromohonpur, a medal and a kind word carry the same weight. Academics, sport, and culture are all given a proper stage.",
+      "At Baramohanpur, a medal and a kind word carry the same weight. Academics, sport, and culture are all given a proper stage.",
     name: "Teacher",
     title: "Faculty Member",
   },

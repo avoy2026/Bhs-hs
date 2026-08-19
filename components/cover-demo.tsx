@@ -14,7 +14,7 @@ export default function CoverDemo() {
       </p>
       <h1 className="relative z-20 mx-auto max-w-7xl py-6 text-center text-5xl font-semibold text-[var(--brand-navy)] md:text-6xl lg:text-7xl">
         Every child who walks in <br /> leaves as a{" "}
-        <Cover>Boromohonpur student</Cover>
+        <Cover>Baramohanpur student</Cover>
       </h1>
       <p className="relative z-20 mt-2 max-w-2xl text-center text-base text-[var(--brand-navy)]/70 md:text-lg">
         We teach the syllabus. We also teach courage, courtesy, and the habit of

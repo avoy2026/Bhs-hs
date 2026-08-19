@@ -33,7 +33,7 @@ export default function LampDemo() {
         className="mt-2 max-w-xl text-center text-sm text-[var(--muted-foreground)] md:text-base"
       >
         From the first assembly of the year to the farewell applause — this is
-        how Boromohonpur gathers, learns, and shines.
+        how Baramohanpur gathers, learns, and shines.
       </motion.p>
     </LampContainer>
   );

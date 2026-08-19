@@ -244,13 +244,13 @@ export const NavbarLogo = () => {
     >
       <img
         src="/images/bhs-logo.jpeg"
-        alt="Boromohonpur High School"
+        alt="Baramohanpur High School"
         width={30}
         height={30}
         className="h-[30px] w-[30px] rounded-full object-cover"
       />
       <span className="max-w-[9rem] truncate font-medium text-black dark:text-white xl:max-w-none xl:overflow-visible">
-        Baramohonpur High School
+        Baramohanpur High School
       </span>
     </a>
   );

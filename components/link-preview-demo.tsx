@@ -26,7 +26,7 @@ export default function LinkPreviewDemo() {
           imageSrc="/images/bhs-logo.jpeg"
           className="font-bold text-[var(--brand-navy)]"
         >
-          Boromohonpur High School
+          Baramohanpur High School
         </LinkPreview>
         , a child learns to think clearly — and to{" "}
         <LinkPreview

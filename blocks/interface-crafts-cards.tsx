@@ -81,7 +81,7 @@ export const Cards = ({
     {
       title: "Cultural Fest",
       description:
-        "Dance, song, and art that carry the voice of Boromohonpur — a festival of culture and belonging.",
+        "Dance, song, and art that carry the voice of Baramohanpur — a festival of culture and belonging.",
       skeleton: (
         <div className="h-50 w-full rounded-xl bg-linear-to-r from-[#1b2a4a] to-[#1b2a4a]/40"></div>
       ),

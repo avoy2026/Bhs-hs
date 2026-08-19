@@ -11,7 +11,7 @@ export default function TimelineDemo() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Today, Boromohonpur High School is still what it has always been —
+            Today, Baramohanpur High School is still what it has always been —
             a place where a child is known by name, taught with patience, and
             sent into the world with{" "}
             <span className="font-semibold text-emerald-600">

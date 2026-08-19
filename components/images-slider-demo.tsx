@@ -27,10 +27,10 @@ export default function ImagesSliderDemo() {
         className="z-50 flex flex-col justify-center items-center px-4"
       >
         <p className="mb-3 text-xs font-semibold tracking-[0.28em] text-[var(--brand-gold)] uppercase">
-          Est. in Boromohonpur
+          Est. in Baramohanpur
         </p>
         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          Boromohonpur High School
+          Baramohanpur High School
           <br />
           <span className="text-white/90">Where knowledge finds</span>{" "}
           <span className="bg-gradient-to-r from-[var(--brand-gold)] to-[#f0d78c] bg-clip-text text-transparent">
