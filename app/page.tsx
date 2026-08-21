@@ -1,29 +1,64 @@
-import CoverDemo from "@/components/cover-demo";
 import ImagesSliderDemo from "@/components/images-slider-demo";
+import WobbleCardDemo from "@/components/wobble-card-demo";
 import SchoolGlories from "@/components/school-glories";
-import Cards from "@/blocks/interface-crafts-cards";
-import InfiniteMovingCardsDemo from "@/components/infinite-moving-cards-demo";
-import LinkPreviewDemo from "@/components/link-preview-demo";
-import MacbookScrollDemo from "@/components/macbook-scroll-demo";
+import StoryBlock from "@/components/story-block";
 import AppleCardsCarouselDemo from "@/components/apple-cards-carousel-demo";
-import SchoolVisionSection from "@/components/school-vision-section";
-import TimelineDemo from "@/components/timeline-demo";
+import LayoutGridDemo from "@/components/layout-grid-demo";
+import PrincipalMessage from "@/components/principal-message";
+import StudentAchievements from "@/components/student-achievements";
 import AnimatedTestimonialsDemo from "@/components/animated-testimonials-demo";
+import CulturalSportsSection from "@/components/cultural-sports-section";
+import TimelineDemo from "@/components/timeline-demo";
+import FAQPreview from "@/components/faq-preview";
+import FinalHomeCta from "@/components/final-home-cta";
+
+export const metadata = {
+  title: "Baramohanpur High School | Knowledge · Character · Community",
+  description:
+    "Baramohanpur High School — an established neighbourhood school where every child is known by name, taught with patience, and prepared for a life of purpose.",
+};
 
 export default function HomePage() {
   return (
     <main className="overflow-x-hidden">
       <ImagesSliderDemo />
+      <WobbleCardDemo />
       <SchoolGlories />
+      <StoryBlock
+        eyebrow="Learning spaces"
+        title="Classrooms built for curiosity and calm."
+        body="From the first-day jitters in a new classroom to the last revision bell before boards — our rooms are designed for attention, participation, and the kind of quiet focus that helps an idea really land. Bright windows, patient teachers, and the steady rhythm of a well-kept school day."
+        image="/images/classroom/classroom-2.png"
+        imageAlt="Classrooms at Baramohanpur High School"
+        href="/about"
+        hrefLabel="About our campus"
+        accent="navy"
+        facts={[
+          { value: "K–X", label: "Classes" },
+          { value: "[SCI]", label: "Science Lab" },
+          { value: "[IT]", label: "Computer Centre" },
+        ]}
+      />
+      <StoryBlock
+        eyebrow="Campus life"
+        title="A campus that feels familiar because it is lived in."
+        body="Between first bell and last, Baramohanpur is full of small rituals that quietly shape a child. The walk between classrooms with friends, the rush of water during tiffin, the hand raised tentatively in a maths class — these are the moments that make a school."
+        image="/images/school/school-3.png"
+        imageAlt="Campus of Baramohanpur High School"
+        href="/gallery"
+        hrefLabel="See our gallery"
+        accent="gold"
+        reverse
+      />
       <AppleCardsCarouselDemo />
-      <TimelineDemo />
-      <InfiniteMovingCardsDemo />
-      <MacbookScrollDemo />
-      <CoverDemo />
-      <SchoolVisionSection />
-      <LinkPreviewDemo />
+      <LayoutGridDemo />
+      <PrincipalMessage />
+      <StudentAchievements />
       <AnimatedTestimonialsDemo />
-      <Cards />
+      <CulturalSportsSection />
+      <TimelineDemo />
+      <FAQPreview limit={6} />
+      <FinalHomeCta />
     </main>
   );
 }

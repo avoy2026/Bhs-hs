@@ -13,7 +13,7 @@ export default function MacbookScrollDemo() {
             Scroll, and the campus comes into view.
           </span>
         }
-        src="/images/img-slider-1.jpeg"
+        src="/images/school/school-3.png"
         showGradient={false}
       />
     </div>

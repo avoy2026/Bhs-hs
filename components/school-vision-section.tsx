@@ -22,12 +22,12 @@ export default function SchoolVisionSection() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-emerald)] uppercase">
+          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-gold)] uppercase">
             Our Heritage
           </p>
           <h2 className="mb-5 text-3xl font-semibold leading-tight text-[var(--brand-navy)] md:text-4xl lg:text-5xl">
             Where tradition meets{" "}
-            <span className="bg-gradient-to-r from-[var(--brand-gold)] to-amber-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[var(--brand-gold)] to-[#d8ae3c] bg-clip-text text-transparent">
               tomorrow
             </span>
           </h2>
@@ -40,16 +40,16 @@ export default function SchoolVisionSection() {
           </p>
           <div className="flex flex-wrap gap-8">
             <div>
-              <p className="text-2xl font-bold text-[var(--brand-navy)] md:text-3xl">50+</p>
-              <p className="text-sm text-[var(--muted-foreground)]">Years of Excellence</p>
+              <p className="text-2xl font-bold text-[var(--brand-navy)] md:text-3xl">[YRS+]</p>
+              <p className="text-sm text-[var(--muted-foreground)]">Years of Service</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[var(--brand-gold)] md:text-3xl">10K+</p>
-              <p className="text-sm text-[var(--muted-foreground)]">Alumni Network</p>
+              <p className="text-2xl font-bold text-[var(--brand-gold)] md:text-3xl">[GEN+]</p>
+              <p className="text-sm text-[var(--muted-foreground)]">Generations Taught</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[var(--brand-emerald)] md:text-3xl">100%</p>
-              <p className="text-sm text-[var(--muted-foreground)]">Dedication</p>
+              <p className="text-2xl font-bold text-[var(--brand-blue)] md:text-3xl">100%</p>
+              <p className="text-sm text-[var(--muted-foreground)]">Whole-Child Care</p>
             </div>
           </div>
         </motion.div>
@@ -64,7 +64,7 @@ export default function SchoolVisionSection() {
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_60px_-20px_rgb(27_42_74/25%)]">
             <Image
-              src="/images/img-slider-2.jpeg"
+              src="/images/classroom/classroom-2.png"
               alt="Baramohanpur High School campus life"
               fill
               className="object-cover"

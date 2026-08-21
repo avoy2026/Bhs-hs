@@ -1,29 +1,147 @@
-import LinkPreviewDemo from "@/components/link-preview-demo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "School Notices | Baramohanpur High School",
+  description:
+    "Official notices and announcements from Baramohanpur High School — admissions, exams, holidays, results, events and everyday reminders for students and parents.",
+};
+
 import TabsDemo from "@/components/tabs-demo";
+import PageSectionHeading from "@/components/page-section-heading";
+import MotionReveal from "@/components/motion-reveal";
+import Link from "next/link";
+import {
+  IconArrowUpRight,
+  IconCalendarClock,
+  IconMessageCircle,
+  IconBell,
+} from "@tabler/icons-react";
 
 export default function NoticesPage() {
   return (
-    <main className="overflow-x-hidden bg-[var(--brand-fog)]">
-      <section className="relative isolate z-10 bg-[var(--brand-fog)] pt-8 md:pt-12">
-        <div className="page-shell pb-6 text-center md:pb-8">
-          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-navy)]/60 uppercase">
-            Notices
-          </p>
-          <h1 className="text-3xl font-semibold text-[var(--brand-navy)] md:text-5xl">
-            What the school is saying{" "}
-            <span className="text-[var(--brand-gold)]">today</span>
-          </h1>
-          <p className="mx-auto mt-3 max-w-2xl text-[var(--muted-foreground)]">
-            Admissions, exams, holidays, results, and everyday reminders — tap a
-            tab, then read on when you are ready.
-          </p>
+    <main className="overflow-x-hidden">
+      {/* Hero */}
+      <section className="relative isolate overflow-hidden bg-[var(--brand-navy)] text-white">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 opacity-40"
+        >
+          <div className="absolute -top-24 left-1/4 h-72 w-72 rounded-full bg-[var(--brand-blue)] blur-3xl" />
+          <div className="absolute bottom-0 right-10 h-72 w-72 rounded-full bg-[var(--brand-gold)]/30 blur-3xl" />
         </div>
-        <div className="pb-28 md:pb-36">
+
+        <div className="page-shell relative py-20 text-center md:py-28">
+          <MotionReveal
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55 }}
+            className="max-w-3xl mx-auto"
+          >
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-[0.7rem] font-semibold tracking-[0.18em] text-[var(--brand-gold)] uppercase backdrop-blur">
+              <IconBell className="h-3.5 w-3.5" />
+              UPDATES &amp; CIRCULARS
+            </p>
+            <h1 className="font-display font-semibold text-4xl tracking-tight leading-[1.05] md:text-6xl text-white max-w-3xl mx-auto">
+              <span className="heading-underline-stroke">School Notices</span>
+            </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
+              Admissions, examinations, holidays, results and everyday reminders —
+              everything the school shares with students and parents lives here.
+            </p>
+          </MotionReveal>
+        </div>
+      </section>
+
+      {/* Quick meta strip */}
+      <section className="bg-[var(--brand-cream)] border-b border-[var(--brand-gold)]/20">
+        <div className="page-shell grid gap-5 py-6 sm:grid-cols-3">
+          <div className="flex items-start gap-3">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--brand-navy)] text-[var(--brand-gold)]">
+              <IconCalendarClock className="h-4 w-4" />
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[var(--brand-navy)]/60">
+                Updated on
+              </p>
+              <p className="text-sm font-medium text-[var(--brand-navy)]">
+                School working days
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--brand-navy)] text-[var(--brand-gold)]">
+              <IconMessageCircle className="h-4 w-4" />
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[var(--brand-navy)]/60">
+                Clarifications
+              </p>
+              <p className="text-sm font-medium text-[var(--brand-navy)]">
+                Contact office in writing or call
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--brand-navy)] text-[var(--brand-gold)]">
+              <IconArrowUpRight className="h-4 w-4" />
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[var(--brand-navy)]/60">
+                Urgent matters
+              </p>
+              <Link
+                href="/contact"
+                className="text-sm font-medium text-[var(--brand-navy)] underline underline-offset-4 transition hover:text-[var(--brand-blue)]"
+              >
+                Reach us immediately
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tabs / Notice content */}
+      <section className="relative bg-[var(--brand-fog)] pb-24 md:pb-32 pt-14 md:pt-16">
+        <div className="page-shell">
+          <PageSectionHeading
+            eyebrow="CATEGORIES"
+            title="Stay informed, every week"
+            description="Browse notices by type. The school will keep adding updated circulars as the term progresses."
+            align="left"
+            size="md"
+            accent="underline"
+          />
+        </div>
+        <div className="mt-10">
           <TabsDemo />
         </div>
       </section>
-      <section className="relative z-0 overflow-hidden bg-white">
-        <LinkPreviewDemo />
+
+      {/* CTA */}
+      <section className="relative overflow-hidden bg-white py-16 md:py-20">
+        <div className="page-shell">
+          <div className="rounded-3xl border border-[var(--brand-gold)]/20 bg-[var(--brand-cream)] p-8 md:p-12 text-center">
+            <p className="mx-auto max-w-2xl text-lg font-display text-[var(--brand-navy)] md:text-xl">
+              Cannot find the notice you are looking for? Our office can help
+              you locate the right circular or explain what it means.
+            </p>
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-navy)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--brand-blue)]"
+              >
+                Contact the office
+                <IconArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Link>
+              <Link
+                href="/faq"
+                className="inline-flex items-center gap-2 rounded-full border border-[var(--brand-navy)]/15 bg-white px-6 py-3 text-sm font-semibold text-[var(--brand-navy)] transition hover:border-[var(--brand-navy)]/30"
+              >
+                Read common questions
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

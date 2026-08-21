@@ -6,19 +6,16 @@ import { usePathname } from "next/navigation";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import Preloader from "@/components/preloader";
+import CelebrationPopup from "@/components/celebration-popup";
 import SiteFooter from "@/components/site-footer";
 import Navbar from "@/app/navbar";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [showPreloader, setShowPreloader] = useState(true);
-
-  // Skip the preloader entirely if it was already shown this session
-  useEffect(() => {
-    if (typeof window !== "undefined" && sessionStorage.getItem("bhs_preloader_done")) {
-      setShowPreloader(false);
-    }
-  }, []);
+  const [showPreloader, setShowPreloader] = useState(() => {
+    if (typeof window === "undefined") return true;
+    return !sessionStorage.getItem("bhs_preloader_done");
+  });
 
   const finishPreloader = useCallback(() => {
     setShowPreloader(false);
@@ -100,12 +97,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: showPreloader ? 0 : 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
         >
           {children}
         </motion.div>
       </AnimatePresence>
       <SiteFooter />
+      <CelebrationPopup visible={!showPreloader} />
     </>
   );
 }

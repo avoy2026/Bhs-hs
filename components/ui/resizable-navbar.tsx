@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
+import Link from "next/link";
 import {
   motion,
   AnimatePresence,
@@ -132,12 +133,12 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-[var(--brand-navy)]"
+              className="absolute inset-0 z-0 h-full w-full rounded-full bg-[var(--brand-navy)]"
             />
           )}
           <span
             className={cn(
-              "relative z-20 transition-colors duration-200",
+              "relative z-10 transition-colors duration-200",
               hovered === idx && "text-white",
             )}
           >
@@ -201,7 +202,6 @@ export const MobileNavMenu = ({
   children,
   className,
   isOpen,
-  onClose,
 }: MobileNavMenuProps) => {
   return (
     <AnimatePresence>
@@ -238,7 +238,7 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
   return (
-    <a
+    <Link
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
@@ -252,7 +252,7 @@ export const NavbarLogo = () => {
       <span className="max-w-[9rem] truncate font-medium text-black dark:text-white xl:max-w-none xl:overflow-visible">
         Baramohanpur High School
       </span>
-    </a>
+    </Link>
   );
 };
 

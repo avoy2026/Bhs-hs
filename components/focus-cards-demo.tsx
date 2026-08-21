@@ -4,19 +4,19 @@ export default function FocusCardsDemo() {
   const cards = [
     {
       title: "Our Campus",
-      src: "/images/img-slider-1.jpeg",
+      src: "/images/school/school-3.png",
     },
     {
       title: "Classroom Learning",
-      src: "/images/img-slider-2.jpeg",
+      src: "/images/classroom/classroom-2.png",
     },
     {
       title: "Student Life",
-      src: "/images/img-slider-3.jpeg",
+      src: "/images/poster/events-1.png",
     },
     {
       title: "Achievements",
-      src: "/images/achievemenets.jpeg",
+      src: "/images/school/school-2.png",
     },
     {
       title: "School Pride",
@@ -24,7 +24,7 @@ export default function FocusCardsDemo() {
     },
     {
       title: "Community Spirit",
-      src: "/images/img-slider-1.jpeg",
+      src: "/images/school/school-3.png",
     },
   ];
 

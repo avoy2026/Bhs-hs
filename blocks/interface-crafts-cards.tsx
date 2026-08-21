@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 type Card = {
@@ -41,6 +42,18 @@ export const controls = {
   cardSpacing: [180, 40, 320, 5],
 };
 
+const CardImage = ({ src, alt }: { src: string; alt: string }) => (
+  <div className="relative h-50 w-full overflow-hidden rounded-xl">
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      sizes="(max-width: 1024px) 220px, 300px"
+      className="object-cover transition duration-500 group-hover:scale-105"
+    />
+  </div>
+);
+
 export const Cards = ({
   spring = defaultSpring,
   activeScale = 1.15,
@@ -52,7 +65,10 @@ export const Cards = ({
       description:
         "A night of music, theatre, and proud applause — when the whole school gathers to celebrate talent.",
       skeleton: (
-        <div className="h-50 w-full rounded-xl bg-linear-to-r from-orange-600 to-orange-600/40"></div>
+        <CardImage
+          src="/images/poster/cultural.png"
+          alt="Students performing at a cultural programme"
+        />
       ),
       className: "bg-orange-500 [&_h2]:text-white",
       config: {
@@ -68,7 +84,10 @@ export const Cards = ({
       description:
         "Races, relays, and house spirit on the field — where discipline meets joy and every student is cheered.",
       skeleton: (
-        <div className="h-50 w-full rounded-xl bg-linear-to-r from-neutral-300 to-neutral-400/40"></div>
+        <CardImage
+          src="/images/poster/sports.png"
+          alt="Students taking part in sports"
+        />
       ),
       className: "bg-stone-200 [&_p]:text-neutral-800",
       config: {
@@ -83,7 +102,10 @@ export const Cards = ({
       description:
         "Dance, song, and art that carry the voice of Baramohanpur — a festival of culture and belonging.",
       skeleton: (
-        <div className="h-50 w-full rounded-xl bg-linear-to-r from-[#1b2a4a] to-[#1b2a4a]/40"></div>
+        <CardImage
+          src="/images/poster/events-1.png"
+          alt="School event gathering"
+        />
       ),
       className: "bg-[var(--brand-navy)] [&_h2]:text-white",
       config: {
@@ -98,7 +120,10 @@ export const Cards = ({
       description:
         "Curious minds, handmade models, and questions that spark — learning that steps out of the textbook.",
       skeleton: (
-        <div className="h-50 w-full rounded-xl bg-linear-to-r from-[#c9a227] to-[#c9a227]/40"></div>
+        <CardImage
+          src="/images/classroom/labs.jpeg"
+          alt="Students learning in the science laboratory"
+        />
       ),
       className: "bg-[var(--brand-gold)] [&_h2]:text-[var(--brand-ink)] [&_p]:text-[var(--brand-ink)]/80",
       config: {
@@ -113,7 +138,10 @@ export const Cards = ({
       description:
         "Medals, certificates, and quiet pride — honouring the students who lifted the name of our school.",
       skeleton: (
-        <div className="h-50 w-full rounded-xl bg-linear-to-r from-neutral-950 to-neutral-950/40"></div>
+        <CardImage
+          src="/images/poster/events-1.png"
+          alt="Students celebrating a school achievement"
+        />
       ),
       className: "bg-neutral-900 [&_h2]:text-white",
       config: {
@@ -221,7 +249,7 @@ export const Cards = ({
                   zIndex: isCurrentActive(card) ? 50 : card.config.zIndex,
                 }}
                 className={cn(
-                  "absolute top-1/2 left-1/2 flex cursor-pointer flex-col items-start justify-between overflow-hidden rounded-2xl p-2 md:p-4",
+                  "group absolute top-1/2 left-1/2 flex cursor-pointer flex-col items-start justify-between overflow-hidden rounded-2xl p-2 md:p-4",
                   card.className,
                 )}
               >

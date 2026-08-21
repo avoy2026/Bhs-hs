@@ -16,7 +16,10 @@ const contactDetails = [
     label: "Address",
     body: (
       <>
-        Baramohanpur High School
+        <span className="block font-medium text-[var(--brand-navy)]">
+          Baramohanpur High School
+        </span>
+        [PLACEHOLDER — Full Address]
         <br />
         Baramohanpur, West Bengal
       </>
@@ -26,8 +29,8 @@ const contactDetails = [
     icon: IconPhone,
     label: "Phone",
     body: (
-      <a href="tel:+910000000000" className="hover:underline">
-        +91 XXXXX XXXXX
+      <a href="tel:+910000000000" className="transition hover:text-[var(--brand-navy)]">
+        +91 [PLACEHOLDER — PHONE]
       </a>
     ),
   },
@@ -36,10 +39,10 @@ const contactDetails = [
     label: "Email",
     body: (
       <a
-        href="mailto:office@baramohanpurhs.edu.in"
-        className="hover:underline"
+        href="mailto:[PLACEHOLDER — EMAIL]"
+        className="transition hover:text-[var(--brand-navy)]"
       >
-        office@baramohanpurhs.edu.in
+        [PLACEHOLDER — EMAIL]
       </a>
     ),
   },
@@ -48,9 +51,9 @@ const contactDetails = [
     label: "Office hours",
     body: (
       <>
-        Mon – Sat · 10:00 AM – 4:00 PM
+        <span className="font-medium text-[var(--brand-navy)]">Mon – Sat</span> · 10:00 AM – 4:00 PM
         <br />
-        Closed on Sundays & holidays
+        <span className="text-[var(--muted-foreground)]">Closed on Sundays &amp; holidays</span>
       </>
     ),
   },

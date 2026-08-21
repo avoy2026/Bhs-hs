@@ -5,6 +5,19 @@ import { useRef } from "react";
 import { cn } from "@/lib/utils";
 import { SparklesCore } from "@/components/ui/sparkles";
 
+function seededRandom(seed: number) {
+  let t = seed + 0x6D2B79F5;
+  t = Math.imul(t ^ (t >>> 15), t | 1);
+  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+}
+
+function hashCode(str: string): number {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+
 export const Cover = ({
   children,
   className,
@@ -13,25 +26,35 @@ export const Cover = ({
   className?: string;
 }) => {
   const [hovered, setHovered] = useState(false);
+  const id = useId();
 
   const ref = useRef<HTMLDivElement>(null);
 
   const [containerWidth, setContainerWidth] = useState(0);
   const [beamPositions, setBeamPositions] = useState<number[]>([]);
+  const [measureTrigger, setMeasureTrigger] = useState(0);
 
   useEffect(() => {
     if (ref.current) {
       setContainerWidth(ref.current?.clientWidth ?? 0);
 
       const height = ref.current?.clientHeight ?? 0;
-      const numberOfBeams = Math.floor(height / 10); // Adjust the divisor to control the spacing
+      const numberOfBeams = Math.floor(height / 10);
       const positions = Array.from(
         { length: numberOfBeams },
         (_, i) => (i + 1) * (height / (numberOfBeams + 1))
       );
       setBeamPositions(positions);
     }
-  }, [ref.current]);
+  }, [measureTrigger]);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setMeasureTrigger((n) => n + 1));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   return (
     <div
@@ -86,18 +109,28 @@ export const Cover = ({
           </motion.div>
         )}
       </AnimatePresence>
-      {beamPositions.map((position, index) => (
-        <Beam
-          key={index}
-          hovered={hovered}
-          duration={Math.random() * 2 + 1}
-          delay={Math.random() * 2 + 1}
-          width={containerWidth}
-          style={{
-            top: `${position}px`,
-          }}
-        />
-      ))}
+      {beamPositions.map((position, index) => {
+        const seed = seededRandom(hashCode(`${id}-beam-${index}`));
+        const seed2 = seededRandom(hashCode(`${id}-beam2-${index}`));
+        const duration = 1 + seed * 2;
+        const delay = 1 + seed2 * 2;
+        const hoverDelaySeed = seededRandom(hashCode(`${id}-beam3-${index}`));
+        const hoverRepeatSeed = seededRandom(hashCode(`${id}-beam4-${index}`));
+        return (
+          <Beam
+            key={index}
+            hovered={hovered}
+            duration={duration}
+            delay={delay}
+            width={containerWidth}
+            hoverDelay={0.2 + hoverDelaySeed * (1 - 0.2)}
+            hoverRepeatDelay={1 + hoverRepeatSeed * (2 - 1)}
+            style={{
+              top: `${position}px`,
+            }}
+          />
+        );
+      })}
       <motion.span
         key={String(hovered)}
         animate={{
@@ -151,6 +184,8 @@ export const Beam = ({
   duration,
   hovered,
   width = 600,
+  hoverDelay = 0.2,
+  hoverRepeatDelay = 1,
   ...svgProps
 }: {
   className?: string;
@@ -158,6 +193,8 @@ export const Beam = ({
   duration?: number;
   hovered?: boolean;
   width?: number;
+  hoverDelay?: number;
+  hoverRepeatDelay?: number;
 } & React.ComponentProps<typeof motion.svg>) => {
   const id = useId();
 
@@ -197,8 +234,8 @@ export const Beam = ({
             duration: hovered ? 0.5 : duration ?? 2,
             ease: "linear",
             repeat: Infinity,
-            delay: hovered ? Math.random() * (1 - 0.2) + 0.2 : 0,
-            repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : delay ?? 1,
+            delay: hovered ? hoverDelay : 0,
+            repeatDelay: hovered ? hoverRepeatDelay : delay ?? 1,
           }}
         >
           <stop stopColor="#2EB9DF" stopOpacity="0" />
@@ -212,7 +249,6 @@ export const Beam = ({
 
 export const CircleIcon = ({
   className,
-  delay,
 }: {
   className?: string;
   delay?: number;

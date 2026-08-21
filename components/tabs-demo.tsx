@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
 
 export default function TabsDemo() {
@@ -15,7 +16,7 @@ export default function TabsDemo() {
             little hope — we will help you with the rest, within the dates
             announced each year.
           </p>
-          <DummyContent src="/images/img-slider-1.jpeg" />
+          <DummyContent src="/images/school/school-3.png" />
         </div>
       ),
     },
@@ -29,7 +30,7 @@ export default function TabsDemo() {
             Half-yearly and annual dates appear here first. Students follow the
             class routine; parents use this board so no one is caught unready.
           </p>
-          <DummyContent src="/images/img-slider-2.jpeg" />
+          <DummyContent src="/images/classroom/classroom-2.png" />
         </div>
       ),
     },
@@ -43,7 +44,7 @@ export default function TabsDemo() {
             Official holidays and unexpected closures are posted for families
             first — so a closed gate never comes as a surprise.
           </p>
-          <DummyContent src="/images/img-slider-3.jpeg" />
+          <DummyContent src="/images/poster/events-1.png" />
         </div>
       ),
     },
@@ -58,7 +59,7 @@ export default function TabsDemo() {
             the office when your name is called — and celebrate with quiet
             pride.
           </p>
-          <DummyContent src="/images/achievemenets.jpeg" />
+          <DummyContent src="/images/poster/events-1.png" />
         </div>
       ),
     },
@@ -87,12 +88,14 @@ export default function TabsDemo() {
 
 const DummyContent = ({ src }: { src: string }) => {
   return (
-    <img
-      src={src}
-      alt="School notice"
-      width="1000"
-      height="1000"
-      className="object-cover object-left-top h-[55%] md:h-[72%] absolute bottom-4 inset-x-0 w-[90%] rounded-xl mx-auto"
-    />
+    <div className="pointer-events-none absolute bottom-4 inset-x-0 mx-auto h-[55%] w-[90%] overflow-hidden rounded-xl md:h-[72%]">
+      <Image
+        src={src}
+        alt="School notice"
+        fill
+        sizes="(max-width: 768px) 85vw, 70vw"
+        className="object-cover object-left-top"
+      />
+    </div>
   );
 };

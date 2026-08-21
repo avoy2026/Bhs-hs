@@ -7,10 +7,10 @@ export default function HeroParallaxDemo() {
 }
 
 const campusImages = [
-  "/images/img-slider-1.jpeg",
-  "/images/img-slider-2.jpeg",
-  "/images/img-slider-3.jpeg",
-  "/images/achievemenets.jpeg",
+  "/images/school/school-3.png",
+  "/images/classroom/classroom-2.png",
+  "/images/poster/events-1.png",
+  "/images/school/school-2.png",
   "/images/bhs-logo.jpeg",
 ];
 

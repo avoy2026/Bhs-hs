@@ -42,20 +42,20 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const [canScrollRight, setCanScrollRight] = React.useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  function checkScrollability() {
+    if (carouselRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth);
+    }
+  }
+
   useEffect(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollLeft = initialScroll;
       checkScrollability();
     }
   }, [initialScroll]);
-
-  const checkScrollability = () => {
-    if (carouselRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
-      setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth);
-    }
-  };
 
   const scrollLeft = () => {
     if (carouselRef.current) {
@@ -163,7 +163,12 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose } = useContext(CarouselContext);
+
+  function handleClose() {
+    setOpen(false);
+    onCardClose(index);
+  }
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -186,11 +191,6 @@ export const Card = ({
 
   const handleOpen = () => {
     setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    onCardClose(index);
   };
 
   return (
@@ -272,13 +272,12 @@ export const BlurImage = ({
   src,
   className,
   alt,
-  fill: _fill,
-  blurDataURL: _blurDataURL,
+  fill,
   ...rest
-}: ImageProps) => {
+}: Omit<ImageProps, "blurDataURL">) => {
   return (
     <img
-      className={cn("h-full w-full object-cover", className)}
+      className={cn(fill ? "absolute inset-0" : "h-full w-full", "object-cover", className)}
       src={src as string}
       width={width}
       height={height}

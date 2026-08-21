@@ -1,8 +1,21 @@
 import React from "react";
+import Image from "next/image";
 import { Timeline } from "@/components/ui/timeline";
 
-const imgClass =
-  "h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60";
+const wrapClass =
+  "relative h-20 w-full overflow-hidden rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60";
+
+const GridImg = ({ src, alt }: { src: string; alt: string }) => (
+  <div className={wrapClass}>
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      sizes="(max-width: 768px) 45vw, 22vw"
+      className="object-cover"
+    />
+  </div>
+);
 
 export default function TimelineDemo() {
   const data = [
@@ -20,34 +33,10 @@ export default function TimelineDemo() {
             .
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src="/images/img-slider-1.jpeg"
-              alt="Campus view"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/img-slider-2.jpeg"
-              alt="Classroom learning"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/img-slider-3.jpeg"
-              alt="Student activities"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/achievemenets.jpeg"
-              alt="School achievements"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
+            <GridImg src="/images/school/school-3.png" alt="Campus view" />
+            <GridImg src="/images/classroom/classroom-2.png" alt="Classroom learning" />
+            <GridImg src="/images/poster/events-1.png" alt="Student activities" />
+            <GridImg src="/images/school/school-2.png" alt="School grounds" />
           </div>
         </div>
       ),
@@ -70,34 +59,10 @@ export default function TimelineDemo() {
             .
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src="/images/bhs-logo.jpeg"
-              alt="School logo"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/img-slider-1.jpeg"
-              alt="Campus"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/img-slider-2.jpeg"
-              alt="Learning"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/achievemenets.jpeg"
-              alt="Achievements"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
+            <GridImg src="/images/bhs-logo.jpeg" alt="School logo" />
+            <GridImg src="/images/school/school-3.png" alt="Campus" />
+            <GridImg src="/images/classroom/classroom-2.png" alt="Learning" />
+            <GridImg src="/images/school/school-2.png" alt="School grounds" />
           </div>
         </div>
       ),
@@ -135,34 +100,10 @@ export default function TimelineDemo() {
             ))}
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src="/images/img-slider-3.jpeg"
-              alt="School life"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/img-slider-2.jpeg"
-              alt="Academics"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/img-slider-1.jpeg"
-              alt="Campus"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
-            <img
-              src="/images/achievemenets.jpeg"
-              alt="Achievements"
-              width={500}
-              height={500}
-              className={imgClass}
-            />
+            <GridImg src="/images/poster/events-1.png" alt="School life" />
+            <GridImg src="/images/classroom/classroom-2.png" alt="Academics" />
+            <GridImg src="/images/school/school-3.png" alt="Campus" />
+            <GridImg src="/images/school/school-2.png" alt="School grounds" />
           </div>
         </div>
       ),
