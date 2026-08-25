@@ -12,10 +12,14 @@ import Navbar from "@/app/navbar";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [showPreloader, setShowPreloader] = useState(() => {
-    if (typeof window === "undefined") return true;
-    return !sessionStorage.getItem("bhs_preloader_done");
-  });
+  const [showPreloader, setShowPreloader] = useState(false);
+
+  useEffect(() => {
+    if (sessionStorage.getItem("bhs_preloader_done")) return;
+
+    const timer = window.setTimeout(() => setShowPreloader(true), 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const finishPreloader = useCallback(() => {
     setShowPreloader(false);
@@ -90,7 +94,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         )}
       </AnimatePresence>
       <Navbar />
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         <motion.div
           key={pathname}
           className="flex-1"

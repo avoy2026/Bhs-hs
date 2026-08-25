@@ -4,27 +4,27 @@ export default function FocusCardsDemo() {
   const cards = [
     {
       title: "Our Campus",
-      src: "/images/school/school-3.png",
+      src: "/images/campus/campus-wide-view.jpeg",
     },
     {
       title: "Classroom Learning",
-      src: "/images/classroom/classroom-2.png",
+      src: "/images/banners/home-hero-classroom.jpeg",
     },
     {
       title: "Student Life",
-      src: "/images/poster/events-1.png",
+      src: "/images/events/academic/educational-events.png",
     },
     {
       title: "Achievements",
-      src: "/images/school/school-2.png",
+      src: "/images/campus/school-ground.jpeg",
     },
     {
       title: "School Pride",
-      src: "/images/bhs-logo.jpeg",
+      src: "/images/branding/school-logo.png.jpeg",
     },
     {
       title: "Community Spirit",
-      src: "/images/school/school-3.png",
+      src: "/images/students/student-group.jpeg",
     },
   ];
 

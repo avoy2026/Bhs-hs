@@ -8,35 +8,35 @@ export default function AnimatedTestimonialsDemo() {
         "My daughter is not only scoring better — she stands a little taller. Teachers here notice the quiet children, and that has changed our home.",
       name: "Rina Banerjee",
       designation: "Guardian, Class VIII",
-      src: "/images/school/school-3.png",
+      src: "/images/campus/campus-wide-view.jpeg",
     },
     {
       quote:
         "I learned that discipline is not fear. It is showing up prepared, greeting a teacher, and finishing the work you promised yourself.",
       name: "Arjun Dey",
       designation: "Class X, Head Boy",
-      src: "/images/classroom/classroom-2.png",
+      src: "/images/banners/home-hero-classroom.jpeg",
     },
     {
       quote:
         "Annual Day still feels like the heartbeat of this school. When the lights come up, you remember why we teach — for that look of pride.",
       name: "S. Mukherjee",
       designation: "Senior Teacher",
-      src: "/images/poster/events-1.png",
+      src: "/images/events/academic/educational-events.png",
     },
     {
       quote:
         "Years later I still remember the assembly ground. Baramohanpur gave me friends, a voice, and the habit of trying once more.",
       name: "Priya Ghosh",
       designation: "Alumna",
-      src: "/images/school/school-2.png",
+      src: "/images/campus/school-ground.jpeg",
     },
     {
       quote:
         "Notices, meetings, and an open office — we never feel like strangers at the gate. The school treats parents as part of the story.",
       name: "Amit Roy",
       designation: "Parent Community",
-      src: "/images/bhs-logo.jpeg",
+      src: "/images/branding/school-logo.png.jpeg",
     },
   ];
   return (

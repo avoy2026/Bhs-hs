@@ -68,7 +68,7 @@ export default function StudentAchievements() {
           >
             <div className="relative aspect-[5/4] w-full overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/poster/events-1.png"
+                src="/images/branding/school-achievements.jpeg"
                 alt="Student achievements at Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 620px"

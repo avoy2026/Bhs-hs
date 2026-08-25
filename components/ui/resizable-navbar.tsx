@@ -243,7 +243,7 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <img
-        src="/images/bhs-logo.jpeg"
+        src="/images/branding/school-logo.png.jpeg"
         alt="Baramohanpur High School"
         width={30}
         height={30}

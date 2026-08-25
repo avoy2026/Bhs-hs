@@ -16,8 +16,8 @@ export default function PrincipalMessage() {
       <div className="page-shell !py-0 relative">
         <PageSectionHeading
           eyebrow="From the desk of the Principal"
-          title="A Message from the Principal"
-          description="Every child is a promise. The work of our school is to help each one find the path and the courage to keep it."
+          title="From the Headmaster's Desk"
+          description="Joining Baramohanpur High School means joining a 150-year-old history of learning, service and community."
           align="left"
           size="md"
           accent="stroke"
@@ -36,7 +36,7 @@ export default function PrincipalMessage() {
               <div className="absolute -right-4 -bottom-4 h-full w-full rounded-[2rem] bg-[var(--brand-gold)]/25 -z-10 -translate-x-3 -translate-y-3" />
               <div className="absolute inset-0 rounded-[2rem] ring-1 ring-[var(--brand-gold)]/30 -z-[5] translate-x-0.5 translate-y-0.5" />
               <Image
-                src="/images/teachers/principal.png"
+                src="/images/teachers/leadership/principal.jpeg"
                 alt="Principal of Baramohanpur High School"
                 fill
                 sizes="(max-width: 768px) 100vw, 520px"
@@ -58,28 +58,33 @@ export default function PrincipalMessage() {
           >
             <blockquote className="relative">
               <p className="font-display text-[1.4rem] md:text-[1.8rem] leading-[1.35] text-[var(--brand-ink)]">
-                Education at Baramohanpur High School begins with a single belief:
-                that every child who walks through our gate is capable of more than
-                they have yet imagined.
+                I did not merely join a school; I joined history itself.
               </p>
               <div className="mt-6 h-px w-16 bg-[var(--brand-gold)]/60" />
               <p className="mt-6 text-base md:text-lg font-normal leading-relaxed text-[var(--muted-foreground)]">
-                In our classrooms, on our grounds, and in the quiet moments
-                between bells, we do our best to teach not only the subject but
-                also the way a young person ought to carry themselves in the
-                world — with honesty, with curiosity, with respect for others
-                and themselves, and a steady care for those around them.
+                I took charge as Headmaster on 11th May, 2021, during the difficult
+                days of the Covid-19 pandemic, when classrooms were locked and the
+                world was uncertain. I stepped into an institution founded in 1878
+                through the inspiration of Ishwar Chandra Vidyasagar and the vision
+                of Shri Nityananda Dey, built and sustained by generations of
+                teachers, students, guardians, well-wishers and villagers.
               </p>
               <p className="mt-5 text-base md:text-lg font-normal leading-relaxed text-[var(--muted-foreground)]">
-                If you are a parent reading this: your child is in trusted
-                hands. If you are a former student: you still belong here.
+                When I joined, student strength from Classes V to XII was 950. With
+                the collective effort of our teaching and non-teaching staff,
+                students, guardians and well-wishers, it has grown to 1,175. We
+                continue to value meaningful learning, academic progress, sports,
+                cultural activities and the all-round development of every child.
+                Today, our Higher Secondary section offers Arts, Science and
+                Commerce, with 25 subjects including Artificial Intelligence,
+                Agriculture, Computer Application and Education.
               </p>
             </blockquote>
 
             <div className="mt-10 flex items-center gap-4 border-t border-[var(--border)] pt-6">
               <div className="h-14 w-14 rounded-full ring-2 ring-[var(--brand-gold)]/45 ring-offset-2 ring-offset-[var(--brand-fog)] overflow-hidden relative shrink-0">
                 <Image
-                  src="/images/teachers/principal.png"
+                  src="/images/teachers/leadership/principal.jpeg"
                   alt=""
                   fill
                   className="object-cover"
@@ -87,10 +92,10 @@ export default function PrincipalMessage() {
               </div>
               <div className="min-w-0">
                 <p className="font-display font-semibold text-lg text-[var(--brand-navy)]">
-                  [PLACEHOLDER — Principal Name]
+                  Sanjoy Modak
                 </p>
                 <p className="text-sm text-[var(--muted-foreground)]">
-                  Principal, Baramohanpur High School
+                  Headmaster, Baramohanpur High School (H.S.)
                 </p>
               </div>
             </div>

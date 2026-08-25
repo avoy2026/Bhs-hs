@@ -32,11 +32,106 @@ const TimelineImg = ({ src, alt }: { src: string; alt: string }) => (
 
 const data = [
   {
-    title: "Today",
+    title: "2027–2028",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
-          Today, Baramohanpur High School is still what it has always been —
+          Baramohanpur High School will observe its 150th Anniversary as a
+          year-long festival of education, culture and reunion from 2nd January
+          2027 to 2nd January 2028. Present and former students, teachers,
+          guardians, well-wishers and lovers of education are invited to join
+          this historic celebration.
+        </p>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
+          <span className="font-semibold text-[var(--brand-navy)]">
+            150 years of light. 150 years of pride. 150 years of Baramohanpur High School.
+          </span>
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <TimelineImg src="/images/campus/campus-wide-view.jpeg" alt="Campus today" />
+          <TimelineImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
+          <TimelineImg src="/images/events/academic/educational-events.png" alt="Student activities" />
+          <TimelineImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "2021–2026",
+    content: (
+      <div>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
+          On 11th May, 2021, Sanjoy Modak took charge as Headmaster during the
+          Covid-19 pandemic. Since then, the school community has worked together
+          to strengthen learning and rebuild student confidence. Student strength
+          from Classes V to XII grew from 950 to 1,175.
+        </p>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
+          The Higher Secondary section continues to offer Arts, Science and
+          Commerce, alongside 25 subjects including Artificial Intelligence,
+          Agriculture, Computer Application and Education. Commerce, which had
+          remained closed for more than a decade, was reopened in 2026.
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <GridImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
+          <GridImg src="/images/campus/school-ground.jpeg" alt="Campus" />
+          <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
+          <GridImg src="/images/events/academic/educational-events.png" alt="School activities" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "150 Years of Legacy",
+    content: (
+      <div>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
+          Across a century and a half, the school has helped remove the darkness
+          of illiteracy and opened a path to a better life for thousands of
+          students. Its alumni now serve in India and abroad as doctors,
+          engineers, teachers, professors, administrators, scientists and
+          successful citizens.
+        </p>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
+          Among the notable former students are freedom fighter and Astra Guru
+          Dronacharya Shri Hemchandra Kanungo and Dr. Surja Kanta Mishra, former
+          Health Minister of the Government of West Bengal. Their journeys remain
+          a source of pride and inspiration for the school community.
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <GridImg src="/images/campus/main-school-building.jpeg" alt="Baramohanpur High School building" />
+          <GridImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
+          <GridImg src="/images/events/cultural/cultural-programme.png" alt="Cultural programmes" />
+          <GridImg src="/images/events/sports/sports-day.png" alt="Sports activities" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "1878",
+    content: (
+      <div>
+        <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
+          Baramohanpur High School was established in 1878, at a time when
+          education was still a distant dream for many village families. Inspired
+          by the ideals of Pandit Ishwar Chandra Vidyasagar, educationist Shri
+          Nityananda Dey took the initiative to establish the school.
+        </p>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
+          Families from the surrounding villages came forward with land, money,
+          labour and blessings. Their collective effort made the school a living
+          symbol of community spirit and a lasting temple of learning.
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <TimelineImg src="/images/campus/main-school-building.jpeg" alt="Baramohanpur High School building" />
+          <TimelineImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
+          <TimelineImg src="/images/banners/home-hero-classroom.jpeg" alt="Learning at the school" />
+          <TimelineImg src="/images/events/academic/educational-events.png" alt="School life" />
+        </div>
+      </div>
+    ),
+  },
+/*
           a place where a child is known by name, taught with patience, and
           sent into the world with{" "}
           <span className="font-semibold text-[var(--brand-navy)]">
@@ -45,15 +140,15 @@ const data = [
           . Classrooms run, bells ring, parents wait at the gate, and another generation learns under our roof.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <TimelineImg src="/images/school/school-3.png" alt="Campus today" />
-          <TimelineImg src="/images/classroom/classroom-2.png" alt="Classrooms" />
-          <TimelineImg src="/images/poster/events-1.png" alt="Student activities" />
-          <TimelineImg src="/images/school/school-2.png" alt="School grounds" />
+          <TimelineImg src="/images/campus/campus-wide-view.jpeg" alt="Campus today" />
+          <TimelineImg src="/images/banners/home-hero-classroom.jpeg" alt="Classrooms" />
+          <TimelineImg src="/images/events/academic/educational-events.png" alt="Student activities" />
+          <TimelineImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
         </div>
       </div>
     ),
-  },
-  {
+  },*/
+  /*{
     title: "Recent Years",
     content: (
       <div>
@@ -72,10 +167,10 @@ const data = [
           .
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/bhs-logo.jpeg" alt="School emblem" />
-          <GridImg src="/images/school/school-2.png" alt="Campus" />
-          <GridImg src="/images/classroom/computers.webp" alt="Computer centre" />
-          <GridImg src="/images/school/school-2.png" alt="School grounds" />
+          <GridImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
+          <GridImg src="/images/campus/school-ground.jpeg" alt="Campus" />
+          <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
+          <GridImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
         </div>
       </div>
     ),
@@ -91,10 +186,10 @@ const data = [
           the centre of the community it still serves today.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/school/school-1.png" alt="Older campus" />
-          <GridImg src="/images/classroom/labs.jpeg" alt="Science teaching" />
-          <GridImg src="/images/poster/cultural.png" alt="Cultural programmes" />
-          <GridImg src="/images/poster/sports.png" alt="Sports day" />
+          <GridImg src="/images/campus/main-school-building.jpeg" alt="Older campus" />
+          <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom teaching" />
+          <GridImg src="/images/events/cultural/cultural-programme.png" alt="Cultural programmes" />
+          <GridImg src="/images/events/sports/sports-day.png" alt="Sports day" />
         </div>
       </div>
     ),
@@ -135,14 +230,14 @@ const data = [
           ))}
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <TimelineImg src="/images/school/school-3.png" alt="Campus roots" />
-          <TimelineImg src="/images/bhs-logo.jpeg" alt="Emblem" />
-          <TimelineImg src="/images/classroom/classroom-2.png" alt="Learning" />
-          <TimelineImg src="/images/poster/events-1.png" alt="School life" />
+          <TimelineImg src="/images/campus/campus-wide-view.jpeg" alt="Campus roots" />
+          <TimelineImg src="/images/branding/school-logo.png.jpeg" alt="Emblem" />
+          <TimelineImg src="/images/banners/home-hero-classroom.jpeg" alt="Learning" />
+          <TimelineImg src="/images/events/academic/educational-events.png" alt="School life" />
         </div>
       </div>
     ),
-  },
+  },*/
 ];
 
 export default function TimelinePage() {
@@ -151,7 +246,7 @@ export default function TimelinePage() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-[28rem] md:h-[36rem]">
           <Image
-            src="/images/school/school-1.png"
+            src="/images/campus/main-school-building.jpeg"
             alt="Baramohanpur High School history"
             fill
             priority

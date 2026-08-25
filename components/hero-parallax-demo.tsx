@@ -7,11 +7,11 @@ export default function HeroParallaxDemo() {
 }
 
 const campusImages = [
-  "/images/school/school-3.png",
-  "/images/classroom/classroom-2.png",
-  "/images/poster/events-1.png",
-  "/images/school/school-2.png",
-  "/images/bhs-logo.jpeg",
+  "/images/campus/campus-wide-view.jpeg",
+  "/images/banners/home-hero-classroom.jpeg",
+  "/images/events/academic/educational-events.png",
+  "/images/campus/school-ground.jpeg",
+  "/images/branding/school-logo.png.jpeg",
 ];
 
 export const products = [

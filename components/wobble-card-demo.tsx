@@ -24,7 +24,7 @@ export default function WobbleCardDemo() {
         <div className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('/images/school/school-3.png')",
+              "url('/images/campus/campus-wide-view.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -59,7 +59,7 @@ export default function WobbleCardDemo() {
         <div className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('/images/school/school-2.png')",
+              "url('/images/campus/school-ground.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

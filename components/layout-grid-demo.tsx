@@ -34,7 +34,7 @@ const SkeletonLabs = () => {
         A science lab where ideas are tested.
       </p>
       <p className="font-normal text-sm my-3 max-w-md text-white/85">
-        Practical learning in the science laboratory lets students turn textbook
+        Practical classroom learning lets students turn textbook
         lessons into real-world understanding.
       </p>
     </div>
@@ -76,24 +76,24 @@ const cards = [
     id: 1,
     content: <SkeletonCampus />,
     className: "md:col-span-2",
-    thumbnail: "/images/school/school-3.png",
+    thumbnail: "/images/campus/campus-wide-view.jpeg",
   },
   {
     id: 2,
     content: <SkeletonLabs />,
     className: "col-span-1",
-    thumbnail: "/images/classroom/labs.jpeg",
+    thumbnail: "/images/events/academic/educational-events.png",
   },
   {
     id: 3,
     content: <SkeletonComputers />,
     className: "col-span-1",
-    thumbnail: "/images/classroom/computers.webp",
+    thumbnail: "/images/banners/home-hero-students.png",
   },
   {
     id: 4,
     content: <SkeletonClassrooms />,
     className: "md:col-span-2",
-    thumbnail: "/images/classroom/classroom-2.png",
+    thumbnail: "/images/banners/home-hero-classroom.jpeg",
   },
 ];

@@ -66,7 +66,7 @@ export const Cards = ({
         "A night of music, theatre, and proud applause — when the whole school gathers to celebrate talent.",
       skeleton: (
         <CardImage
-          src="/images/poster/cultural.png"
+          src="/images/events/cultural/cultural-programme.png"
           alt="Students performing at a cultural programme"
         />
       ),
@@ -85,7 +85,7 @@ export const Cards = ({
         "Races, relays, and house spirit on the field — where discipline meets joy and every student is cheered.",
       skeleton: (
         <CardImage
-          src="/images/poster/sports.png"
+          src="/images/events/sports/sports-day.png"
           alt="Students taking part in sports"
         />
       ),
@@ -103,7 +103,7 @@ export const Cards = ({
         "Dance, song, and art that carry the voice of Baramohanpur — a festival of culture and belonging.",
       skeleton: (
         <CardImage
-          src="/images/poster/events-1.png"
+          src="/images/events/academic/educational-events.png"
           alt="School event gathering"
         />
       ),
@@ -121,8 +121,8 @@ export const Cards = ({
         "Curious minds, handmade models, and questions that spark — learning that steps out of the textbook.",
       skeleton: (
         <CardImage
-          src="/images/classroom/labs.jpeg"
-          alt="Students learning in the science laboratory"
+          src="/images/banners/home-hero-classroom.jpeg"
+          alt="Students learning in a classroom"
         />
       ),
       className: "bg-[var(--brand-gold)] [&_h2]:text-[var(--brand-ink)] [&_p]:text-[var(--brand-ink)]/80",
@@ -139,7 +139,7 @@ export const Cards = ({
         "Medals, certificates, and quiet pride — honouring the students who lifted the name of our school.",
       skeleton: (
         <CardImage
-          src="/images/poster/events-1.png"
+          src="/images/branding/school-achievements.jpeg"
           alt="Students celebrating a school achievement"
         />
       ),

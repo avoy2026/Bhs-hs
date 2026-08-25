@@ -63,12 +63,12 @@ const data = [
   {
     category: "Campus",
     title: "Mornings that begin with assembly.",
-    src: "/images/school/school-3.png",
+    src: "/images/campus/campus-wide-view.jpeg",
     content: (
       <Story
         lead="The bell still means something here."
         body="Students gather, the flag is raised, and a new school day starts with order, song, and a shared sense of belonging."
-        image="/images/school/school-3.png"
+        image="/images/campus/campus-wide-view.jpeg"
         alt="Campus morning"
       />
     ),
@@ -76,12 +76,12 @@ const data = [
   {
     category: "Classrooms",
     title: "Lessons that stay with you.",
-    src: "/images/classroom/classroom-2.png",
+    src: "/images/banners/home-hero-classroom.jpeg",
     content: (
       <Story
         lead="Teaching at Baramohanpur is patient work."
         body="From first letters to board exams, our teachers walk beside every learner — explaining again, encouraging often, and expecting the best."
-        image="/images/classroom/classroom-2.png"
+        image="/images/banners/home-hero-classroom.jpeg"
         alt="Classroom learning"
       />
     ),
@@ -89,12 +89,12 @@ const data = [
   {
     category: "Student life",
     title: "Friends, houses, and house pride.",
-    src: "/images/poster/events-1.png",
+    src: "/images/events/academic/educational-events.png",
     content: (
       <Story
         lead="School is more than a timetable."
         body="It is the walk between classes, the house cheer on sports day, and the quiet confidence of a student who finally understands."
-        image="/images/poster/events-1.png"
+        image="/images/events/academic/educational-events.png"
         alt="Student life"
       />
     ),
@@ -102,12 +102,12 @@ const data = [
   {
     category: "Achievements",
     title: "Glories earned, not given.",
-    src: "/images/school/school-2.png",
+    src: "/images/campus/school-ground.jpeg",
     content: (
       <Story
         lead="Every certificate on our wall has a story."
         body="Academic ranks, cultural prizes, and sports medals — they remind us that hard work at Baramohanpur is seen and celebrated."
-        image="/images/school/school-2.png"
+        image="/images/campus/school-ground.jpeg"
         alt="School achievements"
       />
     ),
@@ -115,12 +115,12 @@ const data = [
   {
     category: "Community",
     title: "Parents, teachers, one school.",
-    src: "/images/bhs-logo.jpeg",
+    src: "/images/branding/school-logo.png.jpeg",
     content: (
       <Story
         lead="A school is strongest when families stand with it."
         body="Meetings, notices, and open doors keep guardians close to classroom life — because a child's progress is a shared responsibility."
-        image="/images/bhs-logo.jpeg"
+        image="/images/branding/school-logo.png.jpeg"
         alt="School emblem"
       />
     ),
@@ -128,12 +128,12 @@ const data = [
   {
     category: "Values",
     title: "Knowledge, character, community.",
-    src: "/images/school/school-3.png",
+    src: "/images/campus/campus-wide-view.jpeg",
     content: (
       <Story
         lead="We measure success in more than marks."
         body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground — that is the Baramohanpur way."
-        image="/images/school/school-3.png"
+        image="/images/campus/campus-wide-view.jpeg"
         alt="School values"
       />
     ),

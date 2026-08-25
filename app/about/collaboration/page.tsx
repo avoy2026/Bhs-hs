@@ -133,10 +133,10 @@ export default function CollaborationPage() {
                     <Image
                       src={
                         idx % 3 === 0
-                          ? "/images/poster/events-1.png"
+                          ? "/images/events/academic/educational-events.png"
                           : idx % 3 === 1
-                            ? "/images/school/school-3.png"
-                            : "/images/poster/student-voice.png"
+                            ? "/images/campus/campus-wide-view.jpeg"
+                            : "/images/students/student-group.jpeg"
                       }
                       alt={p.title}
                       fill
@@ -202,7 +202,7 @@ export default function CollaborationPage() {
             </div>
             <div className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/school/school-2.png"
+                src="/images/campus/school-ground.jpeg"
                 alt="School community gathering"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"

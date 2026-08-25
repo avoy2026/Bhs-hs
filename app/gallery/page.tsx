@@ -31,32 +31,32 @@ type GalleryItem = {
 };
 
 const items: GalleryItem[] = [
-  { src: "/images/school/school-3.png", title: "Main campus view", category: "Campus", span: "wide", alt: "Baramohanpur High School main campus" },
-  { src: "/images/school/school-1.png", title: "School building", category: "Campus", span: "tall", alt: "School building exterior" },
-  { src: "/images/school/school-2.png", title: "Campus grounds", category: "Campus", span: "md", alt: "School campus grounds" },
+  { src: "/images/campus/campus-wide-view.jpeg", title: "Main campus view", category: "Campus", span: "wide", alt: "Baramohanpur High School main campus" },
+  { src: "/images/campus/main-school-building.jpeg", title: "School building", category: "Campus", span: "tall", alt: "School building exterior" },
+  { src: "/images/campus/school-ground.jpeg", title: "Campus grounds", category: "Campus", span: "md", alt: "School campus grounds" },
 
-  { src: "/images/classroom/classroom-2.png", title: "Inside our classrooms", category: "Classrooms", span: "lg", alt: "Baramohanpur High School classroom" },
-  { src: "/images/classroom/labs.jpeg", title: "Science Laboratory", category: "Classrooms", span: "md", alt: "School science laboratory" },
-  { src: "/images/classroom/computers.webp", title: "Computer Centre", category: "Classrooms", span: "md", alt: "Computer lab" },
-  { src: "/images/classroom/noraml class room.jpg", title: "Regular class", category: "Classrooms", span: "sm", alt: "Regular classroom session" },
+  { src: "/images/banners/home-hero-classroom.jpeg", title: "Inside our classrooms", category: "Classrooms", span: "lg", alt: "Baramohanpur High School classroom" },
+  { src: "/images/banners/home-hero-students.png", title: "Learning together", category: "Classrooms", span: "md", alt: "Students learning together" },
+  { src: "/images/events/academic/educational-events.png", title: "Academic activities", category: "Classrooms", span: "md", alt: "School academic activities" },
+  { src: "/images/campus/campus-wide-view.jpeg", title: "School life", category: "Classrooms", span: "sm", alt: "Baramohanpur High School campus" },
 
-  { src: "/images/poster/student-voice.png", title: "Student voices", category: "Students", span: "lg", alt: "Student activities" },
-  { src: "/images/poster/student-voice-2.png", title: "Everyday campus life", category: "Students", span: "tall", alt: "Students on campus" },
-  { src: "/images/poster/events-1.png", title: "Gathering & assembly", category: "Students", span: "md", alt: "School assembly event" },
+  { src: "/images/students/student-group.jpeg", title: "Student voices", category: "Students", span: "lg", alt: "Students at Baramohanpur High School" },
+  { src: "/images/students/student-group.jpeg", title: "Everyday campus life", category: "Students", span: "tall", alt: "Students on campus" },
+  { src: "/images/events/academic/educational-events.png", title: "Gathering & assembly", category: "Students", span: "md", alt: "School student event" },
 
-  { src: "/images/poster/cultural.png", title: "Cultural programmes", category: "Cultural", span: "wide", alt: "Annual cultural programme" },
-  { src: "/images/poster/events-1.png", title: "Annual Day celebrations", category: "Cultural", span: "tall", alt: "Annual Day function" },
+  { src: "/images/events/cultural/cultural-programme.png", title: "Cultural programmes", category: "Cultural", span: "wide", alt: "School cultural programme" },
+  { src: "/images/events/cultural/cultural-audience.png", title: "Cultural audience", category: "Cultural", span: "tall", alt: "Audience at a school cultural programme" },
 
-  { src: "/images/poster/sports.png", title: "Sports Day", category: "Sports", span: "wide", alt: "Annual sports meet" },
-  { src: "/images/poster/student-voice-2.png", title: "On the field", category: "Sports", span: "sm", alt: "Students on the sports field" },
+  { src: "/images/events/sports/sports-day.png", title: "Sports Day", category: "Sports", span: "wide", alt: "Annual sports meet" },
+  { src: "/images/campus/school-ground.jpeg", title: "On the field", category: "Sports", span: "sm", alt: "School sports ground" },
 
-  { src: "/images/poster/events-1.png", title: "Student activities", category: "Achievements", span: "lg", alt: "Student activities" },
-  { src: "/images/poster/events-1.png", title: "Prize distribution", category: "Achievements", span: "sm", alt: "Prize distribution ceremony" },
+  { src: "/images/branding/school-achievements.jpeg", title: "Student activities", category: "Achievements", span: "lg", alt: "Student achievements" },
+  { src: "/images/events/academic/educational-events.png", title: "School activities", category: "Achievements", span: "sm", alt: "School achievement event" },
 
-  { src: "/images/teachers/principal.png", title: "The Principal", category: "Teachers", span: "tall", alt: "Principal of Baramohanpur High School" },
-  { src: "/images/teachers/teacher.png", title: "Teaching staff", category: "Teachers", span: "md", alt: "School teacher" },
+  { src: "/images/teachers/leadership/principal.jpeg", title: "The Headmaster", category: "Teachers", span: "tall", alt: "Headmaster of Baramohanpur High School" },
+  { src: "/images/teachers/teaching/bina-das.jpeg", title: "Teaching staff", category: "Teachers", span: "md", alt: "School teacher" },
 
-  { src: "/images/bhs-logo.jpeg", title: "School emblem", category: "Campus", span: "sm", alt: "BHS school logo" },
+  { src: "/images/branding/school-logo.png.jpeg", title: "School emblem", category: "Campus", span: "sm", alt: "BHS school logo" },
 ];
 
 const categories: Category[] = [

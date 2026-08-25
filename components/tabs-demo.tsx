@@ -16,7 +16,7 @@ export default function TabsDemo() {
             little hope — we will help you with the rest, within the dates
             announced each year.
           </p>
-          <DummyContent src="/images/school/school-3.png" />
+          <DummyContent src="/images/campus/campus-wide-view.jpeg" />
         </div>
       ),
     },
@@ -30,7 +30,7 @@ export default function TabsDemo() {
             Half-yearly and annual dates appear here first. Students follow the
             class routine; parents use this board so no one is caught unready.
           </p>
-          <DummyContent src="/images/classroom/classroom-2.png" />
+          <DummyContent src="/images/banners/home-hero-classroom.jpeg" />
         </div>
       ),
     },
@@ -44,7 +44,7 @@ export default function TabsDemo() {
             Official holidays and unexpected closures are posted for families
             first — so a closed gate never comes as a surprise.
           </p>
-          <DummyContent src="/images/poster/events-1.png" />
+          <DummyContent src="/images/events/academic/educational-events.png" />
         </div>
       ),
     },
@@ -59,7 +59,7 @@ export default function TabsDemo() {
             the office when your name is called — and celebrate with quiet
             pride.
           </p>
-          <DummyContent src="/images/poster/events-1.png" />
+          <DummyContent src="/images/events/cultural/cultural-programme.png" />
         </div>
       ),
     },
@@ -73,7 +73,7 @@ export default function TabsDemo() {
             Uniform, meetings, fees, and the small rules that keep a large
             family in order. If it matters to campus life, it appears here.
           </p>
-          <DummyContent src="/images/bhs-logo.jpeg" />
+          <DummyContent src="/images/branding/school-logo.png.jpeg" />
         </div>
       ),
     },

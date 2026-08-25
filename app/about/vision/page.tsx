@@ -43,7 +43,7 @@ export default function VisionPage() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-[30rem] md:h-[40rem]">
           <Image
-            src="/images/poster/student-voice.png"
+            src="/images/students/student-group.jpeg"
             alt="Students at Baramohanpur High School"
             fill
             priority
@@ -99,7 +99,7 @@ export default function VisionPage() {
             </div>
             <div className="relative w-full aspect-[5/6] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/40%)]">
               <Image
-                src="/images/teachers/principal.png"
+                src="/images/teachers/leadership/principal.jpeg"
                 alt="School leadership"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
@@ -196,7 +196,7 @@ export default function VisionPage() {
           <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16 items-center">
             <div className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/30%)]">
               <Image
-                src="/images/school/school-3.png"
+                src="/images/campus/campus-wide-view.jpeg"
                 alt="Baramohanpur High School campus view"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"

@@ -49,7 +49,7 @@ export default function AboutPage() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-[32rem] md:h-[42rem]">
           <Image
-            src="/images/school/school-2.png"
+            src="/images/campus/school-ground.jpeg"
             alt="Baramohanpur High School campus"
             fill
             priority
@@ -82,18 +82,18 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <StoryBlock
-        eyebrow="The school today"
+        eyebrow="Established in 1878"
         title="Our Story"
-        body="Baramohanpur High School has stood at the centre of learning in our village for as long as many families can remember. Generations of students have passed through our gate — some to become teachers themselves, others to careers across West Bengal and beyond. What has remained unchanged is our belief that education begins with knowing a child by name."
-        image="/images/school/school-1.png"
+        body="Baramohanpur High School was established in 1878 under the inspiration of Pandit Ishwar Chandra Vidyasagar and through the initiative of the educationist Shri Nityananda Dey. Families from the surrounding villages contributed land, money, labour and blessings to make the school a reality. For 150 years, this shared effort has helped generations of students find the light of knowledge and carry the name of Baramohanpur into the world."
+        image="/images/campus/main-school-building.jpeg"
         imageAlt="Baramohanpur High School building"
         href="/about/timeline"
         hrefLabel="Read the school timeline"
         accent="navy"
         facts={[
-          { value: "[YRS]", label: "Years Serving" },
-          { value: "[GEN]", label: "Generations" },
-          { value: "BHS", label: "Since [EST]" },
+          { value: "150", label: "Years of light" },
+          { value: "1878", label: "Year established" },
+          { value: "BHS", label: "A shared legacy" },
         ]}
       />
 
@@ -160,7 +160,7 @@ export default function AboutPage() {
             </div>
             <div className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/poster/student-voice-2.png"
+                src="/images/students/student-group.jpeg"
                 alt="Student life and vision"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"

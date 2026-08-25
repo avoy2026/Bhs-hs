@@ -6,9 +6,9 @@ import { ImagesSlider } from "@/components/ui/images-slider";
 
 export default function ImagesSliderDemo() {
   const images = [
-    "/images/school/school-3.png",
-    "/images/classroom/classroom-2.png",
-    "/images/poster/events-1.png",
+    "/images/banners/home-hero-campus.jpeg",
+    "/images/banners/home-hero-classroom.jpeg",
+    "/images/banners/home-hero-students.png",
   ];
   return (
     <ImagesSlider

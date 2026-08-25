@@ -24,7 +24,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
     const timer = window.setTimeout(() => {
       onComplete?.();
-    }, 2800);
+    }, 1400);
 
     return () => {
       window.clearTimeout(timer);
@@ -41,7 +41,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
     >
       {/* School Logo */}
       <motion.img
-        src="/images/bhs-logo.jpeg"
+        src="/images/branding/school-logo.png.jpeg"
         alt="Baramohanpur High School"
         className="mb-6 h-24 w-24 rounded-full object-cover ring-4 ring-[var(--brand-gold)]/35 shadow-[0_12px_35px_rgba(201,162,39,0.2)] md:h-32 md:w-32"
         initial={{ opacity: 0, scale: 0.7 }}

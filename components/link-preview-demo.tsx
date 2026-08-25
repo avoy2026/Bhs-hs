@@ -23,7 +23,7 @@ export default function LinkPreviewDemo() {
         <LinkPreview
           url="/"
           isStatic
-          imageSrc="/images/bhs-logo.jpeg"
+          imageSrc="/images/branding/school-logo.png.jpeg"
           className="font-bold text-[var(--brand-navy)]"
         >
           Baramohanpur High School
@@ -32,7 +32,7 @@ export default function LinkPreviewDemo() {
         <LinkPreview
           url="/about"
           isStatic
-          imageSrc="/images/school/school-3.png"
+          imageSrc="/images/campus/campus-wide-view.jpeg"
           className="font-bold text-[var(--brand-gold)]"
         >
           carry themselves with grace
@@ -44,7 +44,7 @@ export default function LinkPreviewDemo() {
         <LinkPreview
           url="/events"
           isStatic
-          imageSrc="/images/classroom/classroom-2.png"
+          imageSrc="/images/banners/home-hero-classroom.jpeg"
           className="bg-gradient-to-r from-[var(--brand-gold)] to-amber-500 bg-clip-text font-bold text-transparent"
         >
           campus events
@@ -53,7 +53,7 @@ export default function LinkPreviewDemo() {
         <LinkPreview
           url="/notices"
           isStatic
-          imageSrc="/images/poster/events-1.png"
+          imageSrc="/images/events/academic/educational-events.png"
           className="font-bold text-[var(--brand-emerald)]"
         >
           official notices

@@ -9,88 +9,68 @@ type Teacher = {
   name: string;
   designation: string;
   subject: string;
-  message: string;
-  image: string;
+  message?: string;
+  image?: string;
   category: "leadership" | "teacher";
 };
 
 const teachers: Teacher[] = [
   {
-    name: "[PLACEHOLDER — Principal Name]",
-    designation: "Principal",
-    subject: "School Leadership",
-    message:
-      "Every child who walks through our gate is capable of more than they have yet imagined. Our job, each day, is to help them believe that too.",
-    image: "/images/teachers/principal.png",
+    name: "Sanjoy Modak",
+    designation: "Headmaster",
+    subject: "M.A. (English), B.Ed.",
+    image: "/images/teachers/leadership/principal.jpeg",
     category: "leadership",
   },
   {
-    name: "[PLACEHOLDER — Asst. Headmistress / Vice Principal]",
-    designation: "[TITLE — Asst. Head / VP]",
-    subject: "Administration & [SUBJECT]",
-    message:
-      "A school runs not on rules alone, but on a thousand small kindnesses — noticing the quiet child, the tired teacher, the parent who is worried.",
-    image: "/images/teachers/teacher.png",
-    category: "leadership",
+    name: "Lokesh Mishra", designation: "Teacher", subject: "B.Sc. (Hons) (Chemistry), B.Ed.", category: "teacher",
   },
   {
-    name: "[Teacher Name 1]",
-    designation: "Senior Teacher",
-    subject: "Bengali / Literature",
-    message:
-      "A poem read aloud can change how a child hears language forever. I try to give them that moment at least once a week.",
-    image: "/images/teachers/teacher.png",
-    category: "teacher",
+    name: "Joydeb Bhunia", designation: "Teacher", subject: "M.Sc. (Geography), B.Ed.", image: "/images/teachers/teaching/joydeb-bhunia.jpeg", category: "teacher",
   },
   {
-    name: "[Teacher Name 2]",
-    designation: "Teacher",
-    subject: "Mathematics",
-    message:
-      "Mathematics is not speed. It is sitting with a problem until the moment it makes sense — and then that sense belongs to you.",
-    image: "/images/teachers/teacher.png",
-    category: "teacher",
+    name: "Debasis Ray", designation: "Teacher", subject: "B.Sc. (Hons.) (Physics), B.Ed.", category: "teacher",
   },
   {
-    name: "[Teacher Name 3]",
-    designation: "Teacher",
-    subject: "Science",
-    message:
-      "The lab is where textbooks come alive. An experiment that works — or even one that doesn't — teaches children more than any paragraph.",
-    image: "/images/teachers/teacher.png",
-    category: "teacher",
+    name: "Bina Das", designation: "Teacher", subject: "B.A. (English), M.A. (Political Science), B.Ed.", image: "/images/teachers/teaching/bina-das.jpeg", category: "teacher",
   },
   {
-    name: "[Teacher Name 4]",
-    designation: "Teacher",
-    subject: "English",
-    message:
-      "Grammar is a roof, not a cage. Once you know it well, you can say exactly what you mean, and that is one of life's great freedoms.",
-    image: "/images/teachers/teacher.png",
-    category: "teacher",
+    name: "Manoj Mahapatra", designation: "Teacher", subject: "M.A. (Economics), B.Ed.", image: "/images/teachers/teaching/manoj-mahapatra.jpeg", category: "teacher",
   },
   {
-    name: "[Teacher Name 5]",
-    designation: "Teacher",
-    subject: "History & Social Studies",
-    message:
-      "History is not dates. It is the story of people who once stood where we stand, wondering about many of the same things.",
-    image: "/images/teachers/teacher.png",
-    category: "teacher",
+    name: "Falguni Misra Nanda", designation: "Teacher", subject: "M.A. (English), B.Ed.", image: "/images/teachers/teaching/falguni-misra-nanda.jpeg", category: "teacher",
   },
   {
-    name: "[Teacher Name 6]",
-    designation: "Teacher",
-    subject: "Physical Education",
-    message:
-      "The ground does not lie. A child learns quickly that if you do not practise, you do not improve — and that lesson travels well beyond sports.",
-    image: "/images/teachers/teacher.png",
-    category: "teacher",
+    name: "Binod Behari Murmu", designation: "Teacher", subject: "B.A., B.P.Ed.", category: "teacher",
+  },
+  {
+    name: "Mahua Maity", designation: "Teacher", subject: "M.Sc. (Physiology), Lady Brabourne Trained, B.Ed.", image: "/images/teachers/teaching/mahua-maity.jpeg", category: "teacher",
+  },
+  {
+    name: "Niranjan Kumar Baram", designation: "Teacher", subject: "M.A. (Philosophy), B.Ed.", image: "/images/teachers/teaching/niranjan-kumar-baram.jpeg", category: "teacher",
+  },
+  {
+    name: "Gitesh Biswas", designation: "Teacher", subject: "M.A. (Political Science)", category: "teacher",
+  },
+  {
+    name: "Kedar Dhal", designation: "Teacher", subject: "M.Sc. (Mathematics), B.Ed.", image: "/images/teachers/teaching/kedar-dhal.jpeg", category: "teacher",
+  },
+  {
+    name: "Aranyamoy Bar", designation: "Teacher", subject: "B.A. (Honours) (Bengali), B.P.Ed.", image: "/images/teachers/teaching/aranyamoy-bar.jpeg", category: "teacher",
+  },
+  {
+    name: "Swapnasree Das", designation: "Teacher", subject: "B.Sc. (Honours) (Nutrition)", image: "/images/teachers/teaching/swapnasree-das.jpeg", category: "teacher",
+  },
+  {
+    name: "Asis Dandapat", designation: "Teacher", subject: "M.A. (English), B.Ed.", image: "/images/teachers/teaching/asis-dandapat.jpeg", category: "teacher",
+  },
+  {
+    name: "Khukumoni Mandal Barman", designation: "Teacher", subject: "M.A. (Bengali), B.Ed.", image: "/images/teachers/teaching/khukumoni-mandal-barman.jpeg", category: "teacher",
   },
 ];
 
 function TeacherCard({ t, idx }: { t: Teacher; idx: number }) {
-  const isPrincipal = t.designation === "Principal";
+  const isPrincipal = t.designation === "Headmaster";
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -108,13 +88,28 @@ function TeacherCard({ t, idx }: { t: Teacher; idx: number }) {
             : "aspect-[5/4] w-full"
         }`}
       >
-        <Image
-          src={t.image}
-          alt={`${t.name}, ${t.designation}`}
-          fill
-          sizes={isPrincipal ? "(max-width: 1024px) 100vw, 45vw" : "(max-width: 768px) 100vw, 25vw"}
-          className="object-cover transition duration-[900ms] group-hover:scale-[1.04]"
-        />
+        {t.image ? (
+          <Image
+            src={t.image}
+            alt={`${t.name}, ${t.designation}`}
+            fill
+            sizes={isPrincipal ? "(max-width: 1024px) 100vw, 45vw" : "(max-width: 768px) 100vw, 25vw"}
+            className="object-cover transition duration-[900ms] group-hover:scale-[1.04]"
+          />
+        ) : (
+          <div className="relative flex h-full items-center justify-center bg-[var(--brand-mist)] px-6 text-center">
+            <Image
+              src="/images/branding/school-logo.png.jpeg"
+              alt="Baramohanpur High School emblem"
+              fill
+              sizes="(max-width: 768px) 100vw, 25vw"
+              className="object-contain p-12 opacity-35"
+            />
+            <span className="relative z-10 rounded-md bg-white/80 px-3 py-2 text-sm font-medium text-[var(--brand-navy)]/70">
+              Staff photograph to be added
+            </span>
+          </div>
+        )}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/65 via-transparent to-transparent" />
         {isPrincipal && (
           <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-[var(--brand-gold)] px-3 py-1 text-[0.68rem] font-bold tracking-[0.18em] uppercase text-[var(--brand-ink)] shadow-sm">
@@ -131,10 +126,12 @@ function TeacherCard({ t, idx }: { t: Teacher; idx: number }) {
           <p className={`text-sm text-[var(--muted-foreground)] ${isPrincipal ? "mt-1" : "mt-0.5"}`}>
             {t.designation}
           </p>
-          <blockquote className={`relative mt-4 leading-relaxed text-[var(--muted-foreground)] ${isPrincipal ? "text-base" : "text-sm"}`}>
-            <IconQuote className="absolute -left-0.5 -top-1 h-4 w-4 text-[var(--brand-gold)]/60" />
-            <span className="pl-5">{t.message}</span>
-          </blockquote>
+          {t.message && (
+            <blockquote className={`relative mt-4 leading-relaxed text-[var(--muted-foreground)] ${isPrincipal ? "text-base" : "text-sm"}`}>
+              <IconQuote className="absolute -left-0.5 -top-1 h-4 w-4 text-[var(--brand-gold)]/60" />
+              <span className="pl-5">{t.message}</span>
+            </blockquote>
+          )}
         </div>
         <div className={`mt-6 flex items-center justify-between ${isPrincipal ? "border-t border-[var(--border)] pt-5" : ""}`}>
           <div className="h-9 w-9 rounded-full bg-[var(--brand-navy)]/8 inline-flex items-center justify-center">
@@ -190,7 +187,7 @@ export default function TeamPage() {
         <div className="page-shell !py-0">
           <PageSectionHeading
             eyebrow="Leadership"
-            title="Principal & School Leadership"
+            title="Headmaster & School Leadership"
             description="The people who guide the school, day after day, keeping every class and every student in mind."
             align="left"
             size="md"
@@ -218,7 +215,7 @@ export default function TeamPage() {
             ))}
           </div>
           <p className="mt-10 text-center text-xs text-[var(--muted-foreground)]">
-            * Teacher names, subjects and photographs will be updated as official school records are shared.
+            * Four staff photographs and profile messages remain to be added after official confirmation.
           </p>
         </div>
       </section>

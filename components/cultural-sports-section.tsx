@@ -28,7 +28,7 @@ export default function CulturalSportsSection() {
             <div className="relative grid gap-0 md:grid-cols-[1.1fr_1fr] min-h-[440px]">
               <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden">
                 <Image
-                  src="/images/poster/cultural.png"
+                  src="/images/events/cultural/cultural-programme.png"
                   alt="Cultural programmes at Baramohanpur High School"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -94,7 +94,7 @@ export default function CulturalSportsSection() {
               </div>
               <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden order-1 md:order-2">
                 <Image
-                  src="/images/poster/sports.png"
+                  src="/images/events/sports/sports-day.png"
                   alt="Sports and physical development at Baramohanpur High School"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

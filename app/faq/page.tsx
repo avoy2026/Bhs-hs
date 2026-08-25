@@ -164,7 +164,7 @@ export default function FAQPage() {
               <div className="relative overflow-hidden rounded-3xl bg-white border border-black/5 p-7 shadow-sm">
                 <div className="relative aspect-[5/4] w-full rounded-2xl overflow-hidden mb-6 ring-1 ring-black/5">
                   <Image
-                    src="/images/school/school-1.png"
+                    src="/images/campus/main-school-building.jpeg"
                     alt="Baramohanpur High School campus"
                     fill
                     sizes="(max-width: 1024px) 100vw, 320px"

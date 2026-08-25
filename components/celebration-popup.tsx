@@ -1,18 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { IconX } from "@tabler/icons-react";
 
 const popupStorageKey = "bhs_150_years_popup_dismissed";
 
 export default function CelebrationPopup({ visible }: { visible: boolean }) {
-  const [dismissed, setDismissed] = useState(() =>
-    typeof window === "undefined"
-      ? true
-      : sessionStorage.getItem(popupStorageKey) === "1",
-  );
+  const [dismissed, setDismissed] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setDismissed(sessionStorage.getItem(popupStorageKey) === "1");
+    }, 0);
+
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const closePopup = () => {
     setDismissed(true);
@@ -33,7 +37,7 @@ export default function CelebrationPopup({ visible }: { visible: boolean }) {
         >
           <div className="relative h-28 w-full overflow-hidden bg-[var(--brand-navy)]">
             <Image
-              src="/images/achievemenets.jpeg"
+              src="/images/branding/school-achievements.jpeg"
               alt="Baramohanpur High School celebration"
               fill
               sizes="304px"

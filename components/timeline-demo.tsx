@@ -20,67 +20,63 @@ const GridImg = ({ src, alt }: { src: string; alt: string }) => (
 export default function TimelineDemo() {
   const data = [
     {
-      title: "Today",
+      title: "2027–2028",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Today, Baramohanpur High School is still what it has always been —
-            a place where a child is known by name, taught with patience, and
-            sent into the world with{" "}
-            <span className="font-semibold text-emerald-600">
-              backbone and courtesy
-            </span>
-            .
+            Baramohanpur High School will observe its 150th Anniversary as a
+            year-long festival of education, culture and reunion from 2nd January
+            2027 to 2nd January 2028. Present and former students, teachers,
+            guardians and well-wishers are invited to join this historic celebration.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/school/school-3.png" alt="Campus view" />
-            <GridImg src="/images/classroom/classroom-2.png" alt="Classroom learning" />
-            <GridImg src="/images/poster/events-1.png" alt="Student activities" />
-            <GridImg src="/images/school/school-2.png" alt="School grounds" />
+            <GridImg src="/images/campus/campus-wide-view.jpeg" alt="Campus view" />
+            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
+            <GridImg src="/images/events/academic/educational-events.png" alt="Student activities" />
+            <GridImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
           </div>
         </div>
       ),
     },
     {
-      title: "Growth",
+      title: "2021–2026",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Year after year we have widened the classroom — stronger teaching,
-            richer cultural life, and a campus that feels safer and prouder for
-            every learner.
+            Sanjoy Modak took charge as Headmaster on 11th May, 2021, during the
+            Covid-19 pandemic. With the collective effort of the school community,
+            student strength from Classes V to XII grew from 950 to 1,175.
           </p>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            From first-period mathematics to the last cheer on sports day,
-            students here grow in{" "}
-            <span className="font-semibold text-[var(--brand-gold)]">
-              confidence and purpose
-            </span>
-            .
+            The Higher Secondary section offers Arts, Science and Commerce with 25
+            subjects, including Artificial Intelligence, Agriculture, Computer
+            Application and Education. Commerce was reopened in 2026 after more
+            than a decade.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/bhs-logo.jpeg" alt="School logo" />
-            <GridImg src="/images/school/school-3.png" alt="Campus" />
-            <GridImg src="/images/classroom/classroom-2.png" alt="Learning" />
-            <GridImg src="/images/school/school-2.png" alt="School grounds" />
+            <GridImg src="/images/branding/school-logo.png.jpeg" alt="School logo" />
+            <GridImg src="/images/campus/campus-wide-view.jpeg" alt="Campus" />
+            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Learning" />
+            <GridImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
           </div>
         </div>
       ),
     },
     {
-      title: "Highlights",
+      title: "1878 · Legacy",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            The chapters that still define us
+            Baramohanpur High School was established in 1878 under the inspiration
+            of Pandit Ishwar Chandra Vidyasagar and the initiative of Shri Nityananda Dey.
           </p>
           <div className="mb-8">
             {[
-              "Classroom teaching that refuses to hurry a child",
-              "Sports, music, and festivals that belong to everyone",
-              "Prefects, houses, and a culture of self-discipline",
-              "Parents treated as partners, not visitors",
-              "Quiet pride in every student who wears our name",
+              "A shared foundation built with village families' land, money, labour and blessings",
+              "150 years of spreading the light of knowledge",
+              "Alumni serving India and abroad in respected professions",
+              "Freedom fighter Shri Hemchandra Kanungo among our notable former students",
+              "Dr. Surja Kanta Mishra, former Health Minister of West Bengal, among our distinguished alumni",
             ].map((item, idx) => (
               <div
                 key={item}
@@ -100,10 +96,10 @@ export default function TimelineDemo() {
             ))}
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/poster/events-1.png" alt="School life" />
-            <GridImg src="/images/classroom/classroom-2.png" alt="Academics" />
-            <GridImg src="/images/school/school-3.png" alt="Campus" />
-            <GridImg src="/images/school/school-2.png" alt="School grounds" />
+            <GridImg src="/images/events/academic/educational-events.png" alt="School life" />
+            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Academics" />
+            <GridImg src="/images/campus/campus-wide-view.jpeg" alt="Campus" />
+            <GridImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
           </div>
         </div>
       ),

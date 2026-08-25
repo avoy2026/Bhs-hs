@@ -22,7 +22,7 @@ const testimonials: Testimonial[] = [
     category: "student",
     quote:
       "I learned that discipline is not fear. It is showing up prepared, greeting a teacher, and finishing the work you promised yourself you would finish. That habit has changed me.",
-    image: "/images/poster/student-voice.png",
+    image: "/images/students/student-group.jpeg",
     highlight: true,
   },
   {
@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     category: "student",
     quote:
       "At first I was afraid to raise my hand in English class. But when I finally did, my teacher did not laugh — she said 'very well said' and asked me to say it again. That day mattered.",
-    image: "/images/poster/student-voice-2.png",
+    image: "/images/students/student-group.jpeg",
   },
   {
     name: "[STUDENT NAME 3]",
@@ -39,7 +39,7 @@ const testimonials: Testimonial[] = [
     category: "student",
     quote:
       "Sports day is my favourite day in the whole year. Even when I did not win, my house cheered for me anyway. That is what I will remember most.",
-    image: "/images/poster/sports.png",
+    image: "/images/events/sports/sports-day.png",
   },
   {
     name: "[STUDENT NAME 4]",
@@ -47,7 +47,7 @@ const testimonials: Testimonial[] = [
     category: "student",
     quote:
       "Annual Day was the first time I stood on a stage in front of so many people. My voice shook — but after the last line, the clap felt like a door had opened in me.",
-    image: "/images/poster/cultural.png",
+    image: "/images/events/cultural/cultural-programme.png",
   },
 
   {
@@ -56,7 +56,7 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "My daughter is not only scoring better — she stands a little taller. Teachers here notice the quiet children, and that has changed our home.",
-    image: "/images/school/school-3.png",
+    image: "/images/campus/campus-wide-view.jpeg",
     highlight: true,
   },
   {
@@ -65,7 +65,7 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "Notices, meetings, and an open office — we never feel like strangers at the gate. The school treats parents as part of the story, not as outsiders.",
-    image: "/images/bhs-logo.jpeg",
+    image: "/images/branding/school-logo.png.jpeg",
   },
   {
     name: "[PARENT NAME 3]",
@@ -73,7 +73,7 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "What matters most to us is that our son is happy to come to school every morning. The rest — marks, prizes, everything — follows from that one simple thing.",
-    image: "/images/school/school-2.png",
+    image: "/images/campus/school-ground.jpeg",
   },
   {
     name: "[PARENT NAME 4]",
@@ -81,7 +81,7 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "We were worried before the boards. His teachers stayed after classes, cleared his doubts, and gave us honest feedback about what he still needed. That kind of care is rare.",
-    image: "/images/classroom/classroom-2.png",
+    image: "/images/banners/home-hero-classroom.jpeg",
   },
 
   {
@@ -90,7 +90,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "Annual Day still feels like the heartbeat of this school. When the lights come up, you remember why we teach — for that look of pride on a child's face.",
-    image: "/images/poster/events-1.png",
+    image: "/images/events/academic/educational-events.png",
     highlight: true,
   },
   {
@@ -99,7 +99,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "Mathematics is not speed. It is sitting with a problem until the moment it makes sense — and then that sense belongs to you for life. I try to teach that patience.",
-    image: "/images/teachers/teacher.png",
+    image: "/images/teachers/teaching/bina-das.jpeg",
   },
   {
     name: "[TEACHER NAME 3]",
@@ -107,7 +107,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "A poem read aloud can change how a child hears language forever. I try to give them that moment at least once a week.",
-    image: "/images/teachers/teacher.png",
+    image: "/images/teachers/teaching/kedar-dhal.jpeg",
   },
   {
     name: "[TEACHER NAME 4]",
@@ -115,7 +115,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "The ground does not lie. A child learns quickly that if you do not practise, you do not improve — and that lesson travels very well beyond the field.",
-    image: "/images/poster/sports.png",
+    image: "/images/events/sports/sports-day.png",
   },
 
   {
@@ -124,7 +124,7 @@ const testimonials: Testimonial[] = [
     category: "alumni",
     quote:
       "Years later I still remember the assembly ground. Baramohanpur gave me friends, a voice, and the habit of trying once more when things do not work out the first time.",
-    image: "/images/school/school-2.png",
+    image: "/images/campus/school-ground.jpeg",
     highlight: true,
   },
   {
@@ -133,7 +133,7 @@ const testimonials: Testimonial[] = [
     category: "alumni",
     quote:
       "I have studied at bigger colleges since, but I still measure myself by what my teachers at Baramohanpur expected of me. Those expectations were kind and they were real.",
-    image: "/images/school/school-1.png",
+    image: "/images/campus/main-school-building.jpeg",
   },
   {
     name: "[ALUMNI NAME 3]",
@@ -141,7 +141,7 @@ const testimonials: Testimonial[] = [
     category: "alumni",
     quote:
       "There is a particular kind of confidence that comes from being noticed at this school. Once you have been seen by a patient teacher, you begin to see yourself differently.",
-    image: "/images/poster/student-voice.png",
+    image: "/images/students/student-group.jpeg",
   },
 ];
 
@@ -155,7 +155,7 @@ export default function TestimonialsHub() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-[28rem] md:h-[36rem]">
           <Image
-            src="/images/poster/student-voice-2.png"
+            src="/images/students/student-group.jpeg"
             alt="Student voices at Baramohanpur High School"
             fill
             priority
@@ -260,7 +260,7 @@ export default function TestimonialsHub() {
             </div>
             <div className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/30%)]">
               <Image
-                src="/images/school/school-3.png"
+                src="/images/campus/campus-wide-view.jpeg"
                 alt="Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"

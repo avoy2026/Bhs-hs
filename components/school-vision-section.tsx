@@ -64,7 +64,7 @@ export default function SchoolVisionSection() {
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_60px_-20px_rgb(27_42_74/25%)]">
             <Image
-              src="/images/classroom/classroom-2.png"
+              src="/images/banners/home-hero-classroom.jpeg"
               alt="Baramohanpur High School campus life"
               fill
               className="object-cover"
