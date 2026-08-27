@@ -102,16 +102,8 @@ export default function GalleryPage() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[var(--brand-navy)]/72" />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-black/42" />
         <div className="relative w-full section-pad">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 z-0"
-            style={{
-              background:
-                "radial-gradient(ellipse 70% 50% at 50% 0%, rgb(43 75 136 / 65%), transparent 60%), radial-gradient(ellipse 50% 60% at 90% 100%, rgb(182 141 34 / 18%), transparent 55%)",
-            }}
-          />
           <div className="page-shell !py-0 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -316,8 +316,8 @@
   bottom: -10px;
   height: 10px;
   background:
-    radial-gradient(ellipse at 20% 50%, rgb(43 75 136 / 45%) 0%, transparent 65%),
-    radial-gradient(ellipse at 70% 50%, rgb(43 75 136 / 30%) 0%, transparent 60%);
+    radial-gradient(ellipse at 20% 50%, rgb(190 45 45 / 48%) 0%, transparent 65%),
+    radial-gradient(ellipse at 70% 50%, rgb(190 45 45 / 30%) 0%, transparent 60%);
   border-radius: 999px;
   transform: skewX(-14deg) scaleX(1.02);
   pointer-events: none;
@@ -337,8 +337,8 @@
   height: 4px;
   background: linear-gradient(
     90deg,
-    rgb(43 75 136 / 85%) 0%,
-    rgb(43 75 136 / 30%) 60%,
+    rgb(190 45 45 / 90%) 0%,
+    rgb(190 45 45 / 32%) 60%,
     transparent 100%
   );
   border-radius: 999px;

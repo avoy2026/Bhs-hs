@@ -1,4 +1,5 @@
 import PageSectionHeading from "@/components/page-section-heading";
+import Image from "next/image";
 import {
   academicStats,
   confirmedSubjects,
@@ -64,6 +65,15 @@ export function StreamInformation() {
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {higherSecondaryStreams.map((stream) => (
             <article key={stream.name} className="rounded-2xl border border-[var(--brand-navy)]/10 bg-white p-6 shadow-sm">
+              <div className="relative mb-5 aspect-[16/10] overflow-hidden rounded-xl">
+                <Image
+                  src={stream.image}
+                  alt={stream.imageAlt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover transition duration-700 hover:scale-105"
+                />
+              </div>
               <p className="eyebrow-navy">{stream.classes}</p>
               <h3 className="mt-2 font-display text-2xl font-semibold text-[var(--brand-navy)]">{stream.name}</h3>
               <p className="mt-3 text-sm leading-relaxed text-[var(--muted-foreground)]">{stream.description}</p>

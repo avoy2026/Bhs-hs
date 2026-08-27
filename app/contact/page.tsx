@@ -72,11 +72,7 @@ export default function ContactPage() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[var(--brand-navy)]/72" />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgb(201_162_39/22%),transparent_55%),linear-gradient(180deg,transparent,rgb(11_18_32/40%))]"
-        />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-black/42" />
         <div className="relative z-10 page-shell py-20 md:py-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

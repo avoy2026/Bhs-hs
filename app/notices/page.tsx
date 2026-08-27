@@ -31,14 +31,7 @@ export default function NoticesPage() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[var(--brand-navy)]/75" />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 z-0 opacity-40"
-        >
-          <div className="absolute -top-24 left-1/4 h-72 w-72 rounded-full bg-[var(--brand-blue)] blur-3xl" />
-          <div className="absolute bottom-0 right-10 h-72 w-72 rounded-full bg-[var(--brand-gold)]/30 blur-3xl" />
-        </div>
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-black/42" />
 
         <div className="page-shell relative z-10 py-20 text-center md:py-28">
           <MotionReveal
