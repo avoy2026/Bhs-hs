@@ -63,7 +63,7 @@ export default function FAQPreview({ limit = 4, showLink: _showLink = true }: { 
         />
         <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.35fr] lg:gap-16 items-start">
           <div>
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--brand-navy)] to-[var(--brand-blue)] text-white p-8 md:p-10 shadow-[0_30px_80px_-30px_rgb(20_35_63/50%)]">
+            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-brand-navy to-[var(--brand-blue)] text-white p-8 md:p-10 shadow-[0_30px_80px_-30px_rgb(20_35_63/50%)]">
               <div
                 aria-hidden
                 className="pointer-events-none absolute inset-0"
@@ -72,7 +72,7 @@ export default function FAQPreview({ limit = 4, showLink: _showLink = true }: { 
                     "radial-gradient(ellipse 60% 50% at 100% 0%, rgb(182 141 34 / 22%), transparent 60%)",
                 }}
               />
-              <p className="eyebrow text-[var(--brand-gold)] relative">Need more help?</p>
+              <p className="eyebrow text-brand-gold relative">Need more help?</p>
               <h3 className="relative mt-3 font-display font-semibold text-2xl md:text-3xl text-green leading-tight">
                 A good conversation is worth ten forms.
               </h3>

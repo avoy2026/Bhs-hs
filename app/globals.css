@@ -67,6 +67,7 @@
 :root {
   --brand-navy: #14233f;
   --brand-blue: #2b4b88;
+  --brand-red: #be2d2d;
   --brand-ink: #0a1120;
   --brand-gold: #b68d22;
   --brand-cream: #fbf5e7;
@@ -238,13 +239,13 @@
     bottom: 0;
     width: 3.5rem;
     height: 0.2rem;
-    background: var(--brand-blue);
+    background: var(--brand-red);
     border-radius: 999px;
     transform: skewX(-18deg);
   }
 
   .eyebrow-navy {
-    @apply relative inline-block font-display text-base font-semibold tracking-[0.12em] text-[var(--brand-navy)] uppercase;
+    @apply relative inline-block font-display text-base font-semibold tracking-[0.12em] text-[var(--brand-blue)] uppercase;
     line-height: 1.2;
     padding-bottom: 0.55rem;
   }
@@ -256,7 +257,7 @@
     bottom: 0;
     width: 3.5rem;
     height: 0.2rem;
-    background: var(--brand-blue);
+    background: var(--brand-red);
     border-radius: 999px;
     transform: skewX(-18deg);
   }
