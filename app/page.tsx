@@ -11,7 +11,7 @@ import CulturalSportsSection from "@/components/cultural-sports-section";
 import TimelineDemo from "@/components/timeline-demo";
 import FAQPreview from "@/components/faq-preview";
 import FinalHomeCta from "@/components/final-home-cta";
-import MacbookScrollDemo from "@/components/macbook-scroll-demo";
+import HeroParallaxDemo from "@/components/hero-parallax-demo";
 
 export const metadata = {
   title: "Baramohanpur High School | Knowledge · Character · Community",
@@ -62,18 +62,7 @@ export default function HomePage() {
             every student can find their direction and contribute with purpose.
           </p>
         </div>
-        <MacbookScrollDemo
-          title={
-            <span>
-              Our vision is a school where{" "}
-              <span className="bg-gradient-to-r from-[var(--brand-gold)] to-amber-500 bg-clip-text text-transparent">
-                every learner belongs
-              </span>
-              <br />
-              and every lesson opens a door.
-            </span>
-          }
-        />
+        <HeroParallaxDemo />
       </section>
       <AppleCardsCarouselDemo />
       <LayoutGridDemo />

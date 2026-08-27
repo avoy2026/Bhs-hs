@@ -124,6 +124,22 @@ export default function GalleryPage() {
         </div>
       </section>
 
+            {/* Scrollable visual story */}
+      <section className="section-warm overflow-hidden">
+        <div className="page-shell !pb-0">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow mb-3">Events in motion</p>
+            <h2 className="font-display text-3xl font-semibold text-[var(--brand-navy)] md:text-5xl">
+              A school year told through shared moments.
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted-foreground)] md:text-base">
+              Scroll through a moving wall of campus gatherings, classroom life, and celebrations.
+            </p>
+          </div>
+        </div>
+        <HeroParallaxDemo />
+      </section>
+
       {/* Filter bar */}
       <section className="sticky top-0 z-30 -mt-1 border-b border-black/5 bg-[var(--brand-fog)]/90 backdrop-blur">
         <div className="page-shell !py-0">
@@ -147,22 +163,6 @@ export default function GalleryPage() {
             })}
           </div>
         </div>
-      </section>
-
-      {/* Scrollable visual story */}
-      <section className="section-warm overflow-hidden">
-        <div className="page-shell !pb-0">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow mb-3">Events in motion</p>
-            <h2 className="font-display text-3xl font-semibold text-[var(--brand-navy)] md:text-5xl">
-              A school year told through shared moments.
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted-foreground)] md:text-base">
-              Scroll through a moving wall of campus gatherings, classroom life, and celebrations.
-            </p>
-          </div>
-        </div>
-        <HeroParallaxDemo />
       </section>
 
       {/* Masonry grid */}

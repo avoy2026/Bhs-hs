@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 
 export default function PrincipalMessage() {
   return (
-    <section className="section-soft section-pad relative isolate overflow-hidden">
+    <section className="section-soft section-pad relative isolate overflow-hidden pt-8 md:pt-12">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_40%_at_15%_10%,rgb(182_141_34/8%),transparent),radial-gradient(ellipse_60%_50%_at_90%_90%,rgb(20_35_63/4%),transparent)]"
