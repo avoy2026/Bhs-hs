@@ -61,6 +61,7 @@ const navItems = [
     hasSubmenu: true,
   },
   { name: "School Events", link: "/events" },
+  { name: "Academics", link: "/academics" },
   { name: "Notices", link: "/notices" },
   { name: "Gallery", link: "/gallery" },
   { name: "Contact Us", link: "/contact" },

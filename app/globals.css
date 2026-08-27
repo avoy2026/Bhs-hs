@@ -226,11 +226,39 @@
   }
 
   .eyebrow {
-    @apply text-[0.7rem] md:text-xs font-semibold tracking-[0.24em] text-[var(--brand-gold)] uppercase;
+    @apply relative inline-block font-display text-base font-semibold tracking-[0.12em] text-[var(--brand-blue)] uppercase;
+    line-height: 1.2;
+    padding-bottom: 0.55rem;
+  }
+
+  .eyebrow::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.5rem;
+    height: 0.2rem;
+    background: var(--brand-blue);
+    border-radius: 999px;
+    transform: skewX(-18deg);
   }
 
   .eyebrow-navy {
-    @apply text-[0.7rem] md:text-xs font-semibold tracking-[0.24em] text-[var(--brand-navy)]/60 uppercase;
+    @apply relative inline-block font-display text-base font-semibold tracking-[0.12em] text-[var(--brand-navy)] uppercase;
+    line-height: 1.2;
+    padding-bottom: 0.55rem;
+  }
+
+  .eyebrow-navy::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.5rem;
+    height: 0.2rem;
+    background: var(--brand-blue);
+    border-radius: 999px;
+    transform: skewX(-18deg);
   }
 }
 
@@ -288,8 +316,8 @@
   bottom: -10px;
   height: 10px;
   background:
-    radial-gradient(ellipse at 20% 50%, rgb(182 141 34 / 35%) 0%, transparent 65%),
-    radial-gradient(ellipse at 70% 50%, rgb(43 75 136 / 22%) 0%, transparent 60%);
+    radial-gradient(ellipse at 20% 50%, rgb(43 75 136 / 45%) 0%, transparent 65%),
+    radial-gradient(ellipse at 70% 50%, rgb(43 75 136 / 30%) 0%, transparent 60%);
   border-radius: 999px;
   transform: skewX(-14deg) scaleX(1.02);
   pointer-events: none;
@@ -309,8 +337,8 @@
   height: 4px;
   background: linear-gradient(
     90deg,
-    rgb(182 141 34 / 85%) 0%,
-    rgb(182 141 34 / 30%) 60%,
+    rgb(43 75 136 / 85%) 0%,
+    rgb(43 75 136 / 30%) 60%,
     transparent 100%
   );
   border-radius: 999px;

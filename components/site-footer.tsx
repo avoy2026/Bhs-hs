@@ -23,6 +23,7 @@ const aboutLinks = [
 ];
 
 const exploreLinks = [
+  { name: "Academics", href: "/academics" },
   { name: "Events", href: "/events" },
   { name: "Gallery", href: "/gallery" },
   { name: "Notices", href: "/notices" },

@@ -94,16 +94,25 @@ export default function GalleryPage() {
     <main className="overflow-x-hidden">
       {/* Hero */}
       <section className="relative isolate overflow-hidden section-navy">
+        <Image
+          src="/images/banners/gallery-banner.png"
+          alt="Baramohanpur High School campus gallery"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[var(--brand-navy)]/72" />
         <div className="relative w-full section-pad">
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0"
+            className="pointer-events-none absolute inset-0 z-0"
             style={{
               background:
                 "radial-gradient(ellipse 70% 50% at 50% 0%, rgb(43 75 136 / 65%), transparent 60%), radial-gradient(ellipse 50% 60% at 90% 100%, rgb(182 141 34 / 18%), transparent 55%)",
             }}
           />
-          <div className="page-shell !py-0 relative">
+          <div className="page-shell !py-0 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

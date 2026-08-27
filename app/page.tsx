@@ -12,6 +12,7 @@ import TimelineDemo from "@/components/timeline-demo";
 import FAQPreview from "@/components/faq-preview";
 import FinalHomeCta from "@/components/final-home-cta";
 import HeroParallaxDemo from "@/components/hero-parallax-demo";
+import AcademicOverviewCards from "@/components/academic-overview-cards";
 
 export const metadata = {
   title: "Baramohanpur High School | Knowledge · Character · Community",
@@ -25,6 +26,7 @@ export default function HomePage() {
       <ImagesSliderDemo />
       <WobbleCardDemo />
       <SchoolGlories />
+      <PrincipalMessage />
       <StoryBlock
         eyebrow="Learning spaces"
         title="Classrooms built for curiosity and calm."
@@ -65,12 +67,12 @@ export default function HomePage() {
         <HeroParallaxDemo />
       </section>
       <AppleCardsCarouselDemo />
+      <AcademicOverviewCards />
       <LayoutGridDemo />
-      <PrincipalMessage />
       <StudentAchievements />
-      <AnimatedTestimonialsDemo />
       <CulturalSportsSection />
       <TimelineDemo />
+      <AnimatedTestimonialsDemo />
       <FAQPreview limit={6} />
       <FinalHomeCta />
     </main>

@@ -69,7 +69,7 @@ export default function ImagesSliderDemo() {
           />
           <span className="mt-3 block text-xl sm:text-2xl md:text-3xl">
             <AnimatedWords
-              text="Knowledge meets"
+              text="Shaping Young Minds for a"
               className="text-white/90"
               delay={0.55}
               stagger={0.08}
@@ -81,7 +81,7 @@ export default function ImagesSliderDemo() {
                 animate={{ y: "0%", opacity: 1 }}
                 transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: 0.78 }}
               >
-                character
+                 Brighter Tomorrow.
               </motion.span>
             </span>
           </span>

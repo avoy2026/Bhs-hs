@@ -73,7 +73,7 @@ export default function FAQPreview({ limit = 4, showLink: _showLink = true }: { 
                 }}
               />
               <p className="eyebrow text-[var(--brand-gold)] relative">Need more help?</p>
-              <h3 className="relative mt-3 font-display font-semibold text-2xl md:text-3xl leading-tight">
+              <h3 className="relative mt-3 font-display font-semibold text-2xl md:text-3xl text-green leading-tight">
                 A good conversation is worth ten forms.
               </h3>
               <p className="relative mt-4 text-sm md:text-base leading-relaxed text-white/80">

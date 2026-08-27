@@ -86,7 +86,7 @@ export default function FinalHomeCta() {
 
             <motion.h2
               variants={itemVariants}
-              className="mt-4 font-display font-semibold text-3xl md:text-5xl tracking-tight leading-[1.1]"
+              className="mt-4 font-display font-semibold text-3xl md:text-5xl tracking-tight leading-[1.1] text-white"
             >
               Begin Your Journey With{" "}
               <span className="bg-gradient-to-r from-[var(--brand-gold)] to-[#f1d68c] bg-clip-text text-transparent">

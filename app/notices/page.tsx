@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "School Notices | Baramohanpur High School",
@@ -22,15 +23,24 @@ export default function NoticesPage() {
     <main className="overflow-x-hidden">
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-[var(--brand-navy)] text-white">
+        <Image
+          src="/images/banners/about-banner.png"
+          alt="Baramohanpur High School campus"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[var(--brand-navy)]/75" />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 opacity-40"
+          className="pointer-events-none absolute inset-0 z-0 opacity-40"
         >
           <div className="absolute -top-24 left-1/4 h-72 w-72 rounded-full bg-[var(--brand-blue)] blur-3xl" />
           <div className="absolute bottom-0 right-10 h-72 w-72 rounded-full bg-[var(--brand-gold)]/30 blur-3xl" />
         </div>
 
-        <div className="page-shell relative py-20 text-center md:py-28">
+        <div className="page-shell relative z-10 py-20 text-center md:py-28">
           <MotionReveal
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
