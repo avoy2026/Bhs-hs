@@ -63,12 +63,12 @@ const data = [
   {
     category: "Campus",
     title: "Mornings that begin with assembly.",
-    src: "/images/campus/campus-wide-view.jpeg",
+    src: "/images/apple-card/campus.jpeg",
     content: (
       <Story
         lead="The bell still means something here."
         body="Students gather, the flag is raised, and a new school day starts with order, song, and a shared sense of belonging."
-        image="/images/campus/campus-wide-view.jpeg"
+        image="/images/apple-card/campus.jpeg"
         alt="Campus morning"
       />
     ),
@@ -76,64 +76,64 @@ const data = [
   {
     category: "Classrooms",
     title: "Lessons that stay with you.",
-    src: "/images/banners/home-hero-classroom.jpeg",
+    src: "/images/apple-card/classroom.jpeg",
     content: (
       <Story
         lead="Teaching at Baramohanpur is patient work."
         body="From first letters to board exams, our teachers walk beside every learner — explaining again, encouraging often, and expecting the best."
-        image="/images/banners/home-hero-classroom.jpeg"
+        image="/images/apple-card/classroom.jpeg"
         alt="Classroom learning"
       />
     ),
   },
   {
-    category: "Student life",
+    category: "Student Life",
     title: "Friends, houses, and house pride.",
-    src: "/images/events/academic/educational-events.png",
+    src: "/images/apple-card/student-life.jpeg",
     content: (
       <Story
         lead="School is more than a timetable."
         body="It is the walk between classes, the house cheer on sports day, and the quiet confidence of a student who finally understands."
-        image="/images/events/academic/educational-events.png"
+        image="/images/apple-card/student-life.jpeg"
         alt="Student life"
       />
     ),
   },
   {
-    category: "Achievements",
-    title: "Glories earned, not given.",
-    src: "/images/campus/school-ground.jpeg",
+    category: "Education & Growth",
+    title: "Learning that shapes the mind.",
+    src: "/images/apple-card/education-poster.jpeg",
     content: (
       <Story
-        lead="Every certificate on our wall has a story."
-        body="Academic ranks, cultural prizes, and sports medals — they remind us that hard work at Baramohanpur is seen and celebrated."
-        image="/images/campus/school-ground.jpeg"
-        alt="School achievements"
+        lead="Every lesson builds character."
+        body="Academic study, cultural education, and practical knowledge develop responsible, capable young minds ready for the world."
+        image="/images/apple-card/education-poster.jpeg"
+        alt="Education and growth"
       />
     ),
   },
   {
     category: "Community",
-    title: "Parents, teachers, one school.",
-    src: "/images/branding/school-logo.png.jpeg",
+    title: "Parents, teachers, one family.",
+    src: "/images/apple-card/community.jpeg",
     content: (
       <Story
-        lead="A school is strongest when families stand with it."
-        body="Meetings, notices, and open doors keep guardians close to classroom life — because a child's progress is a shared responsibility."
-        image="/images/branding/school-logo.png.jpeg"
-        alt="School emblem"
+        lead="A school thrives when families stand with it."
+        body="Meetings, notices, and open doors keep guardians close to classroom life — because a child's progress is a shared journey."
+        image="/images/apple-card/community.jpeg"
+        alt="Community and family"
       />
     ),
   },
   {
     category: "Values",
     title: "Knowledge, character, community.",
-    src: "/images/campus/campus-wide-view.jpeg",
+    src: "/images/apple-card/values.jpeg",
     content: (
       <Story
         lead="We measure success in more than marks."
         body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground — that is the Baramohanpur way."
-        image="/images/campus/campus-wide-view.jpeg"
+        image="/images/apple-card/values.jpeg"
         alt="School values"
       />
     ),

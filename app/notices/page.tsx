@@ -24,14 +24,14 @@ export default function NoticesPage() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-[var(--brand-navy)] text-white">
         <Image
-          src="/images/banners/about-banner.png"
-          alt="Baramohanpur High School campus"
+          src="/images/banners/notice-banner.jpeg"
+          alt="Baramohanpur High School notices and campus"
           fill
           priority
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-black/42" />
+        <div aria-hidden="true" className="hero-scrim absolute inset-0" />
 
         <div className="page-shell relative z-10 py-20 text-center md:py-28">
           <MotionReveal

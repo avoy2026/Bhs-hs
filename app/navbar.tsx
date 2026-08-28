@@ -34,7 +34,7 @@ export const aboutSubLinks: AboutSubItem[] = [
   {
     name: "Our Team",
     link: "/about/team",
-    description: "Principal, teachers and leadership",
+    description: "Headmaster, teachers and leadership",
   },
   {
     name: "Timeline",

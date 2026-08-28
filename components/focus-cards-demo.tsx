@@ -3,8 +3,8 @@ import { FocusCards } from "@/components/ui/focus-cards";
 export default function FocusCardsDemo() {
   const cards = [
     {
-      title: "Our Campus",
-      src: "/images/campus/campus-wide-view.jpeg",
+      title: "Knowledge & Guidance",
+      src: "/images/ABout-us(life-between-bell)/knowledge.jpeg",
     },
     {
       title: "Classroom Learning",
@@ -12,15 +12,15 @@ export default function FocusCardsDemo() {
     },
     {
       title: "Student Life",
-      src: "/images/events/academic/educational-events.png",
+      src: "/images/ABout-us(life-between-bell)/student life.jpeg",
     },
     {
       title: "Achievements",
-      src: "/images/campus/school-ground.jpeg",
+      src: "/images/branding/school-achievements.jpeg",
     },
     {
-      title: "School Pride",
-      src: "/images/branding/school-logo.png.jpeg",
+      title: "Our Pride",
+      src: "/images/ABout-us(life-between-bell)/our-pride.jpeg",
     },
     {
       title: "Community Spirit",

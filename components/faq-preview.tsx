@@ -46,7 +46,7 @@ export const popularFAQs: FAQItem[] = [
   },
 ];
 
-export default function FAQPreview({ limit = 4, showLink: _showLink = true }: { limit?: number; showLink?: boolean }) {
+export default function FAQPreview({ limit = 4, showLink = true }: { limit?: number; showLink?: boolean }) {
   const items = popularFAQs.slice(0, limit);
   const [open, setOpen] = useState<number | null>(0);
 

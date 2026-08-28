@@ -132,11 +132,13 @@ export default function CollaborationPage() {
                   >
                     <Image
                       src={
-                        idx % 3 === 0
-                          ? "/images/events/academic/educational-events.png"
-                          : idx % 3 === 1
-                            ? "/images/campus/campus-wide-view.jpeg"
-                            : "/images/students/student-group.jpeg"
+                        [
+                          "/images/testimonials/parents/parents.jpeg",
+                          "/images/events/academic/commuity.jpeg",
+                          "/images/campus/campus-wide-view.jpeg",
+                          "/images/classrooms/science-laboratory.jpeg",
+                          "/images/events/cultural/cultural-programme.png",
+                        ][idx % 5]
                       }
                       alt={p.title}
                       fill

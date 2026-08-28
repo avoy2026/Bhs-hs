@@ -15,7 +15,7 @@ export default function PrincipalMessage() {
       />
       <div className="page-shell !py-0 relative">
         <PageSectionHeading
-          eyebrow="From the desk of the Principal"
+          eyebrow="From the Headmaster's Desk"
           title="From the Headmaster's Desk"
           description="Joining Baramohanpur High School means joining a 150-year-old history of learning, service and community."
           align="left"
@@ -37,7 +37,7 @@ export default function PrincipalMessage() {
               <div className="absolute inset-0 rounded-[2rem] ring-1 ring-[var(--brand-gold)]/30 -z-[5] translate-x-0.5 translate-y-0.5" />
               <Image
                 src="/images/teachers/leadership/principal.jpeg"
-                alt="Principal of Baramohanpur High School"
+                alt="Headmaster of Baramohanpur High School"
                 fill
                 sizes="(max-width: 768px) 100vw, 520px"
                 className="rounded-[1.75rem] object-cover shadow-[0_30px_80px_-30px_rgb(10_17_32/55%)]"

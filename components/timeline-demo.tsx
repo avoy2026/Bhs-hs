@@ -30,10 +30,10 @@ export default function TimelineDemo() {
             guardians and well-wishers are invited to join this historic celebration.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/campus/campus-wide-view.jpeg" alt="Campus view" />
-            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
-            <GridImg src="/images/events/academic/educational-events.png" alt="Student activities" />
-            <GridImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
+            <GridImg src="/images/campus/school-entrance.jpeg" alt="School entrance" />
+            <GridImg src="/images/events/academic/educational-events.png" alt="Educational events" />
+            <GridImg src="/images/events/sports/sports-day.png" alt="Sports and celebrations" />
+            <GridImg src="/images/campus/school-greatimage-poster.jpeg" alt="150 years celebration" />
           </div>
         </div>
       ),
@@ -54,10 +54,10 @@ export default function TimelineDemo() {
             than a decade.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/branding/school-logo.png.jpeg" alt="School logo" />
-            <GridImg src="/images/campus/campus-wide-view.jpeg" alt="Campus" />
-            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Learning" />
-            <GridImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
+            <GridImg src="/images/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
+            <GridImg src="/images/classrooms/science-laboratory.jpeg" alt="Science laboratory" />
+            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
+            <GridImg src="/images/branding/school-achievements.jpeg" alt="Academic achievements" />
           </div>
         </div>
       ),
@@ -96,10 +96,10 @@ export default function TimelineDemo() {
             ))}
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/events/academic/educational-events.png" alt="School life" />
-            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Academics" />
-            <GridImg src="/images/campus/campus-wide-view.jpeg" alt="Campus" />
-            <GridImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
+            <GridImg src="/images/history/iswar-chandra.jpeg" alt="Pandit Ishwar Chandra Vidyasagar" />
+            <GridImg src="/images/history/shi-hemanchandra-kanuga.jpeg" alt="Shri Hemchandra Kanungo" />
+            <GridImg src="/images/history/3-statue.jpeg" alt="Heritage statues at school" />
+            <GridImg src="/images/campus/main-school-building.jpeg" alt="Main school building" />
           </div>
         </div>
       ),

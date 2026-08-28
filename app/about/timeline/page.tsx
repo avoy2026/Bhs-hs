@@ -48,10 +48,10 @@ const data = [
           </span>
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <TimelineImg src="/images/campus/campus-wide-view.jpeg" alt="Campus today" />
-          <TimelineImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
+          <TimelineImg src="/images/campus/school-entrance.jpeg" alt="School entrance" />
           <TimelineImg src="/images/events/academic/educational-events.png" alt="Student activities" />
-          <TimelineImg src="/images/campus/school-ground.jpeg" alt="School grounds" />
+          <TimelineImg src="/images/events/sports/sports-day.png" alt="Sports and celebrations" />
+          <TimelineImg src="/images/campus/school-greatimage-poster.jpeg" alt="150 years celebration" />
         </div>
       </div>
     ),
@@ -73,10 +73,10 @@ const data = [
           remained closed for more than a decade, was reopened in 2026.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
-          <GridImg src="/images/campus/school-ground.jpeg" alt="Campus" />
+          <GridImg src="/images/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
+          <GridImg src="/images/classrooms/science-laboratory.jpeg" alt="Science laboratory" />
           <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
-          <GridImg src="/images/events/academic/educational-events.png" alt="School activities" />
+          <GridImg src="/images/branding/school-achievements.jpeg" alt="Academic achievements" />
         </div>
       </div>
     ),
@@ -99,8 +99,8 @@ const data = [
           a source of pride and inspiration for the school community.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/campus/main-school-building.jpeg" alt="Baramohanpur High School building" />
-          <GridImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
+          <GridImg src="/images/history/shi-hemanchandra-kanuga.jpeg" alt="Shri Hemchandra Kanungo" />
+          <GridImg src="/images/history/our school-pride.jpeg" alt="School pride" />
           <GridImg src="/images/events/cultural/cultural-programme.png" alt="Cultural programmes" />
           <GridImg src="/images/events/sports/sports-day.png" alt="Sports activities" />
         </div>
@@ -123,10 +123,10 @@ const data = [
           symbol of community spirit and a lasting temple of learning.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <TimelineImg src="/images/campus/main-school-building.jpeg" alt="Baramohanpur High School building" />
+          <TimelineImg src="/images/history/iswar-chandra.jpeg" alt="Pandit Ishwar Chandra Vidyasagar" />
+          <TimelineImg src="/images/history/3-statue.jpeg" alt="Statues of founders and luminaries" />
+          <TimelineImg src="/images/campus/main-school-building.jpeg" alt="Main school building" />
           <TimelineImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
-          <TimelineImg src="/images/banners/home-hero-classroom.jpeg" alt="Learning at the school" />
-          <TimelineImg src="/images/events/academic/educational-events.png" alt="School life" />
         </div>
       </div>
     ),

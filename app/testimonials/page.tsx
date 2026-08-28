@@ -56,7 +56,7 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "My daughter is not only scoring better — she stands a little taller. Teachers here notice the quiet children, and that has changed our home.",
-    image: "/images/campus/campus-wide-view.jpeg",
+    image: "/images/testimonials/parents/parents.jpeg",
     highlight: true,
   },
   {
@@ -65,7 +65,7 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "Notices, meetings, and an open office — we never feel like strangers at the gate. The school treats parents as part of the story, not as outsiders.",
-    image: "/images/branding/school-logo.png.jpeg",
+    image: "/images/testimonials/parents/parents-3.jpeg",
   },
   {
     name: "[PARENT NAME 3]",
@@ -73,7 +73,7 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "What matters most to us is that our son is happy to come to school every morning. The rest — marks, prizes, everything — follows from that one simple thing.",
-    image: "/images/campus/school-ground.jpeg",
+    image: "/images/testimonials/parents/parents.jpeg",
   },
   {
     name: "[PARENT NAME 4]",
@@ -81,41 +81,41 @@ const testimonials: Testimonial[] = [
     category: "parent",
     quote:
       "We were worried before the boards. His teachers stayed after classes, cleared his doubts, and gave us honest feedback about what he still needed. That kind of care is rare.",
-    image: "/images/banners/home-hero-classroom.jpeg",
+    image: "/images/testimonials/parents/parents-3.jpeg",
   },
 
   {
-    name: "[S. MUKHERJEE]",
-    role: "Senior Teacher",
+    name: "Falguni Misra Nanda",
+    role: "Assistant Teacher",
     category: "teacher",
     quote:
       "Annual Day still feels like the heartbeat of this school. When the lights come up, you remember why we teach — for that look of pride on a child's face.",
-    image: "/images/events/academic/educational-events.png",
+    image: "/images/teachers/teaching/falguni-misra-nanda.jpeg",
     highlight: true,
   },
   {
-    name: "[TEACHER NAME 2]",
-    role: "Teacher · Mathematics",
+    name: "Bina Das",
+    role: "Assistant Teacher",
     category: "teacher",
     quote:
-      "Mathematics is not speed. It is sitting with a problem until the moment it makes sense — and then that sense belongs to you for life. I try to teach that patience.",
+      "Teaching is not about rush. It is sitting with a problem until the moment it makes sense — and then that sense belongs to you for life. I try to teach that patience.",
     image: "/images/teachers/teaching/bina-das.jpeg",
   },
   {
-    name: "[TEACHER NAME 3]",
-    role: "Teacher · Bengali",
+    name: "Kedar Dhal",
+    role: "Assistant Teacher",
     category: "teacher",
     quote:
-      "A poem read aloud can change how a child hears language forever. I try to give them that moment at least once a week.",
+      "A lesson read aloud can change how a child understands language and thoughts. I try to give them that moment in every single class.",
     image: "/images/teachers/teaching/kedar-dhal.jpeg",
   },
   {
-    name: "[TEACHER NAME 4]",
-    role: "Physical Education",
+    name: "Gautam Makur",
+    role: "Assistant Teacher",
     category: "teacher",
     quote:
-      "The ground does not lie. A child learns quickly that if you do not practise, you do not improve — and that lesson travels very well beyond the field.",
-    image: "/images/events/sports/sports-day.png",
+      "Physical and mental endurance go hand in hand. A student learns that with practice and discipline, any difficulty can be overcome.",
+    image: "/images/teachers/teaching/gautam-makur.jpeg",
   },
 
   {

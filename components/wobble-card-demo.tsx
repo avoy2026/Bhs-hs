@@ -63,7 +63,7 @@ export default function WobbleCardDemo() {
             "
             style={{
               backgroundImage:
-                "url('/images/campus/classroom.jpeg')",
+                "url('/images/banners/home-hero-classroom.jpeg')",
             }}
           />
 

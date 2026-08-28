@@ -172,7 +172,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Principal message (reuse from homepage) */}
+      {/* Headmaster message (reuse from homepage) */}
       <PrincipalMessage />
 
       {/* About sub-navigation cards */}
@@ -185,7 +185,7 @@ export default function AboutPage() {
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: "Our Team", desc: "Principal & Teachers", href: "/about/team" },
+              { title: "Our Team", desc: "Headmaster & Teachers", href: "/about/team" },
               { title: "Timeline", desc: "Our History & Milestones", href: "/about/timeline" },
               { title: "Collaboration", desc: "Community & Parents", href: "/about/collaboration" },
               { title: "Our Vision", desc: "Philosophy & Mission", href: "/about/vision" },

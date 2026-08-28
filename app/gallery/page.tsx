@@ -33,30 +33,34 @@ type GalleryItem = {
 const items: GalleryItem[] = [
   { src: "/images/campus/campus-wide-view.jpeg", title: "Main campus view", category: "Campus", span: "wide", alt: "Baramohanpur High School main campus" },
   { src: "/images/campus/main-school-building.jpeg", title: "School building", category: "Campus", span: "tall", alt: "School building exterior" },
+  { src: "/images/campus/school-entrance.jpeg", title: "Campus entrance", category: "Campus", span: "md", alt: "Baramohanpur High School entrance" },
   { src: "/images/campus/school-ground.jpeg", title: "Campus grounds", category: "Campus", span: "md", alt: "School campus grounds" },
+  { src: "/images/campus/school-greatimage-poster.jpeg", title: "Heritage & 150 Years", category: "Campus", span: "tall", alt: "School heritage poster" },
 
   { src: "/images/banners/home-hero-classroom.jpeg", title: "Inside our classrooms", category: "Classrooms", span: "lg", alt: "Baramohanpur High School classroom" },
+  { src: "/images/classrooms/science-laboratory.jpeg", title: "Science Laboratory", category: "Classrooms", span: "tall", alt: "Science lab at Baramohanpur High School" },
   { src: "/images/banners/home-hero-students.png", title: "Learning together", category: "Classrooms", span: "md", alt: "Students learning together" },
-  { src: "/images/events/academic/educational-events.png", title: "Academic activities", category: "Classrooms", span: "md", alt: "School academic activities" },
-  { src: "/images/campus/campus-wide-view.jpeg", title: "School life", category: "Classrooms", span: "sm", alt: "Baramohanpur High School campus" },
+  { src: "/images/events/academic/educational-events.png", title: "Academic exhibitions", category: "Classrooms", span: "md", alt: "School academic activities" },
 
-  { src: "/images/students/student-group.jpeg", title: "Student voices", category: "Students", span: "lg", alt: "Students at Baramohanpur High School" },
-  { src: "/images/students/student-group.jpeg", title: "Everyday campus life", category: "Students", span: "tall", alt: "Students on campus" },
-  { src: "/images/events/academic/educational-events.png", title: "Gathering & assembly", category: "Students", span: "md", alt: "School student event" },
+  { src: "/images/students/student-group.jpeg", title: "Student community", category: "Students", span: "lg", alt: "Students at Baramohanpur High School" },
+  { src: "/images/events/academic/commuity.jpeg", title: "Gathering & community", category: "Students", span: "tall", alt: "School student gathering" },
 
-  { src: "/images/events/cultural/cultural-programme.png", title: "Cultural programmes", category: "Cultural", span: "wide", alt: "School cultural programme" },
-  { src: "/images/events/cultural/cultural-audience.png", title: "Cultural audience", category: "Cultural", span: "tall", alt: "Audience at a school cultural programme" },
+  { src: "/images/events/cultural/cultural-programme.png", title: "Annual Cultural Programme", category: "Cultural", span: "wide", alt: "School cultural programme" },
+  { src: "/images/events/cultural/cultural-audience.png", title: "Audience & Celebration", category: "Cultural", span: "tall", alt: "Audience at a school cultural programme" },
+  { src: "/images/events/cultural/music-performance.png", title: "Music & Stage Recitals", category: "Cultural", span: "md", alt: "Music performance at school" },
 
-  { src: "/images/events/sports/sports-day.png", title: "Sports Day", category: "Sports", span: "wide", alt: "Annual sports meet" },
+  { src: "/images/events/sports/sports-day.png", title: "Annual Sports Meet", category: "Sports", span: "wide", alt: "Annual sports meet" },
   { src: "/images/campus/school-ground.jpeg", title: "On the field", category: "Sports", span: "sm", alt: "School sports ground" },
 
-  { src: "/images/branding/school-achievements.jpeg", title: "Student activities", category: "Achievements", span: "lg", alt: "Student achievements" },
-  { src: "/images/events/academic/educational-events.png", title: "School activities", category: "Achievements", span: "sm", alt: "School achievement event" },
+  { src: "/images/branding/school-achievements.jpeg", title: "Honours & Trophies", category: "Achievements", span: "lg", alt: "Student achievements" },
+  { src: "/images/history/our school-pride.jpeg", title: "School Pride & Awards", category: "Achievements", span: "tall", alt: "School pride and awards" },
 
-  { src: "/images/teachers/leadership/principal.jpeg", title: "The Headmaster", category: "Teachers", span: "tall", alt: "Headmaster of Baramohanpur High School" },
-  { src: "/images/teachers/teaching/bina-das.jpeg", title: "Teaching staff", category: "Teachers", span: "md", alt: "School teacher" },
+  { src: "/images/teachers/leadership/principal.jpeg", title: "Headmaster Sanjoy Modak", category: "Teachers", span: "tall", alt: "Headmaster of Baramohanpur High School" },
+  { src: "/images/teachers/teaching/bina-das.jpeg", title: "Bina Das (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Bina Das" },
+  { src: "/images/teachers/teaching/gautam-makur.jpeg", title: "Gautam Makur (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Gautam Makur" },
+  { src: "/images/teachers/teaching/falguni-misra-nanda.jpeg", title: "Falguni Misra Nanda (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Falguni Misra Nanda" },
 
-  { src: "/images/branding/school-logo.png.jpeg", title: "School emblem", category: "Campus", span: "sm", alt: "BHS school logo" },
+  { src: "/images/branding/school-logo.png.jpeg", title: "School Emblem", category: "Campus", span: "sm", alt: "BHS school logo" },
 ];
 
 const categories: Category[] = [
@@ -102,7 +106,7 @@ export default function GalleryPage() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-black/42" />
+        <div aria-hidden="true" className="hero-scrim absolute inset-0" />
         <div className="relative w-full section-pad">
           <div className="page-shell !py-0 relative z-10">
             <motion.div

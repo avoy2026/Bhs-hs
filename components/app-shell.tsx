@@ -47,16 +47,29 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  // Section reveal observer with viewport check and fallback guarantee
   useEffect(() => {
     if (showPreloader) return;
 
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    if (reduceMotion) return;
+    if (reduceMotion) {
+      document.querySelectorAll(".will-reveal").forEach((el) => {
+        el.classList.add("is-revealed");
+      });
+      return;
+    }
 
     let observer: IntersectionObserver | null = null;
-    const timer = window.setTimeout(() => {
+    let fallbackTimer: number | null = null;
+
+    const setupTimer = window.setTimeout(() => {
       const targets = [
         ...document.querySelectorAll("main > *"),
         ...document.querySelectorAll("footer"),
@@ -71,17 +84,31 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             }
           });
         },
-        { threshold: 0.1, rootMargin: "0px 0px -6% 0px" },
+        { threshold: 0.05, rootMargin: "0px 0px 50px 0px" },
       );
 
       targets.forEach((el) => {
-        el.classList.add("will-reveal");
-        observer?.observe(el);
+        const rect = el.getBoundingClientRect();
+        // If element is already in viewport, reveal immediately
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add("is-revealed");
+        } else {
+          el.classList.add("will-reveal");
+          observer?.observe(el);
+        }
       });
-    }, 50);
+
+      // Failsafe: Guarantee all sections become visible within 500ms
+      fallbackTimer = window.setTimeout(() => {
+        targets.forEach((el) => {
+          el.classList.add("is-revealed");
+        });
+      }, 500);
+    }, 60);
 
     return () => {
-      window.clearTimeout(timer);
+      window.clearTimeout(setupTimer);
+      if (fallbackTimer) window.clearTimeout(fallbackTimer);
       observer?.disconnect();
     };
   }, [pathname, showPreloader]);
@@ -94,18 +121,15 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         )}
       </AnimatePresence>
       <Navbar />
-      <AnimatePresence mode="sync">
-        <motion.div
-          key={pathname}
-          className="flex-1"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: showPreloader ? 0 : 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.18, ease: "easeOut" }}
-        >
-          {children}
-        </motion.div>
-      </AnimatePresence>
+      <motion.div
+        key={pathname}
+        className="flex-1"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: showPreloader ? 0 : 1 }}
+        transition={{ duration: 0.22, ease: "easeOut" }}
+      >
+        {children}
+      </motion.div>
       <SiteFooter />
       <CelebrationPopup visible={!showPreloader} />
     </>

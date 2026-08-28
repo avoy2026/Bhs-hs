@@ -121,8 +121,8 @@ export const Cards = ({
         "Curious minds, handmade models, and questions that spark — learning that steps out of the textbook.",
       skeleton: (
         <CardImage
-          src="/images/banners/home-hero-classroom.jpeg"
-          alt="Students learning in a classroom"
+          src="/images/classrooms/science-laboratory.jpeg"
+          alt="Science laboratory at Baramohanpur High School"
         />
       ),
       className: "bg-[var(--brand-gold)] [&_h2]:text-[var(--brand-ink)] [&_p]:text-[var(--brand-ink)]/80",

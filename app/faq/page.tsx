@@ -74,7 +74,7 @@ const faqs: FAQItem[] = [
   {
     category: "General",
     q: "How can parents contact the school or meet the teachers?",
-    a: "Parents may call the office, send an enquiry through the website, or visit during office hours. Parent-Teacher meetings are scheduled each term, and additional meetings with teachers or the Principal can be arranged by prior appointment when required.",
+    a: "Parents may call the office, send an enquiry through the website, or visit during office hours. Parent-Teacher meetings are scheduled each term, and additional meetings with teachers or the Headmaster can be arranged by prior appointment when required.",
   },
   {
     category: "General",

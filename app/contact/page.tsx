@@ -72,7 +72,7 @@ export default function ContactPage() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-black/42" />
+        <div aria-hidden="true" className="hero-scrim absolute inset-0" />
         <div className="relative z-10 page-shell py-20 md:py-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

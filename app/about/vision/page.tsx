@@ -99,8 +99,8 @@ export default function VisionPage() {
             </div>
             <div className="relative w-full aspect-[5/6] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/40%)]">
               <Image
-                src="/images/teachers/leadership/principal.jpeg"
-                alt="School leadership"
+                src="/images/our-vision.jpeg"
+                alt="Our Vision for Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
                 className="object-cover"
