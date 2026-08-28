@@ -87,7 +87,7 @@ export default function TimelineDemo() {
                     "bg-emerald-500",
                     "bg-blue-500",
                     "bg-amber-500",
-                    "bg-[var(--brand-gold)]",
+                    "bg-brand-gold",
                     "bg-rose-500",
                   ][idx]}`}
                 />

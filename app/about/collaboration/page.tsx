@@ -81,13 +81,13 @@ export default function CollaborationPage() {
                 "radial-gradient(ellipse 70% 50% at 50% 0%, rgb(43 75 136 / 65%), transparent 60%), radial-gradient(ellipse 50% 60% at 90% 100%, rgb(182 141 34 / 18%), transparent 55%)",
             }}
           />
-          <div className="page-shell !py-0 relative">
+          <div className="page-shell py-0! relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-[var(--brand-gold)] uppercase mb-4">
+              <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-brand-gold uppercase mb-4">
                 About · Community
               </p>
               <h1 className="font-display font-semibold text-4xl md:text-5xl tracking-tight leading-[1.05] text-white max-w-3xl">
@@ -103,7 +103,7 @@ export default function CollaborationPage() {
       </section>
 
       <section className="section-soft section-pad">
-        <div className="page-shell !py-0">
+        <div className="page-shell py-0!">
           <PageSectionHeading
             eyebrow="Together"
             title="How we work with parents & community"
@@ -128,7 +128,7 @@ export default function CollaborationPage() {
                   }`}
                 >
                   <div
-                    className={`relative aspect-[16/10] w-full overflow-hidden rounded-2xl ring-1 ring-black/5`}
+                    className={`relative aspect-16/10 w-full overflow-hidden rounded-2xl ring-1 ring-black/5`}
                   >
                     <Image
                       src={
@@ -143,25 +143,25 @@ export default function CollaborationPage() {
                       sizes="(max-width: 1024px) 100vw, 480px"
                       className="object-cover"
                     />
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/55 via-transparent to-transparent" />
+                    <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--brand-navy)/55 via-transparent to-transparent" />
                   </div>
                   <div>
-                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--brand-navy)]/10 text-[var(--brand-navy)] mb-4">
+                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-(--brand-navy)/10 text-brand-navy mb-4">
                       <Icon className="h-5 w-5" stroke={1.8} />
                     </span>
-                    <h3 className="font-display font-semibold text-2xl text-[var(--brand-navy)]">
+                    <h3 className="font-display font-semibold text-2xl text-brand-navy">
                       {p.title}
                     </h3>
-                    <p className="mt-3 text-sm md:text-base leading-relaxed text-[var(--muted-foreground)]">
+                    <p className="mt-3 text-sm md:text-base leading-relaxed text-muted-foreground">
                       {p.body}
                     </p>
                     <ul className="mt-5 grid gap-2">
                       {p.details.map((d) => (
                         <li
                           key={d}
-                          className="flex items-start gap-2.5 text-sm text-[var(--foreground)]/80"
+                          className="flex items-start gap-2.5 text-sm text-(--foreground)/80"
                         >
-                          <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--brand-gold)]" />
+                          <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-brand-gold" />
                           <span>{d}</span>
                         </li>
                       ))}
@@ -171,21 +171,21 @@ export default function CollaborationPage() {
               );
             })}
           </div>
-          <p className="mt-12 text-center text-xs text-[var(--muted-foreground)]">
+          <p className="mt-12 text-center text-xs text-muted-foreground">
             * Specific programme names and partnership details will be added once official school records are confirmed.
           </p>
         </div>
       </section>
 
       <section className="section-warm section-pad">
-        <div className="page-shell !py-0">
+        <div className="page-shell py-0!">
           <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16 items-center">
             <div>
               <span className="eyebrow block mb-3">A shared promise</span>
-              <h2 className="font-display font-semibold section-heading-title text-[var(--brand-navy)] mb-5">
+              <h2 className="font-display font-semibold section-heading-title text-brand-navy mb-5">
                 <span className="heading-underline">Want to collaborate with the school?</span>
               </h2>
-              <p className="text-sm md:text-base leading-relaxed text-[var(--muted-foreground)] max-w-xl">
+              <p className="text-sm md:text-base leading-relaxed text-muted-foreground max-w-xl">
                 Whether you are a parent with a concern, a former student wishing to visit, a
                 community member wanting to help, or someone with a question about our work —
                 please reach out. A good school conversation begins with a simple, honest message.
@@ -200,7 +200,7 @@ export default function CollaborationPage() {
                 </a>
               </div>
             </div>
-            <div className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
+            <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
                 src="/images/campus/school-ground.jpeg"
                 alt="School community gathering"
@@ -208,7 +208,7 @@ export default function CollaborationPage() {
                 sizes="(max-width: 1024px) 100vw, 520px"
                 className="object-cover"
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-ink)]/55 via-transparent to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--brand-ink)/55 via-transparent to-transparent" />
             </div>
           </div>
         </div>

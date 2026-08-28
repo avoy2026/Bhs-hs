@@ -12,13 +12,13 @@ export default function WobbleCardDemo() {
           Campus introduction
         </p>
 
-        <h2 className="mx-auto max-w-3xl text-center font-display font-semibold section-heading-title text-[var(--brand-navy)]">
+        <h2 className="mx-auto max-w-3xl text-center font-display font-semibold section-heading-title text-brand-navy">
           <span className="heading-underline">
             A campus that has grown with its village
           </span>
         </h2>
 
-        <p className="mx-auto mt-5 max-w-2xl text-center text-sm md:text-base text-[var(--muted-foreground)]">
+        <p className="mx-auto mt-5 max-w-2xl text-center text-sm md:text-base text-muted-foreground">
           A glimpse into the spaces, grounds and surroundings that make
           Baramohanpur High School feel like home.
         </p>
@@ -46,7 +46,7 @@ export default function WobbleCardDemo() {
           />
 
           {/* subtle image treatment */}
-          <div className="absolute inset-0 z-[1] bg-black/[0.03] transition-colors duration-500 group-hover:bg-black/0" />
+          <div className="absolute inset-0 z-1 bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
         </WobbleCard>
 
         {/* Classroom Image */}
@@ -67,7 +67,7 @@ export default function WobbleCardDemo() {
             }}
           />
 
-          <div className="absolute inset-0 z-[1] bg-black/[0.03] transition-colors duration-500 group-hover:bg-black/0" />
+          <div className="absolute inset-0 z-1 bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
         </WobbleCard>
 
         {/* School Ground Image */}
@@ -88,7 +88,7 @@ export default function WobbleCardDemo() {
             }}
           />
 
-          <div className="absolute inset-0 z-[1] bg-black/[0.03] transition-colors duration-500 group-hover:bg-black/0" />
+          <div className="absolute inset-0 z-1 bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
         </WobbleCard>
 
       </div>

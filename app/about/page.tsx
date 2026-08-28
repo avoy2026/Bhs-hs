@@ -47,7 +47,7 @@ export default function AboutPage() {
     <main className="overflow-x-hidden">
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
-        <div className="relative w-full h-[32rem] md:h-[42rem]">
+        <div className="relative w-full h-128 md:h-168">
           <Image
             src="/images/campus/school-ground.jpeg"
             alt="Baramohanpur High School campus"
@@ -64,7 +64,7 @@ export default function AboutPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               >
-                <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-[var(--brand-gold)] uppercase mb-4">
+                <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-brand-gold uppercase mb-4">
                   Our Story
                 </p>
                 <h1 className="font-display font-semibold text-4xl md:text-6xl tracking-tight leading-[1.05] text-white max-w-3xl">
@@ -99,7 +99,7 @@ export default function AboutPage() {
 
       {/* Our Values */}
       <section className="section-warm section-pad">
-        <div className="page-shell !py-0">
+        <div className="page-shell py-0!">
           <PageSectionHeading
             eyebrow="What we stand for"
             title="Our Values"
@@ -117,15 +117,15 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.45, delay: idx * 0.06 }}
-                  className="group relative flex h-full flex-col rounded-2xl border border-[var(--brand-navy)]/8 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md"
+                  className="group relative flex h-full flex-col rounded-2xl border border-(--brand-navy)/8 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md"
                 >
-                  <span className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--brand-navy)]/10 text-[var(--brand-navy)]">
+                  <span className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-(--brand-navy)/10 text-brand-navy">
                     <Icon className="h-5 w-5" stroke={1.8} />
                   </span>
-                  <h3 className="font-display font-semibold text-lg text-[var(--brand-navy)]">
+                  <h3 className="font-display font-semibold text-lg text-brand-navy">
                     {v.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--muted-foreground)]">
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {v.text}
                   </p>
                 </motion.div>
@@ -139,14 +139,14 @@ export default function AboutPage() {
 
       {/* Vision teaser */}
       <section className="section-blue section-pad">
-        <div className="page-shell !py-0">
+        <div className="page-shell py-0!">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16 items-center">
             <div>
               <span className="eyebrow block mb-3">Our Vision & Mission</span>
-              <h2 className="font-display font-semibold section-heading-title text-[var(--brand-navy)] mb-5">
+              <h2 className="font-display font-semibold section-heading-title text-brand-navy mb-5">
                 <span className="heading-underline">A school that looks forward, and remembers.</span>
               </h2>
-              <p className="text-sm md:text-base leading-relaxed text-[var(--muted-foreground)] max-w-xl">
+              <p className="text-sm md:text-base leading-relaxed text-muted-foreground max-w-xl">
                 We want our students to leave Baramohanpur with the marks they need, and also with the character that lasts longer than marks. We believe in the whole child — in classrooms, on grounds, in music rooms, in assemblies.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -158,7 +158,7 @@ export default function AboutPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
+            <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
                 src="/images/students/student-group.jpeg"
                 alt="Student life and vision"
@@ -166,7 +166,7 @@ export default function AboutPage() {
                 sizes="(max-width: 1024px) 100vw, 520px"
                 className="object-cover"
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/55 via-transparent to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--brand-navy)/55 via-transparent to-transparent" />
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
 
       {/* About sub-navigation cards */}
       <section className="section-soft section-pad">
-        <div className="page-shell !py-0">
+        <div className="page-shell py-0!">
           <PageSectionHeading
             eyebrow="Explore"
             title="More about the school"
@@ -193,15 +193,15 @@ export default function AboutPage() {
               <Link
                 key={c.href}
                 href={c.href}
-                className="group relative overflow-hidden rounded-2xl border border-[var(--brand-navy)]/8 bg-white p-6 transition duration-300 hover:-translate-y-0.5 hover:shadow-md hover:border-[var(--brand-navy)]/20"
+                className="group relative overflow-hidden rounded-2xl border border-(--brand-navy)/8 bg-white p-6 transition duration-300 hover:-translate-y-0.5 hover:shadow-md hover:border-(--brand-navy)/20"
               >
-                <h3 className="font-display font-semibold text-lg text-[var(--brand-navy)]">
+                <h3 className="font-display font-semibold text-lg text-brand-navy">
                   {c.title}
                 </h3>
-                <p className="mt-1 text-sm text-[var(--muted-foreground)]">
+                <p className="mt-1 text-sm text-muted-foreground">
                   {c.desc}
                 </p>
-                <span className="mt-4 inline-flex text-sm font-semibold text-[var(--brand-gold)] opacity-80 transition group-hover:opacity-100">
+                <span className="mt-4 inline-flex text-sm font-semibold text-brand-gold opacity-80 transition group-hover:opacity-100">
                   Open →
                 </span>
               </Link>

@@ -17,7 +17,7 @@ const contactDetails = [
     label: "Address",
     body: (
       <>
-        <span className="block font-medium text-[var(--brand-navy)]">
+        <span className="block font-medium text-brand-navy">
           Baramohanpur High School
         </span>
         [PLACEHOLDER — Full Address]
@@ -30,7 +30,7 @@ const contactDetails = [
     icon: IconPhone,
     label: "Phone",
     body: (
-      <a href="tel:+910000000000" className="transition hover:text-[var(--brand-navy)]">
+      <a href="tel:+910000000000" className="transition hover:text-brand-navy">
         +91 [PLACEHOLDER — PHONE]
       </a>
     ),
@@ -41,7 +41,7 @@ const contactDetails = [
     body: (
       <a
         href="mailto:[PLACEHOLDER — EMAIL]"
-        className="transition hover:text-[var(--brand-navy)]"
+        className="transition hover:text-brand-navy"
       >
         [PLACEHOLDER — EMAIL]
       </a>
@@ -52,9 +52,9 @@ const contactDetails = [
     label: "Office hours",
     body: (
       <>
-        <span className="font-medium text-[var(--brand-navy)]">Mon – Sat</span> · 10:00 AM – 4:00 PM
+        <span className="font-medium text-brand-navy">Mon – Sat</span> · 10:00 AM – 4:00 PM
         <br />
-        <span className="text-[var(--muted-foreground)]">Closed on Sundays &amp; holidays</span>
+        <span className="text-muted-foreground">Closed on Sundays &amp; holidays</span>
       </>
     ),
   },
@@ -80,12 +80,12 @@ export default function ContactPage() {
             transition={{ duration: 0.55 }}
             className="max-w-3xl"
           >
-            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-gold)] uppercase">
+            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-brand-gold uppercase">
               Contact Us
             </p>
             <h1 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
               The office is{" "}
-              <span className="text-[var(--brand-gold)]">open</span> to you
+              <span className="text-brand-gold">open</span> to you
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
               Come in person, write to us, or send an enquiry. Admissions,
@@ -93,7 +93,7 @@ export default function ContactPage() {
             </p>
             <Link
               href="#enquiry"
-              className="mt-8 inline-flex items-center justify-center rounded-md bg-[var(--brand-gold)] px-5 py-2.5 text-sm font-bold text-[var(--brand-ink)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#d4af37]"
+              className="mt-8 inline-flex items-center justify-center rounded-md bg-brand-gold px-5 py-2.5 text-sm font-bold text-brand-ink transition duration-200 hover:-translate-y-0.5 hover:bg-[#d4af37]"
             >
               Go to enquiry form →
             </Link>
@@ -109,10 +109,10 @@ export default function ContactPage() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5 }}
           >
-            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-navy)]/60 uppercase">
+            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-(--brand-navy)/60 uppercase">
               Reach us
             </p>
-            <h2 className="text-2xl font-semibold text-[var(--brand-navy)] md:text-3xl">
+            <h2 className="text-2xl font-semibold text-brand-navy md:text-3xl">
               School office details
             </h2>
           </motion.div>
@@ -127,13 +127,13 @@ export default function ContactPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.45, delay: index * 0.08 }}
-                  className="border-t border-[var(--brand-navy)]/15 pt-5"
+                  className="border-t border-(--brand-navy)/15 pt-5"
                 >
-                  <Icon className="mb-3 h-5 w-5 text-[var(--brand-gold)]" />
-                  <p className="text-xs font-semibold tracking-[0.15em] text-[var(--brand-navy)]/50 uppercase">
+                  <Icon className="mb-3 h-5 w-5 text-brand-gold" />
+                  <p className="text-xs font-semibold tracking-[0.15em] text-(--brand-navy)/50 uppercase">
                     {item.label}
                   </p>
-                  <div className="mt-2 text-sm leading-relaxed text-[var(--foreground)]">
+                  <div className="mt-2 text-sm leading-relaxed text-foreground">
                     {item.body}
                   </div>
                 </motion.div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section-soft border-t border-[var(--border)]">
+      <section className="section-soft border-t border-border">
         <div className="page-shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <motion.div
             initial={{ opacity: 0, x: -12 }}
@@ -152,19 +152,19 @@ export default function ContactPage() {
             transition={{ duration: 0.5 }}
             className="lg:sticky lg:top-28"
           >
-            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-[var(--brand-navy)]/60 uppercase">
+            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-(--brand-navy)/60 uppercase">
               Prefer a focused form?
             </p>
-            <h2 className="text-2xl font-semibold text-[var(--brand-navy)] md:text-3xl">
+            <h2 className="text-2xl font-semibold text-brand-navy md:text-3xl">
               Start with an admission enquiry
             </h2>
-            <p className="mt-4 max-w-md text-[var(--muted-foreground)]">
+            <p className="mt-4 max-w-md text-muted-foreground">
               Looking to join Baramohanpur High School? Use the enquiry form
               here, or open the dedicated enquiry page.
             </p>
             <Link
               href="/enquiry"
-              className="mt-6 inline-flex text-sm font-semibold text-[var(--brand-navy)] underline-offset-4 hover:underline"
+              className="mt-6 inline-flex text-sm font-semibold text-brand-navy underline-offset-4 hover:underline"
             >
               Open Enquire Now page →
             </Link>
@@ -173,7 +173,7 @@ export default function ContactPage() {
           <EnquiryForm
             title="Send us a message"
             description="Share your details and we will respond from the school office."
-            className="rounded-2xl border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_50px_-30px_rgb(27_42_74/35%)] md:p-8"
+            className="rounded-2xl border border-border bg-white/90 p-6 shadow-[0_20px_50px_-30px_rgb(27_42_74/35%)] md:p-8"
           />
         </div>
       </section>

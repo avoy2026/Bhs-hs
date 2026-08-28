@@ -101,7 +101,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: showPreloader ? 0 : 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.18, ease: "easeOut" }}
         >
           {children}
         </motion.div>

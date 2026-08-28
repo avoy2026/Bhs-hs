@@ -43,7 +43,7 @@ const data = [
           this historic celebration.
         </p>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
-          <span className="font-semibold text-[var(--brand-navy)]">
+          <span className="font-semibold text-brand-navy">
             150 years of light. 150 years of pride. 150 years of Baramohanpur High School.
           </span>
         </p>
@@ -244,7 +244,7 @@ export default function TimelinePage() {
   return (
     <main className="overflow-x-hidden">
       <section className="relative isolate overflow-hidden">
-        <div className="relative w-full h-[28rem] md:h-[36rem]">
+        <div className="relative w-full h-112 md:h-144">
           <Image
             src="/images/campus/main-school-building.jpeg"
             alt="Baramohanpur High School history"
@@ -256,7 +256,7 @@ export default function TimelinePage() {
           <div className="hero-scrim absolute inset-0" />
           <div className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-20 px-4 md:px-8">
             <div className="mx-auto w-full max-w-5xl">
-              <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-[var(--brand-gold)] uppercase mb-4">
+              <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-brand-gold uppercase mb-4">
                 About · History
               </p>
               <h1 className="font-display font-semibold text-4xl md:text-5xl tracking-tight leading-[1.05] text-white max-w-3xl">
@@ -272,7 +272,7 @@ export default function TimelinePage() {
       </section>
 
       <section className="section-soft py-16 md:py-20">
-        <div className="page-shell !py-0 mb-12">
+        <div className="page-shell py-0! mb-12">
           <PageSectionHeading
             eyebrow="Milestones"
             title="School History & Heritage"
@@ -283,8 +283,8 @@ export default function TimelinePage() {
         <div className="relative w-full overflow-clip">
           <Timeline data={data} />
         </div>
-        <div className="page-shell !py-0 mt-16">
-          <p className="text-center text-xs text-[var(--muted-foreground)]">
+        <div className="page-shell py-0! mt-16">
+          <p className="text-center text-xs text-muted-foreground">
             * Dates and exact historical records are to be verified from official school documents.
           </p>
         </div>

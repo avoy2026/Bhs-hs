@@ -17,17 +17,10 @@ export default function Preloader({ onComplete }: PreloaderProps) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    /*
-     * Slower, more elegant timing.
-     * Each phrase remains visible long enough to actually be read.
-     */
     const wordTimer = window.setInterval(() => {
       setWordIndex((prev) => (prev + 1) % welcomeWords.length);
-    }, 1600);
+    }, 650);
 
-    /*
-     * Slower cosmetic progress animation.
-     */
     const progressTimer = window.setInterval(() => {
       setProgress((prev) => {
         if (prev < 96) {
@@ -35,15 +28,11 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         }
         return prev;
       });
-    }, 150);
+    }, 80);
 
-    /*
-     * Give the complete welcome sequence enough time
-     * before the preloader exits.
-     */
     const timer = window.setTimeout(() => {
       onComplete?.();
-    }, 3500);
+    }, 1400);
 
     return () => {
       window.clearTimeout(timer);
@@ -61,7 +50,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         opacity: 1,
       }}
       transition={{
-        duration: 1.1,
+        duration: 0.45,
         ease: [0.76, 0, 0.24, 1],
       }}
     >
