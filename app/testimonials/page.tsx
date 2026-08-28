@@ -22,7 +22,7 @@ const testimonials: Testimonial[] = [
     category: "student",
     quote:
       "I learned that discipline is not fear. It is showing up prepared, greeting a teacher, and finishing the work you promised yourself you would finish. That habit has changed me.",
-    image: "/images/students/student-group.jpeg",
+    image: "/images/testimonials/students/student-2.jpg",
     highlight: true,
   },
   {
@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     category: "student",
     quote:
       "At first I was afraid to raise my hand in English class. But when I finally did, my teacher did not laugh — she said 'very well said' and asked me to say it again. That day mattered.",
-    image: "/images/students/student-group.jpeg",
+    image: "/images/testimonials/students/student-1.jpg",
   },
   {
     name: "[STUDENT NAME 3]",
@@ -124,7 +124,7 @@ const testimonials: Testimonial[] = [
     category: "alumni",
     quote:
       "Years later I still remember the assembly ground. Baramohanpur gave me friends, a voice, and the habit of trying once more when things do not work out the first time.",
-    image: "/images/campus/school-ground.jpeg",
+    image: "/images/testimonials/alumni/alumni-1.jpg",
     highlight: true,
   },
   {

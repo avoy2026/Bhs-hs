@@ -82,53 +82,39 @@ export const ImagesSlider = ({
 
   const slideVariants = {
     initial: {
-      scale: 1.15,
+      scale: 1.04,
       opacity: 0,
-      rotateX: 45,
     },
     visible: {
       scale: 1,
-      rotateX: 0,
       opacity: 1,
       transition: {
-        duration: 0.7,
-        ease: [0.645, 0.045, 0.355, 1.0] as const,
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1] as const,
       },
     },
     upExit: {
-      opacity: 0.6,
-      y: "-150%",
-      scale: 1.08,
+      opacity: 0,
+      scale: 1.02,
       transition: {
-        duration: 1.1,
+        duration: 0.8,
       },
     },
     downExit: {
-      opacity: 0.6,
-      y: "150%",
-      scale: 1.08,
+      opacity: 0,
+      scale: 1.02,
       transition: {
-        duration: 1.1,
+        duration: 0.8,
       },
     },
   };
 
   const kenBurnsVariants = {
     animate: {
-      scale: [1, 1.12],
-      x: [0, -10],
-      y: [0, -6],
+      scale: [1, 1.03],
       transition: {
         scale: {
-          duration: 6.5,
-          ease: "easeInOut" as const,
-        },
-        x: {
-          duration: 6.5,
-          ease: "easeInOut" as const,
-        },
-        y: {
-          duration: 6.5,
+          duration: 7,
           ease: "easeInOut" as const,
         },
       },
@@ -150,7 +136,7 @@ export const ImagesSlider = ({
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && (
         <div
-          className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)}
+          className={cn("absolute inset-0 z-40 pointer-events-none", overlayClassName)}
         />
       )}
 
@@ -167,7 +153,7 @@ export const ImagesSlider = ({
               animate={["visible", "animate"]}
               exit={direction === "up" ? "upExit" : "downExit"}
               variants={{ ...slideVariants, ...kenBurnsVariants }}
-              className="image h-full w-full absolute inset-0 object-cover object-center"
+              className="image h-full w-full absolute inset-0 object-cover object-[center_35%]"
               alt="School campus"
             />
           </motion.div>

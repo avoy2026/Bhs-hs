@@ -73,7 +73,7 @@ export default function TabsDemo() {
             Uniform, meetings, fees, and the small rules that keep a large
             family in order. If it matters to campus life, it appears here.
           </p>
-          <DummyContent src="/images/branding/school-logo.png.jpeg" />
+          <DummyContent src="/images/students/student-group.jpeg" />
         </div>
       ),
     },

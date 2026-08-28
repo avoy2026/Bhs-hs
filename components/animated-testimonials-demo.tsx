@@ -15,7 +15,7 @@ export default function AnimatedTestimonialsDemo() {
         "I learned that discipline is not fear. It is showing up prepared, greeting a teacher, and finishing the work you promised yourself.",
       name: "Arjun Dey",
       designation: "Class X, Head Boy",
-      src: "/images/students/student-group.jpeg",
+      src: "/images/testimonials/students/student-2.jpg",
     },
     {
       quote:
@@ -29,7 +29,7 @@ export default function AnimatedTestimonialsDemo() {
         "Years later I still remember the assembly ground. Baramohanpur gave me friends, a voice, and the habit of trying once more when things do not work out the first time.",
       name: "Priya Ghosh",
       designation: "Alumna",
-      src: "/images/campus/school-ground.jpeg",
+      src: "/images/testimonials/alumni/alumni-1.jpg",
     },
     {
       quote:

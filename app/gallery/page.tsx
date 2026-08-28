@@ -60,7 +60,7 @@ const items: GalleryItem[] = [
   { src: "/images/teachers/teaching/gautam-makur.jpeg", title: "Gautam Makur (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Gautam Makur" },
   { src: "/images/teachers/teaching/falguni-misra-nanda.jpeg", title: "Falguni Misra Nanda (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Falguni Misra Nanda" },
 
-  { src: "/images/branding/school-logo.png.jpeg", title: "School Emblem", category: "Campus", span: "sm", alt: "BHS school logo" },
+  { src: "/images/history/3-statue.jpeg", title: "Heritage Memorial Statues", category: "Campus", span: "md", alt: "Heritage memorial statues at Baramohanpur High School" },
 ];
 
 const categories: Category[] = [

@@ -56,14 +56,14 @@ export default function EventsPage() {
     <main className="overflow-x-hidden bg-white">
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
-        <div className="relative w-full h-[28rem] md:h-[38rem]">
+        <div className="relative w-full h-[24rem] sm:h-[28rem] md:h-[34rem] lg:h-[38rem]">
           <Image
             src="/images/events/academic/educational-events.png"
             alt="School events and celebrations at Baramohanpur High School"
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-[center_35%]"
           />
           <div className="hero-scrim absolute inset-0" />
           <div className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-4 md:px-8">

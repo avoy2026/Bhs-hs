@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
-const welcomeWords = [
-  "Welcome to",
-  "Baramohanpur High School",
+const narrativeSteps = [
+  { word: "Knowledge", subtext: "জ্ঞান · The Light of Learning" },
+  { word: "Character", subtext: "চরিত্র · Discipline & Integrity" },
+  { word: "Community", subtext: "সমাজ · A 150-Year Heritage" },
+  { word: "Baramohanpur High School", subtext: "Estd. 1878 · Shaping Young Minds" },
 ];
 
 type PreloaderProps = {
@@ -13,306 +15,213 @@ type PreloaderProps = {
 };
 
 export default function Preloader({ onComplete }: PreloaderProps) {
-  const [wordIndex, setWordIndex] = useState(0);
+  const [stepIndex, setStepIndex] = useState(0);
+  const [yearCount, setYearCount] = useState(1878);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const wordTimer = window.setInterval(() => {
-      setWordIndex((prev) => (prev + 1) % welcomeWords.length);
-    }, 650);
-
-    const progressTimer = window.setInterval(() => {
-      setProgress((prev) => {
-        if (prev < 96) {
-          return Math.min(prev + Math.random() * 5, 96);
+    // Step progression (Knowledge -> Character -> Community -> School Name)
+    const stepInterval = window.setInterval(() => {
+      setStepIndex((prev) => {
+        if (prev < narrativeSteps.length - 1) {
+          return prev + 1;
         }
         return prev;
       });
-    }, 80);
+    }, 550);
 
-    const timer = window.setTimeout(() => {
+    // Dynamic Year Milestone Counter (1878 -> 2028)
+    const startYear = 1878;
+    const targetYear = 2028;
+    const totalDuration = 2200; // ms
+    const startTime = performance.now();
+
+    const animateCounter = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progressFraction = Math.min(elapsed / totalDuration, 1);
+      
+      // Easing out cubic
+      const eased = 1 - Math.pow(1 - progressFraction, 3);
+      const currentYear = Math.round(startYear + (targetYear - startYear) * eased);
+      const currentPct = Math.round(progressFraction * 100);
+
+      setYearCount(currentYear);
+      setProgress(currentPct);
+
+      if (progressFraction < 1) {
+        requestAnimationFrame(animateCounter);
+      }
+    };
+
+    const animFrame = requestAnimationFrame(animateCounter);
+
+    // Complete timer
+    const completeTimer = window.setTimeout(() => {
       onComplete?.();
-    }, 1400);
+    }, 2400);
 
     return () => {
-      window.clearTimeout(timer);
-      window.clearInterval(wordTimer);
-      window.clearInterval(progressTimer);
+      window.clearInterval(stepInterval);
+      window.clearTimeout(completeTimer);
+      cancelAnimationFrame(animFrame);
     };
   }, [onComplete]);
 
   return (
     <motion.div
-      className="fixed inset-0 z-[200] flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(255,255,255,1),_rgba(248,240,213,0.92)_38%,_rgba(244,236,220,0.96)_100%)]"
+      className="fixed inset-0 z-[200] flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-[radial-gradient(ellipse_at_center,_#162a4d_0%,_#0d192f_50%,_#091222_100%)] text-white"
       initial={{ opacity: 1, y: 0 }}
       exit={{
         y: "-100%",
         opacity: 1,
       }}
       transition={{
-        duration: 0.45,
+        duration: 0.65,
         ease: [0.76, 0, 0.24, 1],
       }}
     >
-      {/* Ambient floating particles */}
+      {/* Floating golden stardust embers */}
       <div className="pointer-events-none absolute inset-0">
-        {Array.from({ length: 14 }).map((_, i) => (
+        {Array.from({ length: 18 }).map((_, i) => (
           <motion.span
             key={i}
-            className="absolute h-1.5 w-1.5 rounded-full bg-[var(--brand-gold)]/30"
+            className="absolute rounded-full bg-[var(--brand-gold)]"
             style={{
-              left: `${(i * 37) % 100}%`,
-              top: `${(i * 53) % 100}%`,
+              width: i % 3 === 0 ? "3px" : "2px",
+              height: i % 3 === 0 ? "3px" : "2px",
+              left: `${(i * 29 + 13) % 100}%`,
+              top: `${(i * 41 + 17) % 100}%`,
             }}
             initial={{
               opacity: 0,
               y: 0,
-              scale: 0.7,
             }}
             animate={{
-              opacity: [0, 0.45, 0],
-              y: [-10, -40],
-              scale: [0.7, 1, 0.7],
+              opacity: [0, 0.65, 0],
+              y: [-10, -50],
+              scale: [0.8, 1.2, 0.8],
             }}
             transition={{
-              duration: 4 + (i % 4),
+              duration: 3.5 + (i % 4),
               repeat: Infinity,
-              delay: i * 0.25,
+              delay: i * 0.18,
               ease: "easeInOut",
             }}
           />
         ))}
       </div>
 
-      {/* Soft background glow */}
+      {/* Central Ambient Golden Spotlight */}
       <motion.div
-        className="pointer-events-none absolute h-[420px] w-[420px] rounded-full bg-[var(--brand-gold)]/10 blur-3xl"
-        initial={{
-          opacity: 0,
-          scale: 0.75,
-        }}
-        animate={{
-          opacity: [0.2, 0.35, 0.2],
-          scale: [0.9, 1.08, 0.9],
-        }}
-        transition={{
-          duration: 4.5,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
+        className="pointer-events-none absolute h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,_rgba(201,162,39,0.18)_0%,_transparent_70%)] blur-3xl"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: [0.4, 0.7, 0.4], scale: [0.95, 1.08, 0.95] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* Logo with rotating glow ring */}
+      {/* Heritage Badge */}
       <motion.div
-        className="relative mb-7 flex h-24 w-24 items-center justify-center md:h-32 md:w-32"
-        initial={{
-          opacity: 0,
-          scale: 0.75,
-          y: 12,
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.9,
-          ease: [0.22, 1, 0.36, 1],
-        }}
+        initial={{ opacity: 0, y: -12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--brand-gold)]/35 bg-[var(--brand-gold)]/10 px-4 py-1.5 text-[0.68rem] font-semibold tracking-[0.28em] text-[var(--brand-gold)] uppercase backdrop-blur-md"
       >
-        {/* Rotating gold ring */}
+        <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-gold)] animate-pulse" />
+        ESTD. 1878 · 150 YEARS OF EXCELLENCE
+      </motion.div>
+
+      {/* Central Emblem with Dual Concentric Gold Rings */}
+      <motion.div
+        className="relative mb-8 flex h-28 w-28 items-center justify-center md:h-36 md:w-36"
+        initial={{ opacity: 0, scale: 0.75 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      >
+        {/* Outer Rotating Dashed Gold Ring */}
+        <motion.div
+          className="absolute inset-[-8px] rounded-full border border-dashed border-[var(--brand-gold)]/40"
+          animate={{ rotate: 360 }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+        />
+
+        {/* Inner Conic Glow Ring */}
         <motion.div
           className="absolute inset-0 rounded-full"
           style={{
             background:
-              "conic-gradient(from 0deg, var(--brand-gold), transparent 30%, transparent 70%, var(--brand-gold))",
+              "conic-gradient(from 0deg, var(--brand-gold), transparent 35%, transparent 65%, var(--brand-gold))",
           }}
-          animate={{
-            rotate: 360,
-          }}
-          transition={{
-            duration: 4.5,
-            repeat: Infinity,
-            ease: "linear",
-          }}
+          animate={{ rotate: -360 }}
+          transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
         />
 
-        {/* Inner background */}
-        <motion.div
-          className="absolute inset-[3px] rounded-full bg-[#faf3e0]"
-          animate={{
-            scale: [1, 1.015, 1],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
+        {/* Inner Backdrop */}
+        <div className="absolute inset-[3px] rounded-full bg-[#0d192f] ring-1 ring-[var(--brand-gold)]/30" />
 
-        {/* School logo */}
+        {/* School Logo */}
         <motion.img
-          src="/images/branding/school-logo.png.jpeg"
-          alt="Baramohanpur High School"
-          className="relative h-[88%] w-[88%] rounded-full object-cover shadow-[0_12px_35px_rgba(201,162,39,0.25)]"
-          animate={{
-            scale: [1, 1.025, 1],
-          }}
-          transition={{
-            duration: 3.2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-
-        {/* Soft pulsing halo */}
-        <motion.div
-          className="absolute inset-0 rounded-full bg-[var(--brand-gold)]/15 blur-xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.35, 0.12, 0.35],
-          }}
-          transition={{
-            duration: 3.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          src="/images/branding/school-logo.png"
+          alt="Baramohanpur High School Crest"
+          className="relative h-[86%] w-[86%] rounded-full object-cover shadow-[0_15px_35px_rgba(201,162,39,0.35)] ring-1 ring-white/10"
+          animate={{ scale: [1, 1.03, 1] }}
+          transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
         />
       </motion.div>
 
-      {/* School Name */}
-      <motion.p
-        className="mb-8 text-center text-[0.65rem] font-semibold uppercase tracking-[0.38em] text-[var(--brand-gold)] md:text-sm"
-        initial={{
-          opacity: 0,
-          y: 8,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.8,
-          delay: 0.45,
-          ease: "easeOut",
-        }}
-      >
-        Baramohanpur High School
-      </motion.p>
-
-      {/* Main Welcome Text */}
-      <div className="flex min-h-[110px] items-center justify-center overflow-hidden px-4 md:min-h-[140px]">
+      {/* Narrative Words Reveal (Knowledge -> Character -> Community -> Baramohanpur High School) */}
+      <div className="flex min-h-[90px] flex-col items-center justify-center px-4 text-center md:min-h-[110px]">
         <AnimatePresence mode="wait">
-          <motion.h1
-            key={welcomeWords[wordIndex]}
-            className="relative max-w-[95vw] text-center text-4xl font-black leading-tight tracking-tight text-[var(--brand-navy)] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
-            initial={{
-              opacity: 0,
-              y: 28,
-              scale: 0.96,
-              filter: "blur(6px)",
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              filter: "blur(0px)",
-            }}
-            exit={{
-              opacity: 0,
-              y: -24,
-              scale: 1.015,
-              filter: "blur(4px)",
-            }}
-            transition={{
-              duration: 0.7,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+          <motion.div
+            key={narrativeSteps[stepIndex].word}
+            initial={{ opacity: 0, y: 16, filter: "blur(4px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            exit={{ opacity: 0, y: -14, filter: "blur(3px)" }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            className="flex flex-col items-center"
           >
-            {welcomeWords[wordIndex]}
-
-            {/* Gentle shimmer */}
-            <motion.span
-              className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-white/45 to-transparent"
-              style={{
-                mixBlendMode: "overlay",
-              }}
-              initial={{
-                x: "-130%",
-              }}
-              animate={{
-                x: "130%",
-              }}
-              transition={{
-                duration: 1.8,
-                delay: 0.5,
-                ease: "easeInOut",
-              }}
-            />
-          </motion.h1>
+            <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-white">
+              {stepIndex === narrativeSteps.length - 1 ? (
+                <span className="bg-gradient-to-r from-white via-[#fef0c7] to-[var(--brand-gold)] bg-clip-text text-transparent">
+                  {narrativeSteps[stepIndex].word}
+                </span>
+              ) : (
+                <span className="text-white/95">
+                  {narrativeSteps[stepIndex].word}
+                </span>
+              )}
+            </h1>
+            <p className="mt-2 text-xs md:text-sm font-medium tracking-wide text-[var(--brand-gold)]/90">
+              {narrativeSteps[stepIndex].subtext}
+            </p>
+          </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* Gold divider */}
+      {/* Bottom Milestone Ticker & Progress Bar */}
       <motion.div
-        className="mt-8 h-px w-20 bg-gradient-to-r from-transparent via-[var(--brand-gold)] to-transparent"
-        initial={{
-          scaleX: 0,
-          opacity: 0,
-        }}
-        animate={{
-          scaleX: 1,
-          opacity: 1,
-        }}
-        transition={{
-          duration: 1,
-          delay: 0.6,
-          ease: [0.22, 1, 0.36, 1],
-        }}
-      />
-
-      {/* Progress bar + percentage */}
-      <motion.div
-        className="mt-5 flex w-40 flex-col items-center gap-2 md:w-52"
-        initial={{
-          opacity: 0,
-          y: 8,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.7,
-          delay: 0.8,
-        }}
+        className="mt-8 flex flex-col items-center gap-2.5 w-64 md:w-80"
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.35 }}
       >
-        <div className="h-[3px] w-full overflow-hidden rounded-full bg-[var(--brand-navy)]/10">
-          <motion.div
-            className="h-full rounded-full bg-[var(--brand-gold)]"
-            animate={{
-              width: `${Math.min(progress, 100)}%`,
-            }}
-            transition={{
-              duration: 0.3,
-              ease: "easeOut",
-            }}
-          />
+        {/* Years & Progress Label */}
+        <div className="flex w-full items-center justify-between text-xs font-semibold tracking-wider text-white/70">
+          <span className="text-[var(--brand-gold)] font-mono">
+            Year {yearCount}
+          </span>
+          <span className="font-mono text-white/60">
+            {progress}%
+          </span>
         </div>
 
-        <motion.span
-          className="text-[0.65rem] font-medium tracking-widest text-[var(--brand-navy)]/50"
-          animate={{
-            opacity: [0.5, 0.75, 0.5],
-          }}
-          transition={{
-            duration: 2.2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          {Math.min(Math.round(progress), 99)}%
-        </motion.span>
+        {/* Progress Track */}
+        <div className="h-[3px] w-full overflow-hidden rounded-full bg-white/10">
+          <motion.div
+            className="h-full rounded-full bg-gradient-to-r from-[var(--brand-gold)] to-[#fde68a]"
+            style={{ width: `${progress}%` }}
+            transition={{ duration: 0.1, ease: "linear" }}
+          />
+        </div>
       </motion.div>
     </motion.div>
   );

@@ -11,7 +11,9 @@ const campusImages = [
   "/images/banners/home-hero-classroom.jpeg",
   "/images/events/academic/educational-events.png",
   "/images/campus/school-ground.jpeg",
-  "/images/branding/school-logo.png.jpeg",
+  "/images/events/cultural/cultural-programme.png",
+  "/images/events/sports/sports-day.png",
+  "/images/campus/main-school-building.jpeg",
 ];
 
 export const products = [

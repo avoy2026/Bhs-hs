@@ -44,13 +44,13 @@ function AnimatedWords({
 
 export default function ImagesSliderDemo() {
   const images = [
-    "/images/banners/home-hero-campus.jpeg",
-    "/images/banners/home-hero-classroom.jpeg",
-    "/images/banners/home-hero-students.png",
+    "/images/home/hero-campus.jpeg",
+    "/images/home/hero-classroom.jpeg",
+    "/images/home/hero-students.png",
   ];
   return (
     <ImagesSlider
-      className="h-[42rem] md:h-[46rem]"
+      className="min-h-[480px] h-[78vh] max-h-[720px] md:h-[82vh]"
       images={images}
       overlayClassName="hero-scrim"
     >
