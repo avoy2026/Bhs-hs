@@ -18,21 +18,21 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
   useEffect(() => {
     const wordTimer = window.setInterval(() => {
-      setWordIndex((prev) => (prev + 1) % welcomeWords.length);
-    }, 650);
+      setWordIndex((prev) => Math.min(prev + 1, welcomeWords.length - 1));
+    }, 1500);
 
     const progressTimer = window.setInterval(() => {
       setProgress((prev) => {
         if (prev < 96) {
-          return Math.min(prev + Math.random() * 5, 96);
+          return Math.min(prev + Math.random() * 3.5, 96);
         }
         return prev;
       });
-    }, 80);
+    }, 100);
 
     const timer = window.setTimeout(() => {
       onComplete?.();
-    }, 1400);
+    }, 3800);
 
     return () => {
       window.clearTimeout(timer);

@@ -28,6 +28,7 @@ type Teacher = {
   image?: string;
   email?: string;
   social?: SocialLinks;
+  emoji?: string;
   category: "leadership" | "teacher" | "non-teaching";
 };
 
@@ -38,203 +39,203 @@ const teachers: Teacher[] = [
     subject: "M.A. (English), B.Ed.",
     image: "/images/teachers/leadership/principal.jpeg",
     category: "leadership",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Lokesh Mishra",
     designation: "Teacher",
     subject: "B.Sc. (Hons) (Chemistry), B.Ed.",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
+    emoji: "👨‍🔬",
   },
-
   {
     name: "Joydeb Bhunia",
     designation: "Teacher",
     subject: "M.Sc. (Geography), B.Ed.",
-    image: "/images/teachers/teaching/joydeb-bhunia.jpeg",
+    image: "/images/teachers/joydeb-bhunia.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Debasis Ray",
     designation: "Teacher",
     subject: "B.Sc. (Hons.) (Physics), B.Ed.",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
+    emoji: "👨‍🏫",
   },
-
   {
     name: "Bina Das",
     designation: "Teacher",
     subject: "B.A. (English), M.A. (Political Science), B.Ed.",
-    image: "/images/teachers/teaching/bina-das.jpeg",
+    image: "/images/teachers/bina-das.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Manoj Mahapatra",
     designation: "Teacher",
     subject: "M.A. (Economics), B.Ed.",
-    image: "/images/teachers/teaching/manoj-mahapatra.jpeg",
+    image: "/images/teachers/manoj-mahapatra.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Falguni Misra Nanda",
     designation: "Teacher",
     subject: "M.A. (English), B.Ed.",
-    image: "/images/teachers/teaching/falguni-misra-nanda.jpeg",
+    image: "/images/teachers/falguni-misra-nanda.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Binod Behari Murmu",
     designation: "Teacher",
     subject: "B.A., B.P.Ed.",
+    image: "/images/teachers/binod -bihari-murmu.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Mahua Maity",
     designation: "Teacher",
     subject: "M.Sc. (Physiology), Lady Brabourne Trained, B.Ed.",
-    image: "/images/teachers/teaching/mahua-maity.jpeg",
+    image: "/images/teachers/mahua-maity.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Niranjan Kumar Baram",
     designation: "Teacher",
     subject: "M.A. (Philosophy), B.Ed.",
-    image: "/images/teachers/teaching/niranjan-kumar-baram.jpeg",
+    image: "/images/teachers/niranjan-kumar-baram.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Gitesh Biswas",
     designation: "Teacher",
     subject: "M.A. (Political Science)",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
+    emoji: "👨‍🏫",
   },
-
   {
     name: "Kedar Dhal",
     designation: "Teacher",
     subject: "M.Sc. (Mathematics), B.Ed.",
-    image: "/images/teachers/teaching/kedar-dhal.jpeg",
+    image: "/images/teachers/kedar-dhal.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Aranyamoy Bar",
     designation: "Teacher",
     subject: "B.A. (Honours) (Bengali), B.P.Ed.",
-    image: "/images/teachers/teaching/aranyamoy-bar.jpeg",
+    image: "/images/teachers/aranyamoy-bar.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Swapnasree Das",
     designation: "Teacher",
     subject: "B.Sc. (Honours) (Nutrition)",
-    image: "/images/teachers/teaching/swapnasree-das.jpeg",
+    image: "/images/teachers/swapnasree-das.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Asis Dandapat",
     designation: "Teacher",
     subject: "M.A. (English), B.Ed.",
-    image: "/images/teachers/teaching/asis-dandapat.jpeg",
+    image: "/images/teachers/asis-dandapat.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
-
   {
     name: "Khukumoni Mandal Barman",
     designation: "Teacher",
     subject: "M.A. (Bengali), B.Ed.",
-    image: "/images/teachers/teaching/khukumoni-mandal-barman.jpeg",
+    image: "/images/teachers/khukumoni-mandal-barman.jpeg",
     category: "teacher",
-    social: {
-      facebook: "",
-      instagram: "",
-      linkedin: "",
-    },
   },
+  {
+    name: "Ajoy Kumar Mahapatra",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/ajoy-kumar-mahapatra.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Anupam Mandal",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/anupam-mandal.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Gautam Makur",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/gautam-makur.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Jayanta Kumar Patra",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/jayanta-kumar-patra.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Koushik Giri",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/koushik-giri.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Mahaseta Tripati",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/mahaseta-tripati.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Manas Kumar Dey",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/manas-kumar-dey.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Miss Oampa Shit",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/miss-oampa-shit.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Surojit Dingal",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/surojit-dingal.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Uttam Saho",
+    designation: "Teacher",
+    subject: "Teacher",
+    image: "/images/teachers/uttam-saho.jpeg",
+    category: "teacher",
+  },
+  {
+    name: "Office Staff",
+    designation: "Clerk",
+    subject: "Administration",
+    category: "non-teaching",
+    emoji: "👨‍💻",
+  },
+  {
+    name: "Library Assistant",
+    designation: "Librarian",
+    subject: "Library",
+    category: "non-teaching",
+    emoji: "📚",
+  },
+  {
+    name: "Support Staff",
+    designation: "Group D",
+    subject: "Maintenance",
+    category: "non-teaching",
+    emoji: "🛠️",
+  }
 ];
 
 /*
@@ -333,18 +334,23 @@ function TeacherCard({
                 ? "(max-width: 1024px) 100vw, 45vw"
                 : "(max-width: 768px) 100vw, 33vw"
             }
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            className={`transition-transform duration-700 ease-out group-hover:scale-105 ${isPrincipal ? "object-contain object-top" : "object-cover object-top"}`}
           />
         ) : (
           <div className="relative flex h-full items-center justify-center bg-brand-mist">
-            <Image
-              src="/images/branding/school-logo.png.jpeg"
-              alt="Baramohanpur High School emblem"
-              fill
-              className="object-contain p-16 opacity-20"
-            />
-
-            <IconUser className="relative z-10 h-12 w-12 text-(--brand-navy)/25" />
+            {t.emoji ? (
+              <span className="text-7xl">{t.emoji}</span>
+            ) : (
+              <>
+                <Image
+                  src="/images/branding/school-logo.png.jpeg"
+                  alt="Baramohanpur High School emblem"
+                  fill
+                  className="object-contain p-16 opacity-20"
+                />
+                <IconUser className="relative z-10 h-12 w-12 text-(--brand-navy)/25" />
+              </>
+            )}
           </div>
         )}
 
