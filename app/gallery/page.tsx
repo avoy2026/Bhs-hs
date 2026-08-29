@@ -107,26 +107,7 @@ export default function GalleryPage() {
           className="object-cover object-center"
         />
         <div aria-hidden="true" className="hero-scrim absolute inset-0" />
-        <div className="relative w-full section-pad">
-          <div className="page-shell !py-0 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-[var(--brand-gold)] uppercase mb-4">
-                Explore · Visual Story
-              </p>
-              <h1 className="font-display font-semibold text-4xl md:text-6xl tracking-tight leading-[1.05] text-white max-w-4xl">
-                <span className="heading-underline-stroke">School Gallery</span>
-              </h1>
-              <p className="mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-white/75">
-                The classrooms, the grounds, the assemblies, the sports day, and the
-                faces that make Baramohanpur High School feel like home.
-              </p>
-            </motion.div>
-          </div>
-        </div>
+        <div className="relative w-full h-64 md:h-80 lg:h-96" />
       </section>
 
             {/* Scrollable visual story */}

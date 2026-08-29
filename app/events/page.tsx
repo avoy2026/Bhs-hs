@@ -66,26 +66,7 @@ export default function EventsPage() {
             className="object-cover object-[center_35%]"
           />
           <div className="hero-scrim absolute inset-0" />
-          <div className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-4 md:px-8">
-            <div className="mx-auto w-full max-w-5xl">
-              <motion.div
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-[var(--brand-gold)] uppercase mb-4">
-                  School Life
-                </p>
-                <h1 className="font-display font-semibold text-4xl md:text-6xl tracking-tight leading-[1.05] text-white max-w-3xl">
-                  <span className="heading-underline-stroke">School Events</span>
-                </h1>
-                <p className="mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-white/80">
-                  Moments that become memories — the lights, the cheers, the rehearsals,
-                  the speeches, and every student who has ever stood on a Baramohanpur stage.
-                </p>
-              </motion.div>
-            </div>
-          </div>
+          {/* Banner image only — no text overlay */}
         </div>
       </section>
 

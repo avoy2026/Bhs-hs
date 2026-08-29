@@ -470,7 +470,7 @@ export default function TeamPage() {
           HERO / BACKGROUND BANNER
       ================================================================= */}
 
-      <section className="relative isolate min-h-130 overflow-hidden bg-brand-navy md:min-h-145">
+      <section className="relative isolate h-64 overflow-hidden bg-brand-navy md:h-80 lg:h-96">
 
         {/* Background image */}
         <Image
@@ -483,89 +483,10 @@ export default function TeamPage() {
         />
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-(--brand-navy)/75" />
+        <div className="absolute inset-0 bg-(--brand-navy)/60" />
 
         {/* Gradient */}
-        <div className="absolute inset-0 bg-linear-to-b from-(--brand-navy)/30 via-(--brand-navy)/65 to-brand-navy" />
-
-        {/* Decorative glow */}
-        <div
-          aria-hidden
-          className="absolute -right-40 top-20 h-125 w-125 rounded-full bg-(--brand-gold)/10 blur-3xl"
-        />
-
-        <div className="relative z-10 flex min-h-130 items-end md:min-h-145">
-          <div className="page-shell w-full py-0! pb-16 md:pb-20">
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              className="max-w-3xl"
-            >
-              <p className="mb-5 text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-brand-gold md:text-xs">
-                About · Our Team
-              </p>
-
-              <h1 className="font-display text-5xl font-semibold leading-[0.95] tracking-tight text-white md:text-6xl lg:text-7xl">
-                The people
-                <br />
-                behind the
-                <br />
-                <span className="text-brand-gold">
-                  journey.
-                </span>
-              </h1>
-
-              <p className="mt-7 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
-                The teachers and staff of Baramohanpur High School
-                are at the heart of every lesson, every achievement and
-                every generation that passes through our gates.
-              </p>
-            </motion.div>
-
-            {/* Bottom stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.7,
-                delay: 0.35,
-              }}
-              className="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/15 pt-6"
-            >
-              <div>
-                <p className="text-2xl font-semibold text-white">
-                  {teachers.length}
-                </p>
-                <p className="mt-1 text-[0.65rem] uppercase tracking-[0.18em] text-white/50">
-                  Profiles
-                </p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-semibold text-white">
-                  3
-                </p>
-                <p className="mt-1 text-[0.65rem] uppercase tracking-[0.18em] text-white/50">
-                  Staff Areas
-                </p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-semibold text-white">
-                  1878
-                </p>
-                <p className="mt-1 text-[0.65rem] uppercase tracking-[0.18em] text-white/50">
-                  Established
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
+        <div className="absolute inset-0 bg-linear-to-b from-(--brand-navy)/20 via-transparent to-(--brand-navy)/70" />
       </section>
 
       {/* ================================================================

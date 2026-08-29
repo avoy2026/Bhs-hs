@@ -244,7 +244,7 @@ export default function TimelinePage() {
   return (
     <main className="overflow-x-hidden">
       <section className="relative isolate overflow-hidden">
-        <div className="relative w-full h-112 md:h-144">
+        <div className="relative w-full h-52 md:h-72">
           <Image
             src="/images/campus/main-school-building.jpeg"
             alt="Baramohanpur High School history"
@@ -254,20 +254,7 @@ export default function TimelinePage() {
             className="object-cover"
           />
           <div className="hero-scrim absolute inset-0" />
-          <div className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-20 px-4 md:px-8">
-            <div className="mx-auto w-full max-w-5xl">
-              <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-brand-gold uppercase mb-4">
-                About · History
-              </p>
-              <h1 className="font-display font-semibold text-4xl md:text-5xl tracking-tight leading-[1.05] text-white max-w-3xl">
-                <span className="heading-underline-stroke">Timeline</span>
-              </h1>
-              <p className="mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-white/80">
-                The chapters of Baramohanpur High School — from a small village school to the trusted
-                institution it is today.
-              </p>
-            </div>
-          </div>
+          {/* Banner image only — no text overlay */}
         </div>
       </section>
 

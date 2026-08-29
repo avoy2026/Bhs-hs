@@ -73,32 +73,7 @@ export default function ContactPage() {
           className="object-cover object-center"
         />
         <div aria-hidden="true" className="hero-scrim absolute inset-0" />
-        <div className="relative z-10 page-shell py-20 md:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.55 }}
-            className="max-w-3xl"
-          >
-            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-brand-gold uppercase">
-              Contact Us
-            </p>
-            <h1 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              The office is{" "}
-              <span className="text-brand-gold">open</span> to you
-            </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-              Come in person, write to us, or send an enquiry. Admissions,
-              certificates, and everyday questions all begin at the same desk.
-            </p>
-            <Link
-              href="#enquiry"
-              className="mt-8 inline-flex items-center justify-center rounded-md bg-brand-gold px-5 py-2.5 text-sm font-bold text-brand-ink transition duration-200 hover:-translate-y-0.5 hover:bg-[#d4af37]"
-            >
-              Go to enquiry form →
-            </Link>
-          </motion.div>
-        </div>
+        <div className="relative z-10 w-full h-52 md:h-72 lg:h-80" />
       </section>
 
       <section className="section-light">

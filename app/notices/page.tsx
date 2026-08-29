@@ -32,27 +32,8 @@ export default function NoticesPage() {
           className="object-cover object-center"
         />
         <div aria-hidden="true" className="hero-scrim absolute inset-0" />
-
-        <div className="page-shell relative z-10 py-20 text-center md:py-28">
-          <MotionReveal
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.55 }}
-            className="max-w-3xl mx-auto"
-          >
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-[0.7rem] font-semibold tracking-[0.18em] text-[var(--brand-gold)] uppercase backdrop-blur">
-              <IconBell className="h-3.5 w-3.5" />
-              UPDATES &amp; CIRCULARS
-            </p>
-            <h1 className="font-display font-semibold text-4xl tracking-tight leading-[1.05] md:text-6xl text-white max-w-3xl mx-auto">
-              <span className="heading-underline-stroke">School Notices</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
-              Admissions, examinations, holidays, results and everyday reminders —
-              everything the school shares with students and parents lives here.
-            </p>
-          </MotionReveal>
-        </div>
+        {/* Banner image only — no text overlay */}
+        <div className="relative z-10 w-full h-64 md:h-80 lg:h-96" />
       </section>
 
       {/* Quick meta strip */}
