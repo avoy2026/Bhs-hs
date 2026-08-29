@@ -48,10 +48,10 @@ const data = [
           </span>
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <TimelineImg src="/images/campus/school-entrance.jpeg" alt="School entrance" />
-          <TimelineImg src="/images/events/academic/educational-events.png" alt="Student activities" />
-          <TimelineImg src="/images/events/sports/sports-day.png" alt="Sports and celebrations" />
-          <TimelineImg src="/images/campus/school-greatimage-poster.jpeg" alt="150 years celebration" />
+          <TimelineImg src="/images/02-HOMEPAGE/campus/campus-2.png" alt="School entrance" />
+          <TimelineImg src="/images/02-HOMEPAGE/values/support.png" alt="Student activities" />
+          <TimelineImg src="/images/07-GALLERY/sports/sports.png" alt="Sports and celebrations" />
+          <TimelineImg src="/images/03-ABOUT/overview/about-hero.jpeg" alt="150 years celebration" />
         </div>
       </div>
     ),
@@ -73,10 +73,10 @@ const data = [
           remained closed for more than a decade, was reopened in 2026.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
-          <GridImg src="/images/classrooms/science-laboratory.jpeg" alt="Science laboratory" />
-          <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
-          <GridImg src="/images/branding/school-achievements.jpeg" alt="Academic achievements" />
+          <GridImg src="/images/03-ABOUT/staff/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
+          <GridImg src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg" alt="Science laboratory" />
+          <GridImg src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg" alt="Classroom learning" />
+          <GridImg src="/images/01-BRANDING/school-achievements.jpeg" alt="Academic achievements" />
         </div>
       </div>
     ),
@@ -99,10 +99,10 @@ const data = [
           a source of pride and inspiration for the school community.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/history/shi-hemanchandra-kanuga.jpeg" alt="Shri Hemchandra Kanungo" />
-          <GridImg src="/images/history/our school-pride.jpeg" alt="School pride" />
-          <GridImg src="/images/events/cultural/cultural-programme.png" alt="Cultural programmes" />
-          <GridImg src="/images/events/sports/sports-day.png" alt="Sports activities" />
+          <GridImg src="/images/01-BRANDING/school-logo.png" alt="Shri Hemchandra Kanungo" />
+          <GridImg src="/images/03-ABOUT/vision/our-vision.jpeg" alt="School pride" />
+          <GridImg src="/images/02-HOMEPAGE/carousel/c-3.png" alt="Cultural programmes" />
+          <GridImg src="/images/07-GALLERY/sports/sports.png" alt="Sports activities" />
         </div>
       </div>
     ),
@@ -123,10 +123,10 @@ const data = [
           symbol of community spirit and a lasting temple of learning.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <TimelineImg src="/images/history/iswar-chandra.jpeg" alt="Pandit Ishwar Chandra Vidyasagar" />
-          <TimelineImg src="/images/history/3-statue.jpeg" alt="Statues of founders and luminaries" />
-          <TimelineImg src="/images/campus/main-school-building.jpeg" alt="Main school building" />
-          <TimelineImg src="/images/branding/school-logo.png.jpeg" alt="School emblem" />
+          <TimelineImg src="/images/01-BRANDING/school-logo.png" alt="Pandit Ishwar Chandra Vidyasagar" />
+          <TimelineImg src="/images/01-BRANDING/school-logo.png" alt="Statues of founders and luminaries" />
+          <TimelineImg src="/images/02-HOMEPAGE/campus/campus-3.png" alt="Main school building" />
+          <TimelineImg src="/images/01-BRANDING/school-logo.png" alt="School emblem" />
         </div>
       </div>
     ),
@@ -246,7 +246,7 @@ export default function TimelinePage() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-52 md:h-72">
           <Image
-            src="/images/campus/main-school-building.jpeg"
+            src="/images/02-HOMEPAGE/campus/campus-3.png"
             alt="Baramohanpur High School history"
             fill
             priority

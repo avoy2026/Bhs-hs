@@ -33,7 +33,7 @@ export default function AcademicsPage() {
           </div>
           <div className="relative aspect-5/4 overflow-hidden rounded-3xl ring-1 ring-white/10">
             <Image
-              src="/images/banners/home-hero-classroom.jpeg"
+              src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg"
               alt="Students learning in a Baramohanpur High School classroom"
               fill
               priority

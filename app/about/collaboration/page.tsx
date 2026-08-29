@@ -133,11 +133,11 @@ export default function CollaborationPage() {
                     <Image
                       src={
                         [
-                          "/images/testimonials/parents/parents.jpeg",
-                          "/images/events/academic/commuity.jpeg",
-                          "/images/campus/campus-wide-view.jpeg",
-                          "/images/classrooms/science-laboratory.jpeg",
-                          "/images/events/cultural/cultural-programme.png",
+                          "/images/02-HOMEPAGE/testimonials/parent-1.jpeg",
+                          "/images/02-HOMEPAGE/values/values.png",
+                          "/images/02-HOMEPAGE/testimonials/alumni-1.jpeg",
+                          "/images/05-ACADEMICS/classrooms/classroom-main.jpeg",
+                          "/images/02-HOMEPAGE/carousel/cursoal-1.jpeg",
                         ][idx % 5]
                       }
                       alt={p.title}
@@ -204,7 +204,7 @@ export default function CollaborationPage() {
             </div>
             <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/campus/school-ground.jpeg"
+                src="/images/02-HOMEPAGE/campus/campus-2.png"
                 alt="School community gathering"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"

@@ -49,7 +49,7 @@ export default function AboutPage() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-[24rem] sm:h-[28rem] md:h-[34rem] lg:h-[38rem]">
           <Image
-            src="/images/about/campus-ground.jpeg"
+            src="/images/03-ABOUT/overview/about-hero.jpeg"
             alt="Baramohanpur High School campus"
             fill
             priority
@@ -66,7 +66,7 @@ export default function AboutPage() {
         eyebrow="Established in 1878"
         title="Our Story"
         body="Baramohanpur High School was established in 1878 under the inspiration of Pandit Ishwar Chandra Vidyasagar and through the initiative of the educationist Shri Nityananda Dey. Families from the surrounding villages contributed land, money, labour and blessings to make the school a reality. For 150 years, this shared effort has helped generations of students find the light of knowledge and carry the name of Baramohanpur into the world."
-        image="/images/campus/main-school-building.jpeg"
+        image="/images/02-HOMEPAGE/campus/campus-3.png"
         imageAlt="Baramohanpur High School building"
         href="/about/timeline"
         hrefLabel="Read the school timeline"
@@ -141,7 +141,7 @@ export default function AboutPage() {
             </div>
             <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/students/student-group.jpeg"
+                src="/images/03-ABOUT/vision/our-vision.jpeg"
                 alt="Student life and vision"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"

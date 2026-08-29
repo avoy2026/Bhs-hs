@@ -58,7 +58,7 @@ export default function EventsPage() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-[24rem] sm:h-[28rem] md:h-[34rem] lg:h-[38rem]">
           <Image
-            src="/images/events/academic/educational-events.png"
+            src="/images/06-EVENTS/academic/educational-events.png"
             alt="School events and celebrations at Baramohanpur High School"
             fill
             priority
@@ -125,7 +125,7 @@ export default function EventsPage() {
               className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]"
             >
               <Image
-                src="/images/events/cultural/cultural-programme.png"
+                src="/images/06-EVENTS/cultural/cultural-programme.png"
                 alt="Cultural programmes at Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -200,7 +200,7 @@ export default function EventsPage() {
               className="order-1 lg:order-2 relative w-full aspect-[4/3] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]"
             >
               <Image
-                src="/images/events/sports/sports-day.png"
+                src="/images/06-EVENTS/sports/sports-day.png"
                 alt="Sports day at Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -216,7 +216,7 @@ export default function EventsPage() {
       <section className="relative isolate overflow-hidden">
         <div className="relative w-full h-[28rem] md:h-[36rem]">
           <Image
-            src="/images/branding/school-achievements.jpeg"
+            src="/images/01-BRANDING/school-achievements.jpeg"
             alt="Student achievements and honours"
             fill
             sizes="100vw"

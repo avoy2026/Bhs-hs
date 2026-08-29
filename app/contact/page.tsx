@@ -65,7 +65,7 @@ export default function ContactPage() {
     <main className="overflow-x-hidden">
       <section className="relative section-navy overflow-hidden">
         <Image
-          src="/images/banners/contact-banner.png"
+          src="/images/08-CONTACT-FAQ/faq/faq-banner.png"
           alt="Baramohanpur High School contact office"
           fill
           priority

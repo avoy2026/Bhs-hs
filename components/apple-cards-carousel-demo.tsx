@@ -63,12 +63,12 @@ const data = [
   {
     category: "Campus",
     title: "Mornings that begin with assembly.",
-    src: "/images/apple-card/campus.jpeg",
+    src: "/images/02-HOMEPAGE/carousel/cursoal-1.jpeg",
     content: (
       <Story
         lead="The bell still means something here."
         body="Students gather, the flag is raised, and a new school day starts with order, song, and a shared sense of belonging."
-        image="/images/apple-card/campus.jpeg"
+        image="/images/02-HOMEPAGE/carousel/cursoal-1.jpeg"
         alt="Campus morning"
       />
     ),
@@ -76,12 +76,12 @@ const data = [
   {
     category: "Classrooms",
     title: "Lessons that stay with you.",
-    src: "/images/apple-card/classroom.jpeg",
+    src: "/images/02-HOMEPAGE/carousel/c-2.png",
     content: (
       <Story
         lead="Teaching at Baramohanpur is patient work."
         body="From first letters to board exams, our teachers walk beside every learner — explaining again, encouraging often, and expecting the best."
-        image="/images/apple-card/classroom.jpeg"
+        image="/images/02-HOMEPAGE/carousel/c-2.png"
         alt="Classroom learning"
       />
     ),
@@ -89,12 +89,12 @@ const data = [
   {
     category: "Student Life",
     title: "Friends, houses, and house pride.",
-    src: "/images/apple-card/student-life.jpeg",
+    src: "/images/02-HOMEPAGE/carousel/c-3.png",
     content: (
       <Story
         lead="School is more than a timetable."
         body="It is the walk between classes, the house cheer on sports day, and the quiet confidence of a student who finally understands."
-        image="/images/apple-card/student-life.jpeg"
+        image="/images/02-HOMEPAGE/carousel/c-3.png"
         alt="Student life"
       />
     ),
@@ -102,12 +102,12 @@ const data = [
   {
     category: "Education & Growth",
     title: "Learning that shapes the mind.",
-    src: "/images/apple-card/education-poster.jpeg",
+    src: "/images/02-HOMEPAGE/values/support.png",
     content: (
       <Story
         lead="Every lesson builds character."
         body="Academic study, cultural education, and practical knowledge develop responsible, capable young minds ready for the world."
-        image="/images/apple-card/education-poster.jpeg"
+        image="/images/02-HOMEPAGE/values/support.png"
         alt="Education and growth"
       />
     ),
@@ -115,12 +115,12 @@ const data = [
   {
     category: "Community",
     title: "Parents, teachers, one family.",
-    src: "/images/apple-card/community.jpeg",
+    src: "/images/02-HOMEPAGE/values/value-3.png",
     content: (
       <Story
         lead="A school thrives when families stand with it."
         body="Meetings, notices, and open doors keep guardians close to classroom life — because a child's progress is a shared journey."
-        image="/images/apple-card/community.jpeg"
+        image="/images/02-HOMEPAGE/values/value-3.png"
         alt="Community and family"
       />
     ),
@@ -128,12 +128,12 @@ const data = [
   {
     category: "Values",
     title: "Knowledge, character, community.",
-    src: "/images/apple-card/values.jpeg",
+    src: "/images/02-HOMEPAGE/values/values.png",
     content: (
       <Story
         lead="We measure success in more than marks."
         body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground — that is the Baramohanpur way."
-        image="/images/apple-card/values.jpeg"
+        image="/images/02-HOMEPAGE/values/values.png"
         alt="School values"
       />
     ),

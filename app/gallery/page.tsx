@@ -31,36 +31,36 @@ type GalleryItem = {
 };
 
 const items: GalleryItem[] = [
-  { src: "/images/campus/campus-wide-view.jpeg", title: "Main campus view", category: "Campus", span: "wide", alt: "Baramohanpur High School main campus" },
-  { src: "/images/campus/main-school-building.jpeg", title: "School building", category: "Campus", span: "tall", alt: "School building exterior" },
-  { src: "/images/campus/school-entrance.jpeg", title: "Campus entrance", category: "Campus", span: "md", alt: "Baramohanpur High School entrance" },
-  { src: "/images/campus/school-ground.jpeg", title: "Campus grounds", category: "Campus", span: "md", alt: "School campus grounds" },
-  { src: "/images/campus/school-greatimage-poster.jpeg", title: "Heritage & 150 Years", category: "Campus", span: "tall", alt: "School heritage poster" },
+  { src: "/images/07-GALLERY/campus/campus-wide.png", title: "Main campus view", category: "Campus", span: "wide", alt: "Baramohanpur High School main campus" },
+  { src: "/images/03-ABOUT/heritage/heritage-building.png", title: "School building", category: "Campus", span: "tall", alt: "School building exterior" },
+  { src: "/images/03-ABOUT/timeline/school-entrance.png", title: "Campus entrance", category: "Campus", span: "md", alt: "Baramohanpur High School entrance" },
+  { src: "/images/07-GALLERY/campus/school-ground.png", title: "Campus grounds", category: "Campus", span: "md", alt: "School campus grounds" },
+  { src: "/images/03-ABOUT/overview/about-hero.jpeg", title: "Heritage & 150 Years", category: "Campus", span: "tall", alt: "School heritage poster" },
 
-  { src: "/images/banners/home-hero-classroom.jpeg", title: "Inside our classrooms", category: "Classrooms", span: "lg", alt: "Baramohanpur High School classroom" },
-  { src: "/images/classrooms/science-laboratory.jpeg", title: "Science Laboratory", category: "Classrooms", span: "tall", alt: "Science lab at Baramohanpur High School" },
-  { src: "/images/banners/home-hero-students.png", title: "Learning together", category: "Classrooms", span: "md", alt: "Students learning together" },
-  { src: "/images/events/academic/educational-events.png", title: "Academic exhibitions", category: "Classrooms", span: "md", alt: "School academic activities" },
+  { src: "/images/07-GALLERY/classrooms/class-1.jpeg", title: "Inside our classrooms", category: "Classrooms", span: "lg", alt: "Baramohanpur High School classroom" },
+  { src: "/images/05-ACADEMICS/laboratories/science-lab.jpeg", title: "Science Laboratory", category: "Classrooms", span: "tall", alt: "Science lab at Baramohanpur High School" },
+  { src: "/images/07-GALLERY/classrooms/class-2.png", title: "Learning together", category: "Classrooms", span: "md", alt: "Students learning together" },
+  { src: "/images/06-EVENTS/academic/educational-events.png", title: "Academic exhibitions", category: "Classrooms", span: "md", alt: "School academic activities" },
 
-  { src: "/images/students/student-group.jpeg", title: "Student community", category: "Students", span: "lg", alt: "Students at Baramohanpur High School" },
-  { src: "/images/events/academic/commuity.jpeg", title: "Gathering & community", category: "Students", span: "tall", alt: "School student gathering" },
+  { src: "/images/07-GALLERY/students/student-1.jpeg", title: "Student community", category: "Students", span: "lg", alt: "Students at Baramohanpur High School" },
+  { src: "/images/03-ABOUT/collaboration/community-gathering.png", title: "Gathering & community", category: "Students", span: "tall", alt: "School student gathering" },
 
-  { src: "/images/events/cultural/cultural-programme.png", title: "Annual Cultural Programme", category: "Cultural", span: "wide", alt: "School cultural programme" },
-  { src: "/images/events/cultural/cultural-audience.png", title: "Audience & Celebration", category: "Cultural", span: "tall", alt: "Audience at a school cultural programme" },
-  { src: "/images/events/cultural/music-performance.png", title: "Music & Stage Recitals", category: "Cultural", span: "md", alt: "Music performance at school" },
+  { src: "/images/06-EVENTS/cultural/cultural-programme.png", title: "Annual Cultural Programme", category: "Cultural", span: "wide", alt: "School cultural programme" },
+  { src: "/images/06-EVENTS/cultural/cultural-programme.png", title: "Audience & Celebration", category: "Cultural", span: "tall", alt: "Audience at a school cultural programme" },
+  { src: "/images/06-EVENTS/cultural/cultural-programme.png", title: "Music & Stage Recitals", category: "Cultural", span: "md", alt: "Music performance at school" },
 
-  { src: "/images/events/sports/sports-day.png", title: "Annual Sports Meet", category: "Sports", span: "wide", alt: "Annual sports meet" },
-  { src: "/images/campus/school-ground.jpeg", title: "On the field", category: "Sports", span: "sm", alt: "School sports ground" },
+  { src: "/images/06-EVENTS/sports/sports-day.png", title: "Annual Sports Meet", category: "Sports", span: "wide", alt: "Annual sports meet" },
+  { src: "/images/07-GALLERY/campus/school-ground.png", title: "On the field", category: "Sports", span: "sm", alt: "School sports ground" },
 
-  { src: "/images/branding/school-achievements.jpeg", title: "Honours & Trophies", category: "Achievements", span: "lg", alt: "Student achievements" },
-  { src: "/images/history/our school-pride.jpeg", title: "School Pride & Awards", category: "Achievements", span: "tall", alt: "School pride and awards" },
+  { src: "/images/01-BRANDING/school-achievements.jpeg", title: "Honours & Trophies", category: "Achievements", span: "lg", alt: "Student achievements" },
+  { src: "/images/03-ABOUT/vision/our-vision.jpeg", title: "School Pride & Awards", category: "Achievements", span: "tall", alt: "School pride and awards" },
 
-  { src: "/images/teachers/leadership/principal.jpeg", title: "Headmaster Sanjoy Modak", category: "Teachers", span: "tall", alt: "Headmaster of Baramohanpur High School" },
-  { src: "/images/teachers/teaching/bina-das.jpeg", title: "Bina Das (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Bina Das" },
-  { src: "/images/teachers/teaching/gautam-makur.jpeg", title: "Gautam Makur (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Gautam Makur" },
-  { src: "/images/teachers/teaching/falguni-misra-nanda.jpeg", title: "Falguni Misra Nanda (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Falguni Misra Nanda" },
+  { src: "/images/07-GALLERY/teachers/principal.jpeg", title: "Headmaster Sanjoy Modak", category: "Teachers", span: "tall", alt: "Headmaster of Baramohanpur High School" },
+  { src: "/images/03-ABOUT/staff/teachers/bina-das.jpeg", title: "Bina Das (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Bina Das" },
+  { src: "/images/03-ABOUT/staff/teachers/gautam-makur.jpeg", title: "Gautam Makur (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Gautam Makur" },
+  { src: "/images/03-ABOUT/staff/teachers/falguni-misra-nanda.jpeg", title: "Falguni Misra Nanda (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Falguni Misra Nanda" },
 
-  { src: "/images/history/3-statue.jpeg", title: "Heritage Memorial Statues", category: "Campus", span: "md", alt: "Heritage memorial statues at Baramohanpur High School" },
+  { src: "/images/01-BRANDING/school-logo.png", title: "Heritage Memorial Statues", category: "Campus", span: "md", alt: "Heritage memorial statues at Baramohanpur High School" },
 ];
 
 const categories: Category[] = [
@@ -99,7 +99,7 @@ export default function GalleryPage() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden section-navy">
         <Image
-          src="/images/banners/gallery-banner.png"
+          src="/images/07-GALLERY/campus/campus-wide.png"
           alt="Baramohanpur High School campus gallery"
           fill
           priority

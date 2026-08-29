@@ -37,7 +37,7 @@ const teachers: Teacher[] = [
     name: "Sanjoy Modak",
     designation: "Headmaster",
     subject: "M.A. (English), B.Ed.",
-    image: "/images/teachers/leadership/principal.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/leadership/principal.jpeg",
     category: "leadership",
   },
   {
@@ -51,7 +51,7 @@ const teachers: Teacher[] = [
     name: "Joydeb Bhunia",
     designation: "Teacher",
     subject: "M.Sc. (Geography), B.Ed.",
-    image: "/images/teachers/joydeb-bhunia.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/joydeb-bhunia.jpeg",
     category: "teacher",
   },
   {
@@ -65,42 +65,42 @@ const teachers: Teacher[] = [
     name: "Bina Das",
     designation: "Teacher",
     subject: "B.A. (English), M.A. (Political Science), B.Ed.",
-    image: "/images/teachers/bina-das.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/bina-das.jpeg",
     category: "teacher",
   },
   {
     name: "Manoj Mahapatra",
     designation: "Teacher",
     subject: "M.A. (Economics), B.Ed.",
-    image: "/images/teachers/manoj-mahapatra.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/manoj-mahapatra.jpeg",
     category: "teacher",
   },
   {
     name: "Falguni Misra Nanda",
     designation: "Teacher",
     subject: "M.A. (English), B.Ed.",
-    image: "/images/teachers/falguni-misra-nanda.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/falguni-misra-nanda.jpeg",
     category: "teacher",
   },
   {
     name: "Binod Behari Murmu",
     designation: "Teacher",
     subject: "B.A., B.P.Ed.",
-    image: "/images/teachers/binod -bihari-murmu.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/binod -bihari-murmu.jpeg",
     category: "teacher",
   },
   {
     name: "Mahua Maity",
     designation: "Teacher",
     subject: "M.Sc. (Physiology), Lady Brabourne Trained, B.Ed.",
-    image: "/images/teachers/mahua-maity.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/mahua-maity.jpeg",
     category: "teacher",
   },
   {
     name: "Niranjan Kumar Baram",
     designation: "Teacher",
     subject: "M.A. (Philosophy), B.Ed.",
-    image: "/images/teachers/niranjan-kumar-baram.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/niranjan-kumar-baram.jpeg",
     category: "teacher",
   },
   {
@@ -114,105 +114,105 @@ const teachers: Teacher[] = [
     name: "Kedar Dhal",
     designation: "Teacher",
     subject: "M.Sc. (Mathematics), B.Ed.",
-    image: "/images/teachers/kedar-dhal.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/kedar-dhal.jpeg",
     category: "teacher",
   },
   {
     name: "Aranyamoy Bar",
     designation: "Teacher",
     subject: "B.A. (Honours) (Bengali), B.P.Ed.",
-    image: "/images/teachers/aranyamoy-bar.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/aranyamoy-bar.jpeg",
     category: "teacher",
   },
   {
     name: "Swapnasree Das",
     designation: "Teacher",
     subject: "B.Sc. (Honours) (Nutrition)",
-    image: "/images/teachers/swapnasree-das.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/swapnasree-das.jpeg",
     category: "teacher",
   },
   {
     name: "Asis Dandapat",
     designation: "Teacher",
     subject: "M.A. (English), B.Ed.",
-    image: "/images/teachers/asis-dandapat.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/asis-dandapat.jpeg",
     category: "teacher",
   },
   {
     name: "Khukumoni Mandal Barman",
     designation: "Teacher",
     subject: "M.A. (Bengali), B.Ed.",
-    image: "/images/teachers/khukumoni-mandal-barman.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/khukumoni-mandal-barman.jpeg",
     category: "teacher",
   },
   {
     name: "Ajoy Kumar Mahapatra",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/ajoy-kumar-mahapatra.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/ajoy-kumar-mahapatra.jpeg",
     category: "teacher",
   },
   {
     name: "Anupam Mandal",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/anupam-mandal.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/anupam-mandal.jpeg",
     category: "teacher",
   },
   {
     name: "Gautam Makur",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/gautam-makur.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/gautam-makur.jpeg",
     category: "teacher",
   },
   {
     name: "Jayanta Kumar Patra",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/jayanta-kumar-patra.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/jayanta-kumar-patra.jpeg",
     category: "teacher",
   },
   {
     name: "Koushik Giri",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/koushik-giri.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/koushik-giri.jpeg",
     category: "teacher",
   },
   {
     name: "Mahaseta Tripati",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/mahaseta-tripati.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/mahaseta-tripati.jpeg",
     category: "teacher",
   },
   {
     name: "Manas Kumar Dey",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/manas-kumar-dey.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/manas-kumar-dey.jpeg",
     category: "teacher",
   },
   {
     name: "Miss Oampa Shit",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/miss-oampa-shit.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/miss-oampa-shit.jpeg",
     category: "teacher",
   },
   {
     name: "Surojit Dingal",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/surojit-dingal.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/surojit-dingal.jpeg",
     category: "teacher",
   },
   {
     name: "Uttam Saho",
     designation: "Teacher",
     subject: "Teacher",
-    image: "/images/teachers/uttam-saho.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/uttam-saho.jpeg",
     category: "teacher",
   },
   {
@@ -343,7 +343,7 @@ function TeacherCard({
             ) : (
               <>
                 <Image
-                  src="/images/branding/school-logo.png.jpeg"
+                  src="/images/01-BRANDING/school-logo.png"
                   alt="Baramohanpur High School emblem"
                   fill
                   className="object-contain p-16 opacity-20"
@@ -480,7 +480,7 @@ export default function TeamPage() {
 
         {/* Background image */}
         <Image
-          src="/images/campus/campus-wide-view.jpeg"
+          src="/images/02-HOMEPAGE/campus/campus-1.png"
           alt=""
           fill
           priority

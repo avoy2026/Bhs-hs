@@ -41,7 +41,7 @@ export default function WobbleCardDemo() {
             "
             style={{
               backgroundImage:
-                "url('/images/campus/campus-wide-view.jpeg')",
+                "url('/images/02-HOMEPAGE/campus/campus-1.png')",
             }}
           />
 
@@ -63,7 +63,7 @@ export default function WobbleCardDemo() {
             "
             style={{
               backgroundImage:
-                "url('/images/banners/home-hero-classroom.jpeg')",
+                "url('/images/05-ACADEMICS/classrooms/classroom-main.jpeg')",
             }}
           />
 
@@ -84,7 +84,7 @@ export default function WobbleCardDemo() {
             "
             style={{
               backgroundImage:
-                "url('/images/campus/school-ground.jpeg')",
+                "url('/images/02-HOMEPAGE/campus/campus-2.png')",
             }}
           />
 
