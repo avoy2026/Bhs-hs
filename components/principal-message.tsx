@@ -41,7 +41,7 @@ export default function PrincipalMessage() {
                   fill
                   sizes="(max-width: 768px) 100vw, 520px"
                   className="rounded-[1.75rem] object-cover object-[center_20%] shadow-[0_30px_80px_-30px_rgb(10_17_32/55%)]"
-                  priority
+                  loading="lazy"
                 />
                 <div className="absolute -top-4 -left-4 z-10 inline-flex h-20 w-20 items-center justify-center rounded-full bg-[var(--brand-cream)] shadow-md ring-1 ring-[var(--brand-gold)]/30">
                   <IconQuote className="h-9 w-9 text-[var(--brand-gold)] rotate-6" />

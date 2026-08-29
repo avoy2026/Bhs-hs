@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
@@ -13,10 +13,10 @@ export default function TabsDemo() {
           <p>Open for the new session</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Forms are at the school office. Bring the child, the papers, and a
-            little hope — we will help you with the rest, within the dates
+            little hope â€” we will help you with the rest, within the dates
             announced each year.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.webp" />
         </div>
       ),
     },
@@ -30,7 +30,7 @@ export default function TabsDemo() {
             Half-yearly and annual dates appear here first. Students follow the
             class routine; parents use this board so no one is caught unready.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-2.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-2.webp" />
         </div>
       ),
     },
@@ -42,9 +42,9 @@ export default function TabsDemo() {
           <p>When the campus rests</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Official holidays and unexpected closures are posted for families
-            first — so a closed gate never comes as a surprise.
+            first â€” so a closed gate never comes as a surprise.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-3.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-3.webp" />
         </div>
       ),
     },
@@ -56,10 +56,10 @@ export default function TabsDemo() {
           <p>When results are ready</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Class and board announcements live here. Collect mark sheets from
-            the office when your name is called — and celebrate with quiet
+            the office when your name is called â€” and celebrate with quiet
             pride.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.webp" />
         </div>
       ),
     },
@@ -73,7 +73,7 @@ export default function TabsDemo() {
             Uniform, meetings, fees, and the small rules that keep a large
             family in order. If it matters to campus life, it appears here.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-2.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-2.webp" />
         </div>
       ),
     },
@@ -87,7 +87,7 @@ export default function TabsDemo() {
             Schedules for upcoming tournaments, house matches, and athletic
             meets are posted here for all students.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-3.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-3.webp" />
         </div>
       ),
     },
@@ -101,7 +101,7 @@ export default function TabsDemo() {
             Read the annual reports detailing the school&apos;s achievements,
             growth, and vision for the upcoming academic year.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.webp" />
         </div>
       ),
     },

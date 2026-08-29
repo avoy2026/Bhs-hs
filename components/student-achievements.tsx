@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import PageSectionHeading from "@/components/page-section-heading";
@@ -55,7 +55,7 @@ export default function StudentAchievements() {
         <PageSectionHeading
           eyebrow="Pride of our campus"
           title="Student Achievements"
-          description="Every cup, every certificate, every mark — and the quiet effort behind each one. These are the moments Baramohanpur remembers."
+          description="Every cup, every certificate, every mark â€” and the quiet effort behind each one. These are the moments Baramohanpur remembers."
         />
 
         <div className="mt-16 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16 items-center">
@@ -68,7 +68,7 @@ export default function StudentAchievements() {
           >
             <div className="relative aspect-[4/5] sm:aspect-[5/4] w-full overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/01-BRANDING/student-achievement-dancer.png"
+                src="/images/01-BRANDING/student-achievement-dancer.webp"
                 alt="Student cultural achievement at Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 620px"

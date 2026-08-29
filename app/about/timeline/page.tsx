@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import PageSectionHeading from "@/components/page-section-heading";
@@ -21,7 +21,7 @@ const GridImg = ({ src, alt }: { src: string; alt: string }) => (
 
 const data = [
   {
-    title: "1878 · Foundation & Legacy",
+    title: "1878 Â· Foundation & Legacy",
     content: (
       <div>
         <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
@@ -35,16 +35,16 @@ const data = [
           has helped generations of students find the light of knowledge.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/03-ABOUT/timeline/iswar-chandra-vidyasagar.png" alt="Pandit Ishwar Chandra Vidyasagar" />
-          <GridImg src="/images/03-ABOUT/timeline/nityananda-dey.png" alt="Shri Nityananda Dey" />
-          <GridImg src="/images/03-ABOUT/heritage/heritage-building.png" alt="Heritage building" />
-          <GridImg src="/images/03-ABOUT/timeline/school-entrance.png" alt="School entrance" />
+          <GridImg src="/images/03-ABOUT/timeline/iswar-chandra-vidyasagar.webp" alt="Pandit Ishwar Chandra Vidyasagar" />
+          <GridImg src="/images/03-ABOUT/timeline/nityananda-dey.webp" alt="Shri Nityananda Dey" />
+          <GridImg src="/images/03-ABOUT/heritage/heritage-building.webp" alt="Heritage building" />
+          <GridImg src="/images/03-ABOUT/timeline/school-entrance.webp" alt="School entrance" />
         </div>
       </div>
     ),
   },
   {
-    title: "2021–2025 · Modern Growth",
+    title: "2021â€“2025 Â· Modern Growth",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
@@ -61,7 +61,7 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <GridImg src="/images/03-ABOUT/staff/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
-          <GridImg src="/images/03-ABOUT/timeline/academic-growth.png" alt="Academic growth and achievements" />
+          <GridImg src="/images/03-ABOUT/timeline/academic-growth.webp" alt="Academic growth and achievements" />
           <GridImg src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg" alt="Classroom learning" />
           <GridImg src="/images/07-GALLERY/students/assembly.jpeg" alt="Student assembly" />
         </div>
@@ -69,11 +69,11 @@ const data = [
     ),
   },
   {
-    title: "2026 – 2027 · 150th Anniversary",
+    title: "2026 â€“ 2027 Â· 150th Anniversary",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
-          Baramohanpur High School observes its 150th Anniversary (2027–2028) as a historic year-long festival of education, culture, and alumni reunion.
+          Baramohanpur High School observes its 150th Anniversary (2027â€“2028) as a historic year-long festival of education, culture, and alumni reunion.
         </p>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
           <span className="font-semibold text-[var(--brand-navy)]">
@@ -81,10 +81,10 @@ const data = [
           </span>
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <GridImg src="/images/03-ABOUT/timeline/science-education.png" alt="Modern science education" />
+          <GridImg src="/images/03-ABOUT/timeline/science-education.webp" alt="Modern science education" />
           <GridImg src="/images/01-BRANDING/school-logo.png" alt="150th Anniversary Emblem" />
           <GridImg src="/images/01-BRANDING/school-achievements.jpeg" alt="150 Years of Excellence" />
-          <GridImg src="/images/06-EVENTS/academic/educational-events.png" alt="Educational events and celebrations" />
+          <GridImg src="/images/06-EVENTS/academic/educational-events.webp" alt="Educational events and celebrations" />
         </div>
       </div>
     ),
@@ -99,8 +99,8 @@ export default function TimelinePage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/03-ABOUT/about-banner.png"
-              alt="School History & Timeline — Baramohanpur High School"
+              src="/images/03-ABOUT/about-banner.webp"
+              alt="School History & Timeline â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -115,7 +115,7 @@ export default function TimelinePage() {
           <PageSectionHeading
             eyebrow="Milestones"
             title="School History & Heritage"
-            description="Scroll through the moments that still define us — from our founding in 1878 through 150 years of academic light."
+            description="Scroll through the moments that still define us â€” from our founding in 1878 through 150 years of academic light."
             size="md"
             accent="stroke"
           />

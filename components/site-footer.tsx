@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "motion/react";
 import {
   IconBrandFacebook,
@@ -59,12 +60,13 @@ export default function SiteFooter() {
           {/* Brand & identity column */}
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
-              <img
+              <Image
                 src="/images/01-BRANDING/school-logo.png"
                 alt="Baramohanpur High School"
                 width={48}
                 height={48}
                 className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--brand-gold)]/45"
+                loading="lazy"
               />
               <div>
                 <span className="block font-display text-lg font-semibold tracking-tight text-white">

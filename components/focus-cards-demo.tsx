@@ -1,10 +1,10 @@
-import { FocusCards } from "@/components/ui/focus-cards";
+﻿import { FocusCards } from "@/components/ui/focus-cards";
 
 export default function FocusCardsDemo() {
   const cards = [
     {
       title: "Knowledge & Guidance",
-      src: "/images/05-ACADEMICS/classrooms/classroom-learning.png",
+      src: "/images/05-ACADEMICS/classrooms/classroom-learning.webp",
     },
     {
       title: "Classroom Learning",
@@ -20,11 +20,11 @@ export default function FocusCardsDemo() {
     },
     {
       title: "Our Pride",
-      src: "/images/03-ABOUT/heritage/heritage-building.png",
+      src: "/images/03-ABOUT/heritage/heritage-building.webp",
     },
     {
       title: "Community Spirit",
-      src: "/images/03-ABOUT/collaboration/community-gathering.png",
+      src: "/images/03-ABOUT/collaboration/community-gathering.webp",
     },
   ];
 

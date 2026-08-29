@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import PageSectionHeading from "@/components/page-section-heading";
 import StoryBlock from "@/components/story-block";
@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Academics | Baramohanpur High School (H.S.)",
   description:
-    "Explore Classes V–XII, Higher Secondary Arts, Science and Commerce streams, subjects, practical learning, and student development at Baramohanpur High School.",
+    "Explore Classes Vâ€“XII, Higher Secondary Arts, Science and Commerce streams, subjects, practical learning, and student development at Baramohanpur High School.",
 };
 
 export default function AcademicsPage() {
@@ -25,8 +25,8 @@ export default function AcademicsPage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/8] md:aspect-[24/7] max-h-[380px] min-h-[160px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-[#d5e9f6] flex items-center justify-center">
             <Image
-              src="/images/05-ACADEMICS/academics-banner.png"
-              alt="Academics — Baramohanpur High School"
+              src="/images/05-ACADEMICS/academics-banner.webp"
+              alt="Academics â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -56,13 +56,13 @@ export default function AcademicsPage() {
         eyebrow="Learning spaces"
         title="Classrooms that support curiosity."
         body="Academic learning at Baramohanpur High School begins in the classroom, where students from Classes V to XII build understanding, ask questions, and develop the confidence to keep learning."
-        image="/images/05-ACADEMICS/classrooms/classroom-learning.png"
+        image="/images/05-ACADEMICS/classrooms/classroom-learning.webp"
         imageAlt="Classroom learning at Baramohanpur High School"
         href="#classes"
         hrefLabel="Explore our classes"
         accent="navy"
         facts={[
-          { value: "V–XII", label: "Classes" },
+          { value: "Vâ€“XII", label: "Classes" },
           { value: "25", label: "Subjects" },
           { value: "3", label: "HS streams" },
         ]}
@@ -71,8 +71,8 @@ export default function AcademicsPage() {
       <StoryBlock
         eyebrow="Practical learning"
         title="Learning that reaches beyond the textbook."
-        body="Science and Computer Application are part of the school’s academic offering. This practical-learning section is ready to grow with verified laboratory details, equipment information, class schedules, and additional photographs."
-        image="/images/03-ABOUT/timeline/science-education.png"
+        body="Science and Computer Application are part of the schoolâ€™s academic offering. This practical-learning section is ready to grow with verified laboratory details, equipment information, class schedules, and additional photographs."
+        image="/images/03-ABOUT/timeline/science-education.webp"
         imageAlt="Science laboratory at Baramohanpur High School"
         href="#subjects"
         hrefLabel="See confirmed subjects"

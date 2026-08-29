@@ -13,7 +13,7 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import { ImageProps } from "next/image";
+import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 interface CarouselProps {
@@ -262,12 +262,20 @@ export const BlurImage = ({
   ...rest
 }: Omit<ImageProps, "blurDataURL">) => {
   return (
-    <img
-      className={cn(fill ? "absolute inset-0" : "h-full w-full", "object-cover", className)}
-      src={src as string}
-      width={width}
-      height={height}
+    <Image
+      className={cn(
+        fill ? "absolute inset-0" : "h-full w-full",
+        "object-cover",
+        className
+      )}
+      src={src}
+      width={fill ? undefined : (width ?? 800)}
+      height={fill ? undefined : (height ?? 600)}
+      fill={fill}
       alt={alt ? alt : "School photo"}
+      loading="lazy"
+      sizes="(max-width: 768px) 230px, 384px"
+      quality={80}
       {...rest}
     />
   );

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Link from "next/link";
 import { motion } from "motion/react";
 import React from "react";
@@ -44,9 +44,9 @@ function AnimatedWords({
 
 export default function ImagesSliderDemo() {
   const images = [
-    "/images/02-HOMEPAGE/hero/hero1.png",
-    "/images/02-HOMEPAGE/hero/hero-2.png",
-    "/images/02-HOMEPAGE/hero/hero-3.png",
+    "/images/02-HOMEPAGE/hero/hero1.webp",
+    "/images/02-HOMEPAGE/hero/hero-2.webp",
+    "/images/02-HOMEPAGE/hero/hero-3.webp",
   ];
   return (
     <ImagesSlider

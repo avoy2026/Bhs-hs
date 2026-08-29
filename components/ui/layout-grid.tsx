@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 type Card = {
   id: number;
@@ -25,7 +26,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -59,16 +60,16 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 
 const ImageComponent = ({ card }: { card: Card }) => {
   return (
-    <motion.img
-      layoutId={`image-${card.id}-image`}
-      src={card.thumbnail}
-      height="500"
-      width="500"
-      className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
-      )}
-      alt="thumbnail"
-    />
+    <div className="absolute inset-0 h-full w-full">
+      <Image
+        src={card.thumbnail}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        className="object-cover object-top transition duration-200"
+        alt="School photo"
+        loading="lazy"
+        quality={80}
+      />
+    </div>
   );
 };
-

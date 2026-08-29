@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const values = [
   {
     icon: IconBook2,
     title: "Knowledge",
-    text: "Patient teaching that refuses to hurry a child — clear instruction, honest questions, and the slow pleasure of understanding.",
+    text: "Patient teaching that refuses to hurry a child â€” clear instruction, honest questions, and the slow pleasure of understanding.",
   },
   {
     icon: IconShieldCheck,
@@ -23,7 +23,7 @@ const values = [
   {
     icon: IconHeartHandshake,
     title: "Discipline",
-    text: "A self-discipline learned through routine — punctuality, neatness, finishing the work you started.",
+    text: "A self-discipline learned through routine â€” punctuality, neatness, finishing the work you started.",
   },
   {
     icon: IconUsersGroup,
@@ -50,8 +50,8 @@ export default function AboutPage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/03-ABOUT/about-banner.png"
-              alt="About Us — Baramohanpur High School"
+              src="/images/03-ABOUT/about-banner.webp"
+              alt="About Us â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -66,7 +66,7 @@ export default function AboutPage() {
         eyebrow="Established in 1878"
         title="Our Story"
         body="Baramohanpur High School was established in 1878 under the inspiration of Pandit Ishwar Chandra Vidyasagar and through the initiative of the educationist Shri Nityananda Dey. Families from the surrounding villages contributed land, money, labour and blessings to make the school a reality. For 150 years, this shared effort has helped generations of students find the light of knowledge and carry the name of Baramohanpur into the world."
-        image="/images/02-HOMEPAGE/campus/campus-3.png"
+        image="/images/02-HOMEPAGE/campus/campus-3.webp"
         imageAlt="Baramohanpur High School building"
         href="/about/timeline"
         hrefLabel="Read the school timeline"
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 <span className="heading-underline">A school that looks forward, and remembers.</span>
               </h2>
               <p className="text-sm md:text-base leading-relaxed text-muted-foreground max-w-xl">
-                We want our students to leave Baramohanpur with the marks they need, and also with the character that lasts longer than marks. We believe in the whole child — in classrooms, on grounds, in music rooms, in assemblies.
+                We want our students to leave Baramohanpur with the marks they need, and also with the character that lasts longer than marks. We believe in the whole child â€” in classrooms, on grounds, in music rooms, in assemblies.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/about/vision" className="btn-primary">
@@ -162,7 +162,7 @@ export default function AboutPage() {
           <PageSectionHeading
             eyebrow="Explore"
             title="More about the school"
-            description="Find the page you are looking for — from the teachers who lead us to the milestones that shaped us."
+            description="Find the page you are looking for â€” from the teachers who lead us to the milestones that shaped us."
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -183,7 +183,7 @@ export default function AboutPage() {
                   {c.desc}
                 </p>
                 <span className="mt-4 inline-flex text-sm font-semibold text-brand-gold opacity-80 transition group-hover:opacity-100">
-                  Open →
+                  Open â†’
                 </span>
               </Link>
             ))}

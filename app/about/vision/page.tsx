@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -7,9 +7,9 @@ import { motion } from "motion/react";
 import MacbookScrollDemo from "@/components/macbook-scroll-demo";
 
 const visionPoints = [
-  "Educational excellence — without rushing a child's pace",
+  "Educational excellence â€” without rushing a child's pace",
   "Character building that lasts longer than any examination",
-  "Holistic development — mind, body, heart, and voice",
+  "Holistic development â€” mind, body, heart, and voice",
   "Responsible citizenship rooted in our neighbourhood and our culture",
   "Future readiness that does not forget the lessons of the past",
 ];
@@ -18,12 +18,12 @@ const missionPoints = [
   {
     title: "Teach patiently",
     text:
-      "Deliver clear, age-appropriate instruction — in language a child actually understands, and at a pace they can follow without shame.",
+      "Deliver clear, age-appropriate instruction â€” in language a child actually understands, and at a pace they can follow without shame.",
   },
   {
     title: "Notice every student",
     text:
-      "See the quiet child, the restless child, the slow child, and the gifted child — and give each one what they need to grow.",
+      "See the quiet child, the restless child, the slow child, and the gifted child â€” and give each one what they need to grow.",
   },
   {
     title: "Hold to the routines",
@@ -45,8 +45,8 @@ export default function VisionPage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/03-ABOUT/vision-banner.png"
-              alt="Our Vision — Baramohanpur High School"
+              src="/images/03-ABOUT/vision-banner.webp"
+              alt="Our Vision â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -68,13 +68,13 @@ export default function VisionPage() {
                 <span className="heading-underline">The vision that guides us.</span>
               </h2>
               <p className="text-base md:text-lg leading-relaxed text-[var(--muted-foreground)]">
-                We see a school where every child — regardless of background, pace, or talent —
+                We see a school where every child â€” regardless of background, pace, or talent â€”
                 can come in each morning and know they are safe, they are seen, and they are in a
                 place that will not hurry them or forget them.
               </p>
               <p className="mt-4 text-sm md:text-base leading-relaxed text-[var(--muted-foreground)]">
                 Academic results matter. They open doors. But a child&apos;s happiness, honesty, and
-                habit of trying matter more — because those are the things that will stay with them
+                habit of trying matter more â€” because those are the things that will stay with them
                 after the last report card is forgotten.
               </p>
             </div>
@@ -125,7 +125,7 @@ export default function VisionPage() {
             </h2>
             <p className="mt-5 max-w-2xl text-sm md:text-base text-[var(--muted-foreground)]">
               Four promises we make to every family that sends their child through our gate.
-              These are not slogans — they are the standard our teachers and staff hold themselves to.
+              These are not slogans â€” they are the standard our teachers and staff hold themselves to.
             </p>
           </div>
 
@@ -177,7 +177,7 @@ export default function VisionPage() {
           <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16 items-center">
             <div className="relative w-full aspect-[5/4] rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/30%)]">
               <Image
-                src="/images/02-HOMEPAGE/campus/campus-1.png"
+                src="/images/02-HOMEPAGE/campus/campus-1.webp"
                 alt="Baramohanpur High School campus view"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"
@@ -192,7 +192,7 @@ export default function VisionPage() {
               </h2>
               <p className="text-sm md:text-base leading-relaxed text-[var(--muted-foreground)] max-w-xl">
                 The best way to understand our school is to see it in action, or to simply ask us
-                a question. We are happy to hear from prospective parents — and happy to answer
+                a question. We are happy to hear from prospective parents â€” and happy to answer
                 honestly.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">

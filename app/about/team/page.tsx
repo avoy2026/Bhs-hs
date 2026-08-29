@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import PageSectionHeading from "@/components/page-section-heading";
@@ -198,14 +198,14 @@ const teachers: Teacher[] = [
     designation: "Non-Teaching Staff",
     subject: "School Administration",
     category: "non-teaching",
-    emoji: "💼",
+    emoji: "ðŸ’¼",
   },
   {
     name: "Library & Laboratory Technical Staff",
     designation: "Non-Teaching Staff",
     subject: "Academic Support",
     category: "non-teaching",
-    emoji: "📚",
+    emoji: "ðŸ“š",
   },
 ];
 
@@ -294,7 +294,7 @@ function TeacherCard({ t, idx }: { t: Teacher; idx: number }) {
         {/* Image shade */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/80 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-80" />
 
-        {/* Social links — appear on hover */}
+        {/* Social links â€” appear on hover */}
         {t.social && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -359,8 +359,8 @@ export default function TeamPage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/03-ABOUT/team-banner.png"
-              alt="Our Team — Baramohanpur High School"
+              src="/images/03-ABOUT/team-banner.webp"
+              alt="Our Team â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -418,7 +418,7 @@ export default function TeamPage() {
           <PageSectionHeading
             eyebrow="United in Purpose"
             title="Our Faculty Together"
-            description="The complete faculty and staff of Baramohanpur High School — working hand in hand for the academic excellence and moral growth of our students."
+            description="The complete faculty and staff of Baramohanpur High School â€” working hand in hand for the academic excellence and moral growth of our students."
             align="center"
             size="md"
             accent="underline"
@@ -432,7 +432,7 @@ export default function TeamPage() {
             className="mt-12 relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-[var(--border)] bg-white"
           >
             <Image
-              src="/images/02-HOMEPAGE/hero/hero-2.png"
+              src="/images/02-HOMEPAGE/hero/hero-2.webp"
               alt="All Baramohanpur High School Faculty Together"
               fill
               sizes="(max-width: 1280px) 100vw, 1200px"

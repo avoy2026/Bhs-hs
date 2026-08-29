@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Image from "next/image";
 import { Timeline } from "@/components/ui/timeline";
 
@@ -20,7 +20,7 @@ const GridImg = ({ src, alt }: { src: string; alt: string }) => (
 export default function TimelineDemo() {
   const data = [
     {
-      title: "1878 · Foundation & Legacy",
+      title: "1878 Â· Foundation & Legacy",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
@@ -53,16 +53,16 @@ export default function TimelineDemo() {
             ))}
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/03-ABOUT/timeline/iswar-chandra-vidyasagar.png" alt="Pandit Ishwar Chandra Vidyasagar" />
-            <GridImg src="/images/03-ABOUT/timeline/nityananda-dey.png" alt="Shri Nityananda Dey" />
-            <GridImg src="/images/03-ABOUT/heritage/heritage-building.png" alt="Heritage school building" />
-            <GridImg src="/images/03-ABOUT/timeline/school-entrance.png" alt="School entrance" />
+            <GridImg src="/images/03-ABOUT/timeline/iswar-chandra-vidyasagar.webp" alt="Pandit Ishwar Chandra Vidyasagar" />
+            <GridImg src="/images/03-ABOUT/timeline/nityananda-dey.webp" alt="Shri Nityananda Dey" />
+            <GridImg src="/images/03-ABOUT/heritage/heritage-building.webp" alt="Heritage school building" />
+            <GridImg src="/images/03-ABOUT/timeline/school-entrance.webp" alt="School entrance" />
           </div>
         </div>
       ),
     },
     {
-      title: "2021–2025 · Modern Growth",
+      title: "2021â€“2025 Â· Modern Growth",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
@@ -72,7 +72,7 @@ export default function TimelineDemo() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <GridImg src="/images/03-ABOUT/staff/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
-            <GridImg src="/images/03-ABOUT/timeline/academic-growth.png" alt="Academic growth and achievements" />
+            <GridImg src="/images/03-ABOUT/timeline/academic-growth.webp" alt="Academic growth and achievements" />
             <GridImg src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg" alt="Classroom learning" />
             <GridImg src="/images/07-GALLERY/students/assembly.jpeg" alt="Student assembly" />
           </div>
@@ -80,7 +80,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "2026 – 2027 · 150th Anniversary",
+      title: "2026 â€“ 2027 Â· 150th Anniversary",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
@@ -90,13 +90,13 @@ export default function TimelineDemo() {
             than a decade.
           </p>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 font-semibold text-[var(--brand-navy)]">
-            Baramohanpur High School observes its 150th Anniversary (2027–2028) as a historic year-long festival of education, culture, and alumni reunion.
+            Baramohanpur High School observes its 150th Anniversary (2027â€“2028) as a historic year-long festival of education, culture, and alumni reunion.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/03-ABOUT/timeline/science-education.png" alt="Modern science education" />
+            <GridImg src="/images/03-ABOUT/timeline/science-education.webp" alt="Modern science education" />
             <GridImg src="/images/01-BRANDING/school-logo.png" alt="150th Anniversary Emblem" />
             <GridImg src="/images/01-BRANDING/school-achievements.jpeg" alt="150 Years of Excellence" />
-            <GridImg src="/images/06-EVENTS/academic/educational-events.png" alt="Educational events and celebrations" />
+            <GridImg src="/images/06-EVENTS/academic/educational-events.webp" alt="Educational events and celebrations" />
           </div>
         </div>
       ),

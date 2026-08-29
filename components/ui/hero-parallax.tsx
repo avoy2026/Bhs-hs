@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import {
   motion,
   useScroll,
@@ -7,8 +8,6 @@ import {
   useSpring,
   MotionValue,
 } from "motion/react";
-
-
 
 export const HeroParallax = ({
   products,
@@ -57,7 +56,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -78,7 +77,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-20 space-x-20">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -144,14 +143,17 @@ export const ProductCard = ({
     >
       <a
         href={product.link}
-        className="block group-hover/product:shadow-2xl "
+        className="block group-hover/product:shadow-2xl"
       >
-        <img
+        <Image
           src={product.thumbnail}
-          height="600"
-          width="600"
+          height={600}
+          width={600}
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
+          loading="lazy"
+          sizes="480px"
+          quality={75}
         />
       </a>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>

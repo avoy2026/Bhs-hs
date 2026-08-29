@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 
@@ -28,7 +28,7 @@ export default function LinkPreviewDemo() {
         >
           Baramohanpur High School
         </LinkPreview>
-        , a child learns to think clearly — and to{" "}
+        , a child learns to think clearly â€” and to{" "}
         <LinkPreview
           url="/about"
           isStatic
@@ -53,7 +53,7 @@ export default function LinkPreviewDemo() {
         <LinkPreview
           url="/notices"
           isStatic
-          imageSrc="/images/events/academic/educational-events.png"
+          imageSrc="/images/events/academic/educational-events.webp"
           className="font-bold text-[var(--brand-emerald)]"
         >
           official notices

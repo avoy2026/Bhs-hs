@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 
 type MacbookScrollDemoProps = {
@@ -17,7 +17,7 @@ export default function MacbookScrollDemo({ title }: MacbookScrollDemoProps) {
             Scroll, and the campus comes into view.
           </span>
         )}
-        src="/images/03-ABOUT/vision/steve-jobs-quote.png"
+        src="/images/03-ABOUT/vision/steve-jobs-quote.webp"
         showGradient={false}
       />
     </div>

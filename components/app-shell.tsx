@@ -49,7 +49,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
     window.scrollTo(0, 0);
     const showTimer = window.setTimeout(() => setIsNavigating(true), 0);
-    const hideTimer = window.setTimeout(() => setIsNavigating(false), 1200);
+    const hideTimer = window.setTimeout(() => setIsNavigating(false), 600);
 
     return () => {
       window.clearTimeout(showTimer);

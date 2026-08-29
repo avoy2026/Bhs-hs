@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from "react";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 
@@ -10,12 +10,12 @@ export const products = [
   {
     title: "Annual Day & Cultural Night",
     link: "/events",
-    thumbnail: "/images/06-EVENTS/cultural/cultural-programme.png",
+    thumbnail: "/images/06-EVENTS/cultural/cultural-programme.webp",
   },
   {
     title: "Inter-House Sports Meet",
     link: "/events",
-    thumbnail: "/images/06-EVENTS/sports/sports-day.png",
+    thumbnail: "/images/06-EVENTS/sports/sports-day.webp",
   },
   {
     title: "Classroom Learning",
@@ -30,7 +30,7 @@ export const products = [
   {
     title: "School Campus & Grounds",
     link: "/gallery",
-    thumbnail: "/images/02-HOMEPAGE/campus/campus-1.png",
+    thumbnail: "/images/02-HOMEPAGE/campus/campus-1.webp",
   },
   {
     title: "Morning Assembly",
@@ -40,17 +40,17 @@ export const products = [
   {
     title: "Educational Exhibitions",
     link: "/events",
-    thumbnail: "/images/06-EVENTS/academic/educational-events.png",
+    thumbnail: "/images/06-EVENTS/academic/educational-events.webp",
   },
   {
     title: "School Library & Reading",
     link: "/academics",
-    thumbnail: "/images/05-ACADEMICS/library/library-main.png",
+    thumbnail: "/images/05-ACADEMICS/library/library-main.webp",
   },
   {
     title: "Sports & Physical Education",
     link: "/events",
-    thumbnail: "/images/07-GALLERY/sports/sports.png",
+    thumbnail: "/images/07-GALLERY/sports/sports.webp",
   },
   {
     title: "Classroom Discussions",
@@ -60,17 +60,17 @@ export const products = [
   {
     title: "Heritage Building",
     link: "/about",
-    thumbnail: "/images/03-ABOUT/heritage/heritage-building.png",
+    thumbnail: "/images/03-ABOUT/heritage/heritage-building.webp",
   },
   {
     title: "Community & Parent Gathering",
     link: "/about/collaboration",
-    thumbnail: "/images/03-ABOUT/collaboration/community-gathering.png",
+    thumbnail: "/images/03-ABOUT/collaboration/community-gathering.webp",
   },
   {
     title: "Main School Building",
     link: "/gallery",
-    thumbnail: "/images/02-HOMEPAGE/campus/campus-3.png",
+    thumbnail: "/images/02-HOMEPAGE/campus/campus-3.webp",
   },
   {
     title: "Student Life & Companionship",
@@ -80,6 +80,6 @@ export const products = [
   {
     title: "Campus Entrance & Trees",
     link: "/about",
-    thumbnail: "/images/03-ABOUT/timeline/school-entrance.png",
+    thumbnail: "/images/03-ABOUT/timeline/school-entrance.webp",
   },
 ];

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
@@ -63,10 +63,10 @@ export const Cards = ({
     {
       title: "Annual Day",
       description:
-        "A night of music, theatre, and proud applause — when the whole school gathers to celebrate talent.",
+        "A night of music, theatre, and proud applause â€” when the whole school gathers to celebrate talent.",
       skeleton: (
         <CardImage
-          src="/images/06-EVENTS/cultural/cultural-programme.png"
+          src="/images/06-EVENTS/cultural/cultural-programme.webp"
           alt="Students performing at a cultural programme"
         />
       ),
@@ -82,10 +82,10 @@ export const Cards = ({
     {
       title: "Sports Meet",
       description:
-        "Races, relays, and house spirit on the field — where discipline meets joy and every student is cheered.",
+        "Races, relays, and house spirit on the field â€” where discipline meets joy and every student is cheered.",
       skeleton: (
         <CardImage
-          src="/images/06-EVENTS/sports/sports-day.png"
+          src="/images/06-EVENTS/sports/sports-day.webp"
           alt="Students taking part in sports"
         />
       ),
@@ -100,10 +100,10 @@ export const Cards = ({
     {
       title: "Cultural Fest",
       description:
-        "Dance, song, and art that carry the voice of Baramohanpur — a festival of culture and belonging.",
+        "Dance, song, and art that carry the voice of Baramohanpur â€” a festival of culture and belonging.",
       skeleton: (
         <CardImage
-          src="/images/06-EVENTS/rabindranath-tagore.png"
+          src="/images/06-EVENTS/rabindranath-tagore.webp"
           alt="Rabindra Jayanti and cultural fest"
         />
       ),
@@ -118,10 +118,10 @@ export const Cards = ({
     {
       title: "Science Fair",
       description:
-        "Curious minds, handmade models, and questions that spark — learning that steps out of the textbook.",
+        "Curious minds, handmade models, and questions that spark â€” learning that steps out of the textbook.",
       skeleton: (
         <CardImage
-          src="/images/06-EVENTS/science-fair-event.png"
+          src="/images/06-EVENTS/science-fair-event.webp"
           alt="Science Fair at Baramohanpur High School"
         />
       ),
@@ -136,10 +136,10 @@ export const Cards = ({
     {
       title: "Prize Night",
       description:
-        "Medals, certificates, and quiet pride — honouring the students who lifted the name of our school.",
+        "Medals, certificates, and quiet pride â€” honouring the students who lifted the name of our school.",
       skeleton: (
         <CardImage
-          src="/images/06-EVENTS/prize-night-event.png"
+          src="/images/06-EVENTS/prize-night-event.webp"
           alt="Students celebrating a school achievement"
         />
       ),

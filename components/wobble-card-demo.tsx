@@ -1,6 +1,7 @@
-"use client";
+﻿"use client";
 
 import React from "react";
+import Image from "next/image";
 import { WobbleCard } from "@/components/ui/wobble-card";
 
 export default function WobbleCardDemo() {
@@ -32,21 +33,19 @@ export default function WobbleCardDemo() {
           containerClassName="col-span-1 lg:col-span-2 h-full min-h-[320px] md:min-h-[400px] lg:min-h-[420px]"
           className="group overflow-hidden p-0"
         >
-          <div
-            className="
-              absolute inset-0 z-0
-              bg-cover bg-center bg-no-repeat
-              transition-transform duration-700 ease-out
-              group-hover:scale-105
-            "
-            style={{
-              backgroundImage:
-                "url('/images/02-HOMEPAGE/campus/campus-1.png')",
-            }}
-          />
-
+          <div className="absolute inset-0 z-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
+            <Image
+              src="/images/02-HOMEPAGE/campus/campus-1.webp"
+              alt="Baramohanpur High School campus"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 66vw"
+              loading="lazy"
+              quality={80}
+            />
+          </div>
           {/* subtle image treatment */}
-          <div className="absolute inset-0 z-1 bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
+          <div className="absolute inset-0 z-[1] bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
         </WobbleCard>
 
         {/* Classroom Image */}
@@ -54,20 +53,18 @@ export default function WobbleCardDemo() {
           containerClassName="col-span-1 min-h-[320px] md:min-h-[400px] lg:min-h-[420px]"
           className="group overflow-hidden p-0"
         >
-          <div
-            className="
-              absolute inset-0 z-0
-              bg-cover bg-center bg-no-repeat
-              transition-transform duration-700 ease-out
-              group-hover:scale-105
-            "
-            style={{
-              backgroundImage:
-                "url('/images/05-ACADEMICS/classrooms/classroom-main.jpeg')",
-            }}
-          />
-
-          <div className="absolute inset-0 z-1 bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
+          <div className="absolute inset-0 z-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
+            <Image
+              src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg"
+              alt="Classrooms at Baramohanpur High School"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 33vw"
+              loading="lazy"
+              quality={80}
+            />
+          </div>
+          <div className="absolute inset-0 z-[1] bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
         </WobbleCard>
 
         {/* School Ground Image */}
@@ -75,20 +72,18 @@ export default function WobbleCardDemo() {
           containerClassName="col-span-1 lg:col-span-3 min-h-[320px] md:min-h-[400px] lg:min-h-[420px]"
           className="group overflow-hidden p-0"
         >
-          <div
-            className="
-              absolute inset-0 z-0
-              bg-cover bg-center bg-no-repeat
-              transition-transform duration-700 ease-out
-              group-hover:scale-105
-            "
-            style={{
-              backgroundImage:
-                "url('/images/02-HOMEPAGE/campus/campus-2.png')",
-            }}
-          />
-
-          <div className="absolute inset-0 z-1 bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
+          <div className="absolute inset-0 z-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
+            <Image
+              src="/images/02-HOMEPAGE/campus/campus-2.webp"
+              alt="Baramohanpur High School school ground"
+              fill
+              className="object-cover"
+              sizes="100vw"
+              loading="lazy"
+              quality={80}
+            />
+          </div>
+          <div className="absolute inset-0 z-[1] bg-black/3 transition-colors duration-500 group-hover:bg-black/0" />
         </WobbleCard>
 
       </div>

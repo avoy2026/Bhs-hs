@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
+import Image from "next/image";
 import React, { useCallback, useEffect, useState } from "react";
 
 export const ImagesSlider = ({
@@ -21,7 +22,6 @@ export const ImagesSlider = ({
   direction?: "up" | "down";
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
   const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) =>
@@ -35,26 +35,6 @@ export const ImagesSlider = ({
     );
   }, [images.length]);
 
-  const loadImages = useCallback(() => {
-    const loadPromises = images.map((image) => {
-      return new Promise<string>((resolve, reject) => {
-        const img = new Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
-      });
-    });
-
-    Promise.all(loadPromises)
-      .then((loadedImages) => {
-        setLoadedImages(loadedImages);
-      })
-      .catch((error) => console.error("Failed to load images", error));
-  }, [images]);
-
-  useEffect(() => {
-    loadImages();
-  }, [loadImages]);
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
@@ -121,8 +101,6 @@ export const ImagesSlider = ({
     },
   };
 
-  const areImagesLoaded = loadedImages.length > 0;
-
   return (
     <div
       className={cn(
@@ -133,54 +111,69 @@ export const ImagesSlider = ({
         perspective: "1000px",
       }}
     >
-      {areImagesLoaded && children}
-      {areImagesLoaded && overlay && (
+      {/* Always render children and overlay immediately — no waiting for images */}
+      {children}
+      {overlay && (
         <div
           className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)}
         />
       )}
 
-      {areImagesLoaded && (
-        <AnimatePresence>
+      <AnimatePresence>
+        <motion.div
+          key={currentIndex + "wrap"}
+          className="absolute inset-0 h-full w-full"
+        >
           <motion.div
-            key={currentIndex + "wrap"}
+            key={currentIndex}
+            initial="initial"
+            animate={["visible", "animate"]}
+            exit={direction === "up" ? "upExit" : "downExit"}
+            variants={{ ...slideVariants, ...kenBurnsVariants }}
             className="absolute inset-0 h-full w-full"
           >
-            <motion.img
-              key={currentIndex}
-              src={loadedImages[currentIndex]}
-              initial="initial"
-              animate={["visible", "animate"]}
-              exit={direction === "up" ? "upExit" : "downExit"}
-              variants={{ ...slideVariants, ...kenBurnsVariants }}
-              className="image h-full w-full absolute inset-0 object-cover object-[center_35%]"
+            <Image
+              src={images[currentIndex]}
               alt="School campus"
+              fill
+              className="object-cover object-[center_35%]"
+              // Only the very first hero image gets priority; others load lazily
+              priority={currentIndex === 0}
+              sizes="100vw"
+              quality={82}
             />
           </motion.div>
-        </AnimatePresence>
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Preload next image in background without blocking */}
+      {images[currentIndex + 1] && (
+        <link
+          rel="prefetch"
+          href={images[currentIndex + 1]}
+          as="image"
+        />
       )}
 
       {/* Slide indicator dots */}
-      {areImagesLoaded && (
-        <div className="absolute bottom-6 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2">
-          {loadedImages.map((_, idx) => {
-            const active = idx === currentIndex;
-            return (
-              <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                aria-label={`Go to slide ${idx + 1}`}
-                className={cn(
-                  "h-1.5 rounded-full transition-all duration-500",
-                  active
-                    ? "w-8 bg-[var(--brand-gold)]"
-                    : "w-1.5 bg-white/45 hover:bg-white/70"
-                )}
-              />
-            );
-          })}
-        </div>
-      )}
+      <div className="absolute bottom-6 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2">
+        {images.map((_, idx) => {
+          const active = idx === currentIndex;
+          return (
+            <button
+              key={idx}
+              onClick={() => setCurrentIndex(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
+              className={cn(
+                "h-1.5 rounded-full transition-all duration-500",
+                active
+                  ? "w-8 bg-[var(--brand-gold)]"
+                  : "w-1.5 bg-white/45 hover:bg-white/70"
+              )}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

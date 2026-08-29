@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -31,26 +31,26 @@ type GalleryItem = {
 };
 
 const items: GalleryItem[] = [
-  { src: "/images/07-GALLERY/campus/campus-wide.png", title: "Main campus view", category: "Campus", span: "wide", alt: "Baramohanpur High School main campus" },
-  { src: "/images/03-ABOUT/heritage/heritage-building.png", title: "School building", category: "Campus", span: "tall", alt: "School building exterior" },
-  { src: "/images/03-ABOUT/timeline/school-entrance.png", title: "Campus entrance", category: "Campus", span: "md", alt: "Baramohanpur High School entrance" },
-  { src: "/images/07-GALLERY/campus/school-ground.png", title: "Campus grounds", category: "Campus", span: "md", alt: "School campus grounds" },
+  { src: "/images/07-GALLERY/campus/campus-wide.webp", title: "Main campus view", category: "Campus", span: "wide", alt: "Baramohanpur High School main campus" },
+  { src: "/images/03-ABOUT/heritage/heritage-building.webp", title: "School building", category: "Campus", span: "tall", alt: "School building exterior" },
+  { src: "/images/03-ABOUT/timeline/school-entrance.webp", title: "Campus entrance", category: "Campus", span: "md", alt: "Baramohanpur High School entrance" },
+  { src: "/images/07-GALLERY/campus/school-ground.webp", title: "Campus grounds", category: "Campus", span: "md", alt: "School campus grounds" },
   { src: "/images/03-ABOUT/overview/about-hero.jpeg", title: "Heritage & 150 Years", category: "Campus", span: "tall", alt: "School heritage poster" },
 
   { src: "/images/07-GALLERY/classrooms/class-1.jpeg", title: "Inside our classrooms", category: "Classrooms", span: "lg", alt: "Baramohanpur High School classroom" },
   { src: "/images/05-ACADEMICS/laboratories/science-lab.jpeg", title: "Science Laboratory", category: "Classrooms", span: "tall", alt: "Science lab at Baramohanpur High School" },
-  { src: "/images/07-GALLERY/classrooms/class-2.png", title: "Learning together", category: "Classrooms", span: "md", alt: "Students learning together" },
-  { src: "/images/06-EVENTS/academic/educational-events.png", title: "Academic exhibitions", category: "Classrooms", span: "md", alt: "School academic activities" },
+  { src: "/images/07-GALLERY/classrooms/class-2.webp", title: "Learning together", category: "Classrooms", span: "md", alt: "Students learning together" },
+  { src: "/images/06-EVENTS/academic/educational-events.webp", title: "Academic exhibitions", category: "Classrooms", span: "md", alt: "School academic activities" },
 
   { src: "/images/07-GALLERY/students/student-1.jpeg", title: "Student community", category: "Students", span: "lg", alt: "Students at Baramohanpur High School" },
-  { src: "/images/03-ABOUT/collaboration/community-gathering.png", title: "Gathering & community", category: "Students", span: "tall", alt: "School student gathering" },
+  { src: "/images/03-ABOUT/collaboration/community-gathering.webp", title: "Gathering & community", category: "Students", span: "tall", alt: "School student gathering" },
 
-  { src: "/images/06-EVENTS/cultural/cultural-programme.png", title: "Annual Cultural Programme", category: "Cultural", span: "wide", alt: "School cultural programme" },
-  { src: "/images/06-EVENTS/cultural/cultural-programme.png", title: "Audience & Celebration", category: "Cultural", span: "tall", alt: "Audience at a school cultural programme" },
-  { src: "/images/06-EVENTS/cultural/cultural-programme.png", title: "Music & Stage Recitals", category: "Cultural", span: "md", alt: "Music performance at school" },
+  { src: "/images/06-EVENTS/cultural/cultural-programme.webp", title: "Annual Cultural Programme", category: "Cultural", span: "wide", alt: "School cultural programme" },
+  { src: "/images/06-EVENTS/cultural/cultural-programme.webp", title: "Audience & Celebration", category: "Cultural", span: "tall", alt: "Audience at a school cultural programme" },
+  { src: "/images/06-EVENTS/cultural/cultural-programme.webp", title: "Music & Stage Recitals", category: "Cultural", span: "md", alt: "Music performance at school" },
 
-  { src: "/images/06-EVENTS/sports/sports-day.png", title: "Annual Sports Meet", category: "Sports", span: "wide", alt: "Annual sports meet" },
-  { src: "/images/07-GALLERY/campus/school-ground.png", title: "On the field", category: "Sports", span: "sm", alt: "School sports ground" },
+  { src: "/images/06-EVENTS/sports/sports-day.webp", title: "Annual Sports Meet", category: "Sports", span: "wide", alt: "Annual sports meet" },
+  { src: "/images/07-GALLERY/campus/school-ground.webp", title: "On the field", category: "Sports", span: "sm", alt: "School sports ground" },
 
   { src: "/images/01-BRANDING/school-achievements.jpeg", title: "Honours & Trophies", category: "Achievements", span: "lg", alt: "Student achievements" },
   { src: "/images/03-ABOUT/vision/our-vision.jpeg", title: "School Pride & Awards", category: "Achievements", span: "tall", alt: "School pride and awards" },
@@ -101,8 +101,8 @@ export default function GalleryPage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/07-GALLERY/gallery-banner.png"
-              alt="Gallery — Baramohanpur High School"
+              src="/images/07-GALLERY/gallery-banner.webp"
+              alt="Gallery â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"

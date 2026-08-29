@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import PageSectionHeading from "@/components/page-section-heading";
@@ -10,7 +10,7 @@ const pillars = [
     icon: IconUsers,
     title: "Parents as Partners",
     body:
-      "A child's progress is shared work. We keep parents close through regular meetings, notices, report cards, and an open office door — because a school is strongest when families stand with it.",
+      "A child's progress is shared work. We keep parents close through regular meetings, notices, report cards, and an open office door â€” because a school is strongest when families stand with it.",
     details: [
       "Parent-Teacher meetings each term",
       "Written progress reports with honest feedback",
@@ -22,7 +22,7 @@ const pillars = [
     icon: IconHeartHandshake,
     title: "Community Roots",
     body:
-      "Baramohanpur High School belongs to the village it serves. Local families, former students, and residents have supported us for generations — and we continue to be a gathering place for the community.",
+      "Baramohanpur High School belongs to the village it serves. Local families, former students, and residents have supported us for generations â€” and we continue to be a gathering place for the community.",
     details: [
       "Village events hosted on campus when appropriate",
       "Support from local families and well-wishers",
@@ -34,31 +34,31 @@ const pillars = [
     icon: IconSchool,
     title: "Alumni Voices",
     body:
-      "Our alumni are spread across West Bengal and beyond. They still remember their classrooms, their teachers, and the gate they walked through — and many continue to care for the school that shaped them.",
+      "Our alumni are spread across West Bengal and beyond. They still remember their classrooms, their teachers, and the gate they walked through â€” and many continue to care for the school that shaped them.",
     details: [
       "Former students invited back for special occasions",
       "Alumni stories shared with current batches",
       "Guidance and career conversations with former students",
-      "[DETAILS TO BE ADDED — Alumni Association / Reunions]",
+      "[DETAILS TO BE ADDED â€” Alumni Association / Reunions]",
     ],
   },
   {
     icon: IconBulb,
     title: "Educational Initiatives",
     body:
-      "We continue to improve the teaching and learning environment — building on what works, and opening our doors to thoughtful, age-appropriate educational support.",
+      "We continue to improve the teaching and learning environment â€” building on what works, and opening our doors to thoughtful, age-appropriate educational support.",
     details: [
       "Teacher development and shared best practices",
       "Computer centre and practical science instruction",
       "Remedial attention for children who need a little more time",
-      "[DETAILS TO BE ADDED — Specific programmes & initiatives]",
+      "[DETAILS TO BE ADDED â€” Specific programmes & initiatives]",
     ],
   },
   {
     icon: IconCalendarEvent,
     title: "Local Activities",
     body:
-      "Festivals, sports meets, annual day, and cultural programmes are woven into the life of the school — and into the life of the surrounding community, because school events are family events.",
+      "Festivals, sports meets, annual day, and cultural programmes are woven into the life of the school â€” and into the life of the surrounding community, because school events are family events.",
     details: [
       "Annual Day and Prize Distribution",
       "Rabindra Jayanti and other cultural observances",
@@ -76,8 +76,8 @@ export default function CollaborationPage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/03-ABOUT/collaboration-banner.png"
-              alt="Community & Collaboration — Baramohanpur High School"
+              src="/images/03-ABOUT/collaboration-banner.webp"
+              alt="Community & Collaboration â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -104,14 +104,14 @@ export default function CollaborationPage() {
               transition={{ duration: 0.6 }}
             >
               <p className="text-[0.72rem] md:text-xs font-semibold tracking-[0.3em] text-brand-gold uppercase mb-4">
-                About · Community
+                About Â· Community
               </p>
               <h1 className="font-display font-semibold text-4xl md:text-5xl tracking-tight leading-[1.05] text-white max-w-3xl">
                 <span className="heading-underline-stroke">Collaboration</span>
               </h1>
               <p className="mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-white/75">
                 A school does not stand alone. It is parents, teachers, villagers, former
-                students and local well-wishers — all caring for the same group of children.
+                students and local well-wishers â€” all caring for the same group of children.
               </p>
             </motion.div>
           </div>
@@ -123,7 +123,7 @@ export default function CollaborationPage() {
           <PageSectionHeading
             eyebrow="Together"
             title="How we work with parents & community"
-            description="Baramohanpur High School is built on ordinary people, ordinary meetings, and ordinary acts of care — added together over many years."
+            description="Baramohanpur High School is built on ordinary people, ordinary meetings, and ordinary acts of care â€” added together over many years."
             align="left"
             size="md"
             accent="stroke"
@@ -134,10 +134,10 @@ export default function CollaborationPage() {
               const reverse = idx % 2 === 1;
               const pillarImages = [
                 "/images/02-HOMEPAGE/testimonials/parent-1.jpeg",
-                "/images/03-ABOUT/collaboration/community-hands.png",
+                "/images/03-ABOUT/collaboration/community-hands.webp",
                 "/images/02-HOMEPAGE/testimonials/alumni-1.jpeg",
-                "/images/03-ABOUT/collaboration/educational-initiatives.png",
-                "/images/03-ABOUT/collaboration/paschim-medinipur-map.png",
+                "/images/03-ABOUT/collaboration/educational-initiatives.webp",
+                "/images/03-ABOUT/collaboration/paschim-medinipur-map.webp",
               ];
               const isIllustration = idx === 1 || idx === 3 || idx === 4;
               return (
@@ -206,7 +206,7 @@ export default function CollaborationPage() {
               </h2>
               <p className="text-sm md:text-base leading-relaxed text-muted-foreground max-w-xl">
                 Whether you are a parent with a concern, a former student wishing to visit, a
-                community member wanting to help, or someone with a question about our work —
+                community member wanting to help, or someone with a question about our work â€”
                 please reach out. A good school conversation begins with a simple, honest message.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -221,8 +221,8 @@ export default function CollaborationPage() {
             </div>
             <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)] bg-white flex items-center justify-center p-4">
               <Image
-                src="/images/03-ABOUT/collaboration/shared-promise.png"
-                alt="Collaborate with Baramohanpur High School — shared promise"
+                src="/images/03-ABOUT/collaboration/shared-promise.webp"
+                alt="Collaborate with Baramohanpur High School â€” shared promise"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"
                 className="object-contain p-4"

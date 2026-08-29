@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -76,12 +76,12 @@ const data = [
   {
     category: "Classrooms",
     title: "Lessons that stay with you.",
-    src: "/images/02-HOMEPAGE/carousel/c-2.png",
+    src: "/images/02-HOMEPAGE/carousel/c-2.webp",
     content: (
       <Story
         lead="Teaching at Baramohanpur is patient work."
-        body="From first letters to board exams, our teachers walk beside every learner — explaining again, encouraging often, and expecting the best."
-        image="/images/02-HOMEPAGE/carousel/c-2.png"
+        body="From first letters to board exams, our teachers walk beside every learner â€” explaining again, encouraging often, and expecting the best."
+        image="/images/02-HOMEPAGE/carousel/c-2.webp"
         alt="Classroom learning"
       />
     ),
@@ -89,12 +89,12 @@ const data = [
   {
     category: "Student Life",
     title: "Friends, houses, and house pride.",
-    src: "/images/02-HOMEPAGE/carousel/c-3.png",
+    src: "/images/02-HOMEPAGE/carousel/c-3.webp",
     content: (
       <Story
         lead="School is more than a timetable."
         body="It is the walk between classes, the house cheer on sports day, and the quiet confidence of a student who finally understands."
-        image="/images/02-HOMEPAGE/carousel/c-3.png"
+        image="/images/02-HOMEPAGE/carousel/c-3.webp"
         alt="Student life"
       />
     ),
@@ -102,12 +102,12 @@ const data = [
   {
     category: "Education & Growth",
     title: "Learning that shapes the mind.",
-    src: "/images/02-HOMEPAGE/values/support.png",
+    src: "/images/02-HOMEPAGE/values/support.webp",
     content: (
       <Story
         lead="Every lesson builds character."
         body="Academic study, cultural education, and practical knowledge develop responsible, capable young minds ready for the world."
-        image="/images/02-HOMEPAGE/values/support.png"
+        image="/images/02-HOMEPAGE/values/support.webp"
         alt="Education and growth"
       />
     ),
@@ -115,12 +115,12 @@ const data = [
   {
     category: "Community",
     title: "Parents, teachers, one family.",
-    src: "/images/02-HOMEPAGE/values/value-3.png",
+    src: "/images/02-HOMEPAGE/values/value-3.webp",
     content: (
       <Story
         lead="A school thrives when families stand with it."
-        body="Meetings, notices, and open doors keep guardians close to classroom life — because a child's progress is a shared journey."
-        image="/images/02-HOMEPAGE/values/value-3.png"
+        body="Meetings, notices, and open doors keep guardians close to classroom life â€” because a child's progress is a shared journey."
+        image="/images/02-HOMEPAGE/values/value-3.webp"
         alt="Community and family"
       />
     ),
@@ -128,12 +128,12 @@ const data = [
   {
     category: "Values",
     title: "Knowledge, character, community.",
-    src: "/images/02-HOMEPAGE/values/values.png",
+    src: "/images/02-HOMEPAGE/values/values.webp",
     content: (
       <Story
         lead="We measure success in more than marks."
-        body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground — that is the Baramohanpur way."
-        image="/images/02-HOMEPAGE/values/values.png"
+        body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground â€” that is the Baramohanpur way."
+        image="/images/02-HOMEPAGE/values/values.webp"
         alt="School values"
       />
     ),

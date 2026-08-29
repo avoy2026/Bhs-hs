@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "School Notices | Baramohanpur High School",
   description:
-    "Official notices and announcements from Baramohanpur High School — admissions, exams, holidays, results, events and everyday reminders for students and parents.",
+    "Official notices and announcements from Baramohanpur High School â€” admissions, exams, holidays, results, events and everyday reminders for students and parents.",
 };
 
 import TabsDemo from "@/components/tabs-demo";
@@ -24,8 +24,8 @@ export default function NoticesPage() {
         <div className="page-shell !py-0">
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/04-NOTICES/notice-banner.png"
-              alt="Announcements and Notices — Baramohanpur High School"
+              src="/images/04-NOTICES/notice-banner.webp"
+              alt="Announcements and Notices â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
