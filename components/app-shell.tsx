@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname } from "next/navigation";
 import Lenis from "lenis";
@@ -13,6 +13,8 @@ import Navbar from "@/app/navbar";
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [showPreloader, setShowPreloader] = useState(false);
+  const [isNavigating, setIsNavigating] = useState(false);
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
     if (sessionStorage.getItem("bhs_preloader_done")) return;
@@ -35,6 +37,25 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     };
   }, [showPreloader]);
 
+  // Page-to-page navigation transition effect
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    if (showPreloader) return;
+
+    window.scrollTo(0, 0);
+    const showTimer = window.setTimeout(() => setIsNavigating(true), 0);
+    const hideTimer = window.setTimeout(() => setIsNavigating(false), 600);
+
+    return () => {
+      window.clearTimeout(showTimer);
+      window.clearTimeout(hideTimer);
+    };
+  }, [pathname, showPreloader]);
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -46,11 +67,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       lenis.destroy();
     };
   }, []);
-
-  // Scroll to top on route change
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
 
   // Section reveal observer with viewport check and fallback guarantee
   useEffect(() => {
@@ -89,7 +105,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
       targets.forEach((el) => {
         const rect = el.getBoundingClientRect();
-        // If element is already in viewport, reveal immediately
         if (rect.top < window.innerHeight && rect.bottom > 0) {
           el.classList.add("is-revealed");
         } else {
@@ -98,7 +113,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         }
       });
 
-      // Failsafe: Guarantee all sections become visible within 500ms
       fallbackTimer = window.setTimeout(() => {
         targets.forEach((el) => {
           el.classList.add("is-revealed");
@@ -115,12 +129,37 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      {/* 1. FIRST TIME OPENING PRELOADER */}
       <AnimatePresence>
         {showPreloader && (
-          <Preloader key="preloader" onComplete={finishPreloader} />
+          <Preloader key="first-preloader" onComplete={finishPreloader} />
         )}
       </AnimatePresence>
+
+      {/* 2. EVERY PAGE TRANSITION PRELOADER (WHITE BACKGROUND, NO TEXT) */}
+      <AnimatePresence>
+        {isNavigating && !showPreloader && (
+          <motion.div
+            key="page-nav-loader"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="fixed inset-0 z-[250] flex items-center justify-center bg-white"
+          >
+            <div className="relative w-48 h-48 md:w-64 md:h-64 flex items-center justify-center">
+              <img
+                src="/preloading/Every-page.gif"
+                alt=""
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <Navbar />
+
       <motion.div
         key={pathname}
         className="flex-1"
@@ -130,6 +169,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       >
         {children}
       </motion.div>
+
       <SiteFooter />
       <CelebrationPopup visible={!showPreloader} />
     </>

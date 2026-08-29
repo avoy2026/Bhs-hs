@@ -227,8 +227,8 @@ export default function SiteNavbar() {
                     className={cn(
                       "flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-medium transition-colors",
                       active
-                        ? "bg-[var(--brand-navy)] text-white"
-                        : "text-neutral-700 hover:bg-[var(--brand-mist)]",
+                        ? "bg-[var(--brand-navy)] !text-white [&_span]:!text-white [&_svg]:!text-white"
+                        : "!text-neutral-800 hover:bg-[var(--brand-mist)] [&_span]:!text-neutral-800 [&_svg]:!text-neutral-700",
                     )}
                   >
                     <span>{item.name}</span>
@@ -263,8 +263,8 @@ export default function SiteNavbar() {
                                 className={cn(
                                   "rounded-md px-3 py-2 text-sm transition-colors",
                                   subActive
-                                    ? "bg-[var(--brand-navy)] text-white"
-                                    : "text-neutral-600 hover:bg-[var(--brand-mist)]",
+                                    ? "bg-[var(--brand-navy)] !text-white"
+                                    : "!text-neutral-800 hover:bg-[var(--brand-mist)]",
                                 )}
                               >
                                 <p className="font-medium">{sub.name}</p>
@@ -272,7 +272,7 @@ export default function SiteNavbar() {
                                   className={cn(
                                     "text-[0.72rem] mt-0.5",
                                     subActive
-                                      ? "text-white/75"
+                                      ? "!text-white/75"
                                       : "text-[var(--muted-foreground)]",
                                   )}
                                 >
@@ -297,8 +297,8 @@ export default function SiteNavbar() {
                 className={cn(
                   "relative w-full rounded-md px-3 py-2 text-sm font-medium transition-colors",
                   active
-                    ? "bg-[var(--brand-navy)] text-white"
-                    : "text-neutral-700 hover:bg-[var(--brand-mist)]",
+                    ? "bg-[var(--brand-navy)] !text-white [&_span]:!text-white"
+                    : "!text-neutral-800 hover:bg-[var(--brand-mist)] [&_span]:!text-neutral-800",
                 )}
               >
                 <span className="block">{item.name}</span>

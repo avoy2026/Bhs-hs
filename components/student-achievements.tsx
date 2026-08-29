@@ -68,13 +68,13 @@ export default function StudentAchievements() {
           >
             <div className="relative aspect-[5/4] w-full overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/branding/school-achievements.jpeg"
+                src="/images/01-BRANDING/school-achievements.jpeg"
                 alt="Student achievements at Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 620px"
                 className="object-cover"
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/65 via-[var(--brand-navy)]/15 to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/80 via-[var(--brand-navy)]/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
                 <p className="eyebrow text-white/85">Since the earliest days</p>
                 <h3 className="mt-2 font-display text-2xl md:text-3xl font-semibold text-white leading-tight max-w-md">
@@ -84,7 +84,7 @@ export default function StudentAchievements() {
             </div>
             <div
               aria-hidden
-              className="hidden md:block absolute -right-4 -top-4 h-full w-full rounded-3xl bg-gradient-to-br from-[var(--brand-gold)]/25 to-transparent -z-10 -translate-y-3 translate-x-3"
+              className="hidden md:block absolute -right-3 -top-3 h-full w-full rounded-3xl bg-[var(--brand-navy)]/10 -z-10"
             />
           </motion.div>
 

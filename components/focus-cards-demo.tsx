@@ -4,27 +4,27 @@ export default function FocusCardsDemo() {
   const cards = [
     {
       title: "Knowledge & Guidance",
-      src: "/images/ABout-us(life-between-bell)/knowledge.jpeg",
+      src: "/images/05-ACADEMICS/classrooms/classroom-learning.png",
     },
     {
       title: "Classroom Learning",
-      src: "/images/banners/home-hero-classroom.jpeg",
+      src: "/images/05-ACADEMICS/classrooms/classroom-main.jpeg",
     },
     {
       title: "Student Life",
-      src: "/images/ABout-us(life-between-bell)/student life.jpeg",
+      src: "/images/07-GALLERY/students/student-1.jpeg",
     },
     {
       title: "Achievements",
-      src: "/images/branding/school-achievements.jpeg",
+      src: "/images/01-BRANDING/school-achievements.jpeg",
     },
     {
       title: "Our Pride",
-      src: "/images/ABout-us(life-between-bell)/our-pride.jpeg",
+      src: "/images/03-ABOUT/heritage/heritage-building.png",
     },
     {
       title: "Community Spirit",
-      src: "/images/students/student-group.jpeg",
+      src: "/images/03-ABOUT/collaboration/community-gathering.png",
     },
   ];
 

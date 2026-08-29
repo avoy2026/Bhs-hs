@@ -20,27 +20,18 @@ export const metadata: Metadata = {
 export default function AcademicsPage() {
   return (
     <main className="overflow-x-hidden">
-      <section className="relative isolate overflow-hidden section-navy">
-        <div className="relative page-shell grid gap-10 py-20 md:py-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div>
-            <p className="eyebrow text-brand-gold">Learning at BHS</p>
-            <h1 className="mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight text-white md:text-6xl">
-              <span className="heading-underline-stroke">Academics</span>
-            </h1>
-            <p className="mt-6 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
-              A clear guide to the classes, Higher Secondary streams, subjects, practical learning, and student development available at Baramohanpur High School.
-            </p>
-          </div>
-          <div className="relative aspect-5/4 overflow-hidden rounded-3xl ring-1 ring-white/10">
+      {/* Hero */}
+      <section className="relative pt-24 md:pt-32 pb-8 bg-[var(--brand-fog)] overflow-hidden">
+        <div className="page-shell !py-0">
+          <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
-              src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg"
-              alt="Students learning in a Baramohanpur High School classroom"
+              src="/images/05-ACADEMICS/academics-banner.png"
+              alt="Academics — Baramohanpur High School"
               fill
               priority
-              sizes="(max-width: 1024px) 100vw, 440px"
-              className="object-cover"
+              sizes="(max-width: 1280px) 100vw, 1200px"
+              className="object-contain p-4 md:p-8"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-(--brand-ink)/60 via-transparent to-transparent" />
           </div>
         </div>
       </section>
@@ -65,7 +56,7 @@ export default function AcademicsPage() {
         eyebrow="Learning spaces"
         title="Classrooms that support curiosity."
         body="Academic learning at Baramohanpur High School begins in the classroom, where students from Classes V to XII build understanding, ask questions, and develop the confidence to keep learning."
-        image="/images/banners/home-hero-classroom.jpeg"
+        image="/images/05-ACADEMICS/classrooms/classroom-learning.png"
         imageAlt="Classroom learning at Baramohanpur High School"
         href="#classes"
         hrefLabel="Explore our classes"
@@ -81,7 +72,7 @@ export default function AcademicsPage() {
         eyebrow="Practical learning"
         title="Learning that reaches beyond the textbook."
         body="Science and Computer Application are part of the school’s academic offering. This practical-learning section is ready to grow with verified laboratory details, equipment information, class schedules, and additional photographs."
-        image="/images/classrooms/science-laboratory.jpeg"
+        image="/images/03-ABOUT/timeline/science-education.png"
         imageAlt="Science laboratory at Baramohanpur High School"
         href="#subjects"
         hrefLabel="See confirmed subjects"

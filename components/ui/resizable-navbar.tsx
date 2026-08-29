@@ -172,12 +172,19 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       className={cn(
         "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between px-0 py-2 lg:hidden",
         visible
-          ? "bg-white/80 dark:bg-neutral-950/80"
-          : "bg-black/25 text-white [&_a]:text-white [&_span]:text-white [&_svg]:text-white",
+          ? "bg-white/80 dark:bg-neutral-950/80 text-black dark:text-white"
+          : "bg-black/25 text-white",
         className,
       )}
     >
-      {children}
+      {React.Children.map(children, (child) =>
+        React.isValidElement(child)
+          ? React.cloneElement(
+              child as React.ReactElement<{ visible?: boolean }>,
+              { visible },
+            )
+          : child,
+      )}
     </motion.div>
   );
 };
@@ -185,11 +192,15 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
 export const MobileNavHeader = ({
   children,
   className,
-}: MobileNavHeaderProps) => {
+  visible,
+}: MobileNavHeaderProps & { visible?: boolean }) => {
   return (
     <div
       className={cn(
-        "flex w-full flex-row items-center justify-between",
+        "flex w-full flex-row items-center justify-between px-3 py-1",
+        visible
+          ? "text-neutral-900 dark:text-white [&_a]:text-neutral-900 dark:[&_a]:text-white [&_span]:text-neutral-900 dark:[&_span]:text-white [&_svg]:text-neutral-900 dark:[&_svg]:text-white"
+          : "text-white [&_a]:text-white [&_span]:text-white [&_svg]:text-white",
         className,
       )}
     >
@@ -207,11 +218,12 @@ export const MobileNavMenu = ({
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.2 }}
           className={cn(
-            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-white px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-neutral-950",
+            "absolute inset-x-0 top-full mt-2 z-50 flex w-full flex-col items-start justify-start gap-2 rounded-2xl bg-white p-4 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-[var(--border)] dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 [&_a]:text-neutral-800 dark:[&_a]:text-neutral-200 [&_span]:text-neutral-800 dark:[&_span]:text-neutral-200 [&_svg]:text-neutral-700 dark:[&_svg]:text-neutral-300",
             className,
           )}
         >

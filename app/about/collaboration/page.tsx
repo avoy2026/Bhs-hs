@@ -71,6 +71,22 @@ const pillars = [
 export default function CollaborationPage() {
   return (
     <main className="overflow-x-hidden">
+      {/* Hero */}
+      <section className="relative pt-24 md:pt-32 pb-8 bg-[var(--brand-fog)] overflow-hidden">
+        <div className="page-shell !py-0">
+          <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
+            <Image
+              src="/images/03-ABOUT/collaboration-banner.png"
+              alt="Community & Collaboration — Baramohanpur High School"
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1200px"
+              className="object-contain p-4 md:p-8"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="relative isolate overflow-hidden section-navy">
         <div className="relative w-full section-pad">
           <div
@@ -116,6 +132,14 @@ export default function CollaborationPage() {
             {pillars.map((p, idx) => {
               const Icon = p.icon;
               const reverse = idx % 2 === 1;
+              const pillarImages = [
+                "/images/02-HOMEPAGE/testimonials/parent-1.jpeg",
+                "/images/03-ABOUT/collaboration/community-hands.png",
+                "/images/02-HOMEPAGE/testimonials/alumni-1.jpeg",
+                "/images/03-ABOUT/collaboration/educational-initiatives.png",
+                "/images/03-ABOUT/collaboration/paschim-medinipur-map.png",
+              ];
+              const isIllustration = idx === 1 || idx === 3 || idx === 4;
               return (
                 <motion.article
                   key={p.title}
@@ -128,24 +152,17 @@ export default function CollaborationPage() {
                   }`}
                 >
                   <div
-                    className={`relative aspect-16/10 w-full overflow-hidden rounded-2xl ring-1 ring-black/5`}
+                    className={`relative aspect-16/10 w-full overflow-hidden rounded-2xl ring-1 ring-black/5 ${
+                      isIllustration ? "bg-white flex items-center justify-center p-2" : ""
+                    }`}
                   >
                     <Image
-                      src={
-                        [
-                          "/images/02-HOMEPAGE/testimonials/parent-1.jpeg",
-                          "/images/02-HOMEPAGE/values/values.png",
-                          "/images/02-HOMEPAGE/testimonials/alumni-1.jpeg",
-                          "/images/05-ACADEMICS/classrooms/classroom-main.jpeg",
-                          "/images/02-HOMEPAGE/carousel/cursoal-1.jpeg",
-                        ][idx % 5]
-                      }
+                      src={pillarImages[idx % pillarImages.length]}
                       alt={p.title}
                       fill
                       sizes="(max-width: 1024px) 100vw, 480px"
-                      className="object-cover"
+                      className={isIllustration ? "object-contain p-2" : "object-cover"}
                     />
-                    <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--brand-navy)/55 via-transparent to-transparent" />
                   </div>
                   <div>
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-(--brand-navy)/10 text-brand-navy mb-4">
@@ -202,15 +219,14 @@ export default function CollaborationPage() {
                 </a>
               </div>
             </div>
-            <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
+            <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)] bg-white flex items-center justify-center p-4">
               <Image
-                src="/images/02-HOMEPAGE/campus/campus-2.png"
-                alt="School community gathering"
+                src="/images/03-ABOUT/collaboration/shared-promise.png"
+                alt="Collaborate with Baramohanpur High School — shared promise"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"
-                className="object-cover"
+                className="object-contain p-4"
               />
-              <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--brand-ink)/55 via-transparent to-transparent" />
             </div>
           </div>
         </div>

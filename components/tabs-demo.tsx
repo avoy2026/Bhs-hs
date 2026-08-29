@@ -9,14 +9,14 @@ export default function TabsDemo() {
       title: "Admissions",
       value: "admissions",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>Open for the new session</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Forms are at the school office. Bring the child, the papers, and a
             little hope — we will help you with the rest, within the dates
             announced each year.
           </p>
-          <DummyContent src="/images/07-GALLERY/campus/campus-wide.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.png" />
         </div>
       ),
     },
@@ -24,13 +24,13 @@ export default function TabsDemo() {
       title: "Exams",
       value: "exams",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>How the year is examined</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Half-yearly and annual dates appear here first. Students follow the
             class routine; parents use this board so no one is caught unready.
           </p>
-          <DummyContent src="/images/07-GALLERY/classrooms/class-1.jpeg" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-2.png" />
         </div>
       ),
     },
@@ -38,13 +38,13 @@ export default function TabsDemo() {
       title: "Holidays",
       value: "holidays",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>When the campus rests</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Official holidays and unexpected closures are posted for families
             first — so a closed gate never comes as a surprise.
           </p>
-          <DummyContent src="/images/06-EVENTS/academic/educational-events.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-3.png" />
         </div>
       ),
     },
@@ -52,14 +52,14 @@ export default function TabsDemo() {
       title: "Results",
       value: "results",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>When results are ready</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Class and board announcements live here. Collect mark sheets from
             the office when your name is called — and celebrate with quiet
             pride.
           </p>
-          <DummyContent src="/images/06-EVENTS/cultural/cultural-programme.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.png" />
         </div>
       ),
     },
@@ -67,13 +67,13 @@ export default function TabsDemo() {
       title: "General",
       value: "general",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>The everyday school</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Uniform, meetings, fees, and the small rules that keep a large
             family in order. If it matters to campus life, it appears here.
           </p>
-          <DummyContent src="/images/07-GALLERY/students/student-1.jpeg" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-2.png" />
         </div>
       ),
     },
@@ -81,13 +81,13 @@ export default function TabsDemo() {
       title: "Sports",
       value: "sports",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>On the field</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Schedules for upcoming tournaments, house matches, and athletic
             meets are posted here for all students.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/sports-notice.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-3.png" />
         </div>
       ),
     },
@@ -95,13 +95,13 @@ export default function TabsDemo() {
       title: "Annual Report",
       value: "annual_report",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-6 md:p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>Our progress</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Read the annual reports detailing the school&apos;s achievements,
             growth, and vision for the upcoming academic year.
           </p>
-          <DummyContent src="/images/04-NOTICES/tabs/annual-report.png" />
+          <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.png" />
         </div>
       ),
     },
@@ -116,13 +116,13 @@ export default function TabsDemo() {
 
 const DummyContent = ({ src }: { src: string }) => {
   return (
-    <div className="pointer-events-none absolute bottom-4 inset-x-0 mx-auto h-[55%] w-[90%] overflow-hidden rounded-xl md:h-[72%]">
+    <div className="pointer-events-none absolute bottom-4 inset-x-0 mx-auto h-[55%] w-[92%] overflow-hidden rounded-xl bg-white/95 p-3 md:h-[68%] md:p-6 border border-white/20 shadow-lg flex items-center justify-center">
       <Image
         src={src}
-        alt="School notice"
+        alt="School notice coming soon"
         fill
         sizes="(max-width: 768px) 85vw, 70vw"
-        className="object-cover object-left-top"
+        className="object-contain p-2 md:p-4"
       />
     </div>
   );

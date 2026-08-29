@@ -46,18 +46,18 @@ export default function AboutPage() {
   return (
     <main className="overflow-x-hidden">
       {/* Hero */}
-      <section className="relative isolate overflow-hidden">
-        <div className="relative w-full h-[24rem] sm:h-[28rem] md:h-[34rem] lg:h-[38rem]">
-          <Image
-            src="/images/03-ABOUT/overview/about-hero.jpeg"
-            alt="Baramohanpur High School campus"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-[center_35%]"
-          />
-          {/* Banner image only — no text overlay */}
-
+      <section className="relative pt-24 md:pt-32 pb-8 bg-[var(--brand-fog)] overflow-hidden">
+        <div className="page-shell !py-0">
+          <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
+            <Image
+              src="/images/03-ABOUT/about-banner.png"
+              alt="About Us — Baramohanpur High School"
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1200px"
+              className="object-contain p-4 md:p-8"
+            />
+          </div>
         </div>
       </section>
 

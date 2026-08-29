@@ -12,22 +12,22 @@ export const higherSecondaryStreams = [
     name: "Science",
     classes: "Classes XI–XII",
     description: "Higher Secondary Science education for students pursuing scientific and technical study.",
-    image: "/images/05-ACADEMICS/classrooms/classroom-main.jpeg",
-    imageAlt: "Classroom learning at Baramohanpur High School",
+    image: "/images/05-ACADEMICS/science-stream.png",
+    imageAlt: "Science Stream — Baramohanpur High School",
   },
   {
     name: "Arts",
     classes: "Classes XI–XII",
     description: "Higher Secondary Arts education with a foundation for humanities and social science study.",
-    image: "/images/02-HOMEPAGE/carousel/c-3.png",
-    imageAlt: "Cultural learning at Baramohanpur High School",
+    image: "/images/05-ACADEMICS/arts-stream.png",
+    imageAlt: "Arts Stream — Baramohanpur High School",
   },
   {
     name: "Commerce",
     classes: "Classes XI–XII",
     description: "Higher Secondary Commerce education, reopened at Baramohanpur High School in 2026.",
-    image: "/images/02-HOMEPAGE/campus/campus-1.png",
-    imageAlt: "Baramohanpur High School campus",
+    image: "/images/05-ACADEMICS/commerce-stream.png",
+    imageAlt: "Commerce Stream — Baramohanpur High School",
   },
 ] as const;
 

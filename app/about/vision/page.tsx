@@ -40,18 +40,19 @@ const missionPoints = [
 export default function VisionPage() {
   return (
     <main className="overflow-x-hidden">
-      <section className="relative isolate overflow-hidden">
-        <div className="relative w-full h-52 md:h-72">
-          <Image
-            src="/images/02-HOMEPAGE/carousel/c-3.png"
-            alt="Students at Baramohanpur High School"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="hero-scrim-warm absolute inset-0" />
-          {/* Banner image only — no text overlay */}
+      {/* Hero */}
+      <section className="relative pt-24 md:pt-32 pb-8 bg-[var(--brand-fog)] overflow-hidden">
+        <div className="page-shell !py-0">
+          <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
+            <Image
+              src="/images/03-ABOUT/vision-banner.png"
+              alt="Our Vision — Baramohanpur High School"
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1200px"
+              className="object-contain p-4 md:p-8"
+            />
+          </div>
         </div>
       </section>
 

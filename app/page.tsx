@@ -31,7 +31,7 @@ export default function HomePage() {
         eyebrow="Learning spaces"
         title="Classrooms built for curiosity and calm."
         body="From Classes V to XII, our students learn across Arts, Science and Commerce, with 25 subjects including Artificial Intelligence, Agriculture, Computer Application and Education. We want every lesson to build understanding, confidence and the habit of asking meaningful questions."
-        image="/images/05-ACADEMICS/classrooms/classroom-main.jpeg"
+        image="/images/05-ACADEMICS/classrooms/classroom-learning.png"
         imageAlt="Classrooms at Baramohanpur High School"
         href="/about"
         hrefLabel="About our campus"

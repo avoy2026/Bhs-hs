@@ -43,13 +43,13 @@ export const controls = {
 };
 
 const CardImage = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="relative h-50 w-full overflow-hidden rounded-xl">
+  <div className="relative h-50 w-full overflow-hidden rounded-xl bg-white border border-black/5 flex items-center justify-center p-2 shadow-inner">
     <Image
       src={src}
       alt={alt}
       fill
       sizes="(max-width: 1024px) 220px, 300px"
-      className="object-cover transition duration-500 group-hover:scale-105"
+      className="object-contain p-2 transition duration-500 group-hover:scale-105"
     />
   </div>
 );
@@ -66,7 +66,7 @@ export const Cards = ({
         "A night of music, theatre, and proud applause — when the whole school gathers to celebrate talent.",
       skeleton: (
         <CardImage
-          src="/images/events/cultural/cultural-programme.png"
+          src="/images/06-EVENTS/cultural/cultural-programme.png"
           alt="Students performing at a cultural programme"
         />
       ),
@@ -85,7 +85,7 @@ export const Cards = ({
         "Races, relays, and house spirit on the field — where discipline meets joy and every student is cheered.",
       skeleton: (
         <CardImage
-          src="/images/events/sports/sports-day.png"
+          src="/images/06-EVENTS/sports/sports-day.png"
           alt="Students taking part in sports"
         />
       ),
@@ -103,8 +103,8 @@ export const Cards = ({
         "Dance, song, and art that carry the voice of Baramohanpur — a festival of culture and belonging.",
       skeleton: (
         <CardImage
-          src="/images/events/academic/educational-events.png"
-          alt="School event gathering"
+          src="/images/06-EVENTS/rabindranath-tagore.png"
+          alt="Rabindra Jayanti and cultural fest"
         />
       ),
       className: "bg-[var(--brand-navy)] [&_h2]:text-white",
@@ -121,8 +121,8 @@ export const Cards = ({
         "Curious minds, handmade models, and questions that spark — learning that steps out of the textbook.",
       skeleton: (
         <CardImage
-          src="/images/classrooms/science-laboratory.jpeg"
-          alt="Science laboratory at Baramohanpur High School"
+          src="/images/06-EVENTS/science-fair-event.png"
+          alt="Science Fair at Baramohanpur High School"
         />
       ),
       className: "bg-[var(--brand-gold)] [&_h2]:text-[var(--brand-ink)] [&_p]:text-[var(--brand-ink)]/80",
@@ -139,7 +139,7 @@ export const Cards = ({
         "Medals, certificates, and quiet pride — honouring the students who lifted the name of our school.",
       skeleton: (
         <CardImage
-          src="/images/branding/school-achievements.jpeg"
+          src="/images/06-EVENTS/prize-night-event.png"
           alt="Students celebrating a school achievement"
         />
       ),

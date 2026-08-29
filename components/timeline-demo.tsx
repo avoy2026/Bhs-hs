@@ -20,67 +20,24 @@ const GridImg = ({ src, alt }: { src: string; alt: string }) => (
 export default function TimelineDemo() {
   const data = [
     {
-      title: "2027–2028",
+      title: "1878 · Foundation & Legacy",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Baramohanpur High School will observe its 150th Anniversary as a
-            year-long festival of education, culture and reunion from 2nd January
-            2027 to 2nd January 2028. Present and former students, teachers,
-            guardians and well-wishers are invited to join this historic celebration.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/campus/school-entrance.jpeg" alt="School entrance" />
-            <GridImg src="/images/events/academic/educational-events.png" alt="Educational events" />
-            <GridImg src="/images/events/sports/sports-day.png" alt="Sports and celebrations" />
-            <GridImg src="/images/campus/school-greatimage-poster.jpeg" alt="150 years celebration" />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "2021–2026",
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Sanjoy Modak took charge as Headmaster on 11th May, 2021, during the
-            Covid-19 pandemic. With the collective effort of the school community,
-            student strength from Classes V to XII grew from 950 to 1,175.
-          </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            The Higher Secondary section offers Arts, Science and Commerce with 25
-            subjects, including Artificial Intelligence, Agriculture, Computer
-            Application and Education. Commerce was reopened in 2026 after more
-            than a decade.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
-            <GridImg src="/images/classrooms/science-laboratory.jpeg" alt="Science laboratory" />
-            <GridImg src="/images/banners/home-hero-classroom.jpeg" alt="Classroom learning" />
-            <GridImg src="/images/branding/school-achievements.jpeg" alt="Academic achievements" />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "1878 · Legacy",
-      content: (
-        <div>
-          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
             Baramohanpur High School was established in 1878 under the inspiration
             of Pandit Ishwar Chandra Vidyasagar and the initiative of Shri Nityananda Dey.
           </p>
           <div className="mb-8">
             {[
               "A shared foundation built with village families' land, money, labour and blessings",
-              "150 years of spreading the light of knowledge",
+              "150 years of spreading the light of knowledge across the region",
               "Alumni serving India and abroad in respected professions",
               "Freedom fighter Shri Hemchandra Kanungo among our notable former students",
-              "Dr. Surja Kanta Mishra, former Health Minister of West Bengal, among our distinguished alumni",
+              "Dr. Surja Kanta Mishra, former Health Minister of West Bengal, among distinguished alumni",
             ].map((item, idx) => (
               <div
                 key={item}
-                className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300"
+                className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300 py-0.5"
               >
                 <span
                   className={`inline-block h-1.5 w-1.5 rounded-full ${[
@@ -96,10 +53,50 @@ export default function TimelineDemo() {
             ))}
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <GridImg src="/images/history/iswar-chandra.jpeg" alt="Pandit Ishwar Chandra Vidyasagar" />
-            <GridImg src="/images/history/shi-hemanchandra-kanuga.jpeg" alt="Shri Hemchandra Kanungo" />
-            <GridImg src="/images/history/3-statue.jpeg" alt="Heritage statues at school" />
-            <GridImg src="/images/campus/main-school-building.jpeg" alt="Main school building" />
+            <GridImg src="/images/03-ABOUT/timeline/iswar-chandra-vidyasagar.png" alt="Pandit Ishwar Chandra Vidyasagar" />
+            <GridImg src="/images/03-ABOUT/timeline/nityananda-dey.png" alt="Shri Nityananda Dey" />
+            <GridImg src="/images/03-ABOUT/heritage/heritage-building.png" alt="Heritage school building" />
+            <GridImg src="/images/03-ABOUT/timeline/school-entrance.png" alt="School entrance" />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2021–2025 · Modern Growth",
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
+            Sanjoy Modak took charge as Headmaster on 11th May, 2021, during the
+            Covid-19 pandemic. With the collective effort of the school community,
+            student strength from Classes V to XII grew from 950 to 1,175.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <GridImg src="/images/03-ABOUT/staff/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
+            <GridImg src="/images/03-ABOUT/timeline/academic-growth.png" alt="Academic growth and achievements" />
+            <GridImg src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg" alt="Classroom learning" />
+            <GridImg src="/images/07-GALLERY/students/assembly.jpeg" alt="Student assembly" />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2026 – 2027 · 150th Anniversary",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
+            The Higher Secondary section offers Arts, Science and Commerce with 25
+            subjects, including Artificial Intelligence, Agriculture, Computer
+            Application and Education. Commerce was reopened in 2026 after more
+            than a decade.
+          </p>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 font-semibold text-[var(--brand-navy)]">
+            Baramohanpur High School observes its 150th Anniversary (2027–2028) as a historic year-long festival of education, culture, and alumni reunion.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <GridImg src="/images/03-ABOUT/timeline/science-education.png" alt="Modern science education" />
+            <GridImg src="/images/01-BRANDING/school-logo.png" alt="150th Anniversary Emblem" />
+            <GridImg src="/images/01-BRANDING/school-achievements.jpeg" alt="150 Years of Excellence" />
+            <GridImg src="/images/06-EVENTS/academic/educational-events.png" alt="Educational events and celebrations" />
           </div>
         </div>
       ),

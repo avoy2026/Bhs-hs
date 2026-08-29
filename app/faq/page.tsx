@@ -99,7 +99,7 @@ export default function FAQPage() {
   return (
     <main className="overflow-x-hidden">
       <section className="relative isolate overflow-hidden section-navy">
-        <div className="relative w-full section-pad">
+        <div className="relative w-full pt-28 md:pt-36 pb-12 md:pb-16">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0"

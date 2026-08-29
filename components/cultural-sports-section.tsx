@@ -28,13 +28,12 @@ export default function CulturalSportsSection() {
             <div className="relative grid gap-0 md:grid-cols-[1.1fr_1fr] min-h-[440px]">
               <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden">
                 <Image
-                  src="/images/06-EVENTS/cultural/cultural-programme.png"
-                  alt="Cultural programmes at Baramohanpur High School"
+                  src="/images/06-EVENTS/rabindranath-tagore.png"
+                  alt="Kabiguru Rabindranath Tagore — Rabindra Jayanti at Baramohanpur High School"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition duration-[900ms] group-hover:scale-[1.04]"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr md:bg-gradient-to-r from-[var(--brand-ink)]/70 via-[var(--brand-ink)]/20 to-transparent" />
                 <div className="absolute left-5 top-5 md:left-6 md:top-6 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1.5 text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[var(--brand-navy)] shadow-sm">
                   <IconBrush className="h-3.5 w-3.5 text-[var(--brand-gold)]" stroke={2} />
                   Cultural Life

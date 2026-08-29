@@ -18,11 +18,11 @@ const contactDetails = [
     body: (
       <>
         <span className="block font-medium text-brand-navy">
-          Baramohanpur High School
+          Baramohanpur High School (H.S.)
         </span>
-        [PLACEHOLDER — Full Address]
+        State Highway 5, Khakurda, Belda
         <br />
-        Baramohanpur, West Bengal
+        Paschim Medinipur, West Bengal — 721445
       </>
     ),
   },
@@ -63,17 +63,19 @@ const contactDetails = [
 export default function ContactPage() {
   return (
     <main className="overflow-x-hidden">
-      <section className="relative section-navy overflow-hidden">
-        <Image
-          src="/images/08-CONTACT-FAQ/contact/contact-Us banner.png"
-          alt="Baramohanpur High School contact office"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div aria-hidden="true" className="hero-scrim absolute inset-0" />
-        <div className="relative z-10 w-full h-52 md:h-72 lg:h-80" />
+      <section className="relative pt-24 md:pt-32 pb-8 bg-[var(--brand-fog)] overflow-hidden">
+        <div className="page-shell !py-0">
+          <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-[#4a86c6]">
+            <Image
+              src="/images/08-CONTACT-FAQ/contact/contact-Us banner.png"
+              alt="Contact Us — Baramohanpur High School"
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1200px"
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
       </section>
 
       <section className="section-light">
@@ -115,6 +117,49 @@ export default function ContactPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* GOOGLE MAP LOCATION */}
+      <section className="section-soft section-pad border-t border-[var(--border)]">
+        <div className="page-shell !py-0">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-8"
+          >
+            <p className="mb-2 text-xs font-semibold tracking-[0.2em] text-(--brand-navy)/60 uppercase">
+              Location & Campus Map
+            </p>
+            <h2 className="text-2xl font-semibold text-brand-navy md:text-3xl">
+              Visit Baramohanpur High School
+            </h2>
+            <p className="mt-2 text-sm text-muted-foreground">
+              State Highway 5, Khakurda, Belda, Paschim Medinipur, West Bengal (PIN: 721445)
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative w-full h-[380px] md:h-[450px] rounded-3xl overflow-hidden shadow-lg border border-border bg-white"
+          >
+            <iframe
+              title="Baramohanpur High School Google Map Location"
+              src="https://maps.google.com/maps?q=State%20Highway%205%2C%20Khakurda%2C%20Belda%2C%20Paschim%20Medinipur%2C%20West%20Bengal%20721445&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+            />
+          </motion.div>
         </div>
       </section>
 

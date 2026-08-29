@@ -65,13 +65,13 @@ export function StreamInformation() {
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {higherSecondaryStreams.map((stream) => (
             <article key={stream.name} className="rounded-2xl border border-[var(--brand-navy)]/10 bg-white p-6 shadow-sm">
-              <div className="relative mb-5 aspect-[16/10] overflow-hidden rounded-xl">
+              <div className="relative mb-5 aspect-[16/10] overflow-hidden rounded-xl bg-white border border-[var(--border)] p-2">
                 <Image
                   src={stream.image}
                   alt={stream.imageAlt}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition duration-700 hover:scale-105"
+                  className="object-contain p-1 transition duration-700 hover:scale-105"
                 />
               </div>
               <p className="eyebrow-navy">{stream.classes}</p>

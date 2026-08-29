@@ -45,8 +45,8 @@ export default function StoryBlock({
           <div className="relative w-full">
             <div
               className={cn(
-                "aspect-[5/4] md:aspect-[4/3] w-full relative rounded-3xl overflow-hidden",
-                accent === "gold" ? "ring-1 ring-[var(--brand-gold)]/30" : "",
+                "aspect-[5/4] md:aspect-[4/3] w-full relative rounded-3xl overflow-hidden shadow-md",
+                accent === "gold" ? "ring-1 ring-[var(--brand-gold)]/30" : "ring-1 ring-[var(--brand-navy)]/10",
               )}
             >
               <Image
@@ -56,21 +56,13 @@ export default function StoryBlock({
                 sizes="(max-width: 1024px) 100vw, 640px"
                 className="object-cover"
               />
-              <div
-                className={cn(
-                  "absolute inset-x-0 bottom-0 h-2/5 pointer-events-none",
-                  accent === "gold"
-                    ? "bg-gradient-to-t from-[var(--brand-cream)]/90 via-[var(--brand-cream)]/10 to-transparent"
-                    : "bg-gradient-to-t from-[var(--brand-mist)]/95 via-[var(--brand-mist)]/10 to-transparent",
-                )}
-              />
             </div>
             <div
               className={cn(
-                "hidden md:block absolute -z-0 h-full w-full rounded-3xl",
+                "hidden md:block absolute -z-10 h-full w-full rounded-3xl",
                 accent === "gold"
-                  ? "-right-4 -top-4 bg-[var(--brand-gold)]/20 -translate-x-2 -translate-y-2"
-                  : "-left-4 -bottom-4 bg-[var(--brand-navy)]/15 translate-x-2 translate-y-2",
+                  ? "-right-3 -top-3 bg-[var(--brand-gold)]/15"
+                  : "-left-3 -bottom-3 bg-[var(--brand-navy)]/10",
               )}
             />
           </div>

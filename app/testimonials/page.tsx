@@ -4,7 +4,6 @@ import Image from "next/image";
 import TestimonialCard, { type Testimonial, type TestimonialCategory } from "@/components/testimonial-card";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
 import Link from "next/link";
 import InfiniteMovingCardsDemo from "@/components/infinite-moving-cards-demo";
 
@@ -90,7 +89,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "Annual Day still feels like the heartbeat of this school. When the lights come up, you remember why we teach — for that look of pride on a child's face.",
-    image: "/images/teachers/teaching/falguni-misra-nanda.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/falguni-misra-nanda.jpeg",
     highlight: true,
   },
   {
@@ -99,7 +98,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "Teaching is not about rush. It is sitting with a problem until the moment it makes sense — and then that sense belongs to you for life. I try to teach that patience.",
-    image: "/images/teachers/teaching/bina-das.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/bina-das.jpeg",
   },
   {
     name: "Kedar Dhal",
@@ -107,7 +106,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "A lesson read aloud can change how a child understands language and thoughts. I try to give them that moment in every single class.",
-    image: "/images/teachers/teaching/kedar-dhal.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/kedar-dhal.jpeg",
   },
   {
     name: "Gautam Makur",
@@ -115,7 +114,7 @@ const testimonials: Testimonial[] = [
     category: "teacher",
     quote:
       "Physical and mental endurance go hand in hand. A student learns that with practice and discipline, any difficulty can be overcome.",
-    image: "/images/teachers/teaching/gautam-makur.jpeg",
+    image: "/images/03-ABOUT/staff/teachers/gautam-makur.jpeg",
   },
 
   {

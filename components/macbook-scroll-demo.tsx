@@ -17,7 +17,7 @@ export default function MacbookScrollDemo({ title }: MacbookScrollDemoProps) {
             Scroll, and the campus comes into view.
           </span>
         )}
-        src="/images/campus/campus-wide-view.jpeg"
+        src="/images/03-ABOUT/vision/steve-jobs-quote.png"
         showGradient={false}
       />
     </div>
