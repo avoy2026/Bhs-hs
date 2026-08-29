@@ -12,16 +12,17 @@ import Navbar from "@/app/navbar";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [showPreloader, setShowPreloader] = useState(false);
+  
+  // Instant initial mount check for first-time opening preloader
+  const [showPreloader, setShowPreloader] = useState<boolean>(() => {
+    if (typeof window !== "undefined") {
+      return !sessionStorage.getItem("bhs_preloader_done");
+    }
+    return true;
+  });
+
   const [isNavigating, setIsNavigating] = useState(false);
   const isFirstRender = useRef(true);
-
-  useEffect(() => {
-    if (sessionStorage.getItem("bhs_preloader_done")) return;
-
-    const timer = window.setTimeout(() => setShowPreloader(true), 0);
-    return () => window.clearTimeout(timer);
-  }, []);
 
   const finishPreloader = useCallback(() => {
     setShowPreloader(false);
@@ -37,7 +38,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     };
   }, [showPreloader]);
 
-  // Page-to-page navigation transition effect
+  // Page-to-page navigation transition effect with increased duration (1.2s)
   useEffect(() => {
     if (isFirstRender.current) {
       isFirstRender.current = false;
@@ -48,7 +49,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
     window.scrollTo(0, 0);
     const showTimer = window.setTimeout(() => setIsNavigating(true), 0);
-    const hideTimer = window.setTimeout(() => setIsNavigating(false), 600);
+    const hideTimer = window.setTimeout(() => setIsNavigating(false), 1200);
 
     return () => {
       window.clearTimeout(showTimer);
@@ -136,7 +137,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         )}
       </AnimatePresence>
 
-      {/* 2. EVERY PAGE TRANSITION PRELOADER (WHITE BACKGROUND, NO TEXT) */}
+      {/* 2. EVERY PAGE TRANSITION PRELOADER (WHITE BACKGROUND, NO TEXT, INCREASED DURATION) */}
       <AnimatePresence>
         {isNavigating && !showPreloader && (
           <motion.div
@@ -144,14 +145,15 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
             className="fixed inset-0 z-[250] flex items-center justify-center bg-white"
           >
-            <div className="relative w-48 h-48 md:w-64 md:h-64 flex items-center justify-center">
+            <div className="relative w-52 h-52 md:w-72 md:h-72 flex items-center justify-center">
               <img
                 src="/preloading/Every-page.gif"
                 alt=""
                 className="w-full h-full object-contain"
+                loading="eager"
               />
             </div>
           </motion.div>
