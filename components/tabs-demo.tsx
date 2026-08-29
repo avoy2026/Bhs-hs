@@ -98,7 +98,7 @@ export default function TabsDemo() {
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1B2A4A] to-[#13203a]">
           <p>Our progress</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
-            Read the annual reports detailing the school's achievements,
+            Read the annual reports detailing the school&apos;s achievements,
             growth, and vision for the upcoming academic year.
           </p>
           <DummyContent src="/images/04-NOTICES/tabs/annual-report.png" />

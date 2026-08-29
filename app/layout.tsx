@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   description:
     "Official website of Baramohanpur High School — Knowledge · Character · Community.",
   icons: {
-    icon: "/images/branding/school-logo.png",
-    shortcut: "/images/branding/school-logo.png",
-    apple: "/images/branding/school-logo.png",
+    icon: "/images/01-BRANDING/school-logo.png",
+    shortcut: "/images/01-BRANDING/school-logo.png",
+    apple: "/images/01-BRANDING/school-logo.png",
   },
 };
 

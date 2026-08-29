@@ -24,7 +24,7 @@ export default function NoticesPage() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-[var(--brand-navy)] text-white">
         <Image
-          src="/images/02-HOMEPAGE/campus/campus-1.png"
+          src="/images/04-NOTICES/notice-banner.png"
           alt="Baramohanpur High School notices and campus"
           fill
           priority

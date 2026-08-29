@@ -60,7 +60,7 @@ export default function SiteFooter() {
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <img
-                src="/images/branding/school-logo.png.jpeg"
+                src="/images/01-BRANDING/school-logo.png"
                 alt="Baramohanpur High School"
                 width={48}
                 height={48}

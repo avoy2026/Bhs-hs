@@ -152,7 +152,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
         {/* School logo */}
         <motion.img
-          src="/images/branding/school-logo.png.jpeg"
+          src="/images/01-BRANDING/school-logo.png"
           alt="Baramohanpur High School"
           className="relative h-[88%] w-[88%] rounded-full object-cover shadow-[0_12px_35px_rgba(201,162,39,0.25)]"
           animate={{

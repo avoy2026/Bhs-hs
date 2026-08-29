@@ -44,9 +44,9 @@ function AnimatedWords({
 
 export default function ImagesSliderDemo() {
   const images = [
-    "/images/home/hero-campus.jpeg",
-    "/images/home/hero-classroom.jpeg",
-    "/images/home/hero-students.png",
+    "/images/02-HOMEPAGE/hero/hero1.png",
+    "/images/02-HOMEPAGE/hero/hero-2.png",
+    "/images/02-HOMEPAGE/hero/hero-3.png",
   ];
   return (
     <ImagesSlider
