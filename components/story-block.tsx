@@ -54,7 +54,15 @@ export default function StoryBlock({
                 alt={imageAlt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 640px"
-                className="object-cover shadow-sm"
+                className="object-cover"
+              />
+              <div
+                className={cn(
+                  "absolute inset-x-0 bottom-0 h-2/5 pointer-events-none",
+                  accent === "gold"
+                    ? "bg-gradient-to-t from-[var(--brand-cream)]/90 via-[var(--brand-cream)]/10 to-transparent"
+                    : "bg-gradient-to-t from-[var(--brand-mist)]/95 via-[var(--brand-mist)]/10 to-transparent",
+                )}
               />
             </div>
             <div

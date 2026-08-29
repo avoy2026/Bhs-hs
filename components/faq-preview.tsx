@@ -79,17 +79,15 @@ export default function FAQPreview({ limit = 4, showLink = true }: { limit?: num
               <p className="relative mt-4 text-sm md:text-base leading-relaxed text-white/80">
                 If your question is not here — or if you would rather speak to a person — the school office is always happy to receive a parent or guardian with an honest question.
               </p>
-              {showLink && (
-                <div className="relative mt-8 flex flex-wrap gap-3">
-                  <Link href="/faq" className="group inline-flex items-center gap-2 rounded-md bg-[var(--brand-gold)] px-5 py-2.5 text-sm font-bold text-[var(--brand-ink)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#cfaa33]">
-                    View All FAQs
-                    <IconArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </Link>
-                  <Link href="/contact" className="group inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur transition duration-200 hover:-translate-y-0.5 hover:bg-white/18">
-                    Contact the Office
-                  </Link>
-                </div>
-              )}
+              <div className="relative mt-8 flex flex-wrap gap-3">
+                <Link href="/faq" className="group inline-flex items-center gap-2 rounded-md bg-[var(--brand-gold)] px-5 py-2.5 text-sm font-bold text-[var(--brand-ink)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#cfaa33]">
+                  View All FAQs
+                  <IconArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </Link>
+                <Link href="/contact" className="group inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur transition duration-200 hover:-translate-y-0.5 hover:bg-white/18">
+                  Contact the Office
+                </Link>
+              </div>
               <p className="relative mt-7 text-xs text-white/60 tracking-wide">
                 Mon – Sat · 10:00 AM – 4:00 PM
               </p>
