@@ -66,13 +66,13 @@ export default function StudentAchievements() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="relative w-full"
           >
-            <div className="relative aspect-[5/4] w-full overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
+            <div className="relative aspect-[4/5] sm:aspect-[5/4] w-full overflow-hidden rounded-3xl ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/01-BRANDING/school-achievements.jpeg"
-                alt="Student achievements at Baramohanpur High School"
+                src="/images/01-BRANDING/student-achievement-dancer.png"
+                alt="Student cultural achievement at Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 620px"
-                className="object-cover"
+                className="object-cover object-top"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/80 via-[var(--brand-navy)]/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">

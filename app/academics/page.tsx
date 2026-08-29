@@ -23,14 +23,14 @@ export default function AcademicsPage() {
       {/* Hero */}
       <section className="relative pt-24 md:pt-32 pb-8 bg-[var(--brand-fog)] overflow-hidden">
         <div className="page-shell !py-0">
-          <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
+          <div className="relative w-full aspect-[21/8] md:aspect-[24/7] max-h-[380px] min-h-[160px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-[#d5e9f6] flex items-center justify-center">
             <Image
               src="/images/05-ACADEMICS/academics-banner.png"
               alt="Academics — Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
-              className="object-contain p-4 md:p-8"
+              className="object-cover object-center"
             />
           </div>
         </div>
