@@ -32,181 +32,234 @@ type Teacher = {
 };
 
 const teachers: Teacher[] = [
+  // Leadership
   {
     name: "Sanjoy Modak",
     designation: "Headmaster",
     subject: "M.A. (English), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/leadership/principal.jpeg",
+    image: "/images/03-ABOUT/staff/leadership/principal.jpeg",
     category: "leadership",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
+  // Teaching
   {
-    name: "Joydeb Bhunia",
+    name: "Mrs. Bina Das",
     designation: "Assistant Teacher",
-    subject: "M.Sc. (Geography), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/joydeb-bhunia.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Bina Das",
-    designation: "Assistant Teacher",
-    subject: "B.A. (English), M.A. (Pol. Sc.), B.Ed.",
+    subject: "B.A. (English), M.A. (Political Science), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/bina-das.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Manoj Mahapatra",
+    name: "Mr. Manoj Mahapatra",
     designation: "Assistant Teacher",
     subject: "M.A. (Economics), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/manoj-mahapatra.jpeg",
+    image: "/images/03-ABOUT/staff/non-taching/manoj-mahapatra.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Falguni Misra Nanda",
+    name: "Mrs. Falguni Misra Nanda",
     designation: "Assistant Teacher",
     subject: "M.A. (English), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/falguni-misra-nanda.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Binod Bihari Murmu",
+    name: "Mr. Binod Behari Murmu",
     designation: "Assistant Teacher",
     subject: "B.A., B.P.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/binod-bihari-murmu.jpeg",
+    image: "/images/03-ABOUT/staff/non-taching/binod-bihari-murmu.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Mahua Maity",
+    name: "Mrs. Mahua Maity",
     designation: "Assistant Teacher",
-    subject: "M.Sc. (Physiology), B.Ed.",
+    subject: "M.Sc. (Physiology), Lady Braborn Trained, B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/mahua-maity.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Niranjan Kumar Baram",
+    name: "Mr. Niranjan Kumar Baram",
     designation: "Assistant Teacher",
     subject: "M.A. (Philosophy), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/niranjan-kumar-baram.jpeg",
+    image: "/images/03-ABOUT/staff/non-taching/niranjan-kumar-baram.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Kedar Dhal",
+    name: "Mr. Gitesh Biswas",
+    designation: "Assistant Teacher",
+    subject: "M.A. (Political Science)",
+    image: "",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Kedar Dhal",
     designation: "Assistant Teacher",
     subject: "M.Sc. (Mathematics), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/kedar-dhal.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Aranyamoy Bar",
+    name: "Mr. Aranyamoy Bar",
     designation: "Assistant Teacher",
-    subject: "B.A. (Bengali), B.P.Ed.",
+    subject: "B.A. (Honours) (Bengali), B.P.Ed.",
     image: "/images/03-ABOUT/staff/teachers/aranyamoy-bar.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Swapnasree Das",
+    name: "Mrs. Swapnasree Das",
     designation: "Assistant Teacher",
     subject: "B.Sc. (Honours) (Nutrition)",
     image: "/images/03-ABOUT/staff/teachers/swapnasree-das.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Asis Dandapat",
+    name: "Mr. Asis Dandapat",
     designation: "Assistant Teacher",
     subject: "M.A. (English), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/asis-dandapat.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Khukumoni Mandal Barman",
+    name: "Smt. Khukumoni Mandal Barman",
     designation: "Assistant Teacher",
     subject: "M.A. (Bengali), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/khukumoni-mandal-barman.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Ajoy Kumar Mahapatra",
+    name: "Mr. Surajit Dingal",
     designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/ajoy-kumar-mahapatra.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Anupam Mandal",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/anupam-mandal.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Gautam Makur",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/gautam-makur.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Jayanta Kumar Patra",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/jayanta-kumar-patra.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Koushik Giri",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/koushik-giri.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Mahaseta Tripati",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/mahaseta-tripati.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Manas Kumar Dey",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/manas-kumar-dey.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Miss Oampa Shit",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
-    image: "/images/03-ABOUT/staff/teachers/miss-oampa-shit.jpeg",
-    category: "teacher",
-  },
-  {
-    name: "Surojit Dingal",
-    designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
+    subject: "M.A. (English), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/surojit-dingal.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Uttam Saho",
+    name: "Mr. Uttam Sahoo",
     designation: "Assistant Teacher",
-    subject: "Teaching Faculty",
+    subject: "M.A. (Bengali), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/uttam-saho.jpeg",
     category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Office Administration & Clerical Staff",
-    designation: "Non-Teaching Staff",
-    subject: "School Administration",
-    category: "non-teaching",
-    emoji: "ðŸ’¼",
+    name: "Mr. Totan Bharasa",
+    designation: "Assistant Teacher",
+    subject: "M.Sc., M.Tech. (Computer Science), B.Ed.",
+    image: "/images/03-ABOUT/staff/non-taching/totan-bharasa.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Library & Laboratory Technical Staff",
-    designation: "Non-Teaching Staff",
-    subject: "Academic Support",
-    category: "non-teaching",
-    emoji: "ðŸ“š",
+    name: "Mr. Kousik Giri",
+    designation: "Assistant Teacher",
+    subject: "M.AC. (Chemistry), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/koushik-giri.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
   },
+  {
+    name: "Smt. Mahasweta Tripathi",
+    designation: "Assistant Teacher",
+    subject: "M.Sc. (Home Management), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/mahaseta-tripati.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Jayanta Kumar Patra",
+    designation: "Assistant Teacher",
+    subject: "M.A. (Geography), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/jayanta-kumar-patra.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Smt. Chhanda Mandal",
+    designation: "Assistant Teacher",
+    subject: "M.A. (Sanskrit), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/chandana-mondal.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Ujjwal Sardar",
+    designation: "Assistant Teacher",
+    subject: "M.Sc. (Mathematics), B.Ed.",
+    image: "",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Anupam Mandal",
+    designation: "Assistant Teacher",
+    subject: "M.A. (English), B.Ed.",
+    image: "/images/03-ABOUT/staff/non-taching/anupam-mandal.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Ashis Mishra",
+    designation: "Assistant Teacher",
+    subject: "M.Sc. (Physics), B.Ed.",
+    image: "/images/03-ABOUT/staff/non-taching/asis-mishra.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Manas Kumar Dey",
+    designation: "Assistant Teacher",
+    subject: "M.Sc. (Biology), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/manas-kumar-dey.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Goutam Makur",
+    designation: "Assistant Teacher",
+    subject: "M.Lib., M.A. (Bengali), B.Ed., A.N.O. (NCC)",
+    image: "/images/03-ABOUT/staff/non-taching/gautam-makur.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Miss 0ampa Shit",
+    designation: "Assistant Teacher",
+    subject: "M.A. (Bengali), B.Ed., Computer Diploma",
+    image: "/images/03-ABOUT/staff/teachers/miss-oampa-shit.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+
+  // Non-Teaching
+  {
+    name: "Mr. Ajoy Kumar Mahapatra",
+    designation: "Clerk",
+    subject: "M.A. (History)",
+    image: "/images/03-ABOUT/staff/non-taching/ajoy-kumar-mahapatra.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Tanmoy Dutta",
+    designation: "Group-D",
+    subject: "H.S.",
+    image: "/images/03-ABOUT/staff/non-taching/tanmay-duatta.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  }
 ];
 
 function SocialLinks({ social }: { social?: SocialLinks }) {
@@ -226,9 +279,9 @@ function SocialLinks({ social }: { social?: SocialLinks }) {
       label: "LinkedIn",
       icon: IconBrandLinkedin,
     },
-  ].filter((item) => item.href);
+  ];
 
-  if (!links.length) {
+  if (!social) {
     return null;
   }
 
@@ -237,11 +290,17 @@ function SocialLinks({ social }: { social?: SocialLinks }) {
       {links.map(({ href, label, icon: Icon }) => (
         <a
           key={label}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={href || "#"}
+          onClick={(e) => {
+            if (!href) e.preventDefault();
+          }}
+          target={href ? "_blank" : undefined}
+          rel={href ? "noopener noreferrer" : undefined}
           aria-label={`${label} profile`}
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-white hover:text-[var(--brand-navy)]"
+          className={`flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white backdrop-blur-md transition-all duration-300 ${href
+            ? "hover:scale-110 hover:bg-white hover:text-[var(--brand-navy)]"
+            : "opacity-50 cursor-default"
+            }`}
         >
           <Icon className="h-4 w-4" />
         </a>

@@ -36,7 +36,7 @@ export default function PrincipalMessage() {
                 <div className="absolute -right-4 -bottom-4 h-full w-full rounded-[2rem] bg-[var(--brand-gold)]/25 -z-10 -translate-x-3 -translate-y-3" />
                 <div className="absolute inset-0 rounded-[2rem] ring-1 ring-[var(--brand-gold)]/30 -z-[5] translate-x-0.5 translate-y-0.5" />
                 <Image
-                  src="/images/03-ABOUT/staff/teachers/leadership/principal.jpeg"
+                  src="/images/03-ABOUT/staff/leadership/principal.jpeg"
                   alt="Headmaster Sanjoy Modak — Baramohanpur High School"
                   fill
                   sizes="(max-width: 768px) 100vw, 520px"
@@ -84,7 +84,7 @@ export default function PrincipalMessage() {
               <div className="mt-10 flex items-center gap-4 border-t border-[var(--border)] pt-6">
                 <div className="h-14 w-14 rounded-full ring-2 ring-[var(--brand-gold)]/45 ring-offset-2 ring-offset-[var(--brand-fog)] overflow-hidden relative shrink-0 bg-[var(--brand-fog)]">
                   <Image
-                    src="/images/03-ABOUT/staff/teachers/leadership/principal.jpeg"
+                    src="/images/03-ABOUT/staff/leadership/principal.jpeg"
                     alt="Sanjoy Modak, Headmaster"
                     fill
                     sizes="56px"
@@ -116,3 +116,4 @@ export default function PrincipalMessage() {
     </section>
   );
 }
+
