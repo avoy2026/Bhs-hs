@@ -3,16 +3,16 @@ import Image from "next/image";
 import { Timeline } from "@/components/ui/timeline";
 
 const wrapClass =
-  "relative h-20 w-full overflow-hidden rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60";
+  "relative w-full aspect-square md:aspect-video lg:aspect-[4/3] overflow-hidden rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] bg-neutral-100 dark:bg-neutral-900";
 
-const GridImg = ({ src, alt }: { src: string; alt: string }) => (
+const GridImg = ({ src, alt, objectFit = "object-contain" }: { src: string; alt: string; objectFit?: string }) => (
   <div className={wrapClass}>
     <Image
       src={src}
       alt={alt}
       fill
       sizes="(max-width: 768px) 45vw, 22vw"
-      className="object-cover"
+      className={`${objectFit} p-1 md:p-2`}
     />
   </div>
 );
@@ -20,7 +20,7 @@ const GridImg = ({ src, alt }: { src: string; alt: string }) => (
 export default function TimelineDemo() {
   const data = [
     {
-      title: "1878 Â· Foundation & Legacy",
+      title: "1878 · Foundation & Legacy",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
@@ -62,7 +62,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "2021â€“2025 Â· Modern Growth",
+      title: "2021–2025 · Modern Growth",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
@@ -80,7 +80,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "2026 â€“ 2027 Â· 150th Anniversary",
+      title: "2026 – 2027 · 150th Anniversary",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 leading-relaxed">
@@ -90,7 +90,7 @@ export default function TimelineDemo() {
             than a decade.
           </p>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 font-semibold text-[var(--brand-navy)]">
-            Baramohanpur High School observes its 150th Anniversary (2027â€“2028) as a historic year-long festival of education, culture, and alumni reunion.
+            Baramohanpur High School observes its 150th Anniversary (2027–2028) as a historic year-long festival of education, culture, and alumni reunion.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <GridImg src="/images/03-ABOUT/timeline/science-education.webp" alt="Modern science education" />

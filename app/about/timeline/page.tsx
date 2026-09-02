@@ -21,7 +21,7 @@ const GridImg = ({ src, alt }: { src: string; alt: string }) => (
 
 const data = [
   {
-    title: "1878 Â· Foundation & Legacy",
+    title: "1878 · Foundation & Legacy",
     content: (
       <div>
         <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
@@ -44,7 +44,7 @@ const data = [
     ),
   },
   {
-    title: "2021â€“2025 Â· Modern Growth",
+    title: "2021–2025 · Modern Growth",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
@@ -69,11 +69,11 @@ const data = [
     ),
   },
   {
-    title: "2026 â€“ 2027 Â· 150th Anniversary",
+    title: "2026 – 2027 · 150th Anniversary",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
-          Baramohanpur High School observes its 150th Anniversary (2027â€“2028) as a historic year-long festival of education, culture, and alumni reunion.
+          Baramohanpur High School observes its 150th Anniversary (2027–2028) as a historic year-long festival of education, culture, and alumni reunion.
         </p>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm leading-relaxed">
           <span className="font-semibold text-[var(--brand-navy)]">
@@ -100,7 +100,7 @@ export default function TimelinePage() {
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
               src="/images/03-ABOUT/about-banner.webp"
-              alt="School History & Timeline â€” Baramohanpur High School"
+              alt="School History & Timeline — Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -115,7 +115,7 @@ export default function TimelinePage() {
           <PageSectionHeading
             eyebrow="Milestones"
             title="School History & Heritage"
-            description="Scroll through the moments that still define us â€” from our founding in 1878 through 150 years of academic light."
+            description="Scroll through the moments that still define us — from our founding in 1878 through 150 years of academic light."
             size="md"
             accent="stroke"
           />

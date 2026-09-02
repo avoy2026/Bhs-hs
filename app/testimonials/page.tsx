@@ -17,7 +17,7 @@ const categories: Array<{ key: TestimonialCategory; label: string; eyebrow: stri
 const testimonials: Testimonial[] = [
   {
     name: "Arjun Dey",
-    role: "Class X Â· Head Boy",
+    role: "Class X · Head Boy",
     category: "student",
     quote:
       "I learned that discipline is not fear. It is showing up prepared, greeting a teacher, and finishing the work you promised yourself you would finish. That habit has changed me.",
@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
     role: "Class VIII",
     category: "student",
     quote:
-      "At first I was afraid to raise my hand in English class. But when I finally did, my teacher did not laugh â€” she said 'very well said' and asked me to say it again. That day mattered.",
+      "At first I was afraid to raise my hand in English class. But when I finally did, my teacher did not laugh — she said 'very well said' and asked me to say it again. That day mattered.",
     image: "/images/testimonials/students/student-1.jpg",
   },
   {
@@ -45,38 +45,38 @@ const testimonials: Testimonial[] = [
     role: "Class IX",
     category: "student",
     quote:
-      "Annual Day was the first time I stood on a stage in front of so many people. My voice shook â€” but after the last line, the clap felt like a door had opened in me.",
+      "Annual Day was the first time I stood on a stage in front of so many people. My voice shook — but after the last line, the clap felt like a door had opened in me.",
     image: "/images/events/cultural/cultural-programme.webp",
   },
 
   {
     name: "Rina Banerjee",
-    role: "Guardian Â· Class VIII",
+    role: "Guardian · Class VIII",
     category: "parent",
     quote:
-      "My daughter is not only scoring better â€” she stands a little taller. Teachers here notice the quiet children, and that has changed our home.",
+      "My daughter is not only scoring better — she stands a little taller. Teachers here notice the quiet children, and that has changed our home.",
     image: "/images/testimonials/parents/parents.jpeg",
     highlight: true,
   },
   {
     name: "Amit Roy",
-    role: "Parent Â· Class V",
+    role: "Parent · Class V",
     category: "parent",
     quote:
-      "Notices, meetings, and an open office â€” we never feel like strangers at the gate. The school treats parents as part of the story, not as outsiders.",
+      "Notices, meetings, and an open office — we never feel like strangers at the gate. The school treats parents as part of the story, not as outsiders.",
     image: "/images/testimonials/parents/parents-3.jpeg",
   },
   {
     name: "[PARENT NAME 3]",
-    role: "Guardian Â· Class III",
+    role: "Guardian · Class III",
     category: "parent",
     quote:
-      "What matters most to us is that our son is happy to come to school every morning. The rest â€” marks, prizes, everything â€” follows from that one simple thing.",
+      "What matters most to us is that our son is happy to come to school every morning. The rest — marks, prizes, everything — follows from that one simple thing.",
     image: "/images/testimonials/parents/parents.jpeg",
   },
   {
     name: "[PARENT NAME 4]",
-    role: "Parent Â· Class X",
+    role: "Parent · Class X",
     category: "parent",
     quote:
       "We were worried before the boards. His teachers stayed after classes, cleared his doubts, and gave us honest feedback about what he still needed. That kind of care is rare.",
@@ -88,7 +88,7 @@ const testimonials: Testimonial[] = [
     role: "Assistant Teacher",
     category: "teacher",
     quote:
-      "Annual Day still feels like the heartbeat of this school. When the lights come up, you remember why we teach â€” for that look of pride on a child's face.",
+      "Annual Day still feels like the heartbeat of this school. When the lights come up, you remember why we teach — for that look of pride on a child's face.",
     image: "/images/03-ABOUT/staff/teachers/falguni-misra-nanda.jpeg",
     highlight: true,
   },
@@ -97,7 +97,7 @@ const testimonials: Testimonial[] = [
     role: "Assistant Teacher",
     category: "teacher",
     quote:
-      "Teaching is not about rush. It is sitting with a problem until the moment it makes sense â€” and then that sense belongs to you for life. I try to teach that patience.",
+      "Teaching is not about rush. It is sitting with a problem until the moment it makes sense — and then that sense belongs to you for life. I try to teach that patience.",
     image: "/images/03-ABOUT/staff/teachers/bina-das.jpeg",
   },
   {
@@ -119,7 +119,7 @@ const testimonials: Testimonial[] = [
 
   {
     name: "Priya Ghosh",
-    role: "Alumna Â· Class of [YEAR]",
+    role: "Alumna · Class of [YEAR]",
     category: "alumni",
     quote:
       "Years later I still remember the assembly ground. Baramohanpur gave me friends, a voice, and the habit of trying once more when things do not work out the first time.",
@@ -128,7 +128,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "[ALUMNI NAME 2]",
-    role: "Alumnus Â· Class of [YEAR]",
+    role: "Alumnus · Class of [YEAR]",
     category: "alumni",
     quote:
       "I have studied at bigger colleges since, but I still measure myself by what my teachers at Baramohanpur expected of me. Those expectations were kind and they were real.",
@@ -136,7 +136,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "[ALUMNI NAME 3]",
-    role: "Alumna Â· Class of [YEAR]",
+    role: "Alumna · Class of [YEAR]",
     category: "alumni",
     quote:
       "There is a particular kind of confidence that comes from being noticed at this school. Once you have been seen by a patient teacher, you begin to see yourself differently.",
@@ -162,7 +162,7 @@ export default function TestimonialsHub() {
             className="object-cover"
           />
           <div className="hero-scrim absolute inset-0" />
-          {/* Banner image only â€” no text overlay */}
+          {/* Banner image only — no text overlay */}
         </div>
       </section>
 

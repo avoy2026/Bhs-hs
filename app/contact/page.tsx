@@ -22,7 +22,7 @@ const contactDetails = [
         </span>
         State Highway 5, Khakurda, Belda
         <br />
-        Paschim Medinipur, West Bengal â€” 721445
+        Paschim Medinipur, West Bengal — 721445
       </>
     ),
   },
@@ -31,7 +31,7 @@ const contactDetails = [
     label: "Phone",
     body: (
       <a href="tel:+910000000000" className="transition hover:text-brand-navy">
-        +91 [PLACEHOLDER â€” PHONE]
+        +91 [PLACEHOLDER — PHONE]
       </a>
     ),
   },
@@ -40,10 +40,10 @@ const contactDetails = [
     label: "Email",
     body: (
       <a
-        href="mailto:[PLACEHOLDER â€” EMAIL]"
+        href="mailto:[PLACEHOLDER — EMAIL]"
         className="transition hover:text-brand-navy"
       >
-        [PLACEHOLDER â€” EMAIL]
+        [PLACEHOLDER — EMAIL]
       </a>
     ),
   },
@@ -52,7 +52,7 @@ const contactDetails = [
     label: "Office hours",
     body: (
       <>
-        <span className="font-medium text-brand-navy">Mon â€“ Sat</span> Â· 10:00 AM â€“ 4:00 PM
+        <span className="font-medium text-brand-navy">Mon – Sat</span> · 10:00 AM – 4:00 PM
         <br />
         <span className="text-muted-foreground">Closed on Sundays &amp; holidays</span>
       </>
@@ -68,7 +68,7 @@ export default function ContactPage() {
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-[#4a86c6]">
             <Image
               src="/images/08-CONTACT-FAQ/contact/contact-Us banner.webp"
-              alt="Contact Us â€” Baramohanpur High School"
+              alt="Contact Us — Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"

@@ -60,7 +60,7 @@ export default function EventsPage() {
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
               src="/images/06-EVENTS/events-banner.webp"
-              alt="School Events â€” Baramohanpur High School"
+              alt="School Events — Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -126,7 +126,7 @@ export default function EventsPage() {
             >
               <Image
                 src="/images/06-EVENTS/rabindranath-tagore.webp"
-                alt="Kabiguru Rabindranath Tagore â€” Rabindra Jayanti at Baramohanpur High School"
+                alt="Kabiguru Rabindranath Tagore — Rabindra Jayanti at Baramohanpur High School"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -144,7 +144,7 @@ export default function EventsPage() {
               </h2>
               <p className="text-sm md:text-base leading-relaxed text-[var(--muted-foreground)] max-w-xl">
                 From the first nervous rehearsal to the final thunder of applause, our cultural
-                programmes teach children something a textbook cannot â€” how to stand before people
+                programmes teach children something a textbook cannot — how to stand before people
                 and give them something of yourself. Rabindra Jayanti, Annual Day, recitals and
                 classroom assemblies are part of every student&apos;s life at Baramohanpur.
               </p>
@@ -177,8 +177,8 @@ export default function EventsPage() {
                 <span className="heading-underline">Running together. Losing together. Winning together.</span>
               </h2>
               <p className="text-sm md:text-base leading-relaxed text-[var(--muted-foreground)] max-w-xl">
-                The ground is a great teacher. Victory is celebrated â€” but not worshipped. Defeat
-                is borne â€” but not ignored. At Baramohanpur High School, inter-house sports,
+                The ground is a great teacher. Victory is celebrated — but not worshipped. Defeat
+                is borne — but not ignored. At Baramohanpur High School, inter-house sports,
                 athletics, and daily playtime are not extras. They are how children learn endurance,
                 humility, and the dignity of a team.
               </p>
@@ -233,7 +233,7 @@ export default function EventsPage() {
                   Honours that belong to the whole school family.
                 </h2>
                 <p className="mt-5 text-sm md:text-base leading-relaxed text-white/80 max-w-xl">
-                  Academic toppers, inter-school trophies, medals, and certificates â€” each one
+                  Academic toppers, inter-school trophies, medals, and certificates — each one
                   earned with effort, each one shared in assemblies, each one a reminder to the
                   next student: if you try, this school will notice.
                 </p>

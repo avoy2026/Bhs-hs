@@ -19,27 +19,27 @@ const faqs: FAQItem[] = [
   {
     category: "Admissions",
     q: "What is the admission process at Baramohanpur High School?",
-    a: "[PLACEHOLDER â€” Please confirm the official process with the school.] Generally, parents begin by submitting an enquiry or visiting the school office to collect information. Application forms are issued during the admission season, and required documents are reviewed. Depending on the class being applied to, a meeting with school administration or a simple interaction may be arranged before a seat is confirmed.",
+    a: "[PLACEHOLDER — Please confirm the official process with the school.] Generally, parents begin by submitting an enquiry or visiting the school office to collect information. Application forms are issued during the admission season, and required documents are reviewed. Depending on the class being applied to, a meeting with school administration or a simple interaction may be arranged before a seat is confirmed.",
   },
   {
     category: "Admissions",
     q: "What documents are required for a new admission?",
-    a: "[PLACEHOLDER â€” Confirm exact list from school records.] Commonly asked documents include: (a) Birth certificate of the student, (b) Transfer Certificate / School Leaving Certificate from the previous school (for higher classes), (c) Previous year's progress report / mark sheet, (d) Recent passport-sized photographs of the child and guardian, (e) Proof of residence / guardian identification. Please call the office for the latest official list.",
+    a: "[PLACEHOLDER — Confirm exact list from school records.] Commonly asked documents include: (a) Birth certificate of the student, (b) Transfer Certificate / School Leaving Certificate from the previous school (for higher classes), (c) Previous year's progress report / mark sheet, (d) Recent passport-sized photographs of the child and guardian, (e) Proof of residence / guardian identification. Please call the office for the latest official list.",
   },
   {
     category: "Admissions",
     q: "What is the eligibility or age for admission?",
-    a: "[PLACEHOLDER â€” Confirm age criteria.] Admissions are open to eligible students depending on the class. Generally, age-appropriate admissions are offered for classes beginning at the primary level, and admission to upper classes depends on availability of seats and readiness of the student for the class.",
+    a: "[PLACEHOLDER — Confirm age criteria.] Admissions are open to eligible students depending on the class. Generally, age-appropriate admissions are offered for classes beginning at the primary level, and admission to upper classes depends on availability of seats and readiness of the student for the class.",
   },
   {
     category: "Admissions",
     q: "How and when do we apply? Is there a last date?",
-    a: "[PLACEHOLDER â€” Confirm admission window.] Parents are advised to contact the school office or submit an online enquiry before the start of the new academic session. Admission timelines vary by class, so the best first step is to send an enquiry through the website or call the school office directly.",
+    a: "[PLACEHOLDER — Confirm admission window.] Parents are advised to contact the school office or submit an online enquiry before the start of the new academic session. Admission timelines vary by class, so the best first step is to send an enquiry through the website or call the school office directly.",
   },
   {
     category: "Academics",
     q: "Which board or curriculum does the school follow?",
-    a: "[PLACEHOLDER â€” Confirm board/affiliation.] The school follows the curriculum and examination pattern prescribed by [Board Name / West Bengal Board of Secondary Education / appropriate authority]. Teaching is delivered in a balance of Bengali and English, with attention to all core subjects and co-curricular areas.",
+    a: "[PLACEHOLDER — Confirm board/affiliation.] The school follows the curriculum and examination pattern prescribed by [Board Name / West Bengal Board of Secondary Education / appropriate authority]. Teaching is delivered in a balance of Bengali and English, with attention to all core subjects and co-curricular areas.",
   },
   {
     category: "Academics",
@@ -49,7 +49,7 @@ const faqs: FAQItem[] = [
   {
     category: "Academics",
     q: "What kind of academic support is available for students who need extra help?",
-    a: "[PLACEHOLDER â€” Support programmes.] Teachers pay individual attention within the classroom, and extra help or remedial attention is given where needed â€” before class, after class, or during school hours. Parents are always notified early if a child is struggling, so we can work together.",
+    a: "[PLACEHOLDER — Support programmes.] Teachers pay individual attention within the classroom, and extra help or remedial attention is given where needed — before class, after class, or during school hours. Parents are always notified early if a child is struggling, so we can work together.",
   },
   {
     category: "Student Life",
@@ -59,17 +59,17 @@ const faqs: FAQItem[] = [
   {
     category: "Student Life",
     q: "What kinds of sports and physical education are available?",
-    a: "[PLACEHOLDER â€” Exact sports offered.] Sports include group games on the school grounds, athletics, running, relays, and traditional team games played during PE periods and during the annual Sports Day. The emphasis is on participation, discipline and teamwork as much as winning.",
+    a: "[PLACEHOLDER — Exact sports offered.] Sports include group games on the school grounds, athletics, running, relays, and traditional team games played during PE periods and during the annual Sports Day. The emphasis is on participation, discipline and teamwork as much as winning.",
   },
   {
     category: "Student Life",
     q: "Are there cultural programmes, clubs or competitions for students?",
-    a: "Yes â€” Annual Day, Rabindra Jayanti, recitals, house competitions, quiz, essay, debate, art and music events are part of the school calendar. Cultural and sports activities are spread across the academic year so that every child has a chance to join.",
+    a: "Yes — Annual Day, Rabindra Jayanti, recitals, house competitions, quiz, essay, debate, art and music events are part of the school calendar. Cultural and sports activities are spread across the academic year so that every child has a chance to join.",
   },
   {
     category: "General",
     q: "What are the normal school and office hours?",
-    a: "[PLACEHOLDER â€” Confirm exact timing.] Classes are typically held during standard school hours on weekdays, Monday to Saturday. The school office is generally open Monday to Saturday, 10:00 AM â€“ 4:00 PM, and closed on Sundays and public holidays.",
+    a: "[PLACEHOLDER — Confirm exact timing.] Classes are typically held during standard school hours on weekdays, Monday to Saturday. The school office is generally open Monday to Saturday, 10:00 AM – 4:00 PM, and closed on Sundays and public holidays.",
   },
   {
     category: "General",
@@ -84,7 +84,7 @@ const faqs: FAQItem[] = [
   {
     category: "General",
     q: "How are notices and important updates shared with parents?",
-    a: "[PLACEHOLDER â€” Confirm mode of notices.] Notices are issued in writing through students, the school office, the official Notices page on this website, and by direct communication where necessary. Parents are requested to check the school diary and the Notices page regularly.",
+    a: "[PLACEHOLDER — Confirm mode of notices.] Notices are issued in writing through students, the school office, the official Notices page on this website, and by direct communication where necessary. Parents are requested to check the school diary and the Notices page regularly.",
   },
 ];
 
@@ -122,7 +122,7 @@ export default function FAQPage() {
               </h1>
               <p className="mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-white/75">
                 Quick answers to the questions new and existing parents ask most often.
-                If you do not find your answer here, please call or visit the school â€” we are happy to help.
+                If you do not find your answer here, please call or visit the school — we are happy to help.
               </p>
             </motion.div>
           </div>
@@ -178,12 +178,12 @@ export default function FAQPage() {
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted-foreground)]">
                   Please call or visit the school office. The administration is happy to speak with
-                  any parent or guardian â€” whether you are considering admission or already part of the school family.
+                  any parent or guardian — whether you are considering admission or already part of the school family.
                 </p>
                 <div className="mt-6 grid gap-3.5 text-sm">
                   <a href="tel:+910000000000" className="flex items-center gap-3 rounded-xl bg-[var(--brand-mist)] p-3 text-[var(--brand-navy)] hover:bg-[var(--brand-navy)] hover:text-white transition duration-200">
                     <IconPhone className="h-4.5 w-4.5 shrink-0" stroke={1.8} />
-                    <span className="font-medium">+91 [PLACEHOLDER â€” PHONE]</span>
+                    <span className="font-medium">+91 [PLACEHOLDER — PHONE]</span>
                   </a>
                   <Link href="/contact" className="flex items-center gap-3 rounded-xl bg-[var(--brand-mist)] p-3 text-[var(--brand-navy)] hover:bg-[var(--brand-navy)] hover:text-white transition duration-200">
                     <IconMail className="h-4.5 w-4.5 shrink-0" stroke={1.8} />
@@ -191,7 +191,7 @@ export default function FAQPage() {
                   </Link>
                   <div className="flex items-start gap-3 rounded-xl bg-[var(--brand-mist)] p-3 text-[var(--muted-foreground)]">
                     <IconClock className="h-4.5 w-4.5 shrink-0 mt-0.5 text-[var(--brand-navy)]/70" stroke={1.8} />
-                    <span className="text-sm">Mon â€“ Sat Â· 10:00 AM â€“ 4:00 PM Â· Closed Sundays</span>
+                    <span className="text-sm">Mon – Sat · 10:00 AM – 4:00 PM · Closed Sundays</span>
                   </div>
                 </div>
                 <div className="mt-7 flex flex-wrap gap-3">

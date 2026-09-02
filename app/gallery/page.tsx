@@ -102,7 +102,7 @@ export default function GalleryPage() {
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
               src="/images/07-GALLERY/gallery-banner.webp"
-              alt="Gallery â€” Baramohanpur High School"
+              alt="Gallery — Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"

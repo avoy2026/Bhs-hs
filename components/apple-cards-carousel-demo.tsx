@@ -80,7 +80,7 @@ const data = [
     content: (
       <Story
         lead="Teaching at Baramohanpur is patient work."
-        body="From first letters to board exams, our teachers walk beside every learner â€” explaining again, encouraging often, and expecting the best."
+        body="From first letters to board exams, our teachers walk beside every learner — explaining again, encouraging often, and expecting the best."
         image="/images/02-HOMEPAGE/carousel/c-2.webp"
         alt="Classroom learning"
       />
@@ -119,7 +119,7 @@ const data = [
     content: (
       <Story
         lead="A school thrives when families stand with it."
-        body="Meetings, notices, and open doors keep guardians close to classroom life â€” because a child's progress is a shared journey."
+        body="Meetings, notices, and open doors keep guardians close to classroom life — because a child's progress is a shared journey."
         image="/images/02-HOMEPAGE/values/value-3.webp"
         alt="Community and family"
       />
@@ -132,7 +132,7 @@ const data = [
     content: (
       <Story
         lead="We measure success in more than marks."
-        body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground â€” that is the Baramohanpur way."
+        body="Courtesy in the corridor, honesty in the exam hall, and kindness on the playground — that is the Baramohanpur way."
         image="/images/02-HOMEPAGE/values/values.webp"
         alt="School values"
       />

@@ -353,7 +353,7 @@ function TeacherCard({ t, idx }: { t: Teacher; idx: number }) {
         {/* Image shade */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/80 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-80" />
 
-        {/* Social links â€” appear on hover */}
+        {/* Social links — appear on hover */}
         {t.social && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -419,7 +419,7 @@ export default function TeamPage() {
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
               src="/images/03-ABOUT/team-banner.webp"
-              alt="Our Team â€” Baramohanpur High School"
+              alt="Our Team — Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -477,7 +477,7 @@ export default function TeamPage() {
           <PageSectionHeading
             eyebrow="United in Purpose"
             title="Our Faculty Together"
-            description="The complete faculty and staff of Baramohanpur High School â€” working hand in hand for the academic excellence and moral growth of our students."
+            description="The complete faculty and staff of Baramohanpur High School — working hand in hand for the academic excellence and moral growth of our students."
             align="center"
             size="md"
             accent="underline"

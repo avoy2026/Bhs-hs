@@ -13,7 +13,7 @@ export default function TabsDemo() {
           <p>Open for the new session</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Forms are at the school office. Bring the child, the papers, and a
-            little hope â€” we will help you with the rest, within the dates
+            little hope — we will help you with the rest, within the dates
             announced each year.
           </p>
           <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.webp" />
@@ -42,7 +42,7 @@ export default function TabsDemo() {
           <p>When the campus rests</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Official holidays and unexpected closures are posted for families
-            first â€” so a closed gate never comes as a surprise.
+            first — so a closed gate never comes as a surprise.
           </p>
           <DummyContent src="/images/04-NOTICES/tabs/coming-soon-3.webp" />
         </div>
@@ -56,7 +56,7 @@ export default function TabsDemo() {
           <p>When results are ready</p>
           <p className="mt-4 text-sm md:text-lg font-normal text-white/80 max-w-xl">
             Class and board announcements live here. Collect mark sheets from
-            the office when your name is called â€” and celebrate with quiet
+            the office when your name is called — and celebrate with quiet
             pride.
           </p>
           <DummyContent src="/images/04-NOTICES/tabs/coming-soon-1.webp" />

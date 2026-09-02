@@ -55,7 +55,7 @@ export default function StudentAchievements() {
         <PageSectionHeading
           eyebrow="Pride of our campus"
           title="Student Achievements"
-          description="Every cup, every certificate, every mark â€” and the quiet effort behind each one. These are the moments Baramohanpur remembers."
+          description="Every cup, every certificate, every mark — and the quiet effort behind each one. These are the moments Baramohanpur remembers."
         />
 
         <div className="mt-16 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16 items-center">

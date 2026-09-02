@@ -1,6 +1,6 @@
 ﻿export const academicStats = [
   { value: "1,175+", label: "Students" },
-  { value: "Vâ€“XII", label: "Classes" },
+  { value: "V–XII", label: "Classes" },
   { value: "3", label: "Higher Secondary streams" },
   { value: "25", label: "Subjects" },
 ] as const;
@@ -10,24 +10,24 @@ export const secondaryClasses = ["Class V", "Class VI", "Class VII", "Class VIII
 export const higherSecondaryStreams = [
   {
     name: "Science",
-    classes: "Classes XIâ€“XII",
+    classes: "Classes XI–XII",
     description: "Higher Secondary Science education for students pursuing scientific and technical study.",
     image: "/images/05-ACADEMICS/science-stream.webp",
-    imageAlt: "Science Stream â€” Baramohanpur High School",
+    imageAlt: "Science Stream — Baramohanpur High School",
   },
   {
     name: "Arts",
-    classes: "Classes XIâ€“XII",
+    classes: "Classes XI–XII",
     description: "Higher Secondary Arts education with a foundation for humanities and social science study.",
     image: "/images/05-ACADEMICS/arts-stream.webp",
-    imageAlt: "Arts Stream â€” Baramohanpur High School",
+    imageAlt: "Arts Stream — Baramohanpur High School",
   },
   {
     name: "Commerce",
-    classes: "Classes XIâ€“XII",
+    classes: "Classes XI–XII",
     description: "Higher Secondary Commerce education, reopened at Baramohanpur High School in 2026.",
     image: "/images/05-ACADEMICS/commerce-stream.webp",
-    imageAlt: "Commerce Stream â€” Baramohanpur High School",
+    imageAlt: "Commerce Stream — Baramohanpur High School",
   },
 ] as const;
 

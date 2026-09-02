@@ -28,7 +28,7 @@ export default function LinkPreviewDemo() {
         >
           Baramohanpur High School
         </LinkPreview>
-        , a child learns to think clearly â€” and to{" "}
+        , a child learns to think clearly — and to{" "}
         <LinkPreview
           url="/about"
           isStatic

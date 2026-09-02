@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Academics | Baramohanpur High School (H.S.)",
   description:
-    "Explore Classes Vâ€“XII, Higher Secondary Arts, Science and Commerce streams, subjects, practical learning, and student development at Baramohanpur High School.",
+    "Explore Classes V–XII, Higher Secondary Arts, Science and Commerce streams, subjects, practical learning, and student development at Baramohanpur High School.",
 };
 
 export default function AcademicsPage() {
@@ -26,7 +26,7 @@ export default function AcademicsPage() {
           <div className="relative w-full aspect-[21/8] md:aspect-[24/7] max-h-[380px] min-h-[160px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-[#d5e9f6] flex items-center justify-center">
             <Image
               src="/images/05-ACADEMICS/academics-banner.webp"
-              alt="Academics â€” Baramohanpur High School"
+              alt="Academics — Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -62,7 +62,7 @@ export default function AcademicsPage() {
         hrefLabel="Explore our classes"
         accent="navy"
         facts={[
-          { value: "Vâ€“XII", label: "Classes" },
+          { value: "V–XII", label: "Classes" },
           { value: "25", label: "Subjects" },
           { value: "3", label: "HS streams" },
         ]}
@@ -71,7 +71,7 @@ export default function AcademicsPage() {
       <StoryBlock
         eyebrow="Practical learning"
         title="Learning that reaches beyond the textbook."
-        body="Science and Computer Application are part of the schoolâ€™s academic offering. This practical-learning section is ready to grow with verified laboratory details, equipment information, class schedules, and additional photographs."
+        body="Science and Computer Application are part of the school's academic offering. This practical-learning section is ready to grow with verified laboratory details, equipment information, class schedules, and additional photographs."
         image="/images/03-ABOUT/timeline/science-education.webp"
         imageAlt="Science laboratory at Baramohanpur High School"
         href="#subjects"
