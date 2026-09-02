@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -63,12 +63,12 @@ const data = [
   {
     category: "Campus",
     title: "Mornings that begin with assembly.",
-    src: "/images/02-HOMEPAGE/carousel/cursoal-1.jpeg",
+    src: "/images/02-HOMEPAGE/carousel/c-1.webp",
     content: (
       <Story
         lead="The bell still means something here."
         body="Students gather, the flag is raised, and a new school day starts with order, song, and a shared sense of belonging."
-        image="/images/02-HOMEPAGE/carousel/cursoal-1.jpeg"
+        image="/images/02-HOMEPAGE/carousel/c-1.webp"
         alt="Campus morning"
       />
     ),
