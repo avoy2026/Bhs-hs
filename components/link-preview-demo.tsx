@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 
@@ -53,7 +53,7 @@ export default function LinkPreviewDemo() {
         <LinkPreview
           url="/notices"
           isStatic
-          imageSrc="/images/events/academic/educational-events.webp"
+          imageSrc="/images/06-EVENTS/academic/educational-events.webp"
           className="font-bold text-[var(--brand-emerald)]"
         >
           official notices

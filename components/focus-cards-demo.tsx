@@ -1,4 +1,4 @@
-﻿import { FocusCards } from "@/components/ui/focus-cards";
+import { FocusCards } from "@/components/ui/focus-cards";
 
 export default function FocusCardsDemo() {
   const cards = [
@@ -8,7 +8,7 @@ export default function FocusCardsDemo() {
     },
     {
       title: "Classroom Learning",
-      src: "/images/05-ACADEMICS/classrooms/classroom-main.jpeg",
+      src: "/images/05-ACADEMICS/classrooms/classroom-main.jpg",
     },
     {
       title: "Student Life",

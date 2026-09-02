@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -141,7 +141,7 @@ export default function AboutPage() {
             </div>
             <div className="relative w-full aspect-5/4 rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgb(20_35_63/35%)]">
               <Image
-                src="/images/03-ABOUT/vision/our-vision.jpeg"
+                src="/images/03-ABOUT/vision/our-vision.png"
                 alt="Student life and vision"
                 fill
                 sizes="(max-width: 1024px) 100vw, 520px"

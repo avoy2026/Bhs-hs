@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 
@@ -29,6 +29,6 @@ const cards = [
   {
     id: 4,
     className: "md:col-span-2",
-    thumbnail: "/images/05-ACADEMICS/classrooms/classroom-main.jpeg",
+    thumbnail: "/images/05-ACADEMICS/classrooms/classroom-main.jpg",
   },
 ];

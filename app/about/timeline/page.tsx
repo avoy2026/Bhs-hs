@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import PageSectionHeading from "@/components/page-section-heading";
@@ -62,7 +62,7 @@ const data = [
         <div className="grid grid-cols-2 gap-4">
           <GridImg src="/images/03-ABOUT/staff/teachers/leadership/principal.jpeg" alt="Headmaster Sanjoy Modak" />
           <GridImg src="/images/03-ABOUT/timeline/academic-growth.webp" alt="Academic growth and achievements" />
-          <GridImg src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg" alt="Classroom learning" />
+          <GridImg src="/images/05-ACADEMICS/classrooms/classroom-main.jpg" alt="Classroom learning" />
           <GridImg src="/images/07-GALLERY/students/assembly.jpeg" alt="Student assembly" />
         </div>
       </div>

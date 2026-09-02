@@ -55,7 +55,7 @@ export default function WobbleCardDemo() {
         >
           <div className="absolute inset-0 z-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
             <Image
-              src="/images/05-ACADEMICS/classrooms/classroom-main.jpeg"
+              src="/images/02-HOMEPAGE/campus/campus-2.webp"
               alt="Classrooms at Baramohanpur High School"
               fill
               className="object-cover"
@@ -74,7 +74,7 @@ export default function WobbleCardDemo() {
         >
           <div className="absolute inset-0 z-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
             <Image
-              src="/images/02-HOMEPAGE/campus/campus-2.webp"
+              src="/images/02-HOMEPAGE/campus/campus-3.webp"
               alt="Baramohanpur High School school ground"
               fill
               className="object-cover"

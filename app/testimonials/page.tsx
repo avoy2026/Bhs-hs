@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import TestimonialCard, { type Testimonial, type TestimonialCategory } from "@/components/testimonial-card";
@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     category: "student",
     quote:
       "Sports day is my favourite day in the whole year. Even when I did not win, my house cheered for me anyway. That is what I will remember most.",
-    image: "/images/events/sports/sports-day.webp",
+    image: "/images/06-EVENTS/sports/sports-day.webp",
   },
   {
     name: "[STUDENT NAME 4]",

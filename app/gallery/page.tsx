@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -38,7 +38,7 @@ const items: GalleryItem[] = [
   { src: "/images/03-ABOUT/overview/about-hero.jpeg", title: "Heritage & 150 Years", category: "Campus", span: "tall", alt: "School heritage poster" },
 
   { src: "/images/07-GALLERY/classrooms/class-1.jpeg", title: "Inside our classrooms", category: "Classrooms", span: "lg", alt: "Baramohanpur High School classroom" },
-  { src: "/images/05-ACADEMICS/laboratories/science-lab.jpeg", title: "Science Laboratory", category: "Classrooms", span: "tall", alt: "Science lab at Baramohanpur High School" },
+  { src: "/images/05-ACADEMICS/laboratories/science-lab.png", title: "Science Laboratory", category: "Classrooms", span: "tall", alt: "Science lab at Baramohanpur High School" },
   { src: "/images/07-GALLERY/classrooms/class-2.webp", title: "Learning together", category: "Classrooms", span: "md", alt: "Students learning together" },
   { src: "/images/06-EVENTS/academic/educational-events.webp", title: "Academic exhibitions", category: "Classrooms", span: "md", alt: "School academic activities" },
 
@@ -53,7 +53,7 @@ const items: GalleryItem[] = [
   { src: "/images/07-GALLERY/campus/school-ground.webp", title: "On the field", category: "Sports", span: "sm", alt: "School sports ground" },
 
   { src: "/images/01-BRANDING/school-achievements.jpeg", title: "Honours & Trophies", category: "Achievements", span: "lg", alt: "Student achievements" },
-  { src: "/images/03-ABOUT/vision/our-vision.jpeg", title: "School Pride & Awards", category: "Achievements", span: "tall", alt: "School pride and awards" },
+  { src: "/images/03-ABOUT/vision/our-vision.png", title: "School Pride & Awards", category: "Achievements", span: "tall", alt: "School pride and awards" },
 
   { src: "/images/07-GALLERY/teachers/principal.jpeg", title: "Headmaster Sanjoy Modak", category: "Teachers", span: "tall", alt: "Headmaster of Baramohanpur High School" },
   { src: "/images/03-ABOUT/staff/teachers/bina-das.jpeg", title: "Bina Das (Assistant Teacher)", category: "Teachers", span: "md", alt: "School teacher Bina Das" },

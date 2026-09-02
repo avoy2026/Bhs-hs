@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 
@@ -20,12 +20,12 @@ export const products = [
   {
     title: "Classroom Learning",
     link: "/academics",
-    thumbnail: "/images/05-ACADEMICS/classrooms/classroom-main.jpeg",
+    thumbnail: "/images/05-ACADEMICS/classrooms/classroom-main.jpg",
   },
   {
     title: "Science Laboratory",
     link: "/academics",
-    thumbnail: "/images/05-ACADEMICS/laboratories/science-lab.jpeg",
+    thumbnail: "/images/05-ACADEMICS/laboratories/science-lab.png",
   },
   {
     title: "School Campus & Grounds",
