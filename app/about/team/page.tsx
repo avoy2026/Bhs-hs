@@ -51,6 +51,14 @@ const teachers: Teacher[] = [
     social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
+    name: "Mrs. Debasis Ray ",
+    designation: "Assistant Teacher",
+    subject: "B.S.C (Hons) (Physics), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/debasis-ray.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
     name: "Mr. Manoj Mahapatra",
     designation: "Assistant Teacher",
     subject: "M.A. (Economics), B.Ed.",
@@ -95,6 +103,22 @@ const teachers: Teacher[] = [
     designation: "Assistant Teacher",
     subject: "M.A. (Political Science)",
     image: "",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+   {
+    name: "Mr. Joydeb Bhunia",
+    designation: "Assistant Teacher",
+    subject: "M.Sc. (Geography), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/joydeb-bhunia.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+     {
+    name: "Mr. Lokesh Mishra",
+    designation: "Assistant Teacher",
+    subject: "BSC. (Chemistry), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/lokesh-mishra.jpeg",
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -198,7 +222,7 @@ const teachers: Teacher[] = [
     name: "Mr. Ujjwal Sardar",
     designation: "Assistant Teacher",
     subject: "M.Sc. (Mathematics), B.Ed.",
-    image: "",
+    image: "/images/03-ABOUT/staff/teachers/ujjwal-sardar.jpeg",
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -235,8 +259,8 @@ const teachers: Teacher[] = [
     social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
-    name: "Miss 0ampa Shit",
-    designation: "Assistant Teacher",
+    name: "Miss Pampa Shit",
+    designation: "computer teacher",
     subject: "M.A. (Bengali), B.Ed., Computer Diploma",
     image: "/images/03-ABOUT/staff/teachers/miss-oampa-shit.jpeg",
     category: "teacher",
