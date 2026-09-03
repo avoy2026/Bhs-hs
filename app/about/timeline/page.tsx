@@ -82,7 +82,15 @@ const data = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <GridImg src="/images/03-ABOUT/timeline/science-education.webp" alt="Modern science education" />
-          <GridImg src="/images/01-BRANDING/school-logo.png" alt="150th Anniversary Emblem" />
+          <div
+            role="img"
+            aria-label="150 years of Baramohanpur High School"
+            className={`${wrapClass} flex flex-col items-center justify-center bg-[var(--brand-navy)] px-4 text-center text-white`}
+          >
+            <span className="text-4xl font-semibold tracking-tight text-[var(--brand-gold)] md:text-6xl">150</span>
+            <span className="mt-1 text-[0.65rem] font-semibold uppercase tracking-[0.18em] md:text-xs">Years of learning</span>
+            <span className="mt-2 h-px w-12 bg-[var(--brand-gold)]" aria-hidden="true" />
+          </div>
           <GridImg src="/images/01-BRANDING/school-achievements.jpeg" alt="150 Years of Excellence" />
           <GridImg src="/images/06-EVENTS/academic/educational-events.webp" alt="Educational events and celebrations" />
         </div>
