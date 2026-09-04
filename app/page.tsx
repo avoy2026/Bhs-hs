@@ -15,9 +15,9 @@ import HeroParallaxDemo from "@/components/hero-parallax-demo";
 import AcademicOverviewCards from "@/components/academic-overview-cards";
 
 export const metadata = {
-  title: "Baramohanpur High School | Knowledge · Character · Community",
+  title: "Baramohanpur High School | Knowledge Â· Character Â· Community",
   description:
-    "Baramohanpur High School — an established neighbourhood school where every child is known by name, taught with patience, and prepared for a life of purpose.",
+    "Baramohanpur High School â€” an established neighbourhood school where every child is known by name, taught with patience, and prepared for a life of purpose.",
 };
 
 export default function HomePage() {
@@ -37,7 +37,7 @@ export default function HomePage() {
         hrefLabel="About our campus"
         accent="navy"
         facts={[
-          { value: "V–XII", label: "Classes" },
+          { value: "V-XII", label: "Classes" },
           { value: "25", label: "Subjects" },
           { value: "3", label: "HS Streams" },
         ]}
@@ -45,7 +45,7 @@ export default function HomePage() {
       <StoryBlock
         eyebrow="Campus life"
         title="A campus that feels familiar because it is lived in."
-        body="Between first bell and last, Baramohanpur is full of small rituals that quietly shape a child. The walk between classrooms with friends, the rush of water during tiffin, the hand raised tentatively in a maths class — these are the moments that make a school."
+        body="Between first bell and last, Baramohanpur is full of small rituals that quietly shape a child. The walk between classrooms with friends, the rush of water during tiffin, the hand raised tentatively in a maths class â€” these are the moments that make a school."
         image="/images/02-HOMEPAGE/campus/campus-1.webp"
         imageAlt="Campus of Baramohanpur High School"
         href="/gallery"

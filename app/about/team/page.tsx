@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import PageSectionHeading from "@/components/page-section-heading";
@@ -50,22 +50,7 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  {
-    name: "Mrs. Debasis Ray ",
-    designation: "Assistant Teacher",
-    subject: "B.S.C (Hons) (Physics), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/debasis-ray.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Mr. Manoj Mahapatra",
-    designation: "Assistant Teacher",
-    subject: "M.A. (Economics), B.Ed.",
-    image: "/images/03-ABOUT/staff/non-teaching/manoj-mahapatra.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
+
   {
     name: "Mrs. Falguni Misra Nanda",
     designation: "Assistant Teacher",
@@ -74,14 +59,7 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  {
-    name: "Mr. Binod Behari Murmu",
-    designation: "Assistant Teacher",
-    subject: "B.A., B.P.Ed.",
-    image: "/images/03-ABOUT/staff/non-teaching/binod-bihari-murmu.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
+
   {
     name: "Mrs. Mahua Maity",
     designation: "Assistant Teacher",
@@ -90,35 +68,12 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  {
-    name: "Mr. Niranjan Kumar Baram",
-    designation: "Assistant Teacher",
-    subject: "M.A. (Philosophy), B.Ed.",
-    image: "/images/03-ABOUT/staff/non-teaching/niranjan-kumar-baram.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
+
   {
     name: "Mr. Gitesh Biswas",
     designation: "Assistant Teacher",
     subject: "M.A. (Political Science)",
     image: "",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-   {
-    name: "Mr. Joydeb Bhunia",
-    designation: "Assistant Teacher",
-    subject: "M.Sc. (Geography), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/joydeb-bhunia.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-     {
-    name: "Mr. Lokesh Mishra",
-    designation: "Assistant Teacher",
-    subject: "BSC. (Chemistry), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/lokesh-mishra.jpeg",
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -178,14 +133,7 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  {
-    name: "Mr. Totan Bharasa",
-    designation: "Assistant Teacher",
-    subject: "M.Sc., M.Tech. (Computer Science), B.Ed.",
-    image: "/images/03-ABOUT/staff/non-teaching/totan-bharasa.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
+
   {
     name: "Mr. Kousik Giri",
     designation: "Assistant Teacher",
@@ -222,23 +170,7 @@ const teachers: Teacher[] = [
     name: "Mr. Ujjwal Sardar",
     designation: "Assistant Teacher",
     subject: "M.Sc. (Mathematics), B.Ed.",
-    image: "/images/03-ABOUT/staff/teachers/ujjwal-sardar.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Mr. Anupam Mandal",
-    designation: "Assistant Teacher",
-    subject: "M.A. (English), B.Ed.",
-    image: "/images/03-ABOUT/staff/non-teaching/anupam-mandal.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Mr. Ashis Mishra",
-    designation: "Assistant Teacher",
-    subject: "M.Sc. (Physics), B.Ed.",
-    image: "/images/03-ABOUT/staff/non-teaching/asis-mishra.jpeg",
+    image: "",
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -250,17 +182,10 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
+
   {
-    name: "Mr. Goutam Makur",
+    name: "Miss 0ampa Shit",
     designation: "Assistant Teacher",
-    subject: "M.Lib., M.A. (Bengali), B.Ed., A.N.O. (NCC)",
-    image: "/images/03-ABOUT/staff/non-teaching/gautam-makur.jpeg",
-    category: "teacher",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Miss Pampa Shit",
-    designation: "computer teacher",
     subject: "M.A. (Bengali), B.Ed., Computer Diploma",
     image: "/images/03-ABOUT/staff/teachers/miss-oampa-shit.jpeg",
     category: "teacher",
@@ -270,17 +195,82 @@ const teachers: Teacher[] = [
   // Non-Teaching
   {
     name: "Mr. Ajoy Kumar Mahapatra",
-    designation: "Clerk",
-    subject: "M.A. (History)",
-    image: "/images/03-ABOUT/staff/non-teaching/ajoy-kumar-mahapatra.jpeg",
+    designation: "",
+    subject: "",
+    image: "/images/03-ABOUT/staff/non-taching/ajoy-kumar-mahapatra.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Joydeb Bhunia",
+    designation: "",
+    subject: "",
+    image: "/images/03-ABOUT/staff/non-taching/joydeb-bhunia.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Anupam Mandal",
+    designation: "",
+    subject: "",
+    image: "/images/03-ABOUT/staff/non-taching/anupam-mandal.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Totan Bharasa",
+    designation: "",
+    subject: "",
+    image: "/images/03-ABOUT/staff/non-taching/totan-bharasa.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Goutam Makur",
+    designation: "",
+    subject: "M",
+    image: "/images/03-ABOUT/staff/non-taching/gautam-makur.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Binod Behari Murmu",
+    designation: "",
+    subject: "",
+    image: "/images/03-ABOUT/staff/non-taching/binod-bihari-murmu.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Manoj Mahapatra",
+    designation: "",
+    subject: ".",
+    image: "/images/03-ABOUT/staff/non-taching/manoj-mahapatra.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+
+  {
+    name: "Mr. Ashis Mishra",
+    designation: "",
+    subject: "M.Sc. (Physics), B.Ed.",
+    image: "/images/03-ABOUT/staff/non-taching/asis-mishra.jpeg",
+    category: "non-teaching",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Niranjan Kumar Baram",
+    designation: "",
+    subject: "M.",
+    image: "/images/03-ABOUT/staff/non-taching/niranjan-kumar-baram.jpeg",
     category: "non-teaching",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
   {
     name: "Mr. Tanmoy Dutta",
     designation: "Group-D",
-    subject: "H.S.",
-    image: "/images/03-ABOUT/staff/non-teaching/tanmay-duatta.jpeg",
+    subject: ".",
+    image: "/images/03-ABOUT/staff/non-taching/tanmay-duatta.jpeg",
     category: "non-teaching",
     social: { facebook: "", instagram: "", linkedin: "" }
   }
@@ -377,7 +367,7 @@ function TeacherCard({ t, idx }: { t: Teacher; idx: number }) {
         {/* Image shade */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/80 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-80" />
 
-        {/* Social links — appear on hover */}
+        {/* Social links â€” appear on hover */}
         {t.social && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -443,7 +433,7 @@ export default function TeamPage() {
           <div className="relative w-full aspect-[21/9] md:aspect-[24/9] max-h-[360px] min-h-[180px] rounded-3xl overflow-hidden shadow-md border border-[var(--border)] bg-white flex items-center justify-center">
             <Image
               src="/images/03-ABOUT/team-banner.webp"
-              alt="Our Team — Baramohanpur High School"
+              alt="Our Team â€” Baramohanpur High School"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1200px"
@@ -501,7 +491,7 @@ export default function TeamPage() {
           <PageSectionHeading
             eyebrow="United in Purpose"
             title="Our Faculty Together"
-            description="The complete faculty and staff of Baramohanpur High School — working hand in hand for the academic excellence and moral growth of our students."
+            description="The complete faculty and staff of Baramohanpur High School â€” working hand in hand for the academic excellence and moral growth of our students."
             align="center"
             size="md"
             accent="underline"
