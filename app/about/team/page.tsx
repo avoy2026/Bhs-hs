@@ -50,7 +50,7 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-    {
+  {
     name: "Mrs. Debasis Ray",
     designation: "Assistant Teacher",
     subject: "B.S.C( Hons) (Physics), B.Ed.",
@@ -58,7 +58,7 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-    {
+  {
     name: "Mrs. Lokesh Mishra",
     designation: "Assistant Teacher",
     subject: "B.S.C( Hons) (Chemistry), B.Ed..",
@@ -89,7 +89,7 @@ const teachers: Teacher[] = [
     name: "Mr. Gitesh Biswas",
     designation: "Assistant Teacher",
     subject: "M.A. (Political Science)",
-    image: "",
+    image: "/images/03-ABOUT/staff/teachers/gitesh-biswas.jpeg",
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -158,7 +158,7 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  
+
   {
     name: "Mr. Joydeb Bhunia",
     designation: "Assistant Teacher",
@@ -167,7 +167,7 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  
+
   {
     name: "Smt. Mahasweta Tripathi",
     designation: "Assistant Teacher",
@@ -200,7 +200,23 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  
+  {
+    name: "Mr. Anupam Mandal",
+    designation: "Assistant Teacher",
+    subject: "M.A. (Bengali), B.Ed.",
+    image: "/images/03-ABOUT/staff/non-teaching/anupam-mandal.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Manoj Mahapatra",
+    designation: "Assistant Teacher",
+    subject: "M.A. (Physical Education)",
+    image: "/images/03-ABOUT/staff/non-teaching/manoj-mahapatra.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+
   {
     name: "Mr. Gitesh Biswas",
     designation: "Assistant Teacher",
@@ -214,6 +230,22 @@ const teachers: Teacher[] = [
     designation: "Assistant Teacher",
     subject: "M.Sc. (Biology), B.Ed.",
     image: "/images/03-ABOUT/staff/teachers/manas-kumar-dey.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Binod Behari Murmu",
+    designation: "Assistant Teacher",
+    subject: "",
+    image: "/images/03-ABOUT/staff/non-teaching/binod-bihari-murmu.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  {
+    name: "Mr. Totan Bharasa",
+    designation: "Assistant Teacher",
+    subject: "",
+    image: "/images/03-ABOUT/staff/non-teaching/totan-bharasa.jpeg",
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -232,31 +264,7 @@ const teachers: Teacher[] = [
     name: "Mr. Ajoy Kumar Mahapatra",
     designation: "",
     subject: "",
-    image: "/images/03-ABOUT/staff/non-taching/ajoy-kumar-mahapatra.jpeg",
-    category: "non-teaching",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Mr. Joydeb Bhunia",
-    designation: "",
-    subject: "",
-    image: "/images/03-ABOUT/staff/non-taching/joydeb-bhunia.jpeg",
-    category: "non-teaching",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Mr. Anupam Mandal",
-    designation: "",
-    subject: "",
-    image: "/images/03-ABOUT/staff/non-taching/anupam-mandal.jpeg",
-    category: "non-teaching",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Mr. Totan Bharasa",
-    designation: "",
-    subject: "",
-    image: "/images/03-ABOUT/staff/non-taching/totan-bharasa.jpeg",
+    image: "/images/03-ABOUT/staff/non-teaching/ajoy-kumar-mahapatra.jpeg",
     category: "non-teaching",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -264,32 +272,15 @@ const teachers: Teacher[] = [
     name: "Mr. Goutam Makur",
     designation: "Librarian",
     subject: "M",
-    image: "/images/03-ABOUT/staff/non-taching/gautam-makur.jpeg",
+    image: "/images/03-ABOUT/staff/non-teaching/gautam-makur.jpeg",
     category: "non-teaching",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
-  {
-    name: "Mr. Binod Behari Murmu",
-    designation: "",
-    subject: "",
-    image: "/images/03-ABOUT/staff/non-taching/binod-bihari-murmu.jpeg",
-    category: "non-teaching",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-  {
-    name: "Mr. Manoj Mahapatra",
-    designation: "",
-    subject: ".",
-    image: "/images/03-ABOUT/staff/non-taching/manoj-mahapatra.jpeg",
-    category: "non-teaching",
-    social: { facebook: "", instagram: "", linkedin: "" }
-  },
-
   {
     name: "Mr. Ashis Mishra",
     designation: "",
     subject: "M.Sc. (Physics), B.Ed.",
-    image: "/images/03-ABOUT/staff/non-taching/asis-mishra.jpeg",
+    image: "/images/03-ABOUT/staff/non-teaching/asis-mishra.jpeg",
     category: "non-teaching",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -297,7 +288,7 @@ const teachers: Teacher[] = [
     name: "Mr. Niranjan Kumar Baram",
     designation: "",
     subject: "M.",
-    image: "/images/03-ABOUT/staff/non-taching/niranjan-kumar-baram.jpeg",
+    image: "/images/03-ABOUT/staff/non-teaching/niranjan-kumar-baram.jpeg",
     category: "non-teaching",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -305,7 +296,7 @@ const teachers: Teacher[] = [
     name: "Mr. Tanmoy Dutta",
     designation: "Group-D",
     subject: ".",
-    image: "/images/03-ABOUT/staff/non-taching/tanmay-duatta.jpeg",
+    image: "/images/03-ABOUT/staff/non-teaching/tanmoy-dutta.jpeg",
     category: "non-teaching",
     social: { facebook: "", instagram: "", linkedin: "" }
   }
