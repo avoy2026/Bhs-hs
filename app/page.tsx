@@ -1,4 +1,4 @@
-﻿import ImagesSliderDemo from "@/components/images-slider-demo";
+import ImagesSliderDemo from "@/components/images-slider-demo";
 import WobbleCardDemo from "@/components/wobble-card-demo";
 import SchoolGlories from "@/components/school-glories";
 import StoryBlock from "@/components/story-block";
@@ -14,10 +14,20 @@ import FinalHomeCta from "@/components/final-home-cta";
 import HeroParallaxDemo from "@/components/hero-parallax-demo";
 import AcademicOverviewCards from "@/components/academic-overview-cards";
 
-export const metadata = {
-  title: "Baramohanpur High School | Knowledge Â· Character Â· Community",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Baramohanpur High School | Knowledge · Character · Community",
   description:
-    "Baramohanpur High School â€” an established neighbourhood school where every child is known by name, taught with patience, and prepared for a life of purpose.",
+    "Baramohanpur High School — an established neighbourhood school where every child is known by name, taught with patience, and prepared for a life of purpose.",
+  openGraph: {
+    title: "Baramohanpur High School | Knowledge · Character · Community",
+    description:
+      "Baramohanpur High School — an established neighbourhood school where every child is known by name, taught with patience, and prepared for a life of purpose.",
+    url: "https://bhswb.com",
+    siteName: "Baramohanpur High School",
+    type: "website",
+  },
 };
 
 export default function HomePage() {
