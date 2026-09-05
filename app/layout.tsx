@@ -63,11 +63,6 @@ export const metadata: Metadata = {
   verification: {
     google: "Z6udeH7cI24jTKaApQXFWKpa1oD0PXoR-99Ua6jeG8A",
   },
-  icons: {
-    icon: "/images/01-BRANDING/school-logo.png",
-    shortcut: "/images/01-BRANDING/school-logo.png",
-    apple: "/images/01-BRANDING/school-logo.png",
-  },
 };
 
 export default function RootLayout({
