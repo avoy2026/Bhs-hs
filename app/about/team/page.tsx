@@ -50,6 +50,22 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
+    {
+    name: "Mrs. Debasis Ray",
+    designation: "Assistant Teacher",
+    subject: "B.S.C( Hons) (Physics), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/debasis-ray.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+    {
+    name: "Mrs. Lokesh Mishra",
+    designation: "Assistant Teacher",
+    subject: "B.S.C( Hons) (Chemistry), B.Ed..",
+    image: "/images/03-ABOUT/staff/teachers/lokesh-mishra.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
 
   {
     name: "Mrs. Falguni Misra Nanda",
@@ -142,6 +158,16 @@ const teachers: Teacher[] = [
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
+  
+  {
+    name: "Mr. Joydeb Bhunia",
+    designation: "Assistant Teacher",
+    subject: "M.SC. (Geography), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/joydeb-bhunia.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  
   {
     name: "Smt. Mahasweta Tripathi",
     designation: "Assistant Teacher",
@@ -170,7 +196,16 @@ const teachers: Teacher[] = [
     name: "Mr. Ujjwal Sardar",
     designation: "Assistant Teacher",
     subject: "M.Sc. (Mathematics), B.Ed.",
-    image: "",
+    image: "/images/03-ABOUT/staff/teachers/ujjwal-sardar.jpeg",
+    category: "teacher",
+    social: { facebook: "", instagram: "", linkedin: "" }
+  },
+  
+  {
+    name: "Mr. Gitesh Biswas",
+    designation: "Assistant Teacher",
+    subject: "M.A. (Political Science), B.Ed.",
+    image: "/images/03-ABOUT/staff/teachers/gitesh-biswas.jpeg",
     category: "teacher",
     social: { facebook: "", instagram: "", linkedin: "" }
   },
@@ -184,7 +219,7 @@ const teachers: Teacher[] = [
   },
 
   {
-    name: "Miss 0ampa Shit",
+    name: "Miss pampa Shit",
     designation: "Assistant Teacher",
     subject: "M.A. (Bengali), B.Ed., Computer Diploma",
     image: "/images/03-ABOUT/staff/teachers/miss-oampa-shit.jpeg",
@@ -227,7 +262,7 @@ const teachers: Teacher[] = [
   },
   {
     name: "Mr. Goutam Makur",
-    designation: "",
+    designation: "Librarian",
     subject: "M",
     image: "/images/03-ABOUT/staff/non-taching/gautam-makur.jpeg",
     category: "non-teaching",
@@ -505,7 +540,7 @@ export default function TeamPage() {
             className="mt-12 relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-[var(--border)] bg-white"
           >
             <Image
-              src="/images/02-HOMEPAGE/hero/hero-2.webp"
+              src="/images/02-HOMEPAGE/hero/hero1.webp"
               alt="All Baramohanpur High School Faculty Together"
               fill
               sizes="(max-width: 1280px) 100vw, 1200px"
